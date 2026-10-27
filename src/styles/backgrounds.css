@@ -1,0 +1,60 @@
+/* The desktop canvas and the mobile surface are intentionally separate layers.
+   Change these tokens to restyle the background without touching card artwork. */
+:root {
+  --mobile-max-width: 520px;
+  --web-background: #19131f;
+  --mobile-base: #32233f;
+  --mobile-gradient-top: #432f56;
+  --mobile-gradient-middle: #3a294b;
+  --mobile-gradient-bottom: #32233f;
+  --mobile-background-image:
+    radial-gradient(ellipse 100% 540px at 50% 0, rgb(199 166 224 / 6%), transparent 80%),
+    linear-gradient(180deg, var(--mobile-gradient-top) 0, var(--mobile-gradient-middle) 740px, var(--mobile-gradient-bottom) 1700px);
+  --mobile-border: rgb(206 181 226 / 14%);
+  --header-surface: rgb(58 41 74 / 97%);
+  --panel-surface: rgb(222 197 243 / 6%);
+  --panel-border: rgb(218 195 237 / 12%);
+  --surface-raised: #503b62;
+  --text-primary: #f7f2fa;
+  --text-secondary: #c9bad4;
+  --text-muted: #ad9dbb;
+  --accent: #cfb5ee;
+  --accent-border: rgb(196 162 229 / 38%);
+  --accent-surface: rgb(184 139 223 / 16%);
+  --control-highlight: #dfc8f4;
+  --control-shadow: #ac8bc9;
+  --on-accent: #34203f;
+  --primary-gradient: linear-gradient(180deg, var(--control-highlight), var(--control-shadow));
+  --pink-action-gradient: linear-gradient(180deg, #b05a85, #a7507b);
+}
+
+html, body, #app { min-height: 100%; }
+html, body { background: var(--web-background); }
+.web-canvas { position: relative; isolation: isolate; min-height: 100svh; background: radial-gradient(ellipse 900px 900px at 50% 0, rgb(105 74 127 / 12%), transparent 80%), var(--web-background); }
+.mobile-shell {
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
+  width: min(100%, var(--mobile-max-width));
+  min-height: 100svh;
+  margin-inline: auto;
+  background-color: var(--mobile-base);
+  background-image: var(--mobile-background-image);
+  background-repeat: no-repeat;
+  box-shadow: 0 0 0 1px var(--mobile-border), 0 0 72px rgb(0 0 0 / 34%);
+}
+
+/* Review mode changes backgrounds only; the page layout stays identical. */
+.background-original {
+  --web-background: #190f28;
+  --mobile-base: #190f28;
+  --mobile-background-image: none;
+  --mobile-border: transparent;
+  --header-surface: #221a25;
+  --panel-surface: #2b1938;
+}
+.background-original .mobile-shell { box-shadow: none; }
+
+@media (max-width: 520px) {
+  .mobile-shell { box-shadow: none; }
+}

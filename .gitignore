@@ -7,3 +7,9 @@
 .DS_Store
 Thumbs.db
 Desktop.ini
+
+# Frontend build and local preview
+node_modules/
+dist/
+.sites-runtime/
+*.log

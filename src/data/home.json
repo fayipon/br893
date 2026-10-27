@@ -1,0 +1,646 @@
+{
+  "activities": [
+    {
+      "image": "assets/602d3863d0989e95.png",
+      "name": "unknown"
+    },
+    {
+      "image": "assets/activity-wheel-v2.png",
+      "name": "lucky_wheel",
+      "amount": "R$100",
+      "motion": "sway"
+    },
+    {
+      "image": "assets/activity-chest-v2.png",
+      "name": "invite_chest_v2",
+      "amount": "R$80",
+      "motion": "float"
+    },
+    {
+      "image": "assets/activity-gift-v2.png",
+      "name": "mystery_gift",
+      "amount": "R$8888",
+      "motion": "bounce"
+    }
+  ],
+  "appIcon": "assets/06b9ca42df1c4fd0.png",
+  "banners": [
+    "assets/hero-cashback-purple-v3.png",
+    "assets/hero-cashback-purple-v3.png",
+    "assets/hero-cashback-purple-v3.png"
+  ],
+  "brand": "assets/916009d0901398c8.png",
+  "capturedAt": "2026-10-27",
+  "font": "assets/2a63e26505f6c955.woff2",
+  "footer": [
+    {
+      "image": "assets/cd531031a6dd1869.webp",
+      "name": "Pragmatic Play"
+    },
+    {
+      "image": "assets/4f1462a327f7bc15.webp",
+      "name": "PG Soft"
+    },
+    {
+      "image": "assets/d812d484108d3d19.webp",
+      "name": "Hacksaw Gaming"
+    },
+    {
+      "image": "assets/24c6200dee406784.webp",
+      "name": "PopOK"
+    },
+    {
+      "image": "assets/ba18f8f01fa96906.webp",
+      "name": "TADA Gaming"
+    },
+    {
+      "image": "assets/68fbc2448747eb6c.webp",
+      "name": "JILI"
+    },
+    {
+      "image": "assets/caf8728a91be3d4e.webp",
+      "name": "Evolution"
+    },
+    {
+      "image": "assets/244c666cb38ae882.webp",
+      "name": "BGaming"
+    }
+  ],
+  "footerBanner": "assets/2d643013815e46bf.webp",
+  "groups": [
+    {
+      "games": [
+        {
+          "image": "assets/031d50e2b4a1a2e1.png",
+          "name": "Pinata Wins"
+        },
+        {
+          "image": "assets/70cfbd0485b253d7.png",
+          "name": "Dreams of Macau"
+        },
+        {
+          "image": "assets/bd2c1b94a33c4919.jpg",
+          "name": "Fortune Rabbit"
+        },
+        {
+          "image": "assets/4a700a7e80cfcafe.jpg",
+          "name": "Wild Bounty Showdown"
+        },
+        {
+          "image": "assets/5550b9651c6fec38.jpg",
+          "name": "Mahjong Ways"
+        },
+        {
+          "image": "assets/49d3945ed17ac49d.jpg",
+          "name": "Mahjong Ways 2"
+        }
+      ],
+      "image": "assets/78fc2b9f96c8364c.png",
+      "name": "PG"
+    },
+    {
+      "games": [
+        {
+          "image": "assets/a360d41ef5ca13b8.jpg",
+          "name": "Sugar Rush"
+        },
+        {
+          "image": "assets/691886672b79a58c.jpg",
+          "name": "Sugar Rush 1000"
+        },
+        {
+          "image": "assets/07d090e45a6863af.jpg",
+          "name": "Sweet Bonanza"
+        },
+        {
+          "image": "assets/ec2f69833d35b964.jpg",
+          "name": "Sweet Bonanza 1000"
+        },
+        {
+          "image": "assets/2cf5485e16351334.jpg",
+          "name": "Striking Hot 5"
+        },
+        {
+          "image": "assets/82574c0dcfa24793.jpg",
+          "name": "Sugar Rush Super Scatter"
+        }
+      ],
+      "image": "assets/f25e197b3823887f.png",
+      "name": "PP"
+    },
+    {
+      "games": [
+        {
+          "image": "assets/09820b7f90438719.jpg",
+          "name": "Super Ace"
+        },
+        {
+          "image": "assets/abf925a641cefe2e.jpg",
+          "name": "Fortune Gems"
+        },
+        {
+          "image": "assets/c6873aaa165fdd00.jpg",
+          "name": "Fortune Gems 2"
+        },
+        {
+          "image": "assets/ea922d0ce5546290.jpg",
+          "name": "Golden Empire"
+        },
+        {
+          "image": "assets/95871800181ab42b.jpg",
+          "name": "Golden Empire 2"
+        },
+        {
+          "image": "assets/7b0dbfedef8ed3f0.jpg",
+          "name": "Money Coming"
+        }
+      ],
+      "image": "assets/292faa4b5d28c42b.png",
+      "name": "JILI"
+    },
+    {
+      "games": [
+        {
+          "image": "assets/d0dcf43cc20b89e1.png",
+          "name": "Poker Win"
+        },
+        {
+          "image": "assets/07f033582ccafca6.jpg",
+          "name": "Queen Of Inca"
+        },
+        {
+          "image": "assets/cc4ca3dbd9354e64.jpg",
+          "name": "Phoenix Fever"
+        },
+        {
+          "image": "assets/733b674e43eef62e.jpg",
+          "name": "Catlas Money Machine"
+        },
+        {
+          "image": "assets/68415405be6add69.jpg",
+          "name": "Sugar Bang Bang2"
+        },
+        {
+          "image": "assets/c06fe5f9fd836e1c.jpg",
+          "name": "Roma Gladiatrix"
+        }
+      ],
+      "image": "assets/25c0a7df6f380f50.svg",
+      "name": "FACHAI"
+    },
+    {
+      "games": [
+        {
+          "image": "assets/723b4be1f7053ac4.jpg",
+          "name": "Golden Empire"
+        },
+        {
+          "image": "assets/60869c6d25bc8532.jpg",
+          "name": "Golden Empire 2"
+        },
+        {
+          "image": "assets/bcec6e0198799c2a.jpg",
+          "name": "Lucky Tiger"
+        },
+        {
+          "image": "assets/0b4d5203a331e918.jpg",
+          "name": "Charge Buffalo"
+        },
+        {
+          "image": "assets/35b84d10a9171db1.jpg",
+          "name": "3 Charge Buffalo"
+        },
+        {
+          "image": "assets/0afc173fdeb69778.gif",
+          "name": "Fortune Garuda500"
+        }
+      ],
+      "image": "assets/25c0a7df6f380f50.svg",
+      "name": "TADA"
+    },
+    {
+      "games": [
+        {
+          "image": "assets/4a2760b79b4f1595.jpg",
+          "name": "balloon"
+        },
+        {
+          "image": "assets/7f1cad9239118582.jpg",
+          "name": "Hotline"
+        },
+        {
+          "image": "assets/080aa9ca805be8e9.jpg",
+          "name": "Keno"
+        },
+        {
+          "image": "assets/b92dba7206705fce.jpg",
+          "name": "Goal"
+        },
+        {
+          "image": "assets/7b43394edc0b1c87.jpg",
+          "name": "Plinko"
+        },
+        {
+          "image": "assets/444a51d2642a730a.jpg",
+          "name": "Hilo"
+        }
+      ],
+      "image": "assets/25c0a7df6f380f50.svg",
+      "name": "SPRIBE"
+    },
+    {
+      "games": [
+        {
+          "image": "assets/48d497a8ff915f37.png",
+          "name": "Fortune Horse"
+        },
+        {
+          "image": "assets/796d2ddbe0dfe69d.png",
+          "name": "Fortune Gems"
+        },
+        {
+          "image": "assets/76c0d87f5a08d055.png",
+          "name": "Fortune Rabbit 2"
+        },
+        {
+          "image": "assets/e5e02e46badee654.png",
+          "name": "Fortune Snake"
+        },
+        {
+          "image": "assets/e4418d4a8d644ceb.gif",
+          "name": "Wild Bounty Showdown"
+        },
+        {
+          "image": "assets/d0bcdc17de7e8f9c.png",
+          "name": "Fortune Rabbit"
+        }
+      ],
+      "image": "assets/25c0a7df6f380f50.svg",
+      "name": "WG"
+    },
+    {
+      "games": [
+        {
+          "image": "assets/52f3b73f0716b325.jpg",
+          "name": "Kong"
+        },
+        {
+          "image": "assets/3f8a10b0669f3620.jpg",
+          "name": "Bull Treasure"
+        },
+        {
+          "image": "assets/a42b9b7d462bdd6c.jpg",
+          "name": "Blossom Of Wealth"
+        },
+        {
+          "image": "assets/9d6ee1031cf19d84.jpg",
+          "name": "OPEN SESAMEⅡ"
+        },
+        {
+          "image": "assets/ce5fdb2f19dec751.jpg",
+          "name": "GLAMOROUS GIRL"
+        },
+        {
+          "image": "assets/a7e4bbbc1041ff12.jpg",
+          "name": "BOOK OF MYSTERY"
+        }
+      ],
+      "image": "assets/25c0a7df6f380f50.svg",
+      "name": "JDB"
+    },
+    {
+      "games": [
+        {
+          "image": "assets/57aebefad6f2920b.jpg",
+          "name": "Munchy Milo"
+        },
+        {
+          "image": "assets/dd6cd01a02f86066.jpg",
+          "name": "Le Bunny"
+        },
+        {
+          "image": "assets/0419aacb3dcf0fa7.jpg",
+          "name": "Dusk Princess"
+        },
+        {
+          "image": "assets/3b36cd6ba15a3d35.jpg",
+          "name": "Eternal Duel"
+        },
+        {
+          "image": "assets/5aa9fde8b4962651.jpg",
+          "name": "Dark Spiral"
+        },
+        {
+          "image": "assets/baaa304ede115c64.jpg",
+          "name": "Superstar Sevens"
+        }
+      ],
+      "image": "assets/25c0a7df6f380f50.svg",
+      "name": "HACKSAW"
+    },
+    {
+      "games": [
+        {
+          "image": "assets/38d49fd7cb2fe190.jpg",
+          "name": "LABUBU'S LUCKY BOX"
+        },
+        {
+          "image": "assets/d6c5f78886506d87.jpg",
+          "name": "GOLDEN RICHES"
+        },
+        {
+          "image": "assets/a90693cf1490400d.jpg",
+          "name": "DOOM BULLET"
+        },
+        {
+          "image": "assets/0e81489e863faf9f.jpg",
+          "name": "MAGIC DROP"
+        },
+        {
+          "image": "assets/035ea1bdeded2f7b.jpg",
+          "name": "X-PLOSIVE ROCK"
+        },
+        {
+          "image": "assets/287486969f4081fd.jpg",
+          "name": "COSMIC BLITZ"
+        }
+      ],
+      "image": "assets/25c0a7df6f380f50.svg",
+      "name": "2JGAME"
+    },
+    {
+      "games": [
+        {
+          "image": "assets/40185c1ad856b46c.png",
+          "name": "Aztec Empire 1000"
+        },
+        {
+          "image": "assets/5a93f24665c9abac.jpg",
+          "name": "Aztec Empire"
+        },
+        {
+          "image": "assets/0ea3e9ff361c23cb.png",
+          "name": "The Beat of Olympus 1000"
+        },
+        {
+          "image": "assets/07ee24e00e2fbe77.jpg",
+          "name": "Moe Moe Cute"
+        },
+        {
+          "image": "assets/23fe7b5744933802.png",
+          "name": "Subway Runners"
+        },
+        {
+          "image": "assets/8f4e94b467bf6cb5.jpg",
+          "name": "Tiki Paradise"
+        }
+      ],
+      "image": "assets/25c0a7df6f380f50.svg",
+      "name": "ASKMESLOT"
+    },
+    {
+      "games": [
+        {
+          "image": "assets/72bd8e31fcc96502.jpg",
+          "name": "Davinci Diamonds"
+        },
+        {
+          "image": "assets/da6b42378bbd25f0.jpg",
+          "name": "Wheel of Fortune Triple Extreme Spin"
+        },
+        {
+          "image": "assets/52b012187d024b05.jpg",
+          "name": "Double Diamond"
+        },
+        {
+          "image": "assets/07cb0025937d7180.jpg",
+          "name": "Wheel of Fortune Gold Spin Triple Red Hot 7s"
+        },
+        {
+          "image": "assets/463d3edb99541d98.jpg",
+          "name": "Cash Eruption"
+        }
+      ],
+      "image": "assets/25c0a7df6f380f50.svg",
+      "name": "IGT"
+    },
+    {
+      "games": [
+        {
+          "image": "assets/de70deea9ad46e59.jpg",
+          "name": "lunar rabbit"
+        }
+      ],
+      "image": "assets/25c0a7df6f380f50.svg",
+      "name": "GAMEART"
+    },
+    {
+      "games": [
+        {
+          "image": "assets/6deb83907c9d63b1.jpg",
+          "name": "Monkey's Grace"
+        },
+        {
+          "image": "assets/c26fb66560a963ac.png",
+          "name": "Phoenix Legend"
+        },
+        {
+          "image": "assets/f7de80f67143fa96.jpg",
+          "name": "Empire of Gold"
+        },
+        {
+          "image": "assets/116207f8b5545061.jpg",
+          "name": "JIGO DO BICHO"
+        },
+        {
+          "image": "assets/bccf3380a0bce67f.png",
+          "name": "Wrath of Olympus Ⅲ"
+        },
+        {
+          "image": "assets/7f9800179aca7ce9.jpg",
+          "name": "Joker Ace"
+        }
+      ],
+      "image": "assets/25c0a7df6f380f50.svg",
+      "name": "G759"
+    },
+    {
+      "games": [
+        {
+          "image": "assets/345365f56cc00516.jpg",
+          "name": "Lucky Night Market"
+        },
+        {
+          "image": "assets/e5010fac6bb7778e.jpg",
+          "name": "Night Strike"
+        },
+        {
+          "image": "assets/37af87a626cd816e.png",
+          "name": "Electro Fiesta"
+        },
+        {
+          "image": "assets/3ab39b20601b2f47.png",
+          "name": "Curupira"
+        },
+        {
+          "image": "assets/2a32129624669f12.png",
+          "name": "Monster Slayer"
+        },
+        {
+          "image": "assets/09448ce17dc76770.png",
+          "name": "Samba Sensation"
+        }
+      ],
+      "image": "assets/25c0a7df6f380f50.svg",
+      "name": "CP"
+    },
+    {
+      "games": [
+        {
+          "image": "assets/d876027636eaede8.jpg",
+          "name": "Dark Forge"
+        },
+        {
+          "image": "assets/428fa441d8709be8.jpg",
+          "name": "Emberfall 40K"
+        },
+        {
+          "image": "assets/8300ab13d6fbc9a4.jpg",
+          "name": "ragnarok 40k"
+        },
+        {
+          "image": "assets/ed10883df95ea3fb.jpg",
+          "name": "Lucy Luck and the Temple of Mysteries"
+        },
+        {
+          "image": "assets/7daabaa20d417f81.jpg",
+          "name": "Golden Scrolls"
+        },
+        {
+          "image": "assets/baebc5336c036320.jpg",
+          "name": "Lucy Luck and the Crimson Diamond"
+        }
+      ],
+      "image": "assets/25c0a7df6f380f50.svg",
+      "name": "SLOTMILL"
+    },
+    {
+      "games": [
+        {
+          "image": "assets/adf8fdd8d7221265.png",
+          "name": "Wingo"
+        },
+        {
+          "image": "assets/3fec7e954d01ab54.png",
+          "name": "OneMFastThree"
+        },
+        {
+          "image": "assets/12ae64f3b63e7097.jpg",
+          "name": "OneMFiveD"
+        },
+        {
+          "image": "assets/f127cd9425349cf1.png",
+          "name": "DragonTiger"
+        },
+        {
+          "image": "assets/376ae3b474d95d5d.png",
+          "name": "SicBo"
+        },
+        {
+          "image": "assets/d92a507dd11a212c.jpg",
+          "name": "OneMRace"
+        }
+      ],
+      "image": "assets/25c0a7df6f380f50.svg",
+      "name": "OMGMINIGAME"
+    }
+  ],
+  "hot": "assets/48682ec855664a08.webp",
+  "menu": "assets/7b37b141f7c39685.webp",
+  "money": "assets/bc668d2b2063eee5.png",
+  "nav": [
+    "assets/88eee0f665f9d247.png",
+    "assets/410cfc1aeb830e6f.webp",
+    "assets/6090f269dff48755.webp",
+    "assets/2d47d0fffe777dc4.png",
+    "assets/9af6581d62f0ef95.png"
+  ],
+  "notice": "assets/392e5174393fef44.png",
+  "promotions": [
+    "assets/hero-cashback-purple-v3.png",
+    "assets/hero-cashback-purple-v3.png",
+    "assets/hero-cashback-purple-v3.png"
+  ],
+  "providers": [
+    {
+      "image": "assets/78fc2b9f96c8364c.png",
+      "name": "PG"
+    },
+    {
+      "image": "assets/f25e197b3823887f.png",
+      "name": "PP"
+    },
+    {
+      "image": "assets/292faa4b5d28c42b.png",
+      "name": "JILI"
+    },
+    {
+      "image": "assets/14046fe5f1e2128f.png",
+      "name": "FACHAI"
+    },
+    {
+      "image": "assets/62daaf643f0702ad.png",
+      "name": "TADA"
+    },
+    {
+      "image": "assets/3c7317261e587bcd.png",
+      "name": "SPRIBE"
+    },
+    {
+      "image": "assets/9649a5c7e07fcf50.png",
+      "name": "WG"
+    },
+    {
+      "image": "assets/65580c086f725e2f.png",
+      "name": "JDB"
+    },
+    {
+      "image": "assets/1801fc9fa72874c9.png",
+      "name": "HACKSAW"
+    },
+    {
+      "image": "assets/54f4d38f82c1f852.png",
+      "name": "2JGAME"
+    },
+    {
+      "image": "assets/418e1c1b55462a68.png",
+      "name": "ASKMESLOT"
+    },
+    {
+      "image": "assets/d691ee4bad93a882.png",
+      "name": "IGT"
+    },
+    {
+      "image": "assets/fc3157c3c1157b9b.png",
+      "name": "GAMEART"
+    },
+    {
+      "image": "assets/ba9f70a21f835653.png",
+      "name": "G759"
+    },
+    {
+      "image": "assets/60aaa98e17eb3d25.png",
+      "name": "CP"
+    },
+    {
+      "image": "assets/fb39c9441ad94f69.png",
+      "name": "SLOTMILL"
+    },
+    {
+      "image": "assets/795883cb8147b039.png",
+      "name": "OMGMINIGAME"
+    }
+  ],
+  "search": "assets/search-shortcut.svg",
+  "source": "https://s558.com/"
+}

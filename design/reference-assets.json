@@ -1,0 +1,642 @@
+{
+  "activities": [
+    {
+      "image": "https://g561-image.kaninabu.org/cdn-cgi/image/format=auto,width=auto,quality=100,onerror=redirect/1780996068_6a27d7e43339b.webp",
+      "name": "unknown"
+    },
+    {
+      "image": "https://upload-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=auto,quality=100,onerror=redirect/s558/1786980672_6a8329403ebfc.gif",
+      "name": "unknown"
+    },
+    {
+      "image": "https://upload-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=auto,quality=100,onerror=redirect/s558/1785915821_6a72e9ad172d1.gif",
+      "name": "invite_chest_v2"
+    },
+    {
+      "image": "https://upload-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=auto,quality=100,onerror=redirect/s558/1785578949_6a6dc5c546b1f.gif",
+      "name": "red_packet_rain_v2"
+    }
+  ],
+  "appIcon": "https://upload-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=auto,quality=100,onerror=redirect/s558/1783929324_6a5499ec090f7.png",
+  "banners": [
+    "https://upload-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=800,quality=100,onerror=redirect/s558/1784194611_6a58a63327423.webp",
+    "https://upload-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=800,quality=100,onerror=redirect/s558/1784194575_6a58a60f15caa.webp",
+    "https://upload-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=800,quality=100,onerror=redirect/s558/1784194600_6a58a6287cc36.webp",
+    "https://upload-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=800,quality=100,onerror=redirect/s558/1784194554_6a58a5fae2cdf.webp",
+    "https://upload-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=800,quality=100,onerror=redirect/s558/1784194587_6a58a61b27f76.webp"
+  ],
+  "brand": "https://upload-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=auto,quality=100,onerror=redirect/s558/1783930023_6a549ca7e2041.webp",
+  "capturedAt": "2026-10-27",
+  "font": "https://s558.com/fonts/baloo2-latin.woff2",
+  "footer": [
+    {
+      "image": "data:image/webp;base64,UklGRm4DAABXRUJQVlA4WAoAAAASAAAAKAAAOAAAQU5JTQYAAAAAAAAAAABBTk1GQgMAAAAAAAAAACcAADgAAGQAAAFWUDhMKgMAAC8nAA4QD8I4kmwlg3MkRI72HqnYk2CxOBhGktrmlQVy6r/JDMhphnEbSVJKQ1LTw5k5L7pJCkSQbYt7gi8A9vWKBQMw4nZ01QNTjZS1O6MFlvTwSxEhNfycCB+wELbo+v8zbeHWF3qZ9EDBQ8lc9RL4PaTGdWl4bBxm8xI/UFay65rhsDUz1Uvg99Aal2glIC1c+7giZC4KD6FwnYTNVOGgFCYdDqAom6lSDkgQADZtIxUCuwYG6Y2ZCuPNyZy0i/z/X0myY/cFEf134EhS4/SCl7Cs5xL8ASyrUtiR3erRrsCHnYG5VBCnYVSISlYFwUinV4GkhBL/sh9IhNJp3PNem09Epq1wGaL/+rJVFVBe4U5CgKhBHcMbo26DgFGDf+ktioI4CilRi3+XaFkUAt+2jU0VBHyiwxZhRCJ2uz4p43EY8EMZMtiFZSu+b/HJWmky9Vj9CxiYXCl0mq5i3xYvbhZVmWXZyaLhgQefRq4R2xtnhqhqOWCwXlAWjwfGjasBJSvEhSuiUptN80hho2fEr9FAPXXKtwI5/hRRuWfdYT/24gcp9sGh290GaByJc6nqTMiJ9eCrtHDwwjKe8U/ErLEdDxC1NiLHqMU1exHkW6SgDDEWHjys4gRb+2798J9o3w9iHLvelZKmKXwHG+Roi/ktKpi9kj0VAPPXqSVpdncIyesxSzh+nX3h4gtvoTB9V/fmHD5MYvFteoCaZSSmgxNUDe4Td6Sj76cOEtObgvTUAK9mThOaJiU86mBu5jRHrmAvv9rIojOun+4X6n7K7pq8i/rurjZLx3BB9+icxsn1NQi2uEdyyDoKsHk1M5hytzBCSYqosbI64KI39IA4GLqOdWSoKfEwFP1b1/WvubPgRNRzc1gUhXxeMO17GxrN6J1xwjcooZxsS+pK+KFt6TMJtopf5RtU4fzgCvglPAj3GAE7PQpEsxfuIaxeYCuPgBLDlvx3fbc3iEf+9ch9ALzT5hTQfgNwl7XXbjy5H6hyUvvspxufUydrB3f4yRXv2F5Hyg3vPs365CDPD04eG95gbjzPpqhq0GnKt2UNLH4arfXnYviQAQ==",
+      "name": "Pragmatic Play"
+    },
+    {
+      "image": "https://s558.com/assets/pg-CnaaIPR5.webp",
+      "name": "PG Soft"
+    },
+    {
+      "image": "https://s558.com/assets/hacksaw-BMMuCWkw.webp",
+      "name": "Hacksaw Gaming"
+    },
+    {
+      "image": "https://s558.com/assets/popok-Cynfscla.webp",
+      "name": "PopOK"
+    },
+    {
+      "image": "https://s558.com/assets/tada-wMa4EIkP.webp",
+      "name": "TADA Gaming"
+    },
+    {
+      "image": "https://s558.com/assets/jili-DQ6xHem8.webp",
+      "name": "JILI"
+    },
+    {
+      "image": "https://s558.com/assets/evo-BMx5zHnt.webp",
+      "name": "Evolution"
+    },
+    {
+      "image": "https://s558.com/assets/bg-CVA3wfq8.webp",
+      "name": "BGaming"
+    }
+  ],
+  "footerBanner": "https://s558.com/assets/footer_decoration_banner-AQLCmr9z.webp",
+  "groups": [
+    {
+      "games": [
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/1492288.webp",
+          "name": "Pinata Wins"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/79.webp",
+          "name": "Dreams of Macau"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/1543462.webp",
+          "name": "Fortune Rabbit"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/135.webp",
+          "name": "Wild Bounty Showdown"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/65.webp",
+          "name": "Mahjong Ways"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/74.webp",
+          "name": "Mahjong Ways 2"
+        }
+      ],
+      "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=auto,quality=100,onerror=redirect/omg/300x300/pg/1786976481_b3d5e3a6ab16814d.png",
+      "name": "PG"
+    },
+    {
+      "games": [
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/20008.webp",
+          "name": "Sugar Rush"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/20009.webp",
+          "name": "Sugar Rush 1000"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/20012.webp",
+          "name": "Sweet Bonanza"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/20005.webp",
+          "name": "Sweet Bonanza 1000"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/20302.webp",
+          "name": "Striking Hot 5"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/20301.webp",
+          "name": "Sugar Rush Super Scatter"
+        }
+      ],
+      "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=auto,quality=100,onerror=redirect/omg/300x300/pp/1786976481_c5c5b37bab04731e.png",
+      "name": "PP"
+    },
+    {
+      "games": [
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/10049.webp",
+          "name": "Super Ace"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/10109.webp",
+          "name": "Fortune Gems"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/10223.webp",
+          "name": "Fortune Gems 2"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/10103.webp",
+          "name": "Golden Empire"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/10424.webp",
+          "name": "Golden Empire 2"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/10051.webp",
+          "name": "Money Coming"
+        }
+      ],
+      "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=auto,quality=100,onerror=redirect/omg/300x300/jili/1786976480_00563e79a558c455.png",
+      "name": "JILI"
+    },
+    {
+      "games": [
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/122060.webp",
+          "name": "Poker Win"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/122063.webp",
+          "name": "Queen Of Inca"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/122072.webp",
+          "name": "Phoenix Fever"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/122080.webp",
+          "name": "Catlas Money Machine"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/122071.webp",
+          "name": "Sugar Bang Bang2"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/122066.webp",
+          "name": "Roma Gladiatrix"
+        }
+      ],
+      "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221%22%20height%3D%221%22%2F%3E",
+      "name": "FACHAI"
+    },
+    {
+      "games": [
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/40103.webp",
+          "name": "Golden Empire"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/40424.webp",
+          "name": "Golden Empire 2"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/40558.webp",
+          "name": "Lucky Tiger"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/40047.webp",
+          "name": "Charge Buffalo"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/40460.webp",
+          "name": "3 Charge Buffalo"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/40696.webp",
+          "name": "Fortune Garuda500"
+        }
+      ],
+      "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221%22%20height%3D%221%22%2F%3E",
+      "name": "TADA"
+    },
+    {
+      "games": [
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/10000110.webp",
+          "name": "balloon"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/10000109.webp",
+          "name": "Hotline"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/10000108.webp",
+          "name": "Keno"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/10000107.webp",
+          "name": "Goal"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/10000106.webp",
+          "name": "Plinko"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/10000105.webp",
+          "name": "Hilo"
+        }
+      ],
+      "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221%22%20height%3D%221%22%2F%3E",
+      "name": "SPRIBE"
+    },
+    {
+      "games": [
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/83060.webp",
+          "name": "Fortune Horse"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/83051.webp",
+          "name": "Fortune Gems"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/83049.webp",
+          "name": "Fortune Rabbit 2"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/83038.webp",
+          "name": "Fortune Snake"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/83037.webp",
+          "name": "Wild Bounty Showdown"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/83035.webp",
+          "name": "Fortune Rabbit"
+        }
+      ],
+      "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221%22%20height%3D%221%22%2F%3E",
+      "name": "WG"
+    },
+    {
+      "games": [
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/70013.webp",
+          "name": "Kong"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/70001.webp",
+          "name": "Bull Treasure"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/70009.webp",
+          "name": "Blossom Of Wealth"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/70045.webp",
+          "name": "OPEN SESAMEⅡ"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/70044.webp",
+          "name": "GLAMOROUS GIRL"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/70043.webp",
+          "name": "BOOK OF MYSTERY"
+        }
+      ],
+      "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221%22%20height%3D%221%22%2F%3E",
+      "name": "JDB"
+    },
+    {
+      "games": [
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/32219.webp",
+          "name": "Munchy Milo"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/32195.webp",
+          "name": "Le Bunny"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/32190.webp",
+          "name": "Dusk Princess"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/32148.webp",
+          "name": "Eternal Duel"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/32143.webp",
+          "name": "Dark Spiral"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/32138.webp",
+          "name": "Superstar Sevens"
+        }
+      ],
+      "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221%22%20height%3D%221%22%2F%3E",
+      "name": "HACKSAW"
+    },
+    {
+      "games": [
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/131079.webp",
+          "name": "LABUBU'S LUCKY BOX"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/131076.webp",
+          "name": "GOLDEN RICHES"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/131074.webp",
+          "name": "DOOM BULLET"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/131073.webp",
+          "name": "MAGIC DROP"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/131064.webp",
+          "name": "X-PLOSIVE ROCK"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/131063.webp",
+          "name": "COSMIC BLITZ"
+        }
+      ],
+      "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221%22%20height%3D%221%22%2F%3E",
+      "name": "2JGAME"
+    },
+    {
+      "games": [
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/60045.webp",
+          "name": "Aztec Empire 1000"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/60044.webp",
+          "name": "Aztec Empire"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/60043.webp",
+          "name": "The Beat of Olympus 1000"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/60042.webp",
+          "name": "Moe Moe Cute"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/60041.webp",
+          "name": "Subway Runners"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/60040.webp",
+          "name": "Tiki Paradise"
+        }
+      ],
+      "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221%22%20height%3D%221%22%2F%3E",
+      "name": "ASKMESLOT"
+    },
+    {
+      "games": [
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/115006.webp",
+          "name": "Davinci Diamonds"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/115004.webp",
+          "name": "Wheel of Fortune Triple Extreme Spin"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/115003.webp",
+          "name": "Double Diamond"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/115002.webp",
+          "name": "Wheel of Fortune Gold Spin Triple Red Hot 7s"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/115001.webp",
+          "name": "Cash Eruption"
+        }
+      ],
+      "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221%22%20height%3D%221%22%2F%3E",
+      "name": "IGT"
+    },
+    {
+      "games": [
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/140360.webp",
+          "name": "lunar rabbit"
+        }
+      ],
+      "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221%22%20height%3D%221%22%2F%3E",
+      "name": "GAMEART"
+    },
+    {
+      "games": [
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/91042.webp",
+          "name": "Monkey's Grace"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/91041.webp",
+          "name": "Phoenix Legend"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/91040.webp",
+          "name": "Empire of Gold"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/91039.webp",
+          "name": "JIGO DO BICHO"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/91037.webp",
+          "name": "Wrath of Olympus Ⅲ"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/91035.webp",
+          "name": "Joker Ace"
+        }
+      ],
+      "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221%22%20height%3D%221%22%2F%3E",
+      "name": "G759"
+    },
+    {
+      "games": [
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/52470.webp",
+          "name": "Lucky Night Market"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/52420.webp",
+          "name": "Night Strike"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/52410.webp",
+          "name": "Electro Fiesta"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/52350.webp",
+          "name": "Curupira"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/52300.webp",
+          "name": "Monster Slayer"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/52290.webp",
+          "name": "Samba Sensation"
+        }
+      ],
+      "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221%22%20height%3D%221%22%2F%3E",
+      "name": "CP"
+    },
+    {
+      "games": [
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/119089.webp",
+          "name": "Dark Forge"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/119075.webp",
+          "name": "Emberfall 40K"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/119065.webp",
+          "name": "ragnarok 40k"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/119033.webp",
+          "name": "Lucy Luck and the Temple of Mysteries"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/119032.webp",
+          "name": "Golden Scrolls"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/119031.webp",
+          "name": "Lucy Luck and the Crimson Diamond"
+        }
+      ],
+      "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221%22%20height%3D%221%22%2F%3E",
+      "name": "SLOTMILL"
+    },
+    {
+      "games": [
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/10002072.webp",
+          "name": "Wingo"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/10002071.webp",
+          "name": "OneMFastThree"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/10002070.webp",
+          "name": "OneMFiveD"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/10002049.webp",
+          "name": "DragonTiger"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/10002038.webp",
+          "name": "SicBo"
+        },
+        {
+          "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=400,quality=100,onerror=redirect/omg/300x300/en/10002037.webp",
+          "name": "OneMRace"
+        }
+      ],
+      "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221%22%20height%3D%221%22%2F%3E",
+      "name": "OMGMINIGAME"
+    }
+  ],
+  "hot": "https://s558.com/assets/category_hot-B13mkgpi.webp",
+  "menu": "https://s558.com/assets/sidebar_toggle_icon-DFdwb389.webp",
+  "money": "https://s558.com/assets/theme-money-DqNbHU1l.png",
+  "nav": [
+    "https://s558.com/assets/icon_1_active-BUXM7ucg.png",
+    "https://s558.com/assets/tabbar_bonus_gift_icon_animated-D_thxHwF.webp",
+    "https://s558.com/assets/tableBar_3-D1xKEK9J.webp",
+    "https://s558.com/assets/icon_2-BmaqRe0c.png",
+    "https://s558.com/assets/icon_4-Bb5Py_zb.png"
+  ],
+  "notice": "https://s558.com/assets/notice-DEZdT4ON.png",
+  "promotions": [
+    "https://upload-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=300,quality=100,onerror=redirect/s558/1784194671_6a58a66fb5898.webp",
+    "https://upload-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=300,quality=100,onerror=redirect/s558/1784467354_6a5ccf9acb9a0.webp",
+    "https://upload-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=300,quality=100,onerror=redirect/s558/1784195475_6a58a99366cca.webp"
+  ],
+  "providers": [
+    {
+      "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=auto,quality=100,onerror=redirect/omg/300x300/pg/1786976481_b3d5e3a6ab16814d.png",
+      "name": "PG"
+    },
+    {
+      "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=auto,quality=100,onerror=redirect/omg/300x300/pp/1786976481_c5c5b37bab04731e.png",
+      "name": "PP"
+    },
+    {
+      "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=auto,quality=100,onerror=redirect/omg/300x300/jili/1786976480_00563e79a558c455.png",
+      "name": "JILI"
+    },
+    {
+      "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=auto,quality=100,onerror=redirect/omg/300x300/fachai/1786976479_1bd34e8685c95f98.png",
+      "name": "FACHAI"
+    },
+    {
+      "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=auto,quality=100,onerror=redirect/omg/300x300/tada/1786976482_eaa6d6c4c8dc4be5.png",
+      "name": "TADA"
+    },
+    {
+      "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=auto,quality=100,onerror=redirect/omg/300x300/spribe/1786976481_45a03039bdd00bda.png",
+      "name": "SPRIBE"
+    },
+    {
+      "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=auto,quality=100,onerror=redirect/omg/300x300/wg/1786976482_b6a34cde15551ae6.png",
+      "name": "WG"
+    },
+    {
+      "image": "https://upload-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=auto,quality=100,onerror=redirect/s558/1786972519_6a830967b98e7.webp",
+      "name": "JDB"
+    },
+    {
+      "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=auto,quality=100,onerror=redirect/omg/300x300/hacksaw/1786976479_af1efdbfc0568aaa.png",
+      "name": "HACKSAW"
+    },
+    {
+      "image": "https://upload-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=auto,quality=100,onerror=redirect/s558/1786972449_6a830921efd7c.webp",
+      "name": "2JGAME"
+    },
+    {
+      "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=auto,quality=100,onerror=redirect/omg/300x300/askmeslot/1786976478_3e63a87d25e44e38.png",
+      "name": "ASKMESLOT"
+    },
+    {
+      "image": "https://upload-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=auto,quality=100,onerror=redirect/s558/1789404004_17ae50d66e35e797.png",
+      "name": "IGT"
+    },
+    {
+      "image": "https://upload-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=auto,quality=100,onerror=redirect/s558/1789403923_e0743b11158cbc52.png",
+      "name": "GAMEART"
+    },
+    {
+      "image": "https://upload-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=auto,quality=100,onerror=redirect/s558/1789403895_beed467899b186b5.png",
+      "name": "G759"
+    },
+    {
+      "image": "https://upload-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=auto,quality=100,onerror=redirect/s558/1789403815_94b0a24e9a35da23.png",
+      "name": "CP"
+    },
+    {
+      "image": "https://upload-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=auto,quality=100,onerror=redirect/s558/1789402795_3f3152060fdc2d36.png",
+      "name": "SLOTMILL"
+    },
+    {
+      "image": "https://game-images.c-g-r-j.com/cdn-cgi/image/format=auto,width=auto,quality=100,onerror=redirect/omg/300x300/omgminigame/1786976481_0d11bdf32f93239c.png",
+      "name": "OMGMINIGAME"
+    }
+  ],
+  "search": "https://s558.com/assets/search-B47YYTSP.png",
+  "source": "https://s558.com/"
+}
