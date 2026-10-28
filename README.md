@@ -75,9 +75,9 @@ Web 背景由 `src/components/SakuraBackground.vue` 以 Canvas 繪製：銀灰�
 
 推薦佣金 Banner 使用內建 image_gen 製作，目前使用描邊疊字版 `public/assets/hero-referral-emerald-v4.png`，5% 加上深翡翠色描邊與細金色外緣；文案、配色與完整提示詞記錄在 `design/referral-banner-generation.json`。
 
-VIP Banner 使用內建 image_gen 製作，目前使用 `public/assets/hero-vip-burgundy-v3.png`；文案、配色與背景調整的完整提示詞記錄在 `design/vip-banner-generation.json`。
+VIP Banner 使用內建 image_gen 製作，目前使用 `public/assets/hero-vip-burgundy-v4.png`；新版放大銀白 BÔNUS 與金色 VIP，金色 VIP 保持水平，銀白 BÔNUS 獨立向右上傾斜 4°，由前景 VIP 蓋住標語下緣，兩者保留一致、自然的立體透視。VIP 外緣以深酒紅描邊及細香檳金線加強，動畫版用 SVG 輪廓濾鏡隨尺寸等比例呈現。原版記錄在 `design/vip-banner-generation.json`，最新整圖及透明字層提示詞記錄在 `design/banner-slogan-updates.json`。
 
-新會員 Banner 使用內建 image_gen 製作，目前使用 `public/assets/hero-new-members-midnight-v2.png`，初版紫色背景保留於 `public/assets/hero-new-members-purple-v1.png`；文案、配色與完整提示詞記錄在 `design/new-member-banner-generation.json`。
+新會員 Banner 使用內建 image_gen 製作，目前使用 `public/assets/hero-new-members-midnight-v3.png`；新版採大字 BÔNUS、小字 PARA 及斜向 NOVOS MEMBROS，標語維持銀白色，下緣與前景金額輕微交疊。動畫版使用獨立透明字層 `hero-members-lettering-headline-v2.png`。初版記錄在 `design/new-member-banner-generation.json`，最新素材與提示詞記錄在 `design/banner-slogan-updates.json`。
 
 圖片與字型已存放在 `public/assets/` 及 `src/assets/`，執行時不依賴原站。`src/data/home.json` 是首頁靜態資料，保留 17 個供應商分區。
 

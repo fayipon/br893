@@ -68,30 +68,35 @@
       "alt": "Indique. Ganhe. 5% de comissão — Até R$ 1 milhão por mês"
     },
     {
-      "image": "assets/hero-vip-burgundy-v3.png",
+      "image": "assets/hero-vip-burgundy-v4.png",
       "backgroundImage": "assets/hero-vip-burgundy-textless-v1.png",
       "variant": "vip",
       "lettering": [
         {
           "id": "headline",
-          "image": "assets/hero-vip-lettering-headline-v1.png",
+          "image": "assets/hero-vip-lettering-headline-v2.png",
           "origin": "34% 18%",
           "frame": {
-            "left": 4.942,
-            "top": -0.7006,
-            "width": 81,
-            "height": 74.0741
-          }
+            "left": 9.5338,
+            "top": -1.4034,
+            "width": 49.8688,
+            "height": 46.595
+          },
+          "rotation": -4,
+          "rotationOrigin": [
+            34,
+            22
+          ]
         },
         {
           "id": "amount",
-          "image": "assets/hero-vip-lettering-amount-v1.png",
+          "image": "assets/hero-vip-lettering-amount-v2.png",
           "origin": "32% 52%",
           "frame": {
-            "left": 4.8378,
-            "top": 24.9914,
-            "width": 55.7103,
-            "height": 54.5455
+            "left": 3.5029,
+            "top": 28.8009,
+            "width": 61.708,
+            "height": 52.1739
           }
         },
         {
@@ -100,9 +105,9 @@
           "origin": "34% 81%",
           "frame": {
             "left": 3.6161,
-            "top": 40.8575,
+            "top": 45.8386,
             "width": 60.5333,
-            "height": 60
+            "height": 55
           }
         }
       ],
@@ -110,41 +115,41 @@
       "alt": "Bônus VIP — Diário + Semanal + Mensal"
     },
     {
-      "image": "assets/hero-new-members-midnight-v2.png",
+      "image": "assets/hero-new-members-midnight-v3.png",
       "backgroundImage": "assets/hero-new-members-midnight-textless-v1.png",
       "variant": "members",
       "lettering": [
         {
           "id": "headline",
-          "image": "assets/hero-members-lettering-headline-v1.png",
-          "origin": "34% 20%",
+          "image": "assets/hero-members-lettering-headline-v2.png",
+          "origin": "34% 30%",
           "frame": {
-            "left": 3.3298,
-            "top": -0.5254,
-            "width": 61.7647,
-            "height": 61.1111
+            "left": 2.4449,
+            "top": 0.0459,
+            "width": 63.9835,
+            "height": 59.0909
           }
         },
         {
           "id": "amount",
           "image": "assets/hero-members-lettering-amount-v1.png",
-          "origin": "35% 56%",
+          "origin": "35% 65%",
           "frame": {
-            "left": 3.5127,
-            "top": 21.6331,
-            "width": 60.686,
-            "height": 60.6742
+            "left": 3.4994,
+            "top": 33.9487,
+            "width": 61.2137,
+            "height": 56.1798
           }
         },
         {
           "id": "caption",
           "image": "assets/hero-members-lettering-caption-v1.png",
-          "origin": "34% 81%",
+          "origin": "34% 88%",
           "frame": {
             "left": 4.1391,
-            "top": 50.8695,
+            "top": 64.7673,
             "width": 59.7403,
-            "height": 55.814
+            "height": 44.186
           }
         }
       ],

@@ -1,5 +1,5 @@
 <script setup>
-import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
+import { computed, onMounted, onUnmounted, ref, useId, watch } from 'vue'
 
 const props = defineProps({
   banner: { type: Object, required: true },
@@ -8,7 +8,16 @@ const props = defineProps({
   priority: { type: String, default: 'auto' },
 })
 const asset = path => `${import.meta.env.BASE_URL}${path}`
-const frameStyle = layer => Object.fromEntries(Object.entries(layer.frame).map(([key, value]) => [key, `${value}%`]))
+const outlineId = useId()
+const frameStyle = layer => {
+  const style = Object.fromEntries(Object.entries(layer.frame).map(([key, value]) => [key, `${value}%`]))
+  if (layer.rotation) {
+    const [x, y] = layer.rotationOrigin
+    style.rotate = `${layer.rotation}deg`
+    style.transformOrigin = `${(x - layer.frame.left) / layer.frame.width * 100}% ${(y - layer.frame.top) / layer.frame.height * 100}%`
+  }
+  return style
+}
 const layered = computed(() => props.type === 'layered' && props.banner.backgroundImage && props.banner.lettering?.length)
 const source = computed(() => asset(layered.value ? props.banner.backgroundImage : props.banner.image))
 const element = ref(null)
@@ -37,11 +46,23 @@ onUnmounted(() => observer?.disconnect())
 
 <template>
   <div ref="element" class="hero-banner" :class="`hero-banner-${banner.variant}`" :data-banner-type="layered ? 'layered' : 'image'" role="img" :aria-label="banner.alt">
+    <svg v-if="layered && banner.variant === 'vip'" class="hero-filter-defs" width="0" height="0" aria-hidden="true" focusable="false">
+      <defs>
+        <filter :id="outlineId" x="-.05" y="-.05" width="1.1" height="1.1" primitiveUnits="objectBoundingBox" color-interpolation-filters="sRGB">
+          <feComponentTransfer in="SourceAlpha" result="letter-edge"><feFuncA type="discrete" tableValues="0 0 0 1 1" /></feComponentTransfer>
+          <feMorphology in="letter-edge" operator="dilate" radius=".0038 .0095" result="outer-edge" />
+          <feFlood flood-color="#f5d68d" /><feComposite in2="outer-edge" operator="in" result="gold-rim" />
+          <feMorphology in="letter-edge" operator="dilate" radius=".0025 .00625" result="inner-edge" />
+          <feFlood flood-color="#391019" /><feComposite in2="inner-edge" operator="in" result="dark-outline" />
+          <feMerge><feMergeNode in="gold-rim" /><feMergeNode in="dark-outline" /><feMergeNode in="SourceGraphic" /></feMerge>
+        </filter>
+      </defs>
+    </svg>
     <img :key="source" class="hero-background" :src="source" alt="" width="1983" height="793" :loading="loading" :fetchpriority="priority" @load="backgroundReady = true" />
     <div v-if="layered" class="hero-lettering" :class="{ 'is-ready': ready }" aria-hidden="true">
       <div v-for="layer in banner.lettering" :key="layer.image" class="hero-lettering-layer" :class="`hero-lettering-${layer.id}`" :style="{ transformOrigin: layer.origin }">
         <div class="hero-lettering-artwork" :style="frameStyle(layer)">
-          <img :src="asset(layer.image)" alt="" width="1983" height="793" :loading="loading" @load="loadedLayers++" />
+          <img :src="asset(layer.image)" :style="banner.variant === 'vip' && layer.id === 'amount' ? { filter: `url(#${outlineId})` } : undefined" alt="" width="1983" height="793" :loading="loading" @load="loadedLayers++" />
           <span v-if="layer.id === 'amount'" class="hero-lettering-shine" :style="{ maskImage: `url('${asset(layer.image)}')`, WebkitMaskImage: `url('${asset(layer.image)}')` }" />
         </div>
       </div>
@@ -53,6 +74,7 @@ onUnmounted(() => observer?.disconnect())
 .hero-banner { position: relative; isolation: isolate; width: 100%; aspect-ratio: 1983 / 793; overflow: hidden; text-align: left; }
 .hero-banner .hero-background, .hero-lettering-artwork > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: fill; }
 .hero-lettering-artwork { position: absolute; }
+.hero-filter-defs { position: absolute; pointer-events: none; }
 .hero-lettering, .hero-lettering-layer { position: absolute; inset: 0; pointer-events: none; }
 .hero-lettering { opacity: 0; }
 .hero-lettering.is-ready { opacity: 1; }

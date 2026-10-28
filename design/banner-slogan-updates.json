@@ -1,0 +1,124 @@
+{
+  "tool": "Built-in image_gen",
+  "createdAt": "2026-10-28",
+  "purpose": "Reference-matched silver slogans and independent motion layers for the midnight members and burgundy VIP banners.",
+  "assets": [
+    {
+      "variant": "members",
+      "role": "headline",
+      "source": "design/references/new-members-slogan.png",
+      "output": "public/assets/hero-members-lettering-headline-v2.png",
+      "prompt": "Use case: precise-object-edit / background-extraction.\nEdit target: the attached blue-and-gold promotional banner. Extract ONLY the two-line top slogan into a transparent PNG asset:\n\"BÔNUS PARA\"\n\"NOVOS MEMBROS\"\nPreserve the distinctive reference composition exactly: gigantic BÔNUS with the raised circumflex; much smaller PARA sitting at its lower right on the first line; broad NOVOS MEMBROS below; bold forward-slanting letters with an energetic baseline rising to the right, substantial deep-purple 3D extrusion, crisp bevels, fine warm metallic edge highlights. Faithfully match the reference's letterforms and relative sizes. Reconstruct tiny parts of the lower slogan obscured by the reward numerals.\nOne intentional recoloring: the front faces of NOVOS MEMBROS must be bright pearl WHITE / cool SILVER, the same white metallic material as BÔNUS. NOT gold, yellow, cream or bronze on these letter faces. Keep the purple extrusions and subtle thin gold rim highlights. BÔNUS and PARA remain white/silver too.\nRemove the entire environment, gift box, ribbons, coins, floating sparks, sweeping light trails, reward amount R$ 8.888, footer text and plaque. Only these two slogan lines and their tightly attached extrusion/shadows remain. No wide halo or background patch. No other words, numbers or logos.\nA genuine RGBA transparent background, clean alpha edges. No checkerboard painted in the image, no opaque matte. Wide 1983 x 793 canvas with the slogan comfortably contained and only modest transparent margins. Keep the two lines together as ONE artwork group, preserving their relative angle and overlap; do not change to a simple centered flat font.",
+      "layout": {
+        "b": [
+          18,
+          84,
+          1938,
+          660
+        ],
+        "t": [
+          60,
+          50,
+          1240,
+          390
+        ]
+      },
+      "placementReference": "design/references/new-members-slogan-placement.png"
+    },
+    {
+      "variant": "members",
+      "role": "flat",
+      "source": "public/assets/hero-new-members-midnight-v2.png",
+      "references": [
+        "design/references/new-members-slogan.png",
+        "design/references/new-members-slogan-placement.png"
+      ],
+      "output": "public/assets/hero-new-members-midnight-v3.png",
+      "prompts": [
+        "Use case: text-localization / precise-object-edit.\nImage 1 is the EDIT TARGET: current midnight blue new-member banner. Image 2 is TYPOGRAPHIC STYLE REFERENCE only for the upper slogan.\nUpdate ONLY the left-hand slogan design in Image 1 to the energetic slanted 3D slogan style of Image 2: very large BÔNUS, small PARA at its lower right; NOVOS MEMBROS on the second line with the dynamic rising diagonal baseline. Match the reference's bold forward leaning letterforms, bevels, dark purple extrusion and thin warm highlights.\nCRITICAL: All three slogan parts BÔNUS, PARA and NOVOS MEMBROS must have WHITE / silver metallic front faces. NOVOS MEMBROS must NOT be gold. Match BÔNUS's white metallic material. Only the R$8.888 reward and day numbers remain gold.\nFit the new slogan in approx x60–1280,y30–410 on the existing 1983x793 canvas. Reposition the existing R$8.888 amount downward to approximately x100–1260,y400–645; preserve its original gold rounded letterforms/material and prominence. The original rounded purple caption plaque with exact text \"Nos dias 2, 3, 7, 15 e 30\" sits at x100–1250,y665–755, with white helper words and gold day numbers.\nPreserve the right gift box, lid, gold ribbon, all existing coins, fabric, lighting, camera, palette, object positions and quiet background EXACTLY as Image 1. Do NOT import extra flying coins, particles, spiraling light trails or busy decoration from Image 2. No other changes, logos, extra text, new objects or borders. Opaque 1983 x 793 wide banner.",
+        "Use case: precise-object-edit.\nImage 1 is the full banner EDIT TARGET. Image 2 is the user's APPROVED POSITION REFERENCE: its slogan-to-amount spacing and subtle overlap are the desired result.\nKeep Image 1's environment, gift, caption, gold amount and lettering shapes unchanged. Adjust ONLY the complete silver-white slogan group \"BÔNUS PARA / NOVOS MEMBROS\" slightly DOWN by roughly 20 pixels (only 2.5% of the total 793px image height). Do NOT move it substantially down.\nMatch the subtle layering in Image 2: the bottom purple bevel of NOVOS MEMBROS just brushes/tucks behind the upper rims of R$8.888. The GOLD amount remains above the slogan in z-order. All of NOVOS MEMBROS must be readable; no more than a thin sliver of its bottom edge may be hidden. Do NOT bury the lower half of any letters behind the numerals. Do not leave a visible horizontal gap between the groups.\nThe circumflex at the top of BÔNUS should remain around y50 from the top of the 793px full canvas. Keep the large existing slanted white/silver faces and purple extrusion; do not recolor NOVOS MEMBROS gold. Keep exact word spelling, reward R$8.888, footer \"Nos dias 2, 3, 7, 15 e 30\", and full original 1983 x 793 composition. No resizing, horizontal movement, added text or objects. Reconstruct only any narrow revealed background above the slogan."
+      ]
+    },
+    {
+      "variant": "vip",
+      "role": "headline",
+      "source": "design/references/vip-slogan.png",
+      "output": "public/assets/hero-vip-lettering-headline-v2.png",
+      "prompts": [
+        "Use case: background-extraction. The supplied finished VIP banner is the EDIT TARGET. Extract the specified lettering alone as a transparent PNG. Faithfully preserve its exact reference letter shapes, dynamic perspective, 3D depth, brushed metallic faces, bevels, red/burgundy extrusion, fine gold rims, and tight attached highlights. No typographic redesign or replacement font. Completely remove the environment, throne, crown, fabric, other typography and caption plaque. Keep only the requested lettering and tightly attached shadows. Reconstruct any tiny letter portions hidden by the other word using the same shapes. Real RGBA transparency, no matte color, no checkerboard. Contain all letter edges on a wide 1983 x 793 canvas; modest transparent margins are fine.\nExtract ONLY \"BÔNUS\", the enormous pearl-white and silver serif word in the upper part. Include its circumflex, angled rising baseline, strongly dimensional burgundy-red side faces, and gleaming metallic bevels. Do NOT include any VIP letter, part of the gold V, caption or background. Keep the exact geometry and material of the supplied BÔNUS word.",
+        "Use case: precise-object-edit. Edit the supplied typography to look stable, optically balanced and natural. Correct the skewed camera perspective: use front-facing letter faces, a level horizontal baseline and consistent upright vertical stems. No rising diagonal, leaning word, warped letter, bowed baseline, fisheye or individually twisted letters. Maintain the same luxurious serif letterforms, brushed metallic finish, precise bevels, warm highlights and dimensional burgundy-red extrusion. Depth should be consistent in one direction behind the faces, not at different angles. Keep real 3D thickness, not a flat font.\nKeep ONLY the word \"BÔNUS\" as transparent artwork. Pearl WHITE/silver faces, correct circumflex above Ô. No VIP, no caption. Keep the same 1983 x 793 wide canvas with safe transparent margins, no clipped strokes. Remove any broad light halo, keep only tight highlights. Preserve genuine RGBA transparency, no background, matte, checkerboard, environment or props."
+      ],
+      "layout": {
+        "b": [
+          42,
+          99,
+          1905,
+          558
+        ],
+        "t": [
+          210,
+          35,
+          950,
+          260
+        ]
+      },
+      "rotation": -4,
+      "rotationOrigin": [
+        34,
+        22
+      ]
+    },
+    {
+      "variant": "vip",
+      "role": "amount",
+      "source": "design/references/vip-slogan.png",
+      "output": "public/assets/hero-vip-lettering-amount-v2.png",
+      "prompts": [
+        "Use case: background-extraction. The supplied finished VIP banner is the EDIT TARGET. Extract the specified lettering alone as a transparent PNG. Faithfully preserve its exact reference letter shapes, dynamic perspective, 3D depth, brushed metallic faces, bevels, red/burgundy extrusion, fine gold rims, and tight attached highlights. No typographic redesign or replacement font. Completely remove the environment, throne, crown, fabric, other typography and caption plaque. Keep only the requested lettering and tightly attached shadows. Reconstruct any tiny letter portions hidden by the other word using the same shapes. Real RGBA transparency, no matte color, no checkerboard. Contain all letter edges on a wide 1983 x 793 canvas; modest transparent margins are fine.\nExtract ONLY \"VIP\", the three enormous brushed GOLD serif letters. Preserve their wide monumental proportions and rich ruby-red depth, dramatic perspective and strong bevel. Reconstruct the small parts of their top strokes hidden behind BÔNUS. Do NOT include BÔNUS, its silver letters, the bottom caption plaque or background. Keep the gold front faces and red extrusions exactly like the reference.",
+        "Use case: precise-object-edit. Edit the supplied typography to look stable, optically balanced and natural. Correct the skewed camera perspective: use front-facing letter faces, a level horizontal baseline and consistent upright vertical stems. No rising diagonal, leaning word, warped letter, bowed baseline, fisheye or individually twisted letters. Maintain the same luxurious serif letterforms, brushed metallic finish, precise bevels, warm highlights and dimensional burgundy-red extrusion. Depth should be consistent in one direction behind the faces, not at different angles. Keep real 3D thickness, not a flat font.\nKeep ONLY the word \"VIP\" as transparent artwork. Warm brushed GOLD faces. All V, I, P have the same horizontal baseline and consistent height. No BÔNUS, no caption. Keep the same 1983 x 793 wide canvas with safe transparent margins, no clipped strokes. Remove any broad light halo, keep only tight highlights. Preserve genuine RGBA transparency, no background, matte, checkerboard, environment or props."
+      ],
+      "layout": {
+        "b": [
+          90,
+          51,
+          1815,
+          690
+        ],
+        "t": [
+          125,
+          255,
+          1120,
+          360
+        ]
+      }
+    },
+    {
+      "variant": "vip",
+      "role": "full",
+      "source": "design/references/vip-slogan.png",
+      "output": "public/assets/hero-vip-burgundy-v4.png",
+      "prompts": [
+        "Use case: precise-object-edit. The supplied VIP banner is the EDIT TARGET. Deliver the same finished composition on a 1983 x 793 wide canvas. Preserve the silver-white BÔNUS above and slightly in FRONT of the upper gold VIP strokes, the massive gold VIP, red/burgundy 3D extrusions, perspective, bevels, and exact bottom text \"Diário + Semanal + Mensal\" on its original gold-edged burgundy plaque. Keep all words legible, no new text or branding. Extend the scene naturally to the RIGHT to achieve the wider canvas without stretching letterforms; retain the purple cushion, jeweled crown, wine-red throne, drapes, arch and warm cinematic light. Keep the left typography group near x100–1280, with BÔNUS around x210–1160,y20–285, VIP around x125–1280,y220–585 and the original caption x105–1240,y585–700. Match the reference lettering EXACTLY and retain the strong deliberate overlap of BÔNUS in front of VIP. Do not simplify or alter the lettering. Do not add new objects, particles or ornaments. Full-bleed opaque image.",
+        "Use case: precise-object-edit. Edit the supplied typography to look stable, optically balanced and natural. Correct the skewed camera perspective: use front-facing letter faces, a level horizontal baseline and consistent upright vertical stems. No rising diagonal, leaning word, warped letter, bowed baseline, fisheye or individually twisted letters. Maintain the same luxurious serif letterforms, brushed metallic finish, precise bevels, warm highlights and dimensional burgundy-red extrusion. Depth should be consistent in one direction behind the faces, not at different angles. Keep real 3D thickness, not a flat font.\nApply this correction to BOTH \"BÔNUS\" and \"VIP\" in this finished banner. The silver-white BÔNUS remains smaller above the giant gold VIP, centered over it with slight natural overlap at the top of VIP. Both words should feel professionally typeset as one coherent sculptural sign. Do not change their approximate group positions, size hierarchy or text. Keep the circumflex above Ô. Preserve the existing original footer plaque and exact text \"Diário + Semanal + Mensal\", crown, cushion, throne, arch, drapes, camera crop, light and burgundy environment. No added items. Same 1983 x 793 opaque canvas.",
+        "Use case: precise-object-edit. Edit the supplied finished VIP banner with one subtle change.\nRotate ONLY the complete silver-white word \"BÔNUS\", including its circumflex and red extrusion, by 4 degrees counter-clockwise around its own center. Its baseline should rise gently toward the right. Treat the entire word as a single rigid sculpture: do not skew or warp individual letters, change letter spacing, distort faces, change size or redesign the font. Keep it in the same approximate place above VIP with the same slight overlap.\nThe large gold word \"VIP\" MUST STAY PERFECTLY HORIZONTAL and stationary. Do not rotate, tilt, resize, warp or move VIP. Keep the caption plaque horizontal and unchanged with exact text \"Diário + Semanal + Mensal\". Keep the background, crown, cushion, throne, light and all other pixels fixed. Fill only the narrow background uncovered by the rotation of BÔNUS. Preserve its white metallic faces, natural red 3D depth and material. Same opaque 1983 x 793 composition. No new objects or text.",
+        "Use case: precise-object-edit. The supplied banner is the edit target.\nChange ONLY the overlap order of the two lettering groups. The giant GOLD \"VIP\" must be in the FOREGROUND, in front of the silver-white \"BÔNUS\". Wherever their edges overlap, preserve the gold VIP edge as continuous and cover the small lower edge of BÔNUS behind it. In particular, the top of the gold V should cover the overlapping lower silver B edge instead of the B lying on top of V. Do not move either word to create more overlap; only correct the occlusion order.\nKeep BÔNUS's current gentle right-rising tilt, exact position, size, white metallic faces and 3D shape. Gold VIP stays perfectly horizontal, exactly in place and the same size. Keep the footer plaque horizontal and unchanged with exact \"Diário + Semanal + Mensal\". Do not change any background, crown, cushion, throne, lighting, colors, camera, text or objects. Preserve the opaque 1983x793 full canvas. Only fix the small shared edge intersections so VIP is above BÔNUS.",
+        "Use case: precise-object-edit. Edit the supplied finished VIP banner.\nStrengthen ONLY the silhouette edges of the large foreground GOLD \"VIP\" letters: add a clean dark burgundy contour, approximately 4–5 pixels at this full 1983 x 793 resolution, with a finer warm champagne-gold outer rim about 2 pixels. Preserve the original brushed-gold faces, bright metal bevels and red 3D extrusion, and make the front lettering separate more clearly from BÔNUS and the wine-red background. Crisp restrained metallic edging, not a thick cartoon border, no neon halo.\nGold VIP remains perfectly horizontal in front of the gently right-rising silver-white BÔNUS, covering the overlapping lower edges of BÔNUS. Keep all existing positions, sizes, letter shapes, tilt of BÔNUS, exact words, background, crown, throne, fabric, light and footer plaque unchanged. No other edits. The caption stays \"Diário + Semanal + Mensal\". Same opaque 1983x793 canvas."
+      ]
+    }
+  ],
+  "notes": "Only the silver BÔNUS word tilts by -4 degrees. Gold VIP and the footer stay horizontal. VIP is in front of BÔNUS (headline z-index 1, amount z-index 2). A responsive SVG silhouette filter adds dark burgundy edging and a thin champagne-gold outer rim. Members headline retains the approved shallow overlap behind the reward.",
+  "vipOutline": {
+    "implementation": "src/components/HeroBanner.vue",
+    "dark": "#391019",
+    "gold": "#f5d68d",
+    "innerRadius": [
+      0.0025,
+      0.00625
+    ],
+    "outerRadius": [
+      0.0038,
+      0.0095
+    ],
+    "units": "objectBoundingBox"
+  }
+}
