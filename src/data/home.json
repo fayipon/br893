@@ -5,19 +5,19 @@
       "name": "unknown"
     },
     {
-      "image": "assets/activity-wheel-v2.png",
+      "image": "assets/activity-wheel-v3.png",
       "name": "lucky_wheel",
       "amount": "R$100",
-      "motion": "sway"
+      "motion": "spin"
     },
     {
-      "image": "assets/activity-chest-v2.png",
+      "image": "assets/activity-chest-v3.png",
       "name": "invite_chest_v2",
       "amount": "R$80",
-      "motion": "float"
+      "motion": "open-close"
     },
     {
-      "image": "assets/activity-gift-v2.png",
+      "image": "assets/activity-gift-v3.png",
       "name": "mystery_gift",
       "amount": "R$8888",
       "motion": "bounce"
@@ -25,9 +25,26 @@
   ],
   "appIcon": "assets/06b9ca42df1c4fd0.png",
   "banners": [
-    "assets/hero-cashback-purple-v3.png",
-    "assets/hero-cashback-purple-v3.png",
-    "assets/hero-cashback-purple-v3.png"
+    {
+      "image": "assets/hero-referral-emerald-v4.png",
+      "title": "Comissão dos indicados",
+      "alt": "Indique. Ganhe. 5% de comissão — Até R$ 1 milhão por mês"
+    },
+    {
+      "image": "assets/hero-vip-burgundy-v3.png",
+      "title": "Bônus VIP",
+      "alt": "Bônus VIP — Diário + Semanal + Mensal"
+    },
+    {
+      "image": "assets/hero-new-members-midnight-v2.png",
+      "title": "Bônus para novos membros",
+      "alt": "Bônus para novos membros: R$ 8.888. Nos dias 2, 3, 7, 15 e 30."
+    },
+    {
+      "image": "assets/hero-cashback-purple-v3.png",
+      "title": "Cashback semanal",
+      "alt": "Cashback semanal de 50% — BR893"
+    }
   ],
   "brand": "assets/916009d0901398c8.png",
   "capturedAt": "2026-10-27",
@@ -567,9 +584,21 @@
   ],
   "notice": "assets/392e5174393fef44.png",
   "promotions": [
-    "assets/hero-cashback-purple-v3.png",
-    "assets/hero-cashback-purple-v3.png",
-    "assets/hero-cashback-purple-v3.png"
+    {
+      "image": "assets/promo-mystery-mine-bronze-v4.png",
+      "title": "Mina Misteriosa",
+      "alt": "Mina Misteriosa — Prêmio máximo de R$ 8.888."
+    },
+    {
+      "image": "assets/promo-invite-friend-peacock-v5.png",
+      "title": "Convide 1 amigo",
+      "alt": "Convide 1 amigo e ganhe R$ 80."
+    },
+    {
+      "image": "assets/promo-friend-assist-slate-v1.png",
+      "title": "Ajuda de amigos",
+      "alt": "Ajuda de amigos — Ganhe R$ 100."
+    }
   ],
   "providers": [
     {

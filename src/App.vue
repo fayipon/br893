@@ -1,6 +1,7 @@
 <script setup>
 import { computed, nextTick, onMounted, onUnmounted, ref } from 'vue'
 import UiIcon from './components/UiIcon.vue'
+import ActivityIcon from './components/ActivityIcon.vue'
 import SakuraBackground from './components/SakuraBackground.vue'
 import data from './data/home.json'
 
@@ -8,6 +9,7 @@ const asset = path => `${import.meta.env.BASE_URL}${path}`
 const originalBackground = ref(new URLSearchParams(location.search).get('background') === 'original')
 const downloadVisible = ref(true)
 const currentSlide = ref(0)
+const activeBanner = computed(() => data.banners[currentSlide.value])
 const slideDirection = ref(1)
 const carouselPaused = ref(false)
 const currentNotice = ref(0)
@@ -241,11 +243,11 @@ onUnmounted(() => {
           <button class="primary-button install-button" @click="showNotice('Baixar App')"><UiIcon name="download" :size="18" /> Instalar</button>
         </div>
         <div class="header-main">
-          <button class="menu-button" aria-label="Abrir menu" aria-haspopup="dialog" @click="menuDialog.showModal()"><img :src="asset(data.menu)" alt="" width="40" height="40" /></button>
+          <button class="menu-button" aria-label="Abrir menu" aria-haspopup="dialog" @click="menuDialog.showModal()"><span class="menu-symbol glossy-control"><UiIcon name="menu" :size="24" /></span></button>
           <img class="brand-logo" :src="asset(data.brand)" alt="BR893 Entretenimento" width="128" height="56" />
           <div class="auth-buttons">
-            <button class="secondary-button" @click="showNotice('Entrar')">Entrar</button>
-            <button class="primary-button register-button" @click="showNotice('Registro')">Registro</button>
+            <button class="secondary-button glossy-control" @click="showNotice('Entrar')">Entrar</button>
+            <button class="primary-button register-button glossy-control" @click="showNotice('Registro')">Registro</button>
           </div>
         </div>
       </header>
@@ -253,8 +255,8 @@ onUnmounted(() => {
       <main class="home-content">
         <section class="hero" aria-label="Promoções em destaque" :aria-roledescription="data.banners.length > 1 ? 'carousel' : undefined" @mouseenter="carouselPaused = true" @mouseleave="carouselPaused = false" @focusin="carouselPaused = true" @focusout="carouselPaused = false">
           <Transition :name="slideDirection < 0 ? 'hero-backward' : 'hero-forward'">
-            <button :key="currentSlide" class="hero-image-button" :aria-label="`Cashback semanal de 50% — ${currentSlide + 1} de ${data.banners.length}`" @click="showNotice('Cashback semanal', data.banners[currentSlide])">
-              <img :src="asset(data.banners[currentSlide])" alt="Cashback semanal de 50% — BR893" width="1983" height="793" fetchpriority="high" />
+            <button :key="currentSlide" class="hero-image-button" :aria-label="`${activeBanner.alt} — ${currentSlide + 1} de ${data.banners.length}`" @click="showNotice(activeBanner.title, activeBanner.image)">
+              <img :src="asset(activeBanner.image)" :alt="activeBanner.alt" width="1983" height="793" fetchpriority="high" />
             </button>
           </Transition>
           <button v-if="data.banners.length > 1" class="carousel-arrow previous" aria-label="Promoção anterior" @click="changeSlide(-1)"><UiIcon name="left" :size="17" /></button>
@@ -265,8 +267,8 @@ onUnmounted(() => {
         </section>
 
         <section class="promotion-grid" aria-label="Ofertas e benefícios">
-          <button v-for="(promotion, index) in data.promotions" :key="index" :aria-label="`Cashback semanal de 50% — oferta ${index + 1}`" @click="showNotice('Cashback semanal', promotion)">
-            <img :src="asset(promotion)" alt="Cashback semanal de 50% — BR893" width="1983" height="793" />
+          <button v-for="(promotion, index) in data.promotions" :key="index" :aria-label="`${promotion.alt} — oferta ${index + 1}`" @click="showNotice(promotion.title, promotion.image)">
+            <img :src="asset(promotion.image)" :alt="promotion.alt" width="1983" height="793" />
           </button>
         </section>
 
@@ -313,7 +315,7 @@ onUnmounted(() => {
                 <span class="game-hover"><span>{{ game.name }}</span><span class="play-mark">▶</span></span>
               </button>
             </div>
-            <button class="load-more" :aria-label="`Carregar mais ${group.name}`" @click="showToast('Todos os jogos desta prévia já estão na tela.')"><span />Carregar Mais<UiIcon name="chevron" :size="14" /><span /></button>
+            <button v-if="activeProvider !== 'Quente'" class="load-more" :aria-label="`Carregar mais ${group.name}`" @click="showToast('Todos os jogos desta prévia já estão na tela.')"><span />Carregar Mais<UiIcon name="chevron" :size="14" /><span /></button>
           </section>
           <div v-if="!displayedGroups.length" class="empty-state"><UiIcon name="search" :size="36" /><h2>Nenhum jogo encontrado</h2><p>Tente outro nome ou provedor.</p><button class="secondary-button" @click="searchQuery = ''; activeProvider = 'Quente'">Limpar filtros</button></div>
         </div>
@@ -334,7 +336,7 @@ onUnmounted(() => {
           <div id="activity-items" class="activity-panel">
             <div class="activity-items">
               <button v-for="(activity, index) in data.activities.slice(1)" :key="activity.image" type="button" :aria-label="`${activityNames[index]} ${activity.amount}`" aria-haspopup="dialog" @click.stop="showNotice(activityNames[index], activity.image)">
-                <img :src="asset(activity.image)" :class="`activity-motion-${activity.motion}`" alt="" draggable="false" />
+                <ActivityIcon :src="asset(activity.image)" :motion="activity.motion" />
                 <span class="activity-amount" aria-hidden="true">{{ activity.amount }}</span>
                 <span class="activity-label" aria-hidden="true">{{ activityNames[index] }}</span>
               </button>
@@ -360,7 +362,7 @@ onUnmounted(() => {
       <div class="menu-content">
         <div class="drawer-heading"><button class="drawer-back" aria-label="Fechar menu" @click="menuDialog.close()"><UiIcon name="left" :size="18" /></button><img :src="asset(data.brand)" alt="BR893 Entretenimento" width="147" height="49" /></div>
         <div class="drawer-scroll">
-          <div class="drawer-auth"><button class="secondary-button" @click="showNotice('Entrar')">Entrar</button><button class="primary-button register-button" @click="showNotice('Registro')">Registro</button></div>
+          <div class="drawer-auth"><button class="secondary-button glossy-control" @click="showNotice('Entrar')">Entrar</button><button class="primary-button register-button glossy-control" @click="showNotice('Registro')">Registro</button></div>
           <section aria-labelledby="drawer-popular-title">
             <div class="drawer-section-heading"><h2 id="drawer-popular-title" class="drawer-title">Popular</h2><button class="drawer-view-all" @click="menuDialog.close(); viewProvider('Quente')">Ver tudo</button></div>
             <div class="drawer-games"><button v-for="game in data.groups[0].games.slice(0, 3)" :key="game.name" :aria-label="game.name" @click="showNotice(game.name, game.image)"><img :src="asset(game.image)" :alt="game.name" width="100" height="100" /></button></div>
