@@ -5,12 +5,15 @@ import ActivityIcon from './components/ActivityIcon.vue'
 import SakuraBackground from './components/SakuraBackground.vue'
 import HeroBanner from './components/HeroBanner.vue'
 import BannerTypeSwitch from './components/BannerTypeSwitch.vue'
+import GameBrightnessControl from './components/GameBrightnessControl.vue'
 import { useBannerType } from './bannerType'
+import { useGameBrightness } from './gameBrightness'
 import data from './data/home.json'
 
 const asset = path => `${import.meta.env.BASE_URL}${path}`
 const designUrl = `${import.meta.env.BASE_URL}?page=design`
 const { bannerType } = useBannerType()
+const { gameBrightness } = useGameBrightness()
 const originalBackground = ref(new URLSearchParams(location.search).get('background') === 'original')
 const downloadVisible = ref(true)
 const currentSlide = ref(0)
@@ -245,7 +248,7 @@ onUnmounted(() => {
 <template>
   <div class="web-canvas" :class="{ 'background-original': originalBackground }">
     <SakuraBackground />
-    <div class="desktop-design-tools"><a class="desktop-design-link glossy-control" :href="designUrl"><UiIcon name="palette" :size="19" /><span>Design</span><UiIcon name="right" :size="15" /></a><BannerTypeSwitch compact /></div>
+    <div class="desktop-design-tools"><a class="desktop-design-link glossy-control" :href="designUrl"><UiIcon name="palette" :size="19" /><span>Design</span><UiIcon name="right" :size="15" /></a><BannerTypeSwitch compact /><GameBrightnessControl compact /></div>
     <div class="mobile-shell">
       <a class="skip-link" href="#games-start">Ir para os jogos</a>
 
@@ -318,7 +321,7 @@ onUnmounted(() => {
           </div>
         </nav>
 
-        <div id="games-start" class="game-sections">
+        <div id="games-start" class="game-sections" :style="{ '--game-brightness': gameBrightness / 100 }">
           <section v-for="(group, groupIndex) in displayedGroups" :key="group.name" class="game-section" :aria-label="`${group.name} jogos`">
             <div class="section-heading">
               <h2 :aria-label="`${group.name}: ${group.games.length} ${group.games.length === 1 ? 'game' : 'games'}`"><img :src="asset(group.image)" :class="providerLogoVariants[group.name]" alt="" width="34" height="30" /><span class="game-count">{{ group.games.length }} {{ group.games.length === 1 ? 'game' : 'games' }}</span></h2>

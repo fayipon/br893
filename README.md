@@ -28,6 +28,8 @@ npm run preview
 
 桌面 Design 入口下方及 Design 頁的 Banners 區提供 `Banner type switch`，可切換原始整張圖片與預設的 `Artwork + motion`。選擇會儲存在此瀏覽器，首頁、展示頁及放大預覽使用同一設定；三張小 Banner 保持原樣。
 
+開關下方的 `Game brightness` 滑桿可在 0–100% 間即時調整首頁遊戲圖片亮度，預設為 70%。數值會儲存在此瀏覽器並同步至其他開啟的分頁，只影響遊戲卡片圖片；桌面設定區在手機仍保持隱藏。
+
 四張大 Banner 各自拆為去字背景、標題、金額／主視覺字樣及輔助文字。12 張透明 PNG 保留原圖字樣的金屬質感、描邊與立體效果，圖片路徑及百分比定位存於 `src/data/home.json` 的 `lettering`。`src/components/HeroBanner.vue` 統一管理標題滑入、金額縮放落定、輔助文字進場與金額掃光；各層可獨立調整。圖片載入並進入畫面後才開始動畫，切換輪播會重新播放，Design 頁可用 `Replay motion` 重播。減少動態效果模式下顯示靜態合成。
 
 去字背景與拆字素材使用內建 image_gen 製作，素材與提示詞分別記錄在 `design/textless-banner-generation.json`、`design/lettering-banner-generation.json`；原始整圖保留供切換比較。

@@ -3,6 +3,7 @@ import { computed, nextTick, onMounted, ref } from 'vue'
 import UiIcon from './UiIcon.vue'
 import HeroBanner from './HeroBanner.vue'
 import BannerTypeSwitch from './BannerTypeSwitch.vue'
+import GameBrightnessControl from './GameBrightnessControl.vue'
 import { useBannerType } from '../bannerType'
 import data from '../data/home.json'
 
@@ -111,6 +112,7 @@ onMounted(() => { document.title = 'BR893 · Design' })
         <header class="design-section-heading"><div><span class="design-section-number">04</span><h2 id="banners-title">Banners</h2></div><p>Cinematic artwork. One clear message.</p></header>
         <div class="design-banner-controls"><BannerTypeSwitch class="design-banner-switch" /><button class="design-motion-replay" :disabled="bannerType === 'image'" @click="motionReplay++">Replay motion</button></div>
         <p class="design-banner-mode-note">Original lettering, layered for motion. Main banners only; this choice also applies to the homepage.</p>
+        <GameBrightnessControl class="design-game-brightness" />
         <div class="design-gallery-label"><h3>Main banners</h3><span>{{ data.banners.length }} artworks</span></div>
         <div class="design-banner-grid">
           <button v-for="(banner, index) in data.banners" :key="banner.image" class="design-artwork" :aria-label="`Preview ${banner.title}`" @click="openArtwork(banner)"><HeroBanner :key="motionReplay" :banner="banner" :type="bannerType" loading="lazy" /><span class="design-artwork-caption"><span><small>0{{ index + 1 }}</small>{{ banner.title }}</span><UiIcon name="right" :size="17" /></span></button>
@@ -198,6 +200,7 @@ onMounted(() => { document.title = 'BR893 · Design' })
 .design-banner-mode-note { margin: 9px 0 25px; color: var(--text-muted); font-size: 12px; }
 .design-banner-controls { display: flex; align-items: center; gap: 16px; }
 .design-banner-switch { flex: 1; }
+.design-game-brightness { margin: -9px 0 25px; }
 .design-motion-replay { min-height: 44px; padding: 10px 16px; border: 1px solid rgb(218 195 237 / 25%); border-radius: 10px; color: var(--text-primary); background: var(--surface-raised); font-size: 14px; white-space: nowrap; }
 .design-motion-replay:disabled { opacity: .4; }
 .design-gallery-label h3 { margin: 0; font-size: 16px; font-weight: 500; }
