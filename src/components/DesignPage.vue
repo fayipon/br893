@@ -4,13 +4,14 @@ import UiIcon from './UiIcon.vue'
 import HeroBanner from './HeroBanner.vue'
 import BannerTypeSwitch from './BannerTypeSwitch.vue'
 import GameBrightnessControl from './GameBrightnessControl.vue'
+import DesignIcons from './DesignIcons.vue'
 import { useBannerType } from '../bannerType'
 import data from '../data/home.json'
 
 const homeUrl = import.meta.env.BASE_URL
 const { bannerType } = useBannerType()
 const asset = path => `${homeUrl}${path}`
-const sections = ['Colors', 'Typography', 'Buttons', 'Banners']
+const sections = ['Colors', 'Typography', 'Buttons', 'Icons', 'Banners']
 const colors = [
   { name: 'Midnight', value: '#19131F', color: 'var(--web-background)', role: 'Desktop canvas' },
   { name: 'Deep plum', value: '#32233F', color: 'var(--mobile-base)', role: 'Main surface' },
@@ -38,7 +39,11 @@ async function openArtwork(artwork) {
   artworkDialog.value.showModal()
 }
 
-onMounted(() => { document.title = 'BR893 · Design' })
+onMounted(() => {
+  document.title = 'BR893 · Design'
+  const section = location.hash.slice(1)
+  if (sections.some(name => name.toLowerCase() === section)) document.getElementById(section)?.scrollIntoView()
+})
 </script>
 
 <template>
@@ -108,8 +113,13 @@ onMounted(() => { document.title = 'BR893 · Design' })
         <p class="design-caption">Select a button to view its visual role.</p>
       </section>
 
+      <section id="icons" class="design-section" aria-labelledby="icons-title">
+        <header class="design-section-heading"><div><span class="design-section-number">04</span><h2 id="icons-title">Icons &amp; motion</h2></div><p>Small details, full of character.</p></header>
+        <DesignIcons />
+      </section>
+
       <section id="banners" class="design-section" aria-labelledby="banners-title">
-        <header class="design-section-heading"><div><span class="design-section-number">04</span><h2 id="banners-title">Banners</h2></div><p>Cinematic artwork. One clear message.</p></header>
+        <header class="design-section-heading"><div><span class="design-section-number">05</span><h2 id="banners-title">Banners</h2></div><p>Cinematic artwork. One clear message.</p></header>
         <div class="design-banner-controls"><BannerTypeSwitch class="design-banner-switch" /><button class="design-motion-replay" :disabled="bannerType === 'image'" @click="motionReplay++">Replay motion</button></div>
         <p class="design-banner-mode-note">Original lettering, layered for motion. Main banners only; this choice also applies to the homepage.</p>
         <GameBrightnessControl class="design-game-brightness" />
@@ -225,7 +235,9 @@ onMounted(() => { document.title = 'BR893 · Design' })
 .design-artwork-dialog > img { width: 100%; height: auto; }
 .design-artwork-description { padding: 17px 22px 22px; color: var(--text-secondary); font-size: 14px; }
 @media (max-width: 1000px) {
-  .design-header { gap: 20px; width: calc(100% - 48px); }
+  .design-header { flex-wrap: wrap; gap: 16px 20px; width: calc(100% - 48px); padding-block: 18px; }
+  .design-header nav { order: 3; width: 100%; justify-content: space-between; margin: 0; }
+  .design-back { margin-left: auto; }
   .design-header nav { gap: 16px; }
   .design-content { width: calc(100% - 64px); }
   .design-intro { gap: 25px; }

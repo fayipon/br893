@@ -24,6 +24,8 @@ npm run preview
 
 首頁網址加上 `?preview=1` 可進入設計預覽工具，切換 Web、390px、430px、320px 的獨立 iframe 視窗，以及原版／漸層背景。`?page=design` 為獨立 Design 展示頁，整理本站配色、Baloo 2 字體、按鈕樣式與現有 Banner；可切換字重、查看按鈕用途及放大 Banner。入口位於首頁桌面右上留白區，僅在視窗寬度至少 1024px 時顯示，手機不顯示。兩種網址皆相容 GitHub Pages 子路徑，沒有其他業務頁面。
 
+Design 頁的 `Icons` 區列出 12 個介面 SVG 元件與 8 個導覽／快捷圖示，並提供轉盤、寶箱、禮物的即時動畫、原始透明 PNG 預覽與下載。動畫沿用首頁 `ActivityIcon.vue` 元件，可暫停／繼續，也遵循裝置的減少動態效果設定。
+
 ## 大 Banner 分層動畫
 
 桌面 Design 入口下方及 Design 頁的 Banners 區提供 `Banner type switch`，可切換原始整張圖片與預設的 `Artwork + motion`。選擇會儲存在此瀏覽器，首頁、展示頁及放大預覽使用同一設定；三張小 Banner 保持原樣。
