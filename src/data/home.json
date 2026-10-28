@@ -27,21 +27,169 @@
   "banners": [
     {
       "image": "assets/hero-referral-emerald-v4.png",
+      "backgroundImage": "assets/hero-referral-emerald-textless-v1.png",
+      "variant": "referral",
+      "lettering": [
+        {
+          "id": "headline",
+          "image": "assets/hero-referral-lettering-headline-v1.png",
+          "origin": "34% 22%",
+          "frame": {
+            "left": 3.5192,
+            "top": -4.4327,
+            "width": 60.4278,
+            "height": 60.6061
+          }
+        },
+        {
+          "id": "amount",
+          "image": "assets/hero-referral-lettering-amount-v1.png",
+          "origin": "30% 50%",
+          "frame": {
+            "left": 1.5084,
+            "top": 17.2131,
+            "width": 66.7638,
+            "height": 66.9231
+          }
+        },
+        {
+          "id": "caption",
+          "image": "assets/hero-referral-lettering-caption-v1.png",
+          "origin": "32% 85%",
+          "frame": {
+            "left": 3.286,
+            "top": 44.6252,
+            "width": 58.0645,
+            "height": 53.0612
+          }
+        }
+      ],
       "title": "Comissão dos indicados",
       "alt": "Indique. Ganhe. 5% de comissão — Até R$ 1 milhão por mês"
     },
     {
       "image": "assets/hero-vip-burgundy-v3.png",
+      "backgroundImage": "assets/hero-vip-burgundy-textless-v1.png",
+      "variant": "vip",
+      "lettering": [
+        {
+          "id": "headline",
+          "image": "assets/hero-vip-lettering-headline-v1.png",
+          "origin": "34% 18%",
+          "frame": {
+            "left": 4.942,
+            "top": -0.7006,
+            "width": 81,
+            "height": 74.0741
+          }
+        },
+        {
+          "id": "amount",
+          "image": "assets/hero-vip-lettering-amount-v1.png",
+          "origin": "32% 52%",
+          "frame": {
+            "left": 4.8378,
+            "top": 24.9914,
+            "width": 55.7103,
+            "height": 54.5455
+          }
+        },
+        {
+          "id": "caption",
+          "image": "assets/hero-vip-lettering-caption-v1.png",
+          "origin": "34% 81%",
+          "frame": {
+            "left": 3.6161,
+            "top": 40.8575,
+            "width": 60.5333,
+            "height": 60
+          }
+        }
+      ],
       "title": "Bônus VIP",
       "alt": "Bônus VIP — Diário + Semanal + Mensal"
     },
     {
       "image": "assets/hero-new-members-midnight-v2.png",
+      "backgroundImage": "assets/hero-new-members-midnight-textless-v1.png",
+      "variant": "members",
+      "lettering": [
+        {
+          "id": "headline",
+          "image": "assets/hero-members-lettering-headline-v1.png",
+          "origin": "34% 20%",
+          "frame": {
+            "left": 3.3298,
+            "top": -0.5254,
+            "width": 61.7647,
+            "height": 61.1111
+          }
+        },
+        {
+          "id": "amount",
+          "image": "assets/hero-members-lettering-amount-v1.png",
+          "origin": "35% 56%",
+          "frame": {
+            "left": 3.5127,
+            "top": 21.6331,
+            "width": 60.686,
+            "height": 60.6742
+          }
+        },
+        {
+          "id": "caption",
+          "image": "assets/hero-members-lettering-caption-v1.png",
+          "origin": "34% 81%",
+          "frame": {
+            "left": 4.1391,
+            "top": 50.8695,
+            "width": 59.7403,
+            "height": 55.814
+          }
+        }
+      ],
       "title": "Bônus para novos membros",
       "alt": "Bônus para novos membros: R$ 8.888. Nos dias 2, 3, 7, 15 e 30."
     },
     {
       "image": "assets/hero-cashback-purple-v3.png",
+      "backgroundImage": "assets/hero-cashback-purple-textless-v1.png",
+      "variant": "cashback",
+      "lettering": [
+        {
+          "id": "headline",
+          "image": "assets/hero-cashback-lettering-headline-v1.png",
+          "origin": "32% 25%",
+          "frame": {
+            "left": 3.7175,
+            "top": -1.1958,
+            "width": 55.7103,
+            "height": 55.1724
+          }
+        },
+        {
+          "id": "amount",
+          "image": "assets/hero-cashback-lettering-amount-v1.png",
+          "origin": "30% 65%",
+          "frame": {
+            "left": 4.3714,
+            "top": 39.0145,
+            "width": 50.8571,
+            "height": 50.7692
+          }
+        },
+        {
+          "id": "caption",
+          "image": "assets/hero-cashback-lettering-caption-v1.png",
+          "origin": "33% 39%",
+          "frame": {
+            "left": 9.0023,
+            "top": 20.973,
+            "width": 45.6044,
+            "height": 36.8421
+          }
+        }
+      ],
       "title": "Cashback semanal",
       "alt": "Cashback semanal de 50% — BR893"
     }

@@ -24,6 +24,14 @@ npm run preview
 
 首頁網址加上 `?preview=1` 可進入設計預覽工具，切換 Web、390px、430px、320px 的獨立 iframe 視窗，以及原版／漸層背景。`?page=design` 為獨立 Design 展示頁，整理本站配色、Baloo 2 字體、按鈕樣式與現有 Banner；可切換字重、查看按鈕用途及放大 Banner。入口位於首頁桌面右上留白區，僅在視窗寬度至少 1024px 時顯示，手機不顯示。兩種網址皆相容 GitHub Pages 子路徑，沒有其他業務頁面。
 
+## 大 Banner 分層動畫
+
+桌面 Design 入口下方及 Design 頁的 Banners 區提供 `Banner type switch`，可切換原始整張圖片與預設的 `Artwork + motion`。選擇會儲存在此瀏覽器，首頁、展示頁及放大預覽使用同一設定；三張小 Banner 保持原樣。
+
+四張大 Banner 各自拆為去字背景、標題、金額／主視覺字樣及輔助文字。12 張透明 PNG 保留原圖字樣的金屬質感、描邊與立體效果，圖片路徑及百分比定位存於 `src/data/home.json` 的 `lettering`。`src/components/HeroBanner.vue` 統一管理標題滑入、金額縮放落定、輔助文字進場與金額掃光；各層可獨立調整。圖片載入並進入畫面後才開始動畫，切換輪播會重新播放，Design 頁可用 `Replay motion` 重播。減少動態效果模式下顯示靜態合成。
+
+去字背景與拆字素材使用內建 image_gen 製作，素材與提示詞分別記錄在 `design/textless-banner-generation.json`、`design/lettering-banner-generation.json`；原始整圖保留供切換比較。
+
 ## 背景設定
 
 修改 `src/styles/backgrounds.css`：

@@ -1,0 +1,263 @@
+{
+  "tool": "Built-in image_gen",
+  "useCase": "background-extraction",
+  "purpose": "Original banner lettering extracted and reconstructed as independent transparent artwork for CSS motion. Layout frames compensate for extraction canvas placement; original flat images are retained for comparison.",
+  "canvas": [
+    1983,
+    793
+  ],
+  "assets": [
+    {
+      "variant": "referral",
+      "layer": "headline",
+      "source": "public/assets/hero-referral-emerald-v4.png",
+      "output": "public/assets/hero-referral-lettering-headline-v1.png",
+      "prompt": "Use case: precise-object-edit / background-extraction. The supplied image is the EDIT TARGET, an existing finished advertisement. Extract ONLY the specified existing typography as a transparent PNG overlay. This is NOT a typography redesign: faithfully preserve the source letter shapes, kerning, Portuguese accents, proportions, exact original placement, metal texture, bevels, outlines, highlights and extrusion. Remove everything except the requested text group, its tightly attached shadows and specified text decoration. All other pixels, including the full scene and the other text, must be fully transparent with clean alpha edges. Output the SAME 1983 x 793 wide canvas as the reference. Do NOT crop, recenter, resize or move the requested letters. The large transparent margins are intentional: this overlay will align pixel-for-pixel over the original-sized background. No new typography, no replacement font, no redesigned lettering, no visible checkerboard, no matte fill, no environment, people, characters, props, logos or watermark. Retain an original dark extrusion only when attached tightly to the letters, never a broad background patch. Preserve these exact source letters only:\n\"INDIQUE. GANHE.\".\nExtract the silver-white slanted headline at the upper left, about x100–1230, y80–280. Reconstruct only the small portions of its lower strokes hidden behind the foreground 5%, matching the original font. Do not include the 5%, commission label, gold numeric text or bottom text.",
+      "layout": {
+        "b": [
+          50,
+          190,
+          1870,
+          330
+        ],
+        "t": [
+          100,
+          80,
+          1130,
+          200
+        ]
+      }
+    },
+    {
+      "variant": "referral",
+      "layer": "amount",
+      "source": "public/assets/hero-referral-emerald-v4.png",
+      "output": "public/assets/hero-referral-lettering-amount-v1.png",
+      "prompt": "Use case: precise-object-edit / background-extraction. The supplied image is the EDIT TARGET, an existing finished advertisement. Extract ONLY the specified existing typography as a transparent PNG overlay. This is NOT a typography redesign: faithfully preserve the source letter shapes, kerning, Portuguese accents, proportions, exact original placement, metal texture, bevels, outlines, highlights and extrusion. Remove everything except the requested text group, its tightly attached shadows and specified text decoration. All other pixels, including the full scene and the other text, must be fully transparent with clean alpha edges. Output the SAME 1983 x 793 wide canvas as the reference. Do NOT crop, recenter, resize or move the requested letters. The large transparent margins are intentional: this overlay will align pixel-for-pixel over the original-sized background. No new typography, no replacement font, no redesigned lettering, no visible checkerboard, no matte fill, no environment, people, characters, props, logos or watermark. Retain an original dark extrusion only when attached tightly to the letters, never a broad background patch. Preserve these exact source letters only:\n\"5% and DE COMISSÃO\".\nKeep the gigantic gold 5% on the left and its secondary silver DE COMISSÃO immediately to its right exactly in place (roughly x85–1230, y180–610), including the original narrow gold/dark emerald outlines and the thin golden accent directly below DE COMISSÃO. Remove the top headline and all bottom monthly income text.",
+      "layout": {
+        "b": [
+          90,
+          65,
+          1715,
+          650
+        ],
+        "t": [
+          90,
+          180,
+          1145,
+          435
+        ]
+      }
+    },
+    {
+      "variant": "referral",
+      "layer": "caption",
+      "source": "public/assets/hero-referral-emerald-v4.png",
+      "output": "public/assets/hero-referral-lettering-caption-v1.png",
+      "prompt": "Use case: precise-object-edit / background-extraction. The supplied image is the EDIT TARGET, an existing finished advertisement. Extract ONLY the specified existing typography as a transparent PNG overlay. This is NOT a typography redesign: faithfully preserve the source letter shapes, kerning, Portuguese accents, proportions, exact original placement, metal texture, bevels, outlines, highlights and extrusion. Remove everything except the requested text group, its tightly attached shadows and specified text decoration. All other pixels, including the full scene and the other text, must be fully transparent with clean alpha edges. Output the SAME 1983 x 793 wide canvas as the reference. Do NOT crop, recenter, resize or move the requested letters. The large transparent margins are intentional: this overlay will align pixel-for-pixel over the original-sized background. No new typography, no replacement font, no redesigned lettering, no visible checkerboard, no matte fill, no environment, people, characters, props, logos or watermark. Retain an original dark extrusion only when attached tightly to the letters, never a broad background patch. Preserve these exact source letters only:\n\"ATÉ R$ 1 MILHÃO / MÊS\".\nOnly the bottom single-line income text, roughly x100–1190, y585–725. ATÉ and / MÊS are silver-white, R$ 1 MILHÃO warm gold. Preserve original shape, scale, slant and spacing. Remove every other text element.",
+      "layout": {
+        "b": [
+          60,
+          445,
+          1860,
+          245
+        ],
+        "t": [
+          100,
+          590,
+          1080,
+          130
+        ]
+      }
+    },
+    {
+      "variant": "vip",
+      "layer": "headline",
+      "source": "public/assets/hero-vip-burgundy-v3.png",
+      "output": "public/assets/hero-vip-lettering-headline-v1.png",
+      "prompt": "Use case: precise-object-edit / background-extraction. The supplied image is the EDIT TARGET, an existing finished advertisement. Extract ONLY the specified existing typography as a transparent PNG overlay. This is NOT a typography redesign: faithfully preserve the source letter shapes, kerning, Portuguese accents, proportions, exact original placement, metal texture, bevels, outlines, highlights and extrusion. Remove everything except the requested text group, its tightly attached shadows and specified text decoration. All other pixels, including the full scene and the other text, must be fully transparent with clean alpha edges. Output the SAME 1983 x 793 wide canvas as the reference. Do NOT crop, recenter, resize or move the requested letters. The large transparent margins are intentional: this overlay will align pixel-for-pixel over the original-sized background. No new typography, no replacement font, no redesigned lettering, no visible checkerboard, no matte fill, no environment, people, characters, props, logos or watermark. Retain an original dark extrusion only when attached tightly to the letters, never a broad background patch. Preserve these exact source letters only:\n\"BÔNUS\".\nOnly the upper-left silver-white BÔNUS, approx x250–1080, y45–245. Preserve the circumflex over Ô and deep wine-colored extrusion. No VIP, no lower plaque.",
+      "layout": {
+        "b": [
+          200,
+          75,
+          1000,
+          270
+        ],
+        "t": [
+          260,
+          50,
+          810,
+          200
+        ]
+      }
+    },
+    {
+      "variant": "vip",
+      "layer": "amount",
+      "source": "public/assets/hero-vip-burgundy-v3.png",
+      "output": "public/assets/hero-vip-lettering-amount-v1.png",
+      "prompt": "Use case: precise-object-edit / background-extraction. The supplied image is the EDIT TARGET, an existing finished advertisement. Extract ONLY the specified existing typography as a transparent PNG overlay. This is NOT a typography redesign: faithfully preserve the source letter shapes, kerning, Portuguese accents, proportions, exact original placement, metal texture, bevels, outlines, highlights and extrusion. Remove everything except the requested text group, its tightly attached shadows and specified text decoration. All other pixels, including the full scene and the other text, must be fully transparent with clean alpha edges. Output the SAME 1983 x 793 wide canvas as the reference. Do NOT crop, recenter, resize or move the requested letters. The large transparent margins are intentional: this overlay will align pixel-for-pixel over the original-sized background. No new typography, no replacement font, no redesigned lettering, no visible checkerboard, no matte fill, no environment, people, characters, props, logos or watermark. Retain an original dark extrusion only when attached tightly to the letters, never a broad background patch. Preserve these exact source letters only:\n\"VIP\".\nOnly the huge gold VIP word at left center, approximately x150–1160, y245–580. Preserve its brushed gold texture, beveled edges and wine-red side extrusion. No BÔNUS or footer.",
+      "layout": {
+        "b": [
+          115,
+          95,
+          1795,
+          605
+        ],
+        "t": [
+          160,
+          250,
+          1000,
+          330
+        ]
+      }
+    },
+    {
+      "variant": "vip",
+      "layer": "caption",
+      "source": "public/assets/hero-vip-burgundy-v3.png",
+      "output": "public/assets/hero-vip-lettering-caption-v1.png",
+      "prompt": "Use case: precise-object-edit / background-extraction. The supplied image is the EDIT TARGET, an existing finished advertisement. Extract ONLY the specified existing typography as a transparent PNG overlay. This is NOT a typography redesign: faithfully preserve the source letter shapes, kerning, Portuguese accents, proportions, exact original placement, metal texture, bevels, outlines, highlights and extrusion. Remove everything except the requested text group, its tightly attached shadows and specified text decoration. All other pixels, including the full scene and the other text, must be fully transparent with clean alpha edges. Output the SAME 1983 x 793 wide canvas as the reference. Do NOT crop, recenter, resize or move the requested letters. The large transparent margins are intentional: this overlay will align pixel-for-pixel over the original-sized background. No new typography, no replacement font, no redesigned lettering, no visible checkerboard, no matte fill, no environment, people, characters, props, logos or watermark. Retain an original dark extrusion only when attached tightly to the letters, never a broad background patch. Preserve these exact source letters only:\n\"Diário + Semanal + Mensal\".\nOnly the bottom caption, approximately x105–1240, y580–700. Preserve white serif lettering and gold plus signs. KEEP its attached original dark burgundy rounded plaque and fine gold border as part of this extracted caption layer. Everything outside that plaque is transparent. No other text or objects.",
+      "layout": {
+        "b": [
+          55,
+          430,
+          1875,
+          200
+        ],
+        "t": [
+          105,
+          582,
+          1135,
+          120
+        ]
+      }
+    },
+    {
+      "variant": "members",
+      "layer": "headline",
+      "source": "public/assets/hero-new-members-midnight-v2.png",
+      "output": "public/assets/hero-members-lettering-headline-v1.png",
+      "prompt": "Use case: precise-object-edit / background-extraction. The supplied image is the EDIT TARGET, an existing finished advertisement. Extract ONLY the specified existing typography as a transparent PNG overlay. This is NOT a typography redesign: faithfully preserve the source letter shapes, kerning, Portuguese accents, proportions, exact original placement, metal texture, bevels, outlines, highlights and extrusion. Remove everything except the requested text group, its tightly attached shadows and specified text decoration. All other pixels, including the full scene and the other text, must be fully transparent with clean alpha edges. Output the SAME 1983 x 793 wide canvas as the reference. Do NOT crop, recenter, resize or move the requested letters. The large transparent margins are intentional: this overlay will align pixel-for-pixel over the original-sized background. No new typography, no replacement font, no redesigned lettering, no visible checkerboard, no matte fill, no environment, people, characters, props, logos or watermark. Retain an original dark extrusion only when attached tightly to the letters, never a broad background patch. Preserve these exact source letters only:\n\"BÔNUS PARA and NOVOS MEMBROS\".\nKeep only the two silver-white headline rows in their original places, roughly x95–1255, y55–275. Preserve purple bevel edges, accents and proportions. Remove amount, footer and all scene elements.",
+      "layout": {
+        "b": [
+          55,
+          105,
+          1870,
+          360
+        ],
+        "t": [
+          100,
+          60,
+          1155,
+          220
+        ]
+      }
+    },
+    {
+      "variant": "members",
+      "layer": "amount",
+      "source": "public/assets/hero-new-members-midnight-v2.png",
+      "output": "public/assets/hero-members-lettering-amount-v1.png",
+      "prompt": "Use case: precise-object-edit / background-extraction. The supplied image is the EDIT TARGET, an existing finished advertisement. Extract ONLY the specified existing typography as a transparent PNG overlay. This is NOT a typography redesign: faithfully preserve the source letter shapes, kerning, Portuguese accents, proportions, exact original placement, metal texture, bevels, outlines, highlights and extrusion. Remove everything except the requested text group, its tightly attached shadows and specified text decoration. All other pixels, including the full scene and the other text, must be fully transparent with clean alpha edges. Output the SAME 1983 x 793 wide canvas as the reference. Do NOT crop, recenter, resize or move the requested letters. The large transparent margins are intentional: this overlay will align pixel-for-pixel over the original-sized background. No new typography, no replacement font, no redesigned lettering, no visible checkerboard, no matte fill, no environment, people, characters, props, logos or watermark. Retain an original dark extrusion only when attached tightly to the letters, never a broad background patch. Preserve these exact source letters only:\n\"R$ 8.888\".\nKeep only the enormous gold R$8.888 amount, approximately x95–1260, y300–565, with original rounded heavy numeral forms, reflections and purple-gold extrusion. Preserve original currency spacing and number separator dot. No headline or footer.",
+      "layout": {
+        "b": [
+          50,
+          215,
+          1895,
+          445
+        ],
+        "t": [
+          100,
+          302,
+          1150,
+          270
+        ]
+      }
+    },
+    {
+      "variant": "members",
+      "layer": "caption",
+      "source": "public/assets/hero-new-members-midnight-v2.png",
+      "output": "public/assets/hero-members-lettering-caption-v1.png",
+      "prompt": "Use case: precise-object-edit / background-extraction. The supplied image is the EDIT TARGET, an existing finished advertisement. Extract ONLY the specified existing typography as a transparent PNG overlay. This is NOT a typography redesign: faithfully preserve the source letter shapes, kerning, Portuguese accents, proportions, exact original placement, metal texture, bevels, outlines, highlights and extrusion. Remove everything except the requested text group, its tightly attached shadows and specified text decoration. All other pixels, including the full scene and the other text, must be fully transparent with clean alpha edges. Output the SAME 1983 x 793 wide canvas as the reference. Do NOT crop, recenter, resize or move the requested letters. The large transparent margins are intentional: this overlay will align pixel-for-pixel over the original-sized background. No new typography, no replacement font, no redesigned lettering, no visible checkerboard, no matte fill, no environment, people, characters, props, logos or watermark. Retain an original dark extrusion only when attached tightly to the letters, never a broad background patch. Preserve these exact source letters only:\n\"Nos dias 2, 3, 7, 15 e 30\".\nOnly the bottom caption, approx x100–1255, y575–700. Keep original silver-white words, gold day numbers, and the attached dark purple rounded pill with its fine gold border. Everything outside that text plaque is transparent. No other words or artwork.",
+      "layout": {
+        "b": [
+          30,
+          320,
+          1925,
+          215
+        ],
+        "t": [
+          100,
+          582,
+          1150,
+          120
+        ]
+      }
+    },
+    {
+      "variant": "cashback",
+      "layer": "headline",
+      "source": "public/assets/hero-cashback-purple-v3.png",
+      "output": "public/assets/hero-cashback-lettering-headline-v1.png",
+      "prompt": "Use case: precise-object-edit / background-extraction. The supplied image is the EDIT TARGET, an existing finished advertisement. Extract ONLY the specified existing typography as a transparent PNG overlay. This is NOT a typography redesign: faithfully preserve the source letter shapes, kerning, Portuguese accents, proportions, exact original placement, metal texture, bevels, outlines, highlights and extrusion. Remove everything except the requested text group, its tightly attached shadows and specified text decoration. All other pixels, including the full scene and the other text, must be fully transparent with clean alpha edges. Output the SAME 1983 x 793 wide canvas as the reference. Do NOT crop, recenter, resize or move the requested letters. The large transparent margins are intentional: this overlay will align pixel-for-pixel over the original-sized background. No new typography, no replacement font, no redesigned lettering, no visible checkerboard, no matte fill, no environment, people, characters, props, logos or watermark. Retain an original dark extrusion only when attached tightly to the letters, never a broad background patch. Preserve these exact source letters only:\n\"PERDAS NO JOGO and CASHBACK\".\nOnly the top two rows: small PERDAS NO JOGO with its short white horizontal side strokes at x210–1050,y65–110, and large arched silver/purple CASHBACK at x130–1130,y120–295. Preserve exact serif shapes and original perspective. Do NOT include SEMANAL or 50% or tiger.",
+      "layout": {
+        "b": [
+          110,
+          135,
+          1795,
+          435
+        ],
+        "t": [
+          135,
+          65,
+          1000,
+          240
+        ]
+      }
+    },
+    {
+      "variant": "cashback",
+      "layer": "amount",
+      "source": "public/assets/hero-cashback-purple-v3.png",
+      "output": "public/assets/hero-cashback-lettering-amount-v1.png",
+      "prompt": "Use case: precise-object-edit / background-extraction. The supplied image is the EDIT TARGET, an existing finished advertisement. Extract ONLY the specified existing typography as a transparent PNG overlay. This is NOT a typography redesign: faithfully preserve the source letter shapes, kerning, Portuguese accents, proportions, exact original placement, metal texture, bevels, outlines, highlights and extrusion. Remove everything except the requested text group, its tightly attached shadows and specified text decoration. All other pixels, including the full scene and the other text, must be fully transparent with clean alpha edges. Output the SAME 1983 x 793 wide canvas as the reference. Do NOT crop, recenter, resize or move the requested letters. The large transparent margins are intentional: this overlay will align pixel-for-pixel over the original-sized background. No new typography, no replacement font, no redesigned lettering, no visible checkerboard, no matte fill, no environment, people, characters, props, logos or watermark. Retain an original dark extrusion only when attached tightly to the letters, never a broad background patch. Preserve these exact source letters only:\n\"50%\".\nOnly the enormous gold 50% at left bottom, roughly x135–1040, y345–690. Preserve the original wide heavy numeral forms, brushed metal, bevel, slant and deep purple extrusion. No other words or scene elements.",
+      "layout": {
+        "b": [
+          95,
+          80,
+          1750,
+          650
+        ],
+        "t": [
+          135,
+          350,
+          890,
+          330
+        ]
+      }
+    },
+    {
+      "variant": "cashback",
+      "layer": "caption",
+      "source": "public/assets/hero-cashback-purple-v3.png",
+      "output": "public/assets/hero-cashback-lettering-caption-v1.png",
+      "prompt": "Use case: precise-object-edit / background-extraction. The supplied image is the EDIT TARGET, an existing finished advertisement. Extract ONLY the specified existing typography as a transparent PNG overlay. This is NOT a typography redesign: faithfully preserve the source letter shapes, kerning, Portuguese accents, proportions, exact original placement, metal texture, bevels, outlines, highlights and extrusion. Remove everything except the requested text group, its tightly attached shadows and specified text decoration. All other pixels, including the full scene and the other text, must be fully transparent with clean alpha edges. Output the SAME 1983 x 793 wide canvas as the reference. Do NOT crop, recenter, resize or move the requested letters. The large transparent margins are intentional: this overlay will align pixel-for-pixel over the original-sized background. No new typography, no replacement font, no redesigned lettering, no visible checkerboard, no matte fill, no environment, people, characters, props, logos or watermark. Retain an original dark extrusion only when attached tightly to the letters, never a broad background patch. Preserve these exact source letters only:\n\"SEMANAL\".\nOnly the silver-white SEMANAL row and its original short white side divider lines, approximately x210–1045,y270–340. Keep original letter spacing and dark purple bevel. Do NOT include any other text, tiger or objects.",
+      "layout": {
+        "b": [
+          80,
+          295,
+          1820,
+          190
+        ],
+        "t": [
+          215,
+          275,
+          830,
+          70
+        ]
+      }
+    }
+  ]
+}

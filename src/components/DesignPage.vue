@@ -1,9 +1,13 @@
 <script setup>
 import { computed, nextTick, onMounted, ref } from 'vue'
 import UiIcon from './UiIcon.vue'
+import HeroBanner from './HeroBanner.vue'
+import BannerTypeSwitch from './BannerTypeSwitch.vue'
+import { useBannerType } from '../bannerType'
 import data from '../data/home.json'
 
 const homeUrl = import.meta.env.BASE_URL
+const { bannerType } = useBannerType()
 const asset = path => `${homeUrl}${path}`
 const sections = ['Colors', 'Typography', 'Buttons', 'Banners']
 const colors = [
@@ -25,6 +29,7 @@ const controlDetails = {
 const selectedDetail = computed(() => controlDetails[selectedControl.value])
 const artworkDialog = ref(null)
 const selectedArtwork = ref(null)
+const motionReplay = ref(0)
 
 async function openArtwork(artwork) {
   selectedArtwork.value = artwork
@@ -104,9 +109,11 @@ onMounted(() => { document.title = 'BR893 · Design' })
 
       <section id="banners" class="design-section" aria-labelledby="banners-title">
         <header class="design-section-heading"><div><span class="design-section-number">04</span><h2 id="banners-title">Banners</h2></div><p>Cinematic artwork. One clear message.</p></header>
+        <div class="design-banner-controls"><BannerTypeSwitch class="design-banner-switch" /><button class="design-motion-replay" :disabled="bannerType === 'image'" @click="motionReplay++">Replay motion</button></div>
+        <p class="design-banner-mode-note">Original lettering, layered for motion. Main banners only; this choice also applies to the homepage.</p>
         <div class="design-gallery-label"><h3>Main banners</h3><span>{{ data.banners.length }} artworks</span></div>
         <div class="design-banner-grid">
-          <button v-for="(banner, index) in data.banners" :key="banner.image" class="design-artwork" :aria-label="`Preview ${banner.title}`" @click="openArtwork(banner)"><img :src="asset(banner.image)" :alt="banner.alt" width="1983" height="793" loading="lazy" /><span class="design-artwork-caption"><span><small>0{{ index + 1 }}</small>{{ banner.title }}</span><UiIcon name="right" :size="17" /></span></button>
+          <button v-for="(banner, index) in data.banners" :key="banner.image" class="design-artwork" :aria-label="`Preview ${banner.title}`" @click="openArtwork(banner)"><HeroBanner :key="motionReplay" :banner="banner" :type="bannerType" loading="lazy" /><span class="design-artwork-caption"><span><small>0{{ index + 1 }}</small>{{ banner.title }}</span><UiIcon name="right" :size="17" /></span></button>
         </div>
         <div class="design-gallery-label design-gallery-label-small"><h3>Small banners</h3><span>{{ data.promotions.length }} artworks</span></div>
         <div class="design-promo-grid">
@@ -119,7 +126,7 @@ onMounted(() => { document.title = 'BR893 · Design' })
     </main>
 
     <dialog ref="artworkDialog" class="design-artwork-dialog" aria-labelledby="artwork-title" @click="event => { if (event.target === event.currentTarget) artworkDialog.close() }" @close="selectedArtwork = null">
-      <template v-if="selectedArtwork"><header><h2 id="artwork-title">{{ selectedArtwork.title }}</h2><button aria-label="Close artwork" autofocus @click="artworkDialog.close()"><UiIcon name="close" :size="23" /></button></header><img :src="asset(selectedArtwork.image)" :alt="selectedArtwork.alt" /><p>{{ selectedArtwork.alt }}</p></template>
+      <template v-if="selectedArtwork"><header><h2 id="artwork-title">{{ selectedArtwork.title }}</h2><button aria-label="Close artwork" autofocus @click="artworkDialog.close()"><UiIcon name="close" :size="23" /></button></header><HeroBanner v-if="selectedArtwork.backgroundImage" :banner="selectedArtwork" :type="bannerType" /><img v-else :src="asset(selectedArtwork.image)" :alt="selectedArtwork.alt" /><p class="design-artwork-description">{{ selectedArtwork.alt }}</p></template>
     </dialog>
   </div>
 </template>
@@ -188,11 +195,17 @@ onMounted(() => { document.title = 'BR893 · Design' })
 .design-control-detail p { color: var(--text-secondary); font-size: 13px; }
 .design-caption { margin-top: 13px; color: var(--text-muted); font-size: 12px; }
 .design-gallery-label { display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px; }
+.design-banner-mode-note { margin: 9px 0 25px; color: var(--text-muted); font-size: 12px; }
+.design-banner-controls { display: flex; align-items: center; gap: 16px; }
+.design-banner-switch { flex: 1; }
+.design-motion-replay { min-height: 44px; padding: 10px 16px; border: 1px solid rgb(218 195 237 / 25%); border-radius: 10px; color: var(--text-primary); background: var(--surface-raised); font-size: 14px; white-space: nowrap; }
+.design-motion-replay:disabled { opacity: .4; }
 .design-gallery-label h3 { margin: 0; font-size: 16px; font-weight: 500; }
 .design-gallery-label > span { color: var(--text-muted); font-size: 12px; }
 .design-banner-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 26px 22px; }
 .design-artwork { display: flex; flex-direction: column; align-items: stretch; min-width: 0; text-align: left; }
 .design-artwork > img { width: 100%; height: auto; aspect-ratio: 1983 / 793; object-fit: contain; border: 1px solid rgb(221 201 163 / 27%); border-radius: 12px; background: var(--mobile-base); }
+.design-artwork > .hero-banner { border: 1px solid rgb(221 201 163 / 27%); border-radius: 12px; background: var(--mobile-base); }
 .design-artwork-caption { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 12px 1px 0; color: var(--text-secondary); font-size: 14px; }
 .design-artwork-caption > span { display: flex; align-items: baseline; gap: 12px; }
 .design-artwork-caption small { color: var(--text-muted); font-size: 11px; }
@@ -207,7 +220,7 @@ onMounted(() => { document.title = 'BR893 · Design' })
 .design-artwork-dialog h2 { font-size: 20px; font-weight: 600; }
 .design-artwork-dialog header button { flex-shrink: 0; width: 44px; height: 44px; }
 .design-artwork-dialog > img { width: 100%; height: auto; }
-.design-artwork-dialog > p { padding: 17px 22px 22px; color: var(--text-secondary); font-size: 14px; }
+.design-artwork-description { padding: 17px 22px 22px; color: var(--text-secondary); font-size: 14px; }
 @media (max-width: 1000px) {
   .design-header { gap: 20px; width: calc(100% - 48px); }
   .design-header nav { gap: 16px; }
@@ -220,6 +233,7 @@ onMounted(() => { document.title = 'BR893 · Design' })
   .design-control-detail { border-left: 0; border-top: 1px solid var(--panel-border); padding: 20px 28px; }
 }
 @media (max-width: 640px) {
+  .design-banner-controls { flex-wrap: wrap; gap: 10px; }.design-banner-switch { flex-basis: 100%; }
   .design-header { flex-wrap: wrap; gap: 16px; padding: 20px 0 12px; }
   .design-header nav { order: 3; width: 100%; justify-content: space-between; margin: 0; }
   .design-back { margin-left: auto; }

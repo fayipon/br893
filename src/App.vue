@@ -3,10 +3,14 @@ import { computed, nextTick, onMounted, onUnmounted, ref } from 'vue'
 import UiIcon from './components/UiIcon.vue'
 import ActivityIcon from './components/ActivityIcon.vue'
 import SakuraBackground from './components/SakuraBackground.vue'
+import HeroBanner from './components/HeroBanner.vue'
+import BannerTypeSwitch from './components/BannerTypeSwitch.vue'
+import { useBannerType } from './bannerType'
 import data from './data/home.json'
 
 const asset = path => `${import.meta.env.BASE_URL}${path}`
 const designUrl = `${import.meta.env.BASE_URL}?page=design`
+const { bannerType } = useBannerType()
 const originalBackground = ref(new URLSearchParams(location.search).get('background') === 'original')
 const downloadVisible = ref(true)
 const currentSlide = ref(0)
@@ -85,11 +89,12 @@ function goToSlide(index) {
   currentSlide.value = index
 }
 
-function showNotice(title, image = '') {
+function showNotice(title, image = '', banner = null) {
   menuDialog.value?.close()
   dialogContent.value = {
     title,
     image,
+    banner,
     description: 'Esta é uma prévia de design. Esta interação é apenas uma demonstração, sem cadastro, pagamentos ou jogos reais.',
   }
   infoDialog.value.showModal()
@@ -240,7 +245,7 @@ onUnmounted(() => {
 <template>
   <div class="web-canvas" :class="{ 'background-original': originalBackground }">
     <SakuraBackground />
-    <a class="desktop-design-link glossy-control" :href="designUrl"><UiIcon name="palette" :size="19" /><span>Design</span><UiIcon name="right" :size="15" /></a>
+    <div class="desktop-design-tools"><a class="desktop-design-link glossy-control" :href="designUrl"><UiIcon name="palette" :size="19" /><span>Design</span><UiIcon name="right" :size="15" /></a><BannerTypeSwitch compact /></div>
     <div class="mobile-shell">
       <a class="skip-link" href="#games-start">Ir para os jogos</a>
 
@@ -265,8 +270,8 @@ onUnmounted(() => {
       <main class="home-content">
         <section class="hero" aria-label="Promoções em destaque" :aria-roledescription="data.banners.length > 1 ? 'carousel' : undefined" @mouseenter="carouselPaused = true" @mouseleave="carouselPaused = false" @focusin="carouselPaused = true" @focusout="carouselPaused = false">
           <Transition :name="slideDirection < 0 ? 'hero-backward' : 'hero-forward'">
-            <button :key="currentSlide" class="hero-image-button" :aria-label="`${activeBanner.alt} — ${currentSlide + 1} de ${data.banners.length}`" @click="showNotice(activeBanner.title, activeBanner.image)">
-              <img :src="asset(activeBanner.image)" :alt="activeBanner.alt" width="1983" height="793" fetchpriority="high" />
+            <button :key="currentSlide" class="hero-image-button" :aria-label="`${activeBanner.alt} — ${currentSlide + 1} de ${data.banners.length}`" @click="showNotice(activeBanner.title, activeBanner.image, activeBanner)">
+              <HeroBanner :banner="activeBanner" :type="bannerType" priority="high" />
             </button>
           </Transition>
           <button v-if="data.banners.length > 1" class="carousel-arrow previous" aria-label="Promoção anterior" @click="changeSlide(-1)"><UiIcon name="left" :size="17" /></button>
@@ -387,7 +392,7 @@ onUnmounted(() => {
     </dialog>
 
     <dialog ref="infoDialog" class="info-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-description" @click="dismissBackdrop">
-      <div class="info-content"><button class="dialog-close" aria-label="Fechar" @click="infoDialog.close()"><UiIcon name="close" /></button><img v-if="dialogContent.image" class="dialog-image" :src="asset(dialogContent.image)" alt="" /><span class="dialog-badge">DEMONSTRAÇÃO</span><h2 id="dialog-title">{{ dialogContent.title }}</h2><p id="dialog-description">{{ dialogContent.description }}</p><button class="primary-button dialog-confirm" autofocus @click="infoDialog.close()">Entendi</button></div>
+      <div class="info-content"><button class="dialog-close" aria-label="Fechar" @click="infoDialog.close()"><UiIcon name="close" /></button><HeroBanner v-if="dialogContent.banner" class="dialog-hero" :banner="dialogContent.banner" :type="bannerType" /><img v-else-if="dialogContent.image" class="dialog-image" :src="asset(dialogContent.image)" alt="" /><span class="dialog-badge">DEMONSTRAÇÃO</span><h2 id="dialog-title">{{ dialogContent.title }}</h2><p id="dialog-description">{{ dialogContent.description }}</p><button class="primary-button dialog-confirm" autofocus @click="infoDialog.close()">Entendi</button></div>
     </dialog>
     <Transition name="toast"><div v-if="toast" class="toast-message" role="status"><UiIcon name="check" :size="18" />{{ toast }}</div></Transition>
   </div>
