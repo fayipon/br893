@@ -6,6 +6,7 @@ import SakuraBackground from './components/SakuraBackground.vue'
 import data from './data/home.json'
 
 const asset = path => `${import.meta.env.BASE_URL}${path}`
+const designUrl = `${import.meta.env.BASE_URL}?page=design`
 const originalBackground = ref(new URLSearchParams(location.search).get('background') === 'original')
 const downloadVisible = ref(true)
 const currentSlide = ref(0)
@@ -57,6 +58,14 @@ const menuItems = [
   { name: 'Check-in Diário', icon: 'calendar' },
 ]
 const socialItems = ['X', 'Telegram', 'Facebook', 'Instagram', 'Whatsapp']
+const providerLogoVariants = {
+  FACHAI: 'provider-logo-detailed',
+  ASKMESLOT: 'provider-logo-detailed',
+  IGT: 'provider-logo-detailed',
+  GAMEART: 'provider-logo-detailed',
+  G759: 'provider-logo-detailed',
+  OMGMINIGAME: 'provider-logo-inverted',
+}
 const displayedGroups = computed(() => {
   const query = searchQuery.value.trim().toLocaleLowerCase('pt-BR')
   return data.groups
@@ -231,6 +240,7 @@ onUnmounted(() => {
 <template>
   <div class="web-canvas" :class="{ 'background-original': originalBackground }">
     <SakuraBackground />
+    <a class="desktop-design-link glossy-control" :href="designUrl"><UiIcon name="palette" :size="19" /><span>Design</span><UiIcon name="right" :size="15" /></a>
     <div class="mobile-shell">
       <a class="skip-link" href="#games-start">Ir para os jogos</a>
 
@@ -297,7 +307,7 @@ onUnmounted(() => {
           </button>
           <div class="provider-scroll" :class="{ dragging: providerDragging }" @pointerdown="startProviderDrag" @pointermove="moveProviderDrag" @pointerup="endProviderDrag" @pointercancel="endProviderDrag" @lostpointercapture="endProviderDrag" @click.capture="handleProviderClick" @dragstart.prevent>
             <button v-for="provider in data.providers" :key="provider.name" type="button" class="provider-tab" :class="{ active: activeProvider === provider.name }" :aria-pressed="activeProvider === provider.name" @click="selectProvider(provider.name)">
-              <span class="provider-icon"><img :src="asset(provider.image)" alt="" width="40" height="40" draggable="false" /></span>
+              <span class="provider-icon"><img :src="asset(provider.image)" :class="providerLogoVariants[provider.name]" alt="" width="40" height="40" draggable="false" /></span>
               <span>{{ provider.name }}</span>
             </button>
           </div>
@@ -306,7 +316,7 @@ onUnmounted(() => {
         <div id="games-start" class="game-sections">
           <section v-for="(group, groupIndex) in displayedGroups" :key="group.name" class="game-section" :aria-label="`${group.name} jogos`">
             <div class="section-heading">
-              <h2><img :src="asset(group.image)" alt="" width="34" height="30" />{{ group.name }}</h2>
+              <h2 :aria-label="`${group.name}: ${group.games.length} ${group.games.length === 1 ? 'game' : 'games'}`"><img :src="asset(group.image)" :class="providerLogoVariants[group.name]" alt="" width="34" height="30" /><span class="game-count">{{ group.games.length }} {{ group.games.length === 1 ? 'game' : 'games' }}</span></h2>
               <button class="view-all" :aria-label="`Ver tudo ${group.name}`" @click="viewProvider(group.name)">Ver tudo</button>
             </div>
             <div class="game-grid">

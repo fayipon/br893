@@ -2,6 +2,7 @@
 defineProps({ name: String, size: { type: [Number, String], default: 22 } })
 const paths = {
   menu: 'M4 6h16M4 12h12M4 18h16',
+  palette: 'M12 3a9 9 0 1 0 0 18h1a2 2 0 0 0 1.4-3.4 1.5 1.5 0 0 1 1.1-2.6H18a3 3 0 0 0 3-3 9 9 0 0 0-9-9ZM7 11h.01M9 7h.01M14 6h.01M18 10h.01',
   close: 'm6 6 12 12M18 6 6 18',
   chevron: 'm6 9 6 6 6-6',
   left: 'm15 5-7 7 7 7',
