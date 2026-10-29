@@ -41,9 +41,10 @@ Design 頁的 `Icons` 區列出 12 個介面 SVG 元件與 8 個導覽／快捷�
 修改 `src/styles/backgrounds.css`：
 
 - `--web-background`：手機版型外的墨紫色 Web 底色，目前為 `#19131f`。
-- `--mobile-gradient-top`：Mobile 柔和紫色漸層上方，目前為 `#432f56`。
-- `--mobile-gradient-middle`：中段紫色，目前為 `#3a294b`。
-- `--mobile-gradient-bottom`：下方深紫，目前為 `#32233f`。
+- `--mobile-gradient-top`：Mobile 柔和紫色漸層上方，目前為 `#3d2b50`。
+- `--mobile-gradient-middle`：中段紫色，目前為 `#2e1f3d`。
+- `--mobile-gradient-bottom`：下方深紫，目前為 `#24182f`。
+- `--surface-inset`：公告與供應商分類列使用的深色凹槽；`--section-surface`、`--section-border`、`--section-shadow` 控制遊戲分區面板的漸層、細亮邊與柔和陰影。面板向左右留白延伸，維持原本三欄遊戲圖片大小；區塊標題下方以細線區隔。
 - `--accent`：淡紫重點色，目前為 `#cfb5ee`，用於選中狀態、浮窗與少量邊框。
 - `--pink-action-gradient`：Install 與 Register 使用低飽和莓果玫瑰色；一般主要按鈕使用淡紫色。底部導覽保留原本粉紫底色，選中項目以淡紫圖示、亮色粗體文字、底色與底線強調。
 - `--mobile-background-image`：完整背景圖層，可替換為漸層或圖片。

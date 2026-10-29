@@ -14,7 +14,7 @@ const asset = path => `${homeUrl}${path}`
 const sections = ['Colors', 'Typography', 'Buttons', 'Icons', 'Banners']
 const colors = [
   { name: 'Midnight', value: '#19131F', color: 'var(--web-background)', role: 'Desktop canvas' },
-  { name: 'Deep plum', value: '#32233F', color: 'var(--mobile-base)', role: 'Main surface' },
+  { name: 'Deep plum', value: '#24182F', color: 'var(--mobile-base)', role: 'Main surface' },
   { name: 'Soft violet', value: '#503B62', color: 'var(--surface-raised)', role: 'Raised surfaces' },
   { name: 'Rose', value: '#B05A85', color: '#b05a85', role: 'Primary actions' },
   { name: 'Lavender', value: '#CFB5EE', color: 'var(--accent)', role: 'Accents & focus' },
@@ -78,7 +78,7 @@ onMounted(() => {
         </div>
         <div class="design-gradient-row">
           <div class="design-gradient-sample design-rose-gradient"><span>Action gradient</span><code>#B05A85 → #A7507B</code></div>
-          <div class="design-gradient-sample design-surface-gradient"><span>Page gradient</span><code>#432F56 → #32233F</code></div>
+          <div class="design-gradient-sample design-surface-gradient"><span>Page gradient</span><code>#3D2B50 → #24182F</code></div>
         </div>
       </section>
 

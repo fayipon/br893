@@ -3,18 +3,23 @@
 :root {
   --mobile-max-width: 520px;
   --web-background: #19131f;
-  --mobile-base: #32233f;
-  --mobile-gradient-top: #432f56;
-  --mobile-gradient-middle: #3a294b;
-  --mobile-gradient-bottom: #32233f;
+  --mobile-base: #24182f;
+  --mobile-gradient-top: #3d2b50;
+  --mobile-gradient-middle: #2e1f3d;
+  --mobile-gradient-bottom: #24182f;
   --mobile-background-image:
-    radial-gradient(ellipse 100% 540px at 50% 0, rgb(199 166 224 / 6%), transparent 80%),
+    radial-gradient(ellipse 100% 540px at 50% 0, rgb(199 166 224 / 10%), transparent 80%),
     linear-gradient(180deg, var(--mobile-gradient-top) 0, var(--mobile-gradient-middle) 740px, var(--mobile-gradient-bottom) 1700px);
   --mobile-border: rgb(206 181 226 / 14%);
-  --header-surface: rgb(58 41 74 / 97%);
+  --header-surface: rgb(47 31 61 / 97%);
   --panel-surface: rgb(222 197 243 / 6%);
   --panel-border: rgb(218 195 237 / 12%);
   --surface-raised: #503b62;
+  --surface-inset: rgb(22 13 32 / 32%);
+  --section-surface: linear-gradient(145deg, rgb(110 80 130 / 28%), rgb(74 50 94 / 16%)), rgb(48 32 63 / 86%);
+  --section-border: rgb(212 182 235 / 16%);
+  --surface-highlight: rgb(238 218 252 / 9%);
+  --section-shadow: inset 0 1px 0 var(--surface-highlight), 0 8px 20px rgb(14 7 23 / 18%);
   --text-primary: #f7f2fa;
   --text-secondary: #c9bad4;
   --text-muted: #ad9dbb;
