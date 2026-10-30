@@ -1,0 +1,10 @@
+{
+  "tool": "built-in imagegen",
+  "date": "2026-10-30",
+  "key": "nav-invite",
+  "prompt": "Use case: precise-object-edit. Recolor ONLY this trophy icon to have substantially more red. Change the entire large front cup/bowl from gold to rich ribbon red (#D83446) with burgundy (#681C32) shadows and glossy ivory highlights, so red is the dominant visible color. Keep the top rim a thin champagne-gold edge, with a burgundy inner cup. Keep the centered warm ivory star and ivory handles. Keep the existing red stem and red base, with only thin champagne-gold collar and base trim instead of wide gold areas. Preserve exactly the silhouette, proportions, object placement, original transparent padding, dark burgundy contour, rounded glossy 2.5D style, and upper-left lighting. No added motifs, no text, no background, no external shadow. Genuine transparent alpha PNG.",
+  "path": "C:\\Users\\user\\.codex\\generated_images\\01a189dc-52e8-7813-ba0b-53912e2f4714\\exec-fc405d48-61df-4e08-96c8-94d873aed4df.png",
+  "master": "design/ipa-icons/gold-v2/nav-invite-v3.png",
+  "asset": "public/assets/ipa/nav-invite-v3.png",
+  "size": 256
+}

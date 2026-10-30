@@ -1,9 +1,12 @@
 <script setup>
 import { computed, ref } from 'vue'
 
+const props = defineProps({ site: { type: String, default: 'br893' } })
+const siteName = props.site === 'ipa' ? 'Jito' : 'BR893'
 const width = ref('web')
 const original = ref(false)
-const frameSource = computed(() => `${import.meta.env.BASE_URL}?background=${original.value ? 'original' : 'gradient'}`)
+const portalUrl = import.meta.env.BASE_URL
+const frameSource = computed(() => `${portalUrl}?page=${props.site === 'ipa' ? 'ipa' : 'br893'}&background=${original.value ? 'original' : 'gradient'}`)
 const widths = [
   { value: 'web', label: 'Web' },
   { value: '390', label: 'Mobile 390' },
@@ -15,12 +18,12 @@ const widths = [
 <template>
   <div class="preview-workspace">
     <header class="preview-toolbar">
-      <div class="preview-heading"><span>BR893</span><strong>首頁設計預覽</strong></div>
+      <div class="preview-heading"><span>{{ siteName }}</span><strong>首頁設計預覽</strong></div>
       <nav aria-label="預覽尺寸"><button v-for="option in widths" :key="option.value" :aria-pressed="width === option.value" @click="width = option.value">{{ option.label }}</button></nav>
-      <label class="preview-background"><input v-model="original" type="checkbox" /> 比較原版背景</label>
+      <label class="preview-background"><input v-model="original" type="checkbox" /> {{ props.site === 'ipa' ? '比較純色背景' : '比較原版背景' }}</label>
     </header>
     <main class="preview-stage">
-      <iframe :src="frameSource" :style="{ width: width === 'web' ? '100%' : `${width}px` }" title="BR893 首頁預覽" />
+      <iframe :src="frameSource" :style="{ width: width === 'web' ? '100%' : `${width}px` }" :title="`${siteName} 首頁預覽`" />
     </main>
   </div>
 </template>

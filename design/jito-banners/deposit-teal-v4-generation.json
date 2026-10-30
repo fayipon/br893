@@ -1,0 +1,8 @@
+{
+  "tool": "built-in image_gen",
+  "createdAt": "2026-10-30",
+  "path": "design/jito-banners/deposit-teal-v4-short-subtitle.png",
+  "editTarget": "design/jito-banners/deposit-teal-v3-clear-halo.png",
+  "status": "Static artwork review only; not applied to website.",
+  "prompt": "Use case: text-localization / precise-object-edit.\nEdit the attached latest Jito banner with sharp teal halo, simplified burgundy clothing, blurred distant background and five reward groups.\nMake exactly ONE change: replace the entire existing TWO-LINE subtitle\n\"Hit the highest tier and claim\"\n\"your ultimate prize!\"\nwith the exact SINGLE LINE:\n\"claim your ultimate prize\"\nUse these exact lowercase words, no punctuation, no exclamation mark, no additional words.\nKeep the new single line centered in the same subtitle area below the two-line main headline and above the five reward groups. Match the existing warm champagne-ivory serif font, weight, readable letter height and subtle shadow. The shortened copy should have breathing room. Preserve the small gold ornamental dividers around this subtitle area, keeping them clear of the lettering.\nLOCK EVERYTHING ELSE: main headline \"Deposit more,\" / \"earn crazier!\" in the same size, shape, placement and gold texture; the two adult royals' faces, clothing, poses, hands, skin and jewelry; sharp teal halo; blurred architecture; floating magic coin; teal fabric; all FIVE reward groups in exactly their existing positions, sizes and simplified details (coin bag, poker chips, gift, open treasure chest, ruby bowl); all lighting, colors and composition.\nNo other changes. No new logos, no extra text, no watermark. Opaque full-bleed 1983 x 793 wide static banner, same aspect ratio and crop."
+}

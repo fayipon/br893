@@ -1,0 +1,42 @@
+{
+  "tool": "built-in image_gen",
+  "createdAt": "2026-10-30",
+  "staticSource": "design/jito-banners/deposit-teal-v5-foreground.png",
+  "assets": [
+    {
+      "path": "public/assets/ipa/hero-deposit-motion-base-v1.png",
+      "sourcePath": "C:\\Users\\user\\.codex\\generated_images\\01a189dc-52e8-7813-ba0b-53912e2f4714\\exec-f2bb0b35-6e71-4dbf-970e-2abc74542f2a.png",
+      "prompt": "Edit target: attached approved wide 1983 x 793 Jito banner. Prepare a clean background plate for animation. REMOVE ONLY the floating gold/red casino coin and ALL teal orbit rings immediately surrounding that coin over the woman's open hand, plus the FIVE isolated floating red rubies around the scene (small upper left, small lower left, lower center near ruby bowl, upper right beside male head/staff, far lower right). Carefully reconstruct the small areas behind these removed floating objects from the surrounding background / hair / fabric / table as appropriate. Preserve the hand completely and exactly. DO NOT remove any rubies from the bowl of rubies or any gems fixed on clothing/staff. Preserve the LARGE SHARP TEAL HALO behind the characters, all five reward groups, both characters with their exact faces, pose, clothing and silhouette, the entire headline and subtitle, backgrounds and colors. No movement, no resizing, no redesign, no added detail. Lettering EXACTLY unchanged: \"Deposit more,\" / \"earn crazier!\" / \"claim your ultimate prize\". Keep the SAME 1983 x 793 canvas, pixel alignment and framing. Output opaque full-bleed. This must look precisely like the input with just the floating coin/orbit and five isolated floating red rubies erased. Never erase the main circular halo."
+    },
+    {
+      "path": "public/assets/ipa/hero-deposit-motion-sprites-v1.png",
+      "sourcePath": "C:\\Users\\user\\.codex\\generated_images\\01a189dc-52e8-7813-ba0b-53912e2f4714\\exec-07f13164-59d7-49aa-ba74-5e9add9b4be4.png",
+      "prompt": "Extract ONLY the movable overlay sprites from the attached 1983 x 793 Jito banner onto TRUE TRANSPARENT RGBA, retaining their EXACT original canvas positions and scale. The canvas remains 1983 x 793, no rearrangement, no centering or enlarging sprites. Include: (1) the gold/red floating casino coin over the woman's hand, with its teal orbit rings and transparent soft teal glow; (2) all FIVE isolated floating red rubies, one at upper-left around (55,145), one near lower-left around (24,537), one at lower-center around (982,724), one upper-right around (1828,266), one far lower-right around (1951,681). Only isolated floating rubies, NEVER any rubies sitting in the bowl. Preserve the exact 3D shapes, color, perspective, highlights, size and placement from the reference. Remove EVERYTHING ELSE: both people, hand, hair, text, big halo behind heads, background, table, rewards, clothing, staff. Fully transparent everywhere except these six sprite groups, including transparency within open spaces of the coin orbit. Do not render a checkerboard or black background, no rectangle patches. Transparent sprite overlay, same full-wide canvas and original positions so it can be stacked back over the source."
+    },
+    {
+      "path": "public/assets/ipa/promo-mystery-mine-inr-v1.png",
+      "sourcePath": "C:\\Users\\user\\.codex\\generated_images\\01a189dc-52e8-7813-ba0b-53912e2f4714\\exec-44ddee6c-1483-4e06-bfd3-e859b59ebee8.png",
+      "prompt": "Edit this existing promotional artwork. Change ONLY the currency denomination from Brazilian real R$ to Indian rupee ₹. The resulting amount reads exactly \"ATÉ ₹8,888\" (₹ is the Indian rupee symbol, not R, Rs, dollar, or yen). Replace the thousands separator dot with a comma when present. Preserve the numeric value, every other word, image, type size, position, colors, metallic treatment, backdrop and composition. Fit ₹ into the old currency prefix space, keep the large digits in the same location. Do not translate any other text. No new logos or words. Preserve exact original canvas dimensions, padding, and aspect ratio. Opaque full-bleed 1983 x 793 horizontal artwork."
+    },
+    {
+      "path": "public/assets/ipa/promo-invite-friend-inr-v1.png",
+      "sourcePath": "C:\\Users\\user\\.codex\\generated_images\\01a189dc-52e8-7813-ba0b-53912e2f4714\\exec-6a917eae-f626-462e-9c37-1214789aa02d.png",
+      "prompt": "Edit this existing promotional artwork. Change ONLY the currency denomination from Brazilian real R$ to Indian rupee ₹. The resulting amount reads exactly \"₹80\" (₹ is the Indian rupee symbol, not R, Rs, dollar, or yen). Replace the thousands separator dot with a comma when present. Preserve the numeric value, every other word, image, type size, position, colors, metallic treatment, backdrop and composition. Fit ₹ into the old currency prefix space, keep the large digits in the same location. Do not translate any other text. No new logos or words. Preserve exact original canvas dimensions, padding, and aspect ratio. Opaque full-bleed 1983 x 793 horizontal artwork."
+    },
+    {
+      "path": "public/assets/ipa/promo-friend-assist-inr-v1.png",
+      "sourcePath": "C:\\Users\\user\\.codex\\generated_images\\01a189dc-52e8-7813-ba0b-53912e2f4714\\exec-460e8691-fc6f-4567-afdd-be4c83dd3f85.png",
+      "prompt": "Edit this existing promotional artwork. Change ONLY the currency denomination from Brazilian real R$ to Indian rupee ₹. The resulting amount reads exactly \"₹100\" (₹ is the Indian rupee symbol, not R, Rs, dollar, or yen). Replace the thousands separator dot with a comma when present. Preserve the numeric value, every other word, image, type size, position, colors, metallic treatment, backdrop and composition. Fit ₹ into the old currency prefix space, keep the large digits in the same location. Do not translate any other text. No new logos or words. Preserve exact original canvas dimensions, padding, and aspect ratio. Opaque full-bleed 1983 x 793 horizontal artwork."
+    },
+    {
+      "path": "public/assets/ipa/hero-members-inr-v1.png",
+      "sourcePath": "C:\\Users\\user\\.codex\\generated_images\\01a189dc-52e8-7813-ba0b-53912e2f4714\\exec-ce01cf5e-c2a1-429d-b32d-f4a73708ab5a.png",
+      "prompt": "Edit this existing promotional artwork. Change ONLY the currency denomination from Brazilian real R$ to Indian rupee ₹. The resulting amount reads exactly \"₹8,888\" (₹ is the Indian rupee symbol, not R, Rs, dollar, or yen). Replace the thousands separator dot with a comma when present. Preserve the numeric value, every other word, image, type size, position, colors, metallic treatment, backdrop and composition. Fit ₹ into the old currency prefix space, keep the large digits in the same location. Do not translate any other text. No new logos or words. Preserve exact original canvas dimensions, padding, and aspect ratio. Opaque full-bleed 1983 x 793 horizontal artwork."
+    },
+    {
+      "path": "public/assets/ipa/hero-members-amount-inr-v1.png",
+      "sourcePath": "C:\\Users\\user\\.codex\\generated_images\\01a189dc-52e8-7813-ba0b-53912e2f4714\\exec-8796683c-2d87-49a5-8a5c-1716480c7f92.png",
+      "prompt": "Edit this existing promotional artwork. Change ONLY the currency denomination from Brazilian real R$ to Indian rupee ₹. The resulting amount reads exactly \"₹8,888\" (₹ is the Indian rupee symbol, not R, Rs, dollar, or yen). Replace the thousands separator dot with a comma when present. Preserve the numeric value, every other word, image, type size, position, colors, metallic treatment, backdrop and composition. Fit ₹ into the old currency prefix space, keep the large digits in the same location. Do not translate any other text. No new logos or words. Preserve exact original canvas dimensions, padding, and aspect ratio. Keep TRUE RGBA transparency, this is a transparent lettering layer only. Do not crop away existing transparent margins, center or reframe lettering; same scale and original pixel alignment. No checkerboard background."
+    }
+  ]
+}

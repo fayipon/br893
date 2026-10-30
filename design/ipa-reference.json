@@ -1,0 +1,35 @@
+{
+  "observedOn": "2026-10-30",
+  "source": "https://jitobets.com/",
+  "pageTitle": "IPA",
+  "visibleBrand": "Jito Gaming",
+  "purpose": "Observed Jitobets color and layout reference only; no original-site artwork is used by the local IPA page.",
+  "layout": {
+    "desktopContentMaxWidthPx": 517,
+    "heroAspectRatio": "1672:941",
+    "gameColumns": 3,
+    "gameArtworkFormat": "portrait",
+    "font": "Baloo 2"
+  },
+  "observedCssTokens": {
+    "--theme-color6": "#090305",
+    "--app-browser-chrome-color": "#1b0a10",
+    "--app-surface-background": "#321720",
+    "--app-surface-raised-background": "#3d1b29",
+    "--app-surface-inset-background": "#271018",
+    "--brand-accent": "#df5772",
+    "--brand-accent-soft": "#ed7188",
+    "--brand-accent-strong": "#a52b47",
+    "--app-primary-background": "linear-gradient(180deg, #ed7188 0%, #ce405f 46%, #98253f 100%)",
+    "--app-text-primary": "#fff",
+    "--app-text-secondary": "#e2ddeeb8"
+  },
+  "localImplementation": {
+    "route": "?page=ipa",
+    "theme": "src/styles/ipa.css",
+    "brand": "src/components/IpaBrand.vue",
+    "artwork": "src/data/home.json",
+    "bannerControl": "src/bannerType.js",
+    "gameBrightnessControl": "src/gameBrightness.js"
+  }
+}

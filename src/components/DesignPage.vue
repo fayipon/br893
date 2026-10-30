@@ -5,14 +5,28 @@ import HeroBanner from './HeroBanner.vue'
 import BannerTypeSwitch from './BannerTypeSwitch.vue'
 import GameBrightnessControl from './GameBrightnessControl.vue'
 import DesignIcons from './DesignIcons.vue'
+import IpaBrand from './IpaBrand.vue'
 import { useBannerType } from '../bannerType'
-import data from '../data/home.json'
+import baseData from '../data/home.json'
+import { ipaData } from '../data/ipaData'
 
-const homeUrl = import.meta.env.BASE_URL
+const props = defineProps({ site: { type: String, default: 'br893' } })
+const isIpa = props.site === 'ipa'
+const data = isIpa ? ipaData : baseData
+const siteName = isIpa ? 'Jito' : 'BR893'
+const portalUrl = import.meta.env.BASE_URL
+const homeUrl = `${portalUrl}?page=${isIpa ? 'ipa' : 'br893'}`
 const { bannerType } = useBannerType()
-const asset = path => `${homeUrl}${path}`
+const asset = path => `${portalUrl}${path}`
 const sections = ['Colors', 'Typography', 'Buttons', 'Icons', 'Banners']
-const colors = [
+const colors = isIpa ? [
+  { name: 'Wine black', value: '#100507', color: 'var(--web-background)', role: 'Desktop canvas' },
+  { name: 'Deep wine', value: '#240B12', color: 'var(--mobile-base)', role: 'Main surface' },
+  { name: 'Burgundy', value: '#681C32', color: 'var(--surface-raised)', role: 'Raised surfaces' },
+  { name: 'Ribbon red', value: '#D83446', color: 'var(--brand-red)', role: 'Activity highlights' },
+  { name: 'Champagne gold', value: '#E8C77D', color: 'var(--accent)', role: 'Primary actions & selection' },
+  { name: 'Warm ivory', value: '#FFF5E1', color: 'var(--text-primary)', role: 'Primary text' },
+] : [
   { name: 'Midnight', value: '#19131F', color: 'var(--web-background)', role: 'Desktop canvas' },
   { name: 'Deep plum', value: '#24182F', color: 'var(--mobile-base)', role: 'Main surface' },
   { name: 'Soft violet', value: '#503B62', color: 'var(--surface-raised)', role: 'Raised surfaces' },
@@ -21,12 +35,14 @@ const colors = [
   { name: 'Ivory', value: '#F7F2FA', color: 'var(--text-primary)', role: 'Primary text' },
 ]
 const typeWeight = ref(800)
+const controlLabels = isIpa ? { Registro: 'Register', Entrar: 'Login', 'Ver tudo': 'View all', Menu: 'Menu' } : {}
+const controlLabel = name => controlLabels[name] ?? name
 const selectedControl = ref('Registro')
 const controlDetails = {
-  Registro: { role: 'Primary action', detail: 'Rose gradient · White text · Soft highlight' },
-  Entrar: { role: 'Secondary action', detail: 'Violet surface · Light border · Soft highlight' },
-  'Ver tudo': { role: 'Section action', detail: 'Muted rose · Compact shape · 14px text' },
-  Menu: { role: 'Icon button', detail: 'Rounded square · Ivory icon · Violet surface' },
+  Registro: { role: 'Primary action', detail: isIpa ? 'Champagne gold #E8C77D · Burgundy text · Soft highlight' : 'Rose gradient · White text · Soft highlight' },
+  Entrar: { role: 'Secondary action', detail: isIpa ? 'Burgundy surface · Champagne border · Soft highlight' : 'Violet surface · Light border · Soft highlight' },
+  'Ver tudo': { role: 'Section action', detail: isIpa ? 'Deep wine · Champagne text · Compact shape' : 'Muted rose · Compact shape · 14px text' },
+  Menu: { role: 'Icon button', detail: isIpa ? 'Rounded square · Champagne icon · Burgundy surface' : 'Rounded square · Ivory icon · Violet surface' },
 }
 const selectedDetail = computed(() => controlDetails[selectedControl.value])
 const artworkDialog = ref(null)
@@ -40,17 +56,17 @@ async function openArtwork(artwork) {
 }
 
 onMounted(() => {
-  document.title = 'BR893 · Design'
+  document.title = `${siteName} · Design`
   const section = location.hash.slice(1)
   if (sections.some(name => name.toLowerCase() === section)) document.getElementById(section)?.scrollIntoView()
 })
 </script>
 
 <template>
-  <div class="design-page">
+  <div class="design-page" :class="{ 'design-page--ipa': isIpa }">
     <a class="skip-link" href="#design-content">Skip to design library</a>
     <header class="design-header">
-      <a class="design-wordmark" :href="homeUrl" aria-label="BR893 home"><span class="design-mark">B.</span><span>BR893 <small>DESIGN</small></span></a>
+      <a class="design-wordmark" :href="homeUrl" :aria-label="`${siteName} home`"><IpaBrand v-if="isIpa" compact /><span v-else class="design-mark">B.</span><span>{{ siteName }} <small>DESIGN</small></span></a>
       <nav aria-label="Design sections"><a v-for="section in sections" :key="section" :href="`#${section.toLowerCase()}`">{{ section }}</a></nav>
       <a class="design-back" :href="homeUrl"><UiIcon name="left" :size="16" /><span>Back to site</span></a>
     </header>
@@ -58,13 +74,13 @@ onMounted(() => {
     <main id="design-content" class="design-content">
       <section class="design-intro" aria-labelledby="design-title">
         <div>
-          <p class="design-eyebrow">BR893 / VISUAL LIBRARY</p>
+          <p class="design-eyebrow">{{ siteName }} / VISUAL LIBRARY</p>
           <h1 id="design-title">Design<span>.</span></h1>
-          <p class="design-lead">The colors, type and details<br />that bring BR893 together.</p>
+          <p class="design-lead">The colors, type and details<br />that bring {{ siteName }} together.</p>
         </div>
         <div class="design-palette-study" aria-hidden="true">
           <div class="design-palette-bars"><span v-for="(color, index) in colors" :key="color.name" :style="{ background: color.color, '--bar-index': index }" /></div>
-          <p>Deep purple. Soft rose. A little light.</p>
+          <p>{{ isIpa ? 'Deep burgundy. Ribbon red. Champagne gold.' : 'Deep purple. Soft rose. A little light.' }}</p>
         </div>
       </section>
 
@@ -77,8 +93,8 @@ onMounted(() => {
           </figure>
         </div>
         <div class="design-gradient-row">
-          <div class="design-gradient-sample design-rose-gradient"><span>Action gradient</span><code>#B05A85 → #A7507B</code></div>
-          <div class="design-gradient-sample design-surface-gradient"><span>Page gradient</span><code>#3D2B50 → #24182F</code></div>
+          <div class="design-gradient-sample design-rose-gradient"><span>{{ isIpa ? 'Champagne action gradient' : 'Action gradient' }}</span><code>{{ isIpa ? '#F8E7BA → #E8C77D → #C99A50' : '#B05A85 → #A7507B' }}</code></div>
+          <div class="design-gradient-sample design-surface-gradient"><span>Page gradient</span><code>{{ isIpa ? '#42121F → #300D17 → #240B12' : '#3D2B50 → #24182F' }}</code></div>
         </div>
       </section>
 
@@ -88,13 +104,13 @@ onMounted(() => {
           <article class="design-type-specimen">
             <div class="design-specimen-top"><span>Baloo 2</span><span>VARIABLE / 400–800</span></div>
             <p class="design-type-large" :style="{ fontWeight: typeWeight }">Aa<span>Bb</span></p>
-            <p class="design-type-alphabet" :style="{ fontWeight: typeWeight }">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br />abcdefghijklmnopqrstuvwxyz<br />0123456789 R$ % &amp;</p>
+            <p class="design-type-alphabet" :style="{ fontWeight: typeWeight }">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br />abcdefghijklmnopqrstuvwxyz<br />0123456789 {{ isIpa ? '₹' : 'R$' }} % &amp;</p>
             <div class="design-weight-picker" role="group" aria-label="Font weight"><button v-for="weight in [400, 600, 800]" :key="weight" :aria-pressed="typeWeight === weight" @click="typeWeight = weight">{{ weight }}</button></div>
           </article>
           <div class="design-type-scale">
-            <div><span class="design-sample-label">DISPLAY · 800</span><p class="design-display-sample">Ganhe mais.</p></div>
-            <div><span class="design-sample-label">ACTION · 800</span><p class="design-action-sample">Entrar &amp; Registro</p></div>
-            <div><span class="design-sample-label">BODY · 400</span><p class="design-body-sample">Explore os jogos e descubra seus favoritos.</p></div>
+            <div><span class="design-sample-label">DISPLAY · 800</span><p class="design-display-sample">{{ isIpa ? 'Play more.' : 'Ganhe mais.' }}</p></div>
+            <div><span class="design-sample-label">ACTION · 800</span><p class="design-action-sample">{{ isIpa ? 'Login & Register' : 'Entrar & Registro' }}</p></div>
+            <div><span class="design-sample-label">BODY · 400</span><p class="design-body-sample">{{ isIpa ? 'Explore games and discover your favorites.' : 'Explore os jogos e descubra seus favoritos.' }}</p></div>
             <div><span class="design-sample-label">SECONDARY · 14px / 400</span><p class="design-secondary-sample">6 games</p></div>
           </div>
         </div>
@@ -104,24 +120,24 @@ onMounted(() => {
         <header class="design-section-heading"><div><span class="design-section-number">03</span><h2 id="buttons-title">Buttons</h2></div><p>Soft light, restrained borders.</p></header>
         <div class="design-button-board">
           <div class="design-button-samples">
-            <div class="auth-buttons design-auth-samples"><button class="secondary-button glossy-control" :aria-pressed="selectedControl === 'Entrar'" @click="selectedControl = 'Entrar'">Entrar</button><button class="primary-button register-button glossy-control" :aria-pressed="selectedControl === 'Registro'" @click="selectedControl = 'Registro'">Registro</button></div>
-            <button class="view-all" :aria-pressed="selectedControl === 'Ver tudo'" @click="selectedControl = 'Ver tudo'">Ver tudo</button>
+            <div class="auth-buttons design-auth-samples"><button class="secondary-button glossy-control" :aria-pressed="selectedControl === 'Entrar'" @click="selectedControl = 'Entrar'">{{ controlLabel('Entrar') }}</button><button class="primary-button register-button glossy-control" :aria-pressed="selectedControl === 'Registro'" @click="selectedControl = 'Registro'">{{ controlLabel('Registro') }}</button></div>
+            <button class="view-all" :aria-pressed="selectedControl === 'Ver tudo'" @click="selectedControl = 'Ver tudo'">{{ controlLabel('Ver tudo') }}</button>
             <button class="design-menu-sample" aria-label="Menu sample" :aria-pressed="selectedControl === 'Menu'" @click="selectedControl = 'Menu'"><span class="menu-symbol glossy-control"><UiIcon name="menu" :size="24" /></span></button>
           </div>
-          <div class="design-control-detail" aria-live="polite"><span class="design-sample-label">{{ selectedDetail.role }}</span><strong>{{ selectedControl }}</strong><p>{{ selectedDetail.detail }}</p></div>
+          <div class="design-control-detail" aria-live="polite"><span class="design-sample-label">{{ selectedDetail.role }}</span><strong>{{ controlLabel(selectedControl) }}</strong><p>{{ selectedDetail.detail }}</p></div>
         </div>
         <p class="design-caption">Select a button to view its visual role.</p>
       </section>
 
       <section id="icons" class="design-section" aria-labelledby="icons-title">
         <header class="design-section-heading"><div><span class="design-section-number">04</span><h2 id="icons-title">Icons &amp; motion</h2></div><p>Small details, full of character.</p></header>
-        <DesignIcons />
+        <DesignIcons :site="props.site" />
       </section>
 
       <section id="banners" class="design-section" aria-labelledby="banners-title">
         <header class="design-section-heading"><div><span class="design-section-number">05</span><h2 id="banners-title">Banners</h2></div><p>Cinematic artwork. One clear message.</p></header>
         <div class="design-banner-controls"><BannerTypeSwitch class="design-banner-switch" /><button class="design-motion-replay" :disabled="bannerType === 'image'" @click="motionReplay++">Replay motion</button></div>
-        <p class="design-banner-mode-note">Original lettering, layered for motion. Main banners only; this choice also applies to the homepage.</p>
+        <p class="design-banner-mode-note">{{ isIpa ? 'Deposit rewards: slogan entrance, dark-to-bright halo, floating coin and rubies, metallic shine. This choice also applies to the homepage.' : 'Original lettering, layered for motion. Main banners only; this choice also applies to the homepage.' }}</p>
         <GameBrightnessControl class="design-game-brightness" />
         <div class="design-gallery-label"><h3>Main banners</h3><span>{{ data.banners.length }} artworks</span></div>
         <div class="design-banner-grid">
@@ -134,11 +150,11 @@ onMounted(() => {
         <p class="design-caption">Select an artwork for a closer look.</p>
       </section>
 
-      <footer class="design-footer"><span>BR893 <span class="design-footer-dot">/</span> Design library</span><a :href="homeUrl">Back to site <UiIcon name="right" :size="16" /></a></footer>
+      <footer class="design-footer"><span>{{ siteName }} <span class="design-footer-dot">/</span> Design library</span><a :href="homeUrl">Back to site <UiIcon name="right" :size="16" /></a></footer>
     </main>
 
     <dialog ref="artworkDialog" class="design-artwork-dialog" aria-labelledby="artwork-title" @click="event => { if (event.target === event.currentTarget) artworkDialog.close() }" @close="selectedArtwork = null">
-      <template v-if="selectedArtwork"><header><h2 id="artwork-title">{{ selectedArtwork.title }}</h2><button aria-label="Close artwork" autofocus @click="artworkDialog.close()"><UiIcon name="close" :size="23" /></button></header><HeroBanner v-if="selectedArtwork.backgroundImage" :banner="selectedArtwork" :type="bannerType" /><img v-else :src="asset(selectedArtwork.image)" :alt="selectedArtwork.alt" /><p class="design-artwork-description">{{ selectedArtwork.alt }}</p></template>
+      <template v-if="selectedArtwork"><header><h2 id="artwork-title">{{ selectedArtwork.title }}</h2><button aria-label="Close artwork" autofocus @click="artworkDialog.close()"><UiIcon name="close" :size="23" /></button></header><HeroBanner v-if="selectedArtwork.backgroundImage || selectedArtwork.motion" :banner="selectedArtwork" :type="bannerType" /><img v-else :src="asset(selectedArtwork.image)" :alt="selectedArtwork.alt" /><p class="design-artwork-description">{{ selectedArtwork.alt }}</p></template>
     </dialog>
   </div>
 </template>
@@ -234,6 +250,16 @@ onMounted(() => {
 .design-artwork-dialog header button { flex-shrink: 0; width: 44px; height: 44px; }
 .design-artwork-dialog > img { width: 100%; height: auto; }
 .design-artwork-description { padding: 17px 22px 22px; color: var(--text-secondary); font-size: 14px; }
+.design-page--ipa { background: radial-gradient(ellipse 900px 600px at 85% 0, rgb(232 199 125 / 6%), transparent 75%), var(--web-background); }
+.design-page--ipa .design-type-specimen { background: linear-gradient(145deg, #42121f, #240b12); }
+.design-page--ipa .design-rose-gradient { color: var(--on-register); background: var(--register-gradient); }
+.design-page--ipa .design-rose-gradient code { color: inherit; }
+.design-page--ipa .design-surface-gradient { background: linear-gradient(135deg, var(--mobile-gradient-top), var(--mobile-gradient-middle), var(--mobile-gradient-bottom)); }
+.design-page--ipa .design-intro h1 > span,
+.design-page--ipa .design-type-large > span,
+.design-page--ipa .design-section-number,
+.design-page--ipa .design-artwork-caption > svg,
+.design-page--ipa .design-footer-dot { color: var(--accent); }
 @media (max-width: 1000px) {
   .design-header { flex-wrap: wrap; gap: 16px 20px; width: calc(100% - 48px); padding-block: 18px; }
   .design-header nav { order: 3; width: 100%; justify-content: space-between; margin: 0; }

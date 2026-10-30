@@ -1,0 +1,86 @@
+{
+  "tool": "built-in imagegen",
+  "date": "2026-10-30",
+  "style": "Burgundy, ribbon red, champagne gold and ivory; rounded glossy 2.5D with burgundy outlines",
+  "icons": [
+    {
+      "key": "nav-home",
+      "prompt": "Use case: precise-object-edit / style-transfer. Edit the supplied game controller UI icon into the anchor for a coordinated Jito icon family.\nKeep the same controller silhouette, controls, orientation, generous transparent padding and centered composition.\nUnified style: polished rounded 2.5D illustrated toy enamel, clean bold dark burgundy outlines, soft bevels, simple glossy highlights from the upper left, readable at 40px, no realistic textures.\nPalette exclusively: deep burgundy #681C32, ribbon red #D83446, champagne gold #E8C77D with #F8E7BA highlights, warm ivory #FFF5E1, deep wine #341019 outlines. Replace all pink, purple and lavender tones. Controller face warm ivory, grips ribbon red with burgundy shadows, D-pad and buttons champagne gold with burgundy surrounds. Keep colors distinct, rich and warm, no pink wash.\nOne isolated icon on genuinely transparent alpha. No text, badge, background, ground shadow, additional objects or scene. Keep the original object footprint on a square 1280x1280 canvas.",
+      "path": "C:\\Users\\user\\.codex\\generated_images\\01a189dc-52e8-7813-ba0b-53912e2f4714\\exec-3d43accc-9ede-410c-b8ca-8b9fee3fc7aa.png",
+      "master": "design/ipa-icons/gold-v2/nav-home-v2.png",
+      "asset": "public/assets/ipa/nav-home-v2.png",
+      "size": 256
+    },
+    {
+      "key": "nav-promotion",
+      "prompt": "Use case: precise-object-edit. Remove ONLY the ivory heart medallion and its dark red outline from the front of this gift box. In its place continue the straight champagne-gold vertical ribbon naturally from the lid all the way down to the bottom, with the same glossy shading. No heart, badge, emblem, symbol or decoration anywhere on the box front. Preserve the entire rest exactly: red box, ivory lid, champagne bow, burgundy outlines, position, proportions, lighting, size and transparent background. Output a single transparent PNG icon, with no background and no text.",
+      "path": "C:\\Users\\user\\.codex\\generated_images\\01a189dc-52e8-7813-ba0b-53912e2f4714\\exec-fe14ae23-5405-4fe8-ac0c-6cd7ad61ef52.png",
+      "previousPrompt": "Use case: precise-object-edit / style-transfer. Image 1 is the icon to edit; image 2 is the approved Jito family STYLE AND COLOR anchor, not content to copy. Preserve image 1 subject, silhouette, pose, composition and transparent padding. Match image 2's rounded glossy 2.5D enamel illustration, consistent dark burgundy contour, soft bevels, upper-left ivory highlights, simple clean details readable at 40px. Palette: burgundy #681C32, ribbon red #D83446, champagne gold #E8C77D with #F8E7BA highlights, warm ivory #FFF5E1, deep wine #341019 contours. Replace all pink, purple and lavender. Do not add the controller from image 2. Genuinely transparent square canvas, no background, no ground shadow, no text or extra objects.\nSubject/color placement: A red and burgundy gift box with champagne-gold ribbon and bow, retain the little ivory heart emblem. Keep existing gift geometry.",
+      "master": "design/ipa-icons/gold-v2/nav-promotion-v2.png",
+      "asset": "public/assets/ipa/nav-promotion-v2.png",
+      "size": 256
+    },
+    {
+      "key": "nav-deposit",
+      "prompt": "Use case: precise-object-edit / style-transfer. Image 1 is the icon to edit; image 2 is the approved Jito family STYLE AND COLOR anchor, not content to copy. Preserve image 1 subject, silhouette, pose, composition and transparent padding. Match image 2's rounded glossy 2.5D enamel illustration, consistent dark burgundy contour, soft bevels, upper-left ivory highlights, simple clean details readable at 40px. Palette: burgundy #681C32, ribbon red #D83446, champagne gold #E8C77D with #F8E7BA highlights, warm ivory #FFF5E1, deep wine #341019 contours. Replace all pink, purple and lavender. Do not add the controller from image 2. Genuinely transparent square canvas, no background, no ground shadow, no text or extra objects.\nSubject/color placement: A burgundy and ribbon-red wallet, warm ivory flap with champagne-gold clasp and gold coin bearing its existing simple plus symbol. Keep existing wallet and coin geometry.",
+      "path": "C:\\Users\\user\\.codex\\generated_images\\01a189dc-52e8-7813-ba0b-53912e2f4714\\exec-500148b9-c44a-436c-ba43-9c6dd72bdc38.png",
+      "master": "design/ipa-icons/gold-v2/nav-deposit-v2.png",
+      "asset": "public/assets/ipa/nav-deposit-v2.png",
+      "size": 256
+    },
+    {
+      "tool": "built-in imagegen",
+      "date": "2026-10-30",
+      "key": "nav-invite",
+      "prompt": "Use case: precise-object-edit. Recolor ONLY this trophy icon to have substantially more red. Change the entire large front cup/bowl from gold to rich ribbon red (#D83446) with burgundy (#681C32) shadows and glossy ivory highlights, so red is the dominant visible color. Keep the top rim a thin champagne-gold edge, with a burgundy inner cup. Keep the centered warm ivory star and ivory handles. Keep the existing red stem and red base, with only thin champagne-gold collar and base trim instead of wide gold areas. Preserve exactly the silhouette, proportions, object placement, original transparent padding, dark burgundy contour, rounded glossy 2.5D style, and upper-left lighting. No added motifs, no text, no background, no external shadow. Genuine transparent alpha PNG.",
+      "path": "C:\\Users\\user\\.codex\\generated_images\\01a189dc-52e8-7813-ba0b-53912e2f4714\\exec-fc405d48-61df-4e08-96c8-94d873aed4df.png",
+      "master": "design/ipa-icons/gold-v2/nav-invite-v3.png",
+      "asset": "public/assets/ipa/nav-invite-v3.png",
+      "size": 256
+    },
+    {
+      "key": "nav-profile",
+      "prompt": "Use case: precise-object-edit / style-transfer. Image 1 is the icon to edit; image 2 is the approved Jito family STYLE AND COLOR anchor, not content to copy. Preserve image 1 subject, silhouette, pose, composition and transparent padding. Match image 2's rounded glossy 2.5D enamel illustration, consistent dark burgundy contour, soft bevels, upper-left ivory highlights, simple clean details readable at 40px. Palette: burgundy #681C32, ribbon red #D83446, champagne gold #E8C77D with #F8E7BA highlights, warm ivory #FFF5E1, deep wine #341019 contours. Replace all pink, purple and lavender. Do not add the controller from image 2. Genuinely transparent square canvas, no background, no ground shadow, no text or extra objects.\nSubject/color placement: Preserve the simple anonymous profile avatar silhouette. Warm ivory round head, ribbon-red and burgundy shoulders and collar, champagne-gold tie. No face or additional details.",
+      "path": "C:\\Users\\user\\.codex\\generated_images\\01a189dc-52e8-7813-ba0b-53912e2f4714\\exec-53ae6722-90fa-4a0e-ac3f-8131ccd97e4a.png",
+      "master": "design/ipa-icons/gold-v2/nav-profile-v2.png",
+      "asset": "public/assets/ipa/nav-profile-v2.png",
+      "size": 256
+    },
+    {
+      "key": "support",
+      "prompt": "Use case: precise-object-edit / style-transfer. Image 1 is the icon to edit; image 2 is the approved Jito family STYLE AND COLOR anchor, not content to copy. Preserve image 1 subject, silhouette, pose, composition and transparent padding. Match image 2's rounded glossy 2.5D enamel illustration, consistent dark burgundy contour, soft bevels, upper-left ivory highlights, simple clean details readable at 40px. Palette: burgundy #681C32, ribbon red #D83446, champagne gold #E8C77D with #F8E7BA highlights, warm ivory #FFF5E1, deep wine #341019 contours. Replace all pink, purple and lavender. Do not add the controller from image 2. Genuinely transparent square canvas, no background, no ground shadow, no text or extra objects.\nSubject/color placement: Preserve the headset-wearing chat bubble. Warm ivory speech bubble, three burgundy dots, burgundy headband, ribbon-red ear cushions, champagne-gold fittings and microphone tip. No text.",
+      "path": "C:\\Users\\user\\.codex\\generated_images\\01a189dc-52e8-7813-ba0b-53912e2f4714\\exec-b021e44a-b55e-40a2-b3c9-446412f6aebd.png",
+      "master": "design/ipa-icons/gold-v2/support-v2.png",
+      "asset": "public/assets/ipa/support-v2.png",
+      "size": 256
+    },
+    {
+      "key": "activity-wheel",
+      "prompt": "Use case: precise-object-edit / style-transfer. Image 1 is the icon to edit; image 2 is the approved Jito family STYLE AND COLOR anchor, not content to copy. Preserve image 1 subject, silhouette, pose, composition and transparent padding. Match image 2's rounded glossy 2.5D enamel illustration, consistent dark burgundy contour, soft bevels, upper-left ivory highlights, simple clean details readable at 40px. Palette: burgundy #681C32, ribbon red #D83446, champagne gold #E8C77D with #F8E7BA highlights, warm ivory #FFF5E1, deep wine #341019 contours. Replace all pink, purple and lavender. Do not add the controller from image 2. Genuinely transparent square canvas, no background, no ground shadow, no text or extra objects.\nRecolor the wheel: champagne-gold rim and center hub; alternating warm ivory, ribbon-red and burgundy segments; ribbon-red pointer; ivory and gold pedestal with burgundy base. CRITICAL animation geometry: keep wheel circular face centered at pixel (638,626), inner moving face radius396, original fixed pointer at the top and original pedestal. Preserve every segment boundary position and source footprint on a 1280x1280 square. Top wedge remains warm ivory. Keep circle perfectly round, front facing, no perspective changes.\nRetain the first reference's strong outline and geometry, but upgrade its surfaces to match the second reference's softly beveled glossy enamel. No lavender or pink, use only the stated warm red/gold/ivory family.",
+      "path": "C:\\Users\\user\\.codex\\generated_images\\01a189dc-52e8-7813-ba0b-53912e2f4714\\exec-3899a88a-19af-4b56-9d17-f283a3c55c05.png",
+      "master": "design/ipa-icons/gold-v2/activity-wheel-v2.png",
+      "asset": "public/assets/ipa/activity-wheel-v2.png",
+      "size": 512
+    },
+    {
+      "key": "activity-chest",
+      "prompt": "Use case: precise-object-edit / style-transfer. Image 1 is the icon to edit; image 2 is the approved Jito family STYLE AND COLOR anchor, not content to copy. Preserve image 1 subject, silhouette, pose, composition and transparent padding. Match image 2's rounded glossy 2.5D enamel illustration, consistent dark burgundy contour, soft bevels, upper-left ivory highlights, simple clean details readable at 40px. Palette: burgundy #681C32, ribbon red #D83446, champagne gold #E8C77D with #F8E7BA highlights, warm ivory #FFF5E1, deep wine #341019 contours. Replace all pink, purple and lavender. Do not add the controller from image 2. Genuinely transparent square canvas, no background, no ground shadow, no text or extra objects.\nRecolor the open treasure chest: warm ivory and champagne-gold panels and edges; ribbon-red and burgundy straps, body front, and interior; champagne-gold coins. CRITICAL animation geometry on 1280x1280 square: preserve the source open lid position and shape, lid above y500, coins between y500 and680, stationary chest body below y660. Do not move, resize or crop the object; keep all seams and horizontal part positions exactly as the first reference.\nRetain the first reference's strong outline and geometry, but upgrade its surfaces to match the second reference's softly beveled glossy enamel. No lavender or pink, use only the stated warm red/gold/ivory family.",
+      "path": "C:\\Users\\user\\.codex\\generated_images\\01a189dc-52e8-7813-ba0b-53912e2f4714\\exec-3931f98f-12d9-4b23-a12a-d645e6d4c98c.png",
+      "master": "design/ipa-icons/gold-v2/activity-chest-v2.png",
+      "asset": "public/assets/ipa/activity-chest-v2.png",
+      "size": 512
+    },
+    {
+      "key": "activity-gift",
+      "prompt": "Use case: precise-object-edit / style-transfer. Image 1 is the icon to edit; image 2 is the approved Jito family STYLE AND COLOR anchor, not content to copy. Preserve image 1 subject, silhouette, pose, composition and transparent padding. Match image 2's rounded glossy 2.5D enamel illustration, consistent dark burgundy contour, soft bevels, upper-left ivory highlights, simple clean details readable at 40px. Palette: burgundy #681C32, ribbon red #D83446, champagne gold #E8C77D with #F8E7BA highlights, warm ivory #FFF5E1, deep wine #341019 contours. Replace all pink, purple and lavender. Do not add the controller from image 2. Genuinely transparent square canvas, no background, no ground shadow, no text or extra objects.\nRecolor the existing gift box: warm ivory box, rich ribbon-red and burgundy large bow and vertical ribbon, understated champagne-gold edge accents. Keep the exact gift silhouette, ribbon shapes, perspective and centered footprint. No hearts, badges, labels, letters, symbols, ornaments or new elements.\nRetain the first reference's strong outline and geometry, but upgrade its surfaces to match the second reference's softly beveled glossy enamel. No lavender or pink, use only the stated warm red/gold/ivory family.",
+      "path": "C:\\Users\\user\\.codex\\generated_images\\01a189dc-52e8-7813-ba0b-53912e2f4714\\exec-fdd4f586-28e4-4e50-8e9f-ac6244945b0f.png",
+      "master": "design/ipa-icons/gold-v2/activity-gift-v2.png",
+      "asset": "public/assets/ipa/activity-gift-v2.png",
+      "size": 512
+    }
+  ],
+  "search": {
+    "asset": "public/assets/ipa/search-shortcut-v2.svg",
+    "method": "Edited existing SVG gradients and strokes to match the family; no bitmap generation."
+  }
+}

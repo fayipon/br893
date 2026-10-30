@@ -22,6 +22,7 @@ button:active { transform: translateY(1px); }
 .skip-link { position: fixed; top: -80px; left: 16px; z-index: 50; padding: 12px; border-radius: 8px; color: var(--text-primary); background: var(--surface-raised); }
 .skip-link:focus { top: 12px; }
 .desktop-design-tools { display: none; }
+.portal-return { display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 36px; color: var(--text-secondary); font: 12px Arial, 'Microsoft JhengHei', sans-serif; text-decoration: none; }
 @media (min-width: 1024px) {
   .desktop-design-tools { position: fixed; z-index: 5; top: 56px; left: calc(75% + 130px); transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 12px; width: 214px; }
   .desktop-design-link.glossy-control { display: inline-flex; align-items: center; gap: 13px; min-height: 46px; padding: 9px 19px; border: 1px solid rgb(221 166 194 / 30%); border-radius: 13px; color: #f2dce8; background: rgb(74 45 65 / 74%); box-shadow: inset 0 1px 0 rgb(255 235 245 / 9%), 0 6px 24px rgb(0 0 0 / 12%); backdrop-filter: blur(12px); font-size: 17px; font-weight: 600; text-decoration: none; }

@@ -1,0 +1,9 @@
+{
+  "tool": "built-in imagegen",
+  "date": "2026-10-30",
+  "source": "https://upload-images.kaninabu.org/nb1/1789550322_6aaa5ef2a3cce.png",
+  "prompt": "Use case: background-extraction / precise-object-edit.\nAsset type: transparent website brand symbol, no wordmark.\nInput image: the supplied original IPA Gaming logo, very low resolution.\nPrimary request: extract and faithfully clean up ONLY the existing red and champagne-gold intertwined ribbon / infinity emblem and its tiny decorative stars above the wordmark. Remove ALL text below the emblem, including the brand name and the tiny tagline. There must be absolutely no letters, words, numbers, typography, baseline, or remnants of text in the output.\nPreserve the distinctive original ribbon contours, overlaps, red on the left and upper sweep, champagne-gold loop on the right, original small star positions, glossy metallic highlights and shaded dimensional finish. Do not redesign the symbol, add shapes, or place it in a badge.\nComposition: one centered isolated emblem, large on a square canvas with a small even transparent margin. Reconstruct clean high-resolution edges from the low-resolution source while retaining the brand shape.\nBackground: genuinely transparent alpha, no backdrop, no checkerboard baked in, no external shadow or glow.",
+  "master": "design/ipa-logo/mark-v1.png",
+  "asset": "public/assets/ipa/brand-mark-v1.png",
+  "wordmark": "Jito Gaming — rendered with HTML/CSS, not included in the image"
+}

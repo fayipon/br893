@@ -1,7 +1,7 @@
 <script setup>
 import { useId } from 'vue'
 
-defineProps({ src: String, motion: String })
+defineProps({ src: String, motion: String, tone: { type: String, default: 'original' } })
 const id = useId()
 const fragment = name => `url(#${id}-${name})`
 </script>
@@ -13,7 +13,7 @@ const fragment = name => `url(#${id}-${name})`
       <clipPath :id="`${id}-wheel-hub`"><circle cx="638" cy="626" r="92" /></clipPath>
       <clipPath :id="`${id}-wheel-pointer`"><path d="M480 40H800V150L675 298H590L480 150Z" /></clipPath>
       <linearGradient :id="`${id}-cream`" x1="0" y1="0" x2="0" y2="1">
-        <stop stop-color="#fffef4" /><stop offset="1" stop-color="#f7dfc9" />
+        <stop :stop-color="tone === 'jito' ? '#fff9e8' : '#fffef4'" /><stop offset="1" :stop-color="tone === 'jito' ? '#f5e0b8' : '#f7dfc9'" />
       </linearGradient>
     </defs>
     <image :href="src" width="1280" height="1280" />
@@ -21,7 +21,7 @@ const fragment = name => `url(#${id}-${name})`
       <g class="activity-moving activity-wheel-rotor">
         <image :href="src" width="1280" height="1280" />
         <!-- Restore the cream wedge hidden by the pointer in the source image. -->
-        <path d="M638 626L486.5 260.1A396 396 0 0 1 789.5 260.1Z" :fill="fragment('cream')" stroke="#1b0822" stroke-width="22" stroke-linejoin="round" />
+        <path d="M638 626L486.5 260.1A396 396 0 0 1 789.5 260.1Z" :fill="fragment('cream')" :stroke="tone === 'jito' ? '#341019' : '#1b0822'" stroke-width="22" stroke-linejoin="round" />
       </g>
     </g>
     <image :href="src" width="1280" height="1280" :clip-path="fragment('wheel-hub')" />

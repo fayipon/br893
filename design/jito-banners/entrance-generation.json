@@ -1,0 +1,26 @@
+{
+  "tool": "built-in image_gen",
+  "createdAt": "2026-10-30",
+  "assets": [
+    {
+      "path": "public/assets/ipa/hero-deposit-motion-textless-v1.png",
+      "sourcePath": "C:\\Users\\user\\.codex\\generated_images\\01a189dc-52e8-7813-ba0b-53912e2f4714\\exec-c4e71d7f-2792-4f7f-8eef-da45670e9f0f.png",
+      "prompt": "Use case: precise-object-edit, clean plate for animated lettering. Edit the attached 1983 x 793 Jito animation background plate. Remove ONLY ALL the left-side typography and its small gold rules/diamonds: \"Deposit more,\", \"earn crazier!\", \"claim your ultimate prize\". Remove the gold dot above the letter i as part of the text. Inpaint those exact areas with the calm dark teal / softly blurred environment continuous with the surrounding background. There must be NO remaining letters, word shadows, lettering outlines, or gold decorative divider rules on the left.\nPreserve EVERYTHING ELSE with exact original pixel alignment: both foreground characters and their faces, hair, silhouettes, hands, poses, simplified burgundy/gold clothing; the entire sharp teal circular halo; background blur and lighting; all five reward groups on the table; the empty open hand and absence of floating coin/rubies (those are separate animation sprites). Do not add objects, redesign, sharpen the blurred background, change color grading, move or resize anything. Opaque full-bleed 1983 x 793 wide canvas, identical composition. This is strictly removal of lettering for layering, not a new banner design."
+    },
+    {
+      "path": "public/assets/ipa/hero-deposit-motion-lettering-v1.png",
+      "sourcePath": "C:\\Users\\user\\.codex\\generated_images\\01a189dc-52e8-7813-ba0b-53912e2f4714\\exec-a46470ba-ae3b-4029-9e65-241007e7fe58.png",
+      "prompt": "Use case: background-extraction, animated lettering layer. Extract ONLY the complete existing left-side lettering from the attached Jito banner onto a TRUE TRANSPARENT RGBA canvas. Canvas MUST remain 1983 x 793, every element retained at its exact original pixel position and scale; do not center, crop, enlarge, reflow or redraw the words.\nInclude the two-line large beveled metallic gold main headline, including all original dark teal contours and shadows:\n\"Deposit more,\"\n\"earn crazier!\"\nInclude the single-line warm ivory serif subtitle:\n\"claim your ultimate prize\"\nInclude the small gold horizontal ornamental rules and diamonds surrounding the subtitle. Preserve every existing letter shape, angle, spacing, gold facet texture, bevel, sharp contour and lighting exactly. Retain the original visible occlusion at the headline's right edge beside the woman's hair; do not extend any hidden letters beyond the original silhouette.\nRemove ALL environment, people, hand, hair, halo, magical light, coins, table, and all five reward objects. Entire canvas transparent except the typography, its fine decorations and natural shadows. No checkerboard, solid color background, or rectangular patches. Same original wide canvas and placement for exact overlay registration."
+    }
+  ],
+  "letteringRegistration": {
+    "translate": [
+      10,
+      9
+    ],
+    "scale": [
+      0.86,
+      0.88
+    ]
+  }
+}

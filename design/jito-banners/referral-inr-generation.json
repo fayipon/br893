@@ -1,0 +1,16 @@
+{
+  "tool": "built-in image_gen",
+  "createdAt": "2026-10-30",
+  "assets": [
+    {
+      "path": "public/assets/ipa/hero-referral-inr-v1.png",
+      "sourcePath": "C:\\Users\\user\\.codex\\generated_images\\01a189dc-52e8-7813-ba0b-53912e2f4714\\exec-cd8ebac5-ba0b-4221-841f-c51090c96544.png",
+      "prompt": "Change ONLY the \"R$\" currency prefix in this existing banner artwork to the Indian rupee symbol \"₹\". The bottom caption must read EXACTLY \"ATÉ ₹ 1 MILHÃO / MÊS\". Keep every word, numeral, accent, lettering size, line position, spacing, color, depth, metallic texture and all other artwork unchanged. Keep the qualifier ATÉ, the amount 1 MILHÃO, and / MÊS. Use the actual ₹ glyph, not R, Rs, $, or yen. Do not translate other words, invent offers, move the lettering or reframe the image. Same canvas dimensions, aspect ratio, and placement. Opaque original full-width banner, no border."
+    },
+    {
+      "path": "public/assets/ipa/hero-referral-caption-inr-v1.png",
+      "sourcePath": "C:\\Users\\user\\.codex\\generated_images\\01a189dc-52e8-7813-ba0b-53912e2f4714\\exec-b4c3cd5f-b95b-4a9c-9145-1dc73ff01b18.png",
+      "prompt": "Change ONLY the \"R$\" currency prefix in this existing banner transparent caption lettering layer to the Indian rupee symbol \"₹\". The bottom caption must read EXACTLY \"ATÉ ₹ 1 MILHÃO / MÊS\". Keep every word, numeral, accent, lettering size, line position, spacing, color, depth, metallic texture and all other artwork unchanged. Keep the qualifier ATÉ, the amount 1 MILHÃO, and / MÊS. Use the actual ₹ glyph, not R, Rs, $, or yen. Do not translate other words, invent offers, move the lettering or reframe the image. Same canvas dimensions, aspect ratio, and placement. Retain true RGBA transparency and all original transparent margins, no colored background, no checkerboard."
+    }
+  ]
+}

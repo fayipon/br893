@@ -1,4 +1,27 @@
-# BR893 首頁設計
+# Project Hub / BR893 首頁設計
+
+根目錄為卡片式專案入口，提供 **BR893** 與 **Jito** 兩張卡片。兩張卡片皆以 **Design**、**演示站** 兩個並排按鈕分別進入各自的設計展示與首頁；Jito 卡片頁尾另保留尺寸預覽。BR893 尺寸預覽仍可透過 `?preview=1` 直接開啟。桌面並排、手機單欄，卡片內容集中在 `src/components/ProjectHub.vue` 的 `projects` 清單。兩站共用 `DesignPage.vue` 的色票、字體、按鈕、圖示與 Banner 展示架構，Jito 使用酒紅色票及英文介面，Back to site 返回所屬演示站。
+
+Jito 是本地酒紅主題靜態頁，與 BR893 共用 `App.vue`、遊戲圖片、輪播、Banner 圖片／動畫切換及遊戲亮度控制。Jito 的獨立 Banner 與印度盧比資料集中於 `src/data/ipaData.js`。設定沿用既有瀏覽器儲存，因此兩站同步使用相同的 Banner 模式與亮度。Jito 的橫式品牌以 `IpaBrand.vue` 呈現：圖片僅包含紅金 LOGO 圖形，右側「Jito Gaming」為 HTML/CSS 文字；下載列 APP 圖示使用相同圖形。透明圖檔位於 `public/assets/ipa/brand-mark-v1.png`，原稿、來源與生成提示詞保存在 `design/ipa-logo/`。既有 `?page=ipa` 與 `site=ipa` 連結維持相容，英文介面文案位於 `src/ipaCopy.js`，主題集中在 `src/styles/ipa.css`。不載入 Jitobets 的 Banner、遊戲素材或服務，先前下載的原站縮圖已移除；原站色碼觀察保留在 `design/ipa-reference.json`。
+
+Jito 的 Web 留白使用 `KoiBackground.vue` 繪製五條不同大小的粒子錦鯉：最大魚身由 150px 放大至最高 300px，依視窗留白縮放，其餘為 85%、68%、56%、43%。象牙白／朱紅與香檳金斑紋搭配魚身擺動、尾鰭、胸鰭、尾流與細水波，左側三條、右側兩條緩游；巡游時依魚身邊界調整位置，右側避開上方設定區。水池加入細粒子荷葉、淡線花瓣、水草、不規則石岸與緩動水面反光；池底以離屏 Canvas 快取。Canvas 僅繪製中央版型之外，背景可點擊投餌，中央頁面與設定控制維持各自的點擊行為。動畫限制為 30fps 與最高 1.5 倍像素密度，窄螢幕和背景分頁停止運算；減少動態效果時暫停環境巡游，使用者主動投餌時才完成單次追食動畫。BR893 沿用原本櫻花背景。
+
+點擊任一側水面投下一顆餌料，落水產生三圈波紋與水花，之後隨水面漂浮。同側錦鯉以 2.6 倍速度追食、同步加快擺尾；餌料被吃掉後，魚群在 3 秒內平順回到巡游。全場一次只允許一顆餌料，連點或點擊另一側都不會追加，必須被吃掉才能再投；縮放視窗與暫停分頁也保留此限制。互動狀態位於 `src/koiFeeding.js`，以 `npm test` 驗證鎖定、落水／漂浮、加速、消耗與恢復行為。
+
+- `/`：專案入口。
+- `?page=br893`：BR893 紫色首頁。
+- `?page=ipa`：Jito 酒紅色首頁。
+- `?page=design`：BR893 Design 展示頁，Back to site 返回 BR893。
+- `?page=design&site=ipa`：Jito Design 展示頁，Back to site 返回 Jito。
+- `?preview=1`：BR893 尺寸預覽。
+- `?page=ipa&preview=1`：Jito 尺寸預覽，可比較純色／漸層背景。
+- `?background=original`：保留舊版直接預覽 BR893 背景的網址。
+
+兩站僅在桌面右側留白工具區提供「專案入口」、Banner 與亮度設定。側邊選單、頁尾、Design 與尺寸預覽內容區不新增入口。Jito 的範圍與 BR893 相同：首頁、側邊選單、搜尋／廠商篩選及登入、活動、遊戲等示意彈窗，沒有帳號服務、資料提交、金流或真實遊戲。部分既有圖稿保留葡文；Jito 的活動金額與 Banner 貨幣使用印度盧比 ₹，BR893 保留 R$。示意金額數字沿用原稿，未做匯率換算。
+
+Jito 的配色呼應紅金 LOGO：以 `#240B12` 深酒紅作頁面底、`#681C32` 酒紅作抬升表面、`#D83446` 紅色強調活動，以及 `#E8C77D` 香檳金呈現 Register、選中狀態、細邊框及重點文字；主要文字為 `#FFF5E1` 暖象牙白。Register 使用 `#F8E7BA → #E8C77D → #C99A50` 金色漸層及深酒紅文字。頁首、側邊選單、活動浮窗、底部導航、設定控制、專案卡片及 Design 色票同步。品牌程式字樣垂直加高 45% 並下移 2px，保留原有橫向寬度與手機版按鈕空間。
+
+Jito 遊戲分類選中時使用香檳金底與深酒紅圖示，未選中圖示使用柔和暖金；帶底圖的廠商品牌保留明暗細節。右側三個活動金額標籤使用紅色漸層底、淺香檳金數字與細金邊。
 
 以 Vue 3 + Vite 製作的靜態 SPA，參考 https://s558.com/ 首頁。桌面中央維持最大 520px 的手機版型，真實手機上填滿可用寬度。
 
@@ -15,20 +38,24 @@ npm run preview
 
 ## GitHub Pages
 
-- 公開首頁：https://fayipon.github.io/br893/
+- 專案入口：https://fayipon.github.io/br893/
+- BR893 首頁：https://fayipon.github.io/br893/?page=br893
+- Jito 首頁：https://fayipon.github.io/br893/?page=ipa
+- Jito 設計預覽：https://fayipon.github.io/br893/?page=ipa&preview=1
 - 設計預覽：https://fayipon.github.io/br893/?preview=1
 - Design 展示頁：https://fayipon.github.io/br893/?page=design
 - 推送至 `main` 後，`.github/workflows/deploy-pages.yml` 使用 Node.js 24 自動安裝、建置並部署 `dist/`。
 - Pages 建置指定 `--base=/br893/`；本機開發維持原本路徑設定。
 - Repository 的 Settings → Pages → Source 使用 GitHub Actions。
 
-首頁網址加上 `?preview=1` 可進入設計預覽工具，切換 Web、390px、430px、320px 的獨立 iframe 視窗，以及原版／漸層背景。`?page=design` 為獨立 Design 展示頁，整理本站配色、Baloo 2 字體、按鈕樣式與現有 Banner；可切換字重、查看按鈕用途及放大 Banner。入口位於首頁桌面右上留白區，僅在視窗寬度至少 1024px 時顯示，手機不顯示。兩種網址皆相容 GitHub Pages 子路徑，沒有其他業務頁面。
+首頁網址加上 `?preview=1` 可進入設計預覽工具，切換 Web、390px、430px、320px 的獨立 iframe 視窗，以及原版／漸層背景。`?page=design` 為獨立 Design 展示頁，整理本站配色、Baloo 2 字體、按鈕樣式與現有 Banner；可切換字重、查看按鈕用途及放大 Banner。Design 入口位於專案首頁 BR893 卡片內；BR893 桌面右上留白區僅保留「專案入口」，視窗寬度至少 1024px 時顯示，手機不顯示。兩種網址皆相容 GitHub Pages 子路徑，沒有其他業務頁面。
 
 Design 頁的 `Icons` 區列出 12 個介面 SVG 元件與 8 個導覽／快捷圖示，並提供轉盤、寶箱、禮物的即時動畫、原始透明 PNG 預覽與下載。動畫沿用首頁 `ActivityIcon.vue` 元件，可暫停／繼續，也遵循裝置的減少動態效果設定。
 
+Jito 保留原有四張大 Banner，再新增「Deposit rewards」作為第一張，共五張輪播；首頁與 Design 展示同步。新 Banner 使用 `JitoDepositBanner.vue`：光環以 5.2 秒週期先暗、再亮、再暗，青綠色遮罩與柔邊限制明暗範圍；手中籌碼以 4.6 秒週期上下浮動、五顆獨立紅寶石以 4.9–6.3 秒不同節奏漂浮。主標用獨立透明字稿在 0.95 秒內滑入、微幅放大落定，副標延後 0.36 秒淡入，再接上 BR893 風格的暖金屬掃光，每 7.5 秒循環。靜態原稿、去字底圖及透明文字／浮動物件各自保留，人物及五組獎勵保持穩定。首頁、彈窗與 Design 頁共用同一元件；離開可見範圍或切至背景分頁時暫停，減少動態效果設定及圖片模式顯示完整靜態原稿。素材載入失敗亦保留靜態圖。圖片與內建 image_gen 提示詞記錄於 `design/jito-banners/motion-and-inr-generation.json`，文字拆層記錄於 `design/jito-banners/entrance-generation.json`。
 ## 大 Banner 分層動畫
 
-桌面 Design 入口下方及 Design 頁的 Banners 區提供 `Banner type switch`，可切換原始整張圖片與預設的 `Artwork + motion`。選擇會儲存在此瀏覽器，首頁、展示頁及放大預覽使用同一設定；三張小 Banner 保持原樣。
+桌面「專案入口」下方及 Design 頁的 Banners 區提供 `Banner type switch`，可切換原始整張圖片與預設的 `Artwork + motion`。選擇會儲存在此瀏覽器，首頁、展示頁及放大預覽使用同一設定；三張小 Banner 保持原樣。
 
 開關下方的 `Game brightness` 滑桿可在 0–100% 間即時調整首頁遊戲圖片亮度，預設為 70%。數值會儲存在此瀏覽器並同步至其他開啟的分頁，只影響遊戲卡片圖片；桌面設定區在手機仍保持隱藏。
 
@@ -87,5 +114,7 @@ VIP Banner 使用內建 image_gen 製作，目前使用 `public/assets/hero-vip-
 圖片與字型已存放在 `public/assets/` 及 `src/assets/`，執行時不依賴原站。`src/data/home.json` 是首頁靜態資料，保留 17 個供應商分區。
 
 三個活動 ICON 使用內建 image_gen 重製，透明 PNG 位於 `public/assets/activity-*-v3.png`；較深的粉紅色部位改用 Registro 按鈕的玫瑰色調（`#b05a85 → #a7507b`），保留原本明暗、象牙白、淡紫與金幣。完整提示詞與風格參考記錄在 `design/activity-icon-generation.json`。
+
+Jito 的五個底部快捷、客服與右側三個活動圖示使用內建 image_gen 統一為紅色／酒紅主體、香檳金、暖象牙白、深酒紅描邊與圓潤立體高光；Promotion 禮盒已移除愛心。新版透明圖檔 `*-v2.png`（Invite 獎盃使用紅色杯身 `nav-invite-v3.png`）存放在 `public/assets/ipa/`（導航與客服 256px，動畫素材 512px），高解析原稿及完整提示詞保存在 `design/ipa-icons/gold-v2/`。搜尋放大鏡沿用可編輯 SVG 結構，使用相同紅金與象牙白漸層，另存為 `search-shortcut-v2.svg`。`src/data/ipaIcons.js` 供 Jito 首頁與 Jito Design 圖示庫共用；轉盤旋轉、寶箱開合與禮盒彈跳保留，BR893 仍使用原有圖示與配色。
 
 `design/reference-assets.json` 記錄於 2026-10-27 從公開首頁讀取的素材來源；`design/asset-sources.json` 對照來源與本機路徑。需要重新取得參考素材時執行 `npm run assets:sync`。這些素材用於此專案的首頁設計參考。

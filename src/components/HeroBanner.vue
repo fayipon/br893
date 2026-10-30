@@ -1,5 +1,6 @@
 <script setup>
 import { computed, onMounted, onUnmounted, ref, useId, watch } from 'vue'
+import JitoDepositBanner from './JitoDepositBanner.vue'
 
 const props = defineProps({
   banner: { type: Object, required: true },
@@ -39,13 +40,18 @@ onMounted(() => {
       observer.disconnect()
     }
   }, { threshold: .2 })
-  observer.observe(element.value)
+  if (element.value) observer.observe(element.value)
 })
+watch(element, target => {
+  observer?.disconnect()
+  if (target && observer) observer.observe(target)
+}, { flush: 'post' })
 onUnmounted(() => observer?.disconnect())
 </script>
 
 <template>
-  <div ref="element" class="hero-banner" :class="`hero-banner-${banner.variant}`" :data-banner-type="layered ? 'layered' : 'image'" role="img" :aria-label="banner.alt">
+  <JitoDepositBanner v-if="banner.variant === 'jito-deposit'" :banner="banner" :type="type" :loading="loading" :priority="priority" />
+  <div v-else ref="element" class="hero-banner" :class="`hero-banner-${banner.variant}`" :data-banner-type="layered ? 'layered' : 'image'" role="img" :aria-label="banner.alt">
     <svg v-if="layered && banner.variant === 'vip'" class="hero-filter-defs" width="0" height="0" aria-hidden="true" focusable="false">
       <defs>
         <filter :id="outlineId" x="-.05" y="-.05" width="1.1" height="1.1" primitiveUnits="objectBoundingBox" color-interpolation-filters="sRGB">

@@ -3,16 +3,19 @@ import { ref } from 'vue'
 import ActivityIcon from './ActivityIcon.vue'
 import UiIcon from './UiIcon.vue'
 import data from '../data/home.json'
+import { ipaNavigationIcons, ipaSupportIcon, ipaSearchIcon, ipaActivityIcons } from '../data/ipaIcons'
 
+const props = defineProps({ site: { type: String, default: 'br893' } })
+const isIpa = props.site === 'ipa'
 const asset = path => `${import.meta.env.BASE_URL}${path}`
 const fileName = path => path.split('/').pop()
 const motionPaused = ref(false)
 const activityDetails = {
-  spin: { title: 'Roda da Sorte', detail: 'Wheel rotation', timing: '7s · Linear' },
-  'open-close': { title: 'Convide amigos', detail: 'Chest opening & closing', timing: '4.8s · Ease in / out' },
-  bounce: { title: 'Mina Misteriosa', detail: 'Gift bounce', timing: '4.8s · Ease in / out' },
+  spin: { title: isIpa ? 'Lucky Wheel' : 'Roda da Sorte', detail: 'Wheel rotation', timing: '7s · Linear' },
+  'open-close': { title: isIpa ? 'Invite Friends' : 'Convide amigos', detail: 'Chest opening & closing', timing: '4.8s · Ease in / out' },
+  bounce: { title: isIpa ? 'Mystery Mine' : 'Mina Misteriosa', detail: 'Gift bounce', timing: '4.8s · Ease in / out' },
 }
-const activities = data.activities.filter(item => activityDetails[item.motion]).map(item => ({ ...item, ...activityDetails[item.motion] }))
+const activities = data.activities.filter(item => activityDetails[item.motion]).map(item => ({ ...item, ...activityDetails[item.motion], image: isIpa ? ipaActivityIcons[item.motion] : item.image }))
 const interfaceIcons = [
   { name: 'menu', label: 'Menu' }, { name: 'close', label: 'Close' },
   { name: 'left', label: 'Previous' }, { name: 'right', label: 'Next' },
@@ -21,11 +24,12 @@ const interfaceIcons = [
   { name: 'gift', label: 'Gift' }, { name: 'people', label: 'Invite' },
   { name: 'calendar', label: 'Check-in' }, { name: 'support', label: 'Support' },
 ]
-const navigationNames = ['Início', 'Promoção', 'Depósito', 'Convidar', 'Perfil']
+const navigationNames = isIpa ? ['Home', 'Promotion', 'Deposit', 'Invite', 'Profile'] : ['Início', 'Promoção', 'Depósito', 'Convidar', 'Perfil']
 const artworkIcons = [
-  ...data.nav.map((image, index) => ({ image, label: navigationNames[index] })),
-  { image: data.hot, label: 'Quente', hot: true },
-  { image: data.search, label: 'Search' },
+  ...(isIpa ? ipaNavigationIcons : data.nav).map((image, index) => ({ image, label: navigationNames[index] })),
+  ...(isIpa ? [{ image: ipaSupportIcon, label: 'Customer Support' }] : []),
+  { image: data.hot, label: isIpa ? 'Hot' : 'Quente', hot: true },
+  { image: isIpa ? ipaSearchIcon : data.search, label: 'Search' },
   { image: data.notice, label: 'Notice' },
 ]
 </script>
@@ -38,7 +42,7 @@ const artworkIcons = [
         <div class="motion-stage" role="img" :aria-label="`${item.title} — ${item.detail}`">
           <span class="motion-index" aria-hidden="true">0{{ index + 1 }}</span>
           <span class="motion-status">{{ motionPaused ? 'Paused' : 'Motion' }}</span>
-          <ActivityIcon :src="asset(item.image)" :motion="item.motion" />
+          <ActivityIcon :src="asset(item.image)" :motion="item.motion" :tone="isIpa ? 'jito' : 'original'" />
         </div>
         <div class="motion-info"><h4>{{ item.title }}</h4><p>{{ item.detail }}</p><span class="motion-timing">{{ item.timing }}</span></div>
         <div class="motion-source">
