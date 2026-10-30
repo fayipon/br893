@@ -1,0 +1,22 @@
+{
+  "tool": "built-in image_gen",
+  "status": "Static concept v1 for review; not added to carousel or deployed",
+  "asset": "design/jito-banners/cricket-cashback-50-v1.png",
+  "canvas": {
+    "width": 1983,
+    "height": 793
+  },
+  "copy": [
+    "CRICKET",
+    "UP TO",
+    "50%",
+    "CASHBACK"
+  ],
+  "palette": {
+    "base": "#681C32",
+    "contrast": "#BED889",
+    "accent": "champagne gold",
+    "scene": "floodlit green cricket field"
+  },
+  "prompt": "Use case: ads-marketing.\nAsset type: finished static homepage hero banner for Jito Gaming, EXACTLY 1983 x 793 pixels, wide 2.5:1, full bleed opaque artwork.\n\nPrimary request: an exhilarating CRICKET campaign featuring an adult athlete and UP TO 50% CASHBACK. Build a premium, cinematic sports advertising image with clear, forceful hierarchy, legible when reduced to a 480px-wide mobile banner. This is the static design approval stage.\n\nScene: a floodlit night cricket stadium, emerald grass and a subtly visible cricket pitch, defocused spectators and bright stadium lamps in the distance. Dark wine and charcoal atmosphere on the text side, fresh vivid green stadium light and pale lime #BED889 accents, burgundy #681C32 and rich red jersey, warm champagne highlights. Strong warm/cool separation and depth. Keep background details soft and restrained.\n\nSubject: ONE fictional adult professional male cricket batter, athletic, contemporary appearance, wearing a burgundy/red performance uniform with small champagne piping, cricket helmet with realistic protective face grille, white batting gloves and batting pads. Energetic follow-through of a powerful shot, two anatomically correct gloved hands holding ONE proper flat-faced wooden cricket bat, torsion through shoulders and torso, focused determined face visible through the helmet. Use a dynamic low three-quarter angle. An airborne red leather cricket ball with a white stitched seam and a short curved light trace conveys the hit. Athletic broadcast-campaign realism, not fantasy armor. No real athlete likeness or named team endorsement.\n\nComposition: dominant, asymmetrical typographic block in the left 52%; batter fills the right 48%, large and in the foreground, bat and shoulder creating a diagonal toward the upper center. Natural depth and limited overlap near the central seam, never obscure important letters. Bat, helmet and major digits remain fully within safe margins. The red cricket ball can sit near the lower center-right in front of the athlete, clear of lettering. Use only a few flying blades of grass or dust specks to suggest explosive athletic energy. No fire or clutter.\n\nExact English text, no extra copy:\n\"CRICKET\"\n\"UP TO\"\n\"50%\"\n\"CASHBACK\"\n\nTypography: make \"50%\" by far the largest element, around half the banner height, bold italic sports display with dimensional champagne-gold faces, dark burgundy/navy extrusion and controlled bright edge highlights; 50 and % share the same material and color. \"UP TO\" sits clearly beside the upper edge of 50%, readable, not a tiny disclaimer. \"CRICKET\" is a compact, bold warm-ivory heading above. \"CASHBACK\" is a wide assertive pale-lime/green-accented italic line below and slightly offset from the number, creating an energetic staggered arrangement. Vary scale and color; avoid a centered stack of equally sized text or four boxed rows. Keep typography crisp and bold, bevels simplified, no intricate engravings, no thin ornamental frames.\n\nLighting: dramatic white-green stadium rim light on helmet/bat/shoulder, warm red reflections on jersey, sharp athlete and typography, selectively blurred stadium, controlled short motion streaks aligned with bat/ball. Passionate, competitive, explosive sporting mood.\n\nConstraints: authentic cricket equipment and anatomy, one athlete, one bat, no duplicated limbs or extra fingers, no soccer/baseball equipment. No CTA button. No gifts, treasure chests, coins, roulette, gems, gods, palace, ornate Indian costume, flag, team badges, watermark, website URL or extra promotional claims. Preserve plenty of dark negative space behind the text. No app mockup, surrounding border or UI. Deliver only the finished banner image."
+}

@@ -1,0 +1,49 @@
+{
+  "tool": "built-in image_gen",
+  "mode": "static artwork",
+  "createdAt": "2026-10-30",
+  "usage": "Replaces Jito's three small promotion banners on the homepage, Design library and image preview dialogs; intentionally no motion layers.",
+  "dimensions": {
+    "width": 1983,
+    "height": 793
+  },
+  "assets": [
+    {
+      "title": "Daily Check-in",
+      "output": "public/assets/ipa/promo-daily-checkin-v1.png",
+      "references": [],
+      "prompt": "Use case: ads-marketing. Asset type: static mini promotional banner for the existing Jito Gaming website. Exact canvas 1983 x 793 pixels, wide 2.5:1, full bleed. It will display as one of THREE small cards in a row, approximately 156x62 CSS pixels desktop or 114x46 mobile, so use extremely strong hierarchy, huge simple type and a single bold visual grouping, few details, no tiny body copy. Premium dimensional 3D finish matching cinematic burgundy/gold Jito banners, broad glossy highlights, crisp silhouettes, restrained depth. Dark burgundy #681C32 anchors the design, champagne gold gives brand consistency. No CTA button, no outer frame, no rounded-corner mockup, no watermark, no extra claims, no fine ornamental filigree. Keep copy in safe area with 6% horizontal margins; readable contrast at thumbnail size.\nSubject and composition: left 64% is typography on a deep burgundy-to-dark-teal ground. On the right 36% a large sculpted red enamel desk-calendar icon, champagne-gold binding rings and bevels, a broad ivory/champagne calendar page with ONE oversized emerald checkmark. No dates or extra writing on the calendar. A few large simple check marks on subtle tiles can suggest progress behind it, but no tiny grids. Teal #46B8A5 rim lighting and a softly defocused teal glow distinguish the background.\nText EXACTLY: \"DAILY CHECK-IN\" as one short, bold warm champagne uppercase header near upper left; below it \"7 DAYS\" very large, with the 7 the largest element in bright champagne gold and DAYS in pale teal/ivory. Tight balanced horizontal grouping, robust bold condensed lettering, smooth bevels, minimal extrusion. The 7 DAYS line should dominate the card. No other text or numbers, no money, no chest or gift box. Finished static artwork only."
+    },
+    {
+      "title": "VIP Club",
+      "output": "public/assets/ipa/promo-vip-club-v1.png",
+      "references": [],
+      "prompt": "Use case: ads-marketing. Asset type: static mini promotional banner for the existing Jito Gaming website. Exact canvas 1983 x 793 pixels, wide 2.5:1, full bleed. It will display as one of THREE small cards in a row, approximately 156x62 CSS pixels desktop or 114x46 mobile, so use extremely strong hierarchy, huge simple type and a single bold visual grouping, few details, no tiny body copy. Premium dimensional 3D finish matching cinematic burgundy/gold Jito banners, broad glossy highlights, crisp silhouettes, restrained depth. Dark burgundy #681C32 anchors the design, champagne gold gives brand consistency. No CTA button, no outer frame, no rounded-corner mockup, no watermark, no extra claims, no fine ornamental filigree. Keep copy in safe area with 6% horizontal margins; readable contrast at thumbnail size.\nSubject and composition: left 67% is bold typography on a deep burgundy/near-black ground. Right 33% is one striking champagne-gold crown with ruby accents, resting over a tilted glossy burgundy VIP membership card with a simple embossed crown emblem, no words or numbers on the card. Broad violet #9B7CFF edge lighting and a blurred deep-purple glow behind the crown create color contrast. No treasure chest, gifts, human figure, cash pile or decorative clutter.\nText EXACTLY: \"VIP CLUB\" as a substantial pale lavender/champagne uppercase header on upper left; below, \"₹120,000\" in enormous champagne-gold dimensional condensed type, ALL digits fit on ONE line. The rupee symbol must be ₹, the number exactly 120,000 with a single comma after 120. The amount is the visual priority; clear heavy letterforms with restrained bevel/extrusion and dark burgundy outline. No additional copy, no UP TO, no invented conditions. Finished static artwork only."
+    },
+    {
+      "title": "Cricket Cashback",
+      "output": "public/assets/ipa/promo-cricket-cashback-v1.png",
+      "references": [
+        "C:/Users/user/Documents/GitHub/br893/public/assets/ipa/hero-cricket-cashback-v5.png"
+      ],
+      "prompt": "Use case: ads-marketing. Asset type: static mini promotional banner for the existing Jito Gaming website. Exact canvas 1983 x 793 pixels, wide 2.5:1, full bleed. It will display as one of THREE small cards in a row, approximately 156x62 CSS pixels desktop or 114x46 mobile, so use extremely strong hierarchy, huge simple type and a single bold visual grouping, few details, no tiny body copy. Premium dimensional 3D finish matching cinematic burgundy/gold Jito banners, broad glossy highlights, crisp silhouettes, restrained depth. Dark burgundy #681C32 anchors the design, champagne gold gives brand consistency. No CTA button, no outer frame, no rounded-corner mockup, no watermark, no extra claims, no fine ornamental filigree. Keep copy in safe area with 6% horizontal margins; readable contrast at thumbnail size.\nInput Image 1 is the APPROVED large cricket artwork to adapt into a SIMPLER small-banner composition. Preserve the recognizable faces and kit colors of Shreyas Iyer (red Punjab Kings, left), Rishabh Pant (blue/red Delhi Capitals, center foreground), and Jasprit Bumrah (blue/gold Mumbai Indians, right), and the existing IPL logo. This is a graphic adaptation, no new factual season details or endorsement statements.\nRecompose into left 55% typography and right 45% three tightly grouped athletes with clear faces, Pant prominent in front, Iyer and Bumrah behind left/right. Simplify away the fine stadium/crowd details into soft green floodlit bokeh with burgundy on the left. Keep the energy and batting/bowling cues, clean natural anatomy. No giant foreground ball.\nLeft: small clear existing IPL logo at top left with \"CRICKET\" alongside it, both visually subordinate; below a HUGE bright-gold \"50%\" dominating the entire left area, with a smaller but legible \"UP TO\" directly above/beside it; below the number, \"CASHBACK\" in muted sage green, large enough to read but secondary. Text exactly \"CRICKET\", \"UP TO\", \"50%\", \"CASHBACK\"; do not add anything else except existing IPL logo. Simplify the original bevels, no light streaks crossing the copy, no tiny body copy. Ensure the gold percentage is instantly legible at 156x62px. Keep the percentage complete and unobscured. Finished static banner, not animated."
+    }
+  ],
+  "copy": [
+    [
+      "DAILY CHECK-IN",
+      "7 DAYS"
+    ],
+    [
+      "VIP CLUB",
+      "₹120,000"
+    ],
+    [
+      "CRICKET",
+      "UP TO",
+      "50%",
+      "CASHBACK"
+    ]
+  ],
+  "preserved": "Main hero banners and BR893 promotions"
+}

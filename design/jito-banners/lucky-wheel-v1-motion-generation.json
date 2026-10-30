@@ -1,0 +1,65 @@
+{
+  "tool": "built-in image_gen",
+  "source": "public/assets/ipa/hero-lucky-wheel-v1.png",
+  "purpose": "Approved static Lucky Wheel artwork separated for rotating disc and dropping headline.",
+  "layers": [
+    {
+      "role": "plate",
+      "prompt": "Use case: precise-object-edit. Image 1 is the approved Lucky Wheel banner edit target. Make a clean motion background plate, identical exact 1983x793 canvas and registration. REMOVE ONLY the two huge headline words LUCKY and WHEEL and their shadows/extrusions/glints at the left, seamlessly reconstructing the burgundy curtains, violet atmospheric light and architectural stage behind them. KEEP the smaller SPIN & WIN text and underline in precisely its existing position, size and color. On the right, REMOVE the colored prize wedges and the star/ruby/rupee symbols INSIDE the wheel face and replace those interior segments with a plain dark burgundy circular/elliptical backing. KEEP the wheel outer gold rim with bulbs, gold central hub, top red pointer, stand, foreground coins and entire surroundings exactly registered in their original locations. This is layer preparation, not a redesign. Don't move or resize the wheel or change composition, lighting, colors or dimensions. No added text, objects or watermark. Full opaque background.",
+      "transparentBackground": false,
+      "output": "public/assets/ipa/hero-lucky-wheel-background-v1.png"
+    },
+    {
+      "role": "lettering",
+      "prompt": "Use case: background-extraction. Image 1 is the approved banner edit target. Extract ONLY the two large dimensional headline words LUCKY and WHEEL, including their burgundy beveled extrusions, gold/lavender faces, fine rim outlines and attached highlights, onto a REAL TRANSPARENT RGBA background. Exact 1983x793 canvas; preserve the exact original size, position, angle, line spacing, glyph shapes and colors. Do not recenter, enlarge, rearrange or restyle. LUCKY stays gold and WHEEL stays pale lavender/champagne. Exclude SPIN & WIN completely. Exclude the underline, room, wheel, all coins, floor, ambient glow and all other objects. Empty canvas and gaps between letters must be completely transparent, not black or checkerboard. Output only original headline lettering on transparency, no other content.",
+      "transparentBackground": true,
+      "output": "public/assets/ipa/hero-lucky-wheel-lettering-v1.png"
+    },
+    {
+      "role": "disc",
+      "prompt": "Use case: background-extraction. Image 1 is the approved Lucky Wheel banner style and object reference. Create ONLY the circular rotating INNER PRIZE DISC of this wheel as an isolated animation sprite on REAL TRANSPARENT RGBA background. Exact square canvas 1024x1024, disc centered at (512,512), diameter 1000px, perfectly circular and directly front-on (remove perspective). Match the original glossy lacquered crimson/burgundy and champagne-gold wedges, narrow gold separators, embossed gold stars, gold rupee coins with ₹, and faceted ruby symbols. Preserve the original premium 3D render materials and twelve broad prize segments. The full disc fills its circle with no holes and has a plain small gold center covered later by a separate fixed hub. Only a very thin gold edge. DO NOT include the outer lightbulb ring, pointer, pedestal, thick rim, floating coins, headline, caption, room, background, shadow outside the circle, or watermark. The circle boundary is crisp antialiased transparency; corners of square are transparent. This is an animation face texture derived from the approved wheel, not a new banner design.",
+      "transparentBackground": true,
+      "output": "public/assets/ipa/hero-lucky-wheel-disc-v1.png"
+    }
+  ],
+  "registration": {
+    "lettering": "translate(-20 62) scale(.73)",
+    "disc": {
+      "sourceSize": 1254,
+      "sourceCenter": [
+        622,
+        615
+      ],
+      "sourceRadius": 570,
+      "projection": "matrix(.558 -.032 0 .551 1474 397)"
+    },
+    "fixedElements": [
+      "outer rim and bulbs",
+      "top red pointer",
+      "central gold hub",
+      "stand",
+      "foreground coins",
+      "SPIN & WIN"
+    ]
+  },
+  "motion": {
+    "disc": {
+      "direction": "clockwise",
+      "secondsPerRevolution": 12
+    },
+    "headline": {
+      "delaySeconds": 0.03,
+      "durationSeconds": 0.65,
+      "dropSourcePixels": 360,
+      "overshootSourcePixels": 18,
+      "reboundSourcePixels": -12
+    },
+    "shine": {
+      "delaySeconds": 0.8,
+      "loopDurationSeconds": 6.5
+    },
+    "pauseWhenOffscreen": true,
+    "staticFallbackForReducedMotionOrAssetFailure": true
+  },
+  "createdAt": "2026-10-30"
+}

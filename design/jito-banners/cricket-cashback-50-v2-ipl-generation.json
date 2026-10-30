@@ -1,0 +1,62 @@
+{
+  "tool": "built-in image_gen",
+  "status": "Static concept for user review; not yet added to homepage or deployed",
+  "asset": "design/jito-banners/cricket-cashback-50-v2-ipl-stars.png",
+  "canvas": {
+    "width": 1983,
+    "height": 793
+  },
+  "sourceArtwork": "design/jito-banners/cricket-cashback-50-v1.png",
+  "copy": [
+    "CRICKET",
+    "UP TO",
+    "50%",
+    "CASHBACK"
+  ],
+  "players": [
+    {
+      "name": "Rishabh Pant",
+      "team": "Delhi Capitals",
+      "roleInArtwork": "Foreground left-handed batter"
+    },
+    {
+      "name": "Shreyas Iyer",
+      "team": "Punjab Kings",
+      "roleInArtwork": "Left rear batter with bat"
+    },
+    {
+      "name": "Jasprit Bumrah",
+      "team": "Mumbai Indians",
+      "roleInArtwork": "Right rear bowler"
+    }
+  ],
+  "references": [
+    {
+      "name": "rishabh-pant-dc.png",
+      "url": "https://www.delhicapitals.in/static-assets/images/players/ipl/65756.png?v=2.33",
+      "page": "https://www.delhicapitals.in/players/65756-rishabh-pant-profile",
+      "localPath": "design/jito-banners/references/rishabh-pant-dc.png"
+    },
+    {
+      "name": "shreyas-iyer-pbks.png",
+      "url": "https://www.punjabkingsipl.in/static-assets/images/players/63961.png?v=6.68",
+      "page": "https://www.punjabkingsipl.in/players/63961-shreyas-iyer-profile",
+      "localPath": "design/jito-banners/references/shreyas-iyer-pbks.png"
+    },
+    {
+      "name": "jasprit-bumrah-mi.png",
+      "url": "https://www.mumbaiindians.com/static-assets/images/players/large/63755.png?v=1.34&w=400",
+      "page": "https://www.mumbaiindians.com/players/63755-jasprit-bumrah-profile",
+      "localPath": "design/jito-banners/references/jasprit-bumrah-mi.png"
+    },
+    {
+      "name": "ipl-official-logo.png",
+      "url": "https://images.ctfassets.net/jot2qw8s50z1/68BTfjWpntEFEBXMhfs9Jf/27b791fb9dc3ee514ef5cddb5e6defb8/image.png",
+      "page": "https://www.iplt20.com/",
+      "localPath": "design/jito-banners/references/ipl-official-logo.png"
+    }
+  ],
+  "teamSourceDate": "2026-10-30",
+  "pantTeamUpdateSource": "https://www.iplt20.com/news/article/rishabh-pant-and-kuldeep-yadav-complete-high-profile-trade-between-dc-and-lsg",
+  "prompt": "Use case: compositing, identity-preserving sports campaign revision.\nAsset: finished static 1983 x 793 pixel Jito IPL cricket cashback banner, full bleed opaque.\n\nInput roles:\nImage 1 is the EDIT TARGET: existing cricket banner. Preserve its premium energetic sports campaign treatment, dark burgundy left side, night stadium, green turf, bold champagne-gold 50%, lime-green CASHBACK and restrained fast light streaks.\nImage 2 is identity AND kit reference for RISHABH PANT: Delhi Capitals blue jersey with red collar/cuffs and red-blue patterned lower torso, official team crest. Preserve his actual facial identity, short swept black hair, rounded face, thick beard, stocky athletic build.\nImage 3 is identity AND kit reference for SHREYAS IYER: Punjab Kings red torso with blue patterned shoulders/sleeves, blue collar, Kings crest. Preserve his actual facial identity, voluminous wavy hair, strong brows, shaped beard and tattooed forearm.\nImage 4 is identity AND kit reference for JASPRIT BUMRAH: Mumbai Indians royal-blue kit, gold details and MI crest. Preserve his actual facial identity, distinctive tall hairstyle, narrow long face, prominent beard and lean athletic proportions.\nImage 5 is the exact official transparent TATA IPL LEAGUE LOGO. Insert this logo faithfully; preserve white batsman silhouette, TATA emblem and typography, IPL letters, colored sweep and original proportions.\n\nRequested revision:\nCompletely REMOVE the old anonymous single batter and his bat from Image 1. Replace with EXACTLY THREE recognizable named players from images 2–4, all together in their own referenced team kits. Keep authentic kit colors and visible team badges; do not dress all three in burgundy, do not swap kits, do not put them in India national-team jerseys. Keep jersey graphics faithful to reference. No extra sponsor text outside the kits.\n\nCreate a powerful right-half montage with clear separate faces and layered depth: Pant is the large foreground hero slightly right of center in a dynamic LEFT-HANDED batting follow-through with batting gloves and a wooden cricket bat angled across his own right-side space, his face uncovered and recognizable. Iyer appears behind and to Pant's left in a confident athletic stance, one bat held at his shoulder. Bumrah is behind and to Pant's right in an energetic RIGHT-ARM bowling delivery pose with the ball in his right hand, lean body in motion. Faces are the priority: all three fully visible, no helmets/grilles obscuring likeness, no faces overlapping. Cropping around hips/lower body is fine, but no cropped heads, duplicate arms, merged hands or extra athletes. Hands, bats and bowling arm must not obstruct the main promotional text. The montage is a dramatic designed sports poster, not a photograph claiming an actual shared match moment.\n\nRebalance the left text block to make space for the official TATA IPL logo at the upper left: logo about 180–200px wide, with comfortable margins, next to a slightly reduced CRICKET heading. Preserve the logo’s precise recognizable shape, do not replace it with plain 'IPL' text or invent a different mark. Do not add year or 'official partner' wording.\n\nKeep EXACT promotional text:\n\"CRICKET\"\n\"UP TO\"\n\"50%\"\n\"CASHBACK\"\n50% must remain the largest element with matching gold digits and percent sign, clear bright face and dark burgundy extrusion. UP TO must remain plainly readable. CASHBACK remains fresh lime/green (#BED889 family), bold italic and staggered beneath 50%. Keep text to the left 48–50%, three athletes on the right 50–52%. No extra slogans or player-name captions.\n\nKeep electric floodlights, softly blurred stadium, green turf and a restrained foreground cricket ball/light trace to retain the passionate, high-energy sporting mood. Use realistic skin and sports apparel with cinematic lighting, sharp player faces and text, restrained background detail. Avoid jewelry-like micro-detail. Do not add treasure, coins, gifts, roulette, fire, fantasy costumes, button, URL, watermark, borders, UI, extra promotional claims or a fourth person. Same 1983 x 793 canvas."
+}

@@ -1,0 +1,25 @@
+{
+  "tool": "built-in image_gen",
+  "intent": "generate",
+  "useCase": "ads-marketing",
+  "title": "Lucky Wheel",
+  "version": 1,
+  "status": "static preview; motion pending design approval",
+  "prompt": "Use case: ads-marketing.\nAsset type: polished static wide hero banner for the Jito Gaming website, exact canvas 1983 x 793 pixels (2.5:1 landscape), full bleed.\nPrimary request: create a new premium LUCKY WHEEL promotional banner, with a gigantic beautiful physical prize wheel as the hero. It belongs to a series of rich cinematic 3D casino promotional banners with dimensional headline lettering. This is a complete finished banner, not a webpage mockup.\nScene/backdrop: softly defocused deep burgundy casino stage fading into a saturated violet lighting environment on the right; broad purple arcs and a small amount of atmospheric gold bokeh, uncluttered silhouettes, purposeful negative space behind the headline.\nSubject: on the right 48% of the composition, an impressive large upright fortune wheel with a glossy champagne-gold rim, evenly spaced warm light bulbs, glossy lacquered burgundy and rich crimson wedges alternating with muted champagne wedges, a ruby-red pointer at its top, and a polished gold hub. Tilt the wheel very slightly in perspective while keeping its circular geometry convincing and its face readable. Wheel nearly fills the height, clean sculpted stand below. Subtle symbols inside wedges: simple embossed star, single coin, ruby, no amounts or small words. A few large gold rupee coins at the bottom edge create depth, no shower of tiny clutter.\nTypography/composition: left 52%, make LUCKY and WHEEL the dominant two-line typographic statement. LUCKY in luminous rich gold dimensional bold display lettering, WHEEL in pale lavender/champagne metallic lettering with burgundy extrusion, visually varied but cohesive. Give the two lines a slight energetic upward slant and tight deliberate overlap/spacing. Strong dark edge definition and broad surfaces for readability on mobile. Below, SPIN & WIN in smaller crisp warm champagne uppercase type with generous tracking, not in a button. All text fits safely inside 5% edge margins. The wheel and headline must not collide. Foreground coins may overlap the lower wheel base but never the copy.\nLighting/mood: celebratory, premium, cinematic, strong violet rim light and warm gold highlights, readable contrasting forms. Broad reflections and controlled bloom; intricate micro-engraving is unnecessary.\nColor palette: burgundy #681C32 and crimson, champagne gold #EACD8A, strong violet accent #9B7CFF. Keep purple clearly visible as a contrasting area, not an overall monochromatic gold wash.\nText (verbatim, exactly these words only): \"LUCKY\" / \"WHEEL\" / \"SPIN & WIN\".\nConstraints: no CTA button, no human figure, no gift box, no treasure chest, no cash amount or percentage, no guarantee wording, no decorative body copy, no watermark, no fake website UI, no outer border. Preserve an impactful visual hierarchy and premium crisp 3D finish.",
+  "output": {
+    "design": "design/jito-banners/lucky-wheel-v1.png",
+    "runtime": "public/assets/ipa/hero-lucky-wheel-v1.png",
+    "width": 1983,
+    "height": 793
+  },
+  "palette": {
+    "base": "#681C32",
+    "gold": "#EACD8A",
+    "contrast": "#9B7CFF"
+  },
+  "copy": [
+    "LUCKY WHEEL",
+    "SPIN & WIN"
+  ],
+  "createdAt": "2026-10-30"
+}

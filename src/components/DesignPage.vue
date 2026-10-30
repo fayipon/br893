@@ -137,7 +137,7 @@ onMounted(() => {
       <section id="banners" class="design-section" aria-labelledby="banners-title">
         <header class="design-section-heading"><div><span class="design-section-number">05</span><h2 id="banners-title">Banners</h2></div><p>Cinematic artwork. One clear message.</p></header>
         <div class="design-banner-controls"><BannerTypeSwitch class="design-banner-switch" /><button class="design-motion-replay" :disabled="bannerType === 'image'" @click="motionReplay++">Replay motion</button></div>
-        <p class="design-banner-mode-note">{{ isIpa ? 'All banners: slogan entrance and metallic shine. Deposit rewards adds a breathing halo and floating gems. First Deposit adds a fast car entrance and blue light trails. This choice also applies to the homepage.' : 'Original lettering, layered for motion. Main banners only; this choice also applies to the homepage.' }}</p>
+        <p class="design-banner-mode-note">{{ isIpa ? 'Slogan entrances and metallic shine, with floating gems, a racing car and cricket stars. Cricket: side players enter first, then the center hero and gold 50%. Lucky Wheel: rotating disc, quick headline drop, then shine. This choice also applies to the homepage.' : 'Original lettering, layered for motion. Main banners only; this choice also applies to the homepage.' }}</p>
         <GameBrightnessControl class="design-game-brightness" />
         <div class="design-gallery-label"><h3>Main banners</h3><span>{{ data.banners.length }} artworks</span></div>
         <div class="design-banner-grid">

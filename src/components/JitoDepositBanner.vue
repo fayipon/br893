@@ -30,6 +30,8 @@ const depositSprites = [
   { id: 'ruby-right-low', x: 1875, y: 600, width: 108, height: 155, duration: '6.3s', delay: '-4s', travel: '-11px' },
 ]
 const sprites = computed(() => props.banner.motion.spritesImage ? depositSprites : [])
+const players = computed(() => props.banner.motion.players ?? [])
+const wheel = computed(() => props.banner.motion.wheel)
 const textLayers = computed(() => props.banner.motion.textLayers ?? [
   { id: 'slogan', x: 0, y: 0, width: 1400, height: 447 },
   { id: 'caption', x: 0, y: 447, width: 1400, height: 110 },
@@ -45,7 +47,7 @@ onMounted(() => {
   motionPreference.addEventListener('change', updateMotion)
   observer = new IntersectionObserver(entries => { visible.value = entries.some(entry => entry.isIntersecting) }, { threshold: .05 })
   observer.observe(element.value)
-  Promise.all([props.banner.motion.backgroundImage, props.banner.motion.letteringImage, props.banner.motion.spritesImage, props.banner.motion.foregroundImage].filter(Boolean).map(path => new Promise((resolve, reject) => {
+  Promise.all([props.banner.motion.backgroundImage, props.banner.motion.letteringImage, props.banner.motion.spritesImage, props.banner.motion.foregroundImage, wheel.value?.image, ...players.value.map(player => player.image)].filter(Boolean).map(path => new Promise((resolve, reject) => {
     const image = new Image()
     image.onload = resolve
     image.onerror = reject
@@ -61,10 +63,16 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div ref="element" class="hero-banner jito-deposit" :class="[banner.variant, { 'motion-ready': animated, 'motion-running': animated && visible && pageVisible }]" :style="{ '--slogan-origin': banner.motion.sloganOrigin ?? '650px 260px', '--slogan-delay': banner.motion.sloganDelay ?? '0s', '--caption-delay': banner.motion.captionDelay ?? '.55s' }" :data-banner-type="animated ? 'layered' : 'image'" role="img" :aria-label="banner.alt">
+  <div ref="element" class="hero-banner jito-deposit" :class="[banner.variant, { 'motion-ready': animated, 'motion-running': animated && visible && pageVisible }]" :style="{ '--slogan-origin': banner.motion.sloganOrigin ?? '650px 260px', '--slogan-delay': banner.motion.sloganDelay ?? '0s', '--caption-delay': banner.motion.captionDelay ?? '.55s', '--shine-delay': banner.motion.shineDelay ?? '0s' }" :data-banner-type="animated ? 'layered' : 'image'" role="img" :aria-label="banner.alt">
     <img v-if="!motionEnabled || assetFailed" class="jito-static" :src="asset(banner.image)" alt="" width="1983" height="793" :loading="loading" :fetchpriority="priority" />
     <svg v-else class="jito-motion" viewBox="0 0 1983 793" aria-hidden="true" focusable="false">
       <defs>
+        <!-- The disc rotates in its own circular plane before the fixed perspective projection. -->
+        <clipPath v-if="wheel" :id="`${id}-wheel-face`"><circle r="570" /></clipPath>
+        <clipPath v-if="wheel" :id="`${id}-wheel-fixed`">
+          <ellipse cx="1464" cy="389" rx="84" ry="82" />
+          <path d="M1420 25L1454 4L1499 0L1518 24L1466 125Z" />
+        </clipPath>
         <clipPath v-for="sprite in sprites" :id="`${id}-${sprite.id}`" :key="sprite.id"><rect :x="sprite.x" :y="sprite.y" :width="sprite.width" :height="sprite.height" /></clipPath>
         <radialGradient :id="`${id}-halo-falloff`"><stop offset=".7" stop-color="white" /><stop offset="1" stop-color="white" stop-opacity="0" /></radialGradient>
         <mask :id="`${id}-halo-area`" maskUnits="userSpaceOnUse" x="0" y="0" width="1983" height="793"><ellipse cx="1475" cy="140" rx="450" ry="370" :fill="refId('halo-falloff')" /></mask>
@@ -94,6 +102,17 @@ onUnmounted(() => {
         </linearGradient>
       </defs>
       <image :href="asset(banner.motion.backgroundImage)" width="1983" height="793" />
+      <template v-if="wheel">
+        <g :transform="wheel.projection">
+          <g :clip-path="refId('wheel-face')">
+            <g class="wheel-spin" :style="{ '--wheel-duration': wheel.duration }">
+              <image :href="asset(wheel.image)" x="-622" y="-615" width="1254" height="1254" />
+            </g>
+          </g>
+        </g>
+        <!-- Reapply the fixed pointer and hub above the rotating face; the outer rim stays in the plate. -->
+        <image :href="asset(banner.motion.backgroundImage)" width="1983" height="793" :clip-path="refId('wheel-fixed')" />
+      </template>
       <g v-if="banner.motion.halo !== false" :mask="refId('halo-area')">
         <rect class="halo-dim" width="1983" height="793" fill="#001a19" :mask="refId('halo-mask')" />
         <image class="halo-breathe" :href="asset(banner.motion.backgroundImage)" width="1983" height="793" :filter="refId('teal-key')" />
@@ -105,6 +124,10 @@ onUnmounted(() => {
       </g>
       <g v-if="banner.motion.foregroundImage" class="car-enter">
         <image :href="asset(banner.motion.foregroundImage)" width="1983" height="793" />
+      </g>
+      <!-- Array order controls depth; the center player is drawn last, in front of both sides. -->
+      <g v-for="player in players" :key="player.id" class="player-enter" :class="`player-${player.id}`" :style="{ '--player-delay': player.delay, '--player-x': player.x, '--player-origin': player.origin }">
+        <g :transform="player.transform ?? 'translate(0 0)'"><image :href="asset(player.image)" width="1983" height="793" /></g>
       </g>
       <!-- Register the extracted typography to the approved poster, then animate each text group independently. -->
       <g :transform="banner.motion.letteringTransform ?? 'translate(10 9) scale(.86 .88)'">
@@ -126,22 +149,57 @@ onUnmounted(() => {
 .jito-motion { pointer-events: none; }
 .halo-dim { opacity: .9; }
 .halo-breathe, .slogan-shine { opacity: 0; mix-blend-mode: screen; }
-.slogan-enter, .caption-enter, .eyebrow-enter, .jito-float, .car-enter, .speed-trails { opacity: 0; }
+.slogan-enter, .caption-enter, .eyebrow-enter, .jito-float, .car-enter, .speed-trails, .player-enter { opacity: 0; }
 .slogan-enter { transform-origin: var(--slogan-origin); }
+.player-enter { transform-box: view-box; transform-origin: var(--player-origin); }
+.wheel-spin { transform-box: view-box; transform-origin: 0 0; }
 /* Anchor at the tire contact plane so perspective scaling keeps the car on the road. */
 .car-enter { transform-box: view-box; transform-origin: 1450px 700px; }
 .speed-trails { mix-blend-mode: screen; stroke-dasharray: 26 100; }
 .motion-ready .eyebrow-enter { animation: eyebrow-enter .55s .08s ease-out both; }
 .motion-ready .slogan-enter { animation: slogan-enter 1.25s var(--slogan-delay) cubic-bezier(.22, .65, .3, 1) both; }
 .motion-ready .caption-enter { animation: caption-enter .65s var(--caption-delay) cubic-bezier(.16, 1, .3, 1) both; }
+.motion-ready .player-enter { animation: player-side-enter .72s var(--player-delay) cubic-bezier(.18, .7, .25, 1) both; }
+.motion-ready .player-center { animation-name: player-center-enter; animation-duration: .85s; }
+.jito-cricket.motion-ready .slogan-enter { animation-name: cricket-amount-enter; animation-duration: .95s; }
+.jito-lucky-wheel.motion-ready .slogan-enter { animation-name: lucky-title-drop; animation-duration: .65s; animation-timing-function: linear; }
+.motion-ready .wheel-spin { animation: lucky-wheel-spin var(--wheel-duration) linear infinite; }
 .motion-ready .car-enter { animation: car-enter 1.65s .06s linear both; }
 .motion-ready .speed-trails { animation: speed-trails 1.65s .06s linear both; }
 .motion-ready .halo-dim { animation: halo-dim 5.2s ease-in-out infinite; }
 .motion-ready .halo-breathe { animation: halo-breathe 5.2s ease-in-out infinite; }
 .motion-ready .jito-float { opacity: 1; animation: jito-float var(--float-duration) var(--float-delay) ease-in-out infinite; }
-.motion-ready .slogan-shine { animation: slogan-shine 7.5s ease-in-out infinite; }
-.motion-ready :is(.halo-dim, .halo-breathe, .jito-float, .slogan-shine, .slogan-enter, .caption-enter, .eyebrow-enter, .car-enter, .speed-trails) { animation-play-state: paused; }
-.motion-running :is(.halo-dim, .halo-breathe, .jito-float, .slogan-shine, .slogan-enter, .caption-enter, .eyebrow-enter, .car-enter, .speed-trails) { animation-play-state: running; }
+.motion-ready .slogan-shine { animation: slogan-shine 7.5s var(--shine-delay) ease-in-out infinite; }
+.jito-lucky-wheel.motion-ready .slogan-shine { animation-name: lucky-title-shine; animation-duration: 6.5s; }
+.motion-ready :is(.halo-dim, .halo-breathe, .jito-float, .slogan-shine, .slogan-enter, .caption-enter, .eyebrow-enter, .car-enter, .speed-trails, .player-enter, .wheel-spin) { animation-play-state: paused; }
+.motion-running :is(.halo-dim, .halo-breathe, .jito-float, .slogan-shine, .slogan-enter, .caption-enter, .eyebrow-enter, .car-enter, .speed-trails, .player-enter, .wheel-spin) { animation-play-state: running; }
+@keyframes lucky-wheel-spin { to { transform: rotate(360deg); } }
+@keyframes lucky-title-shine {
+  0% { opacity: 0; transform: translateX(-300px); }
+  4%, 18% { opacity: .75; }
+  22%, 100% { opacity: 0; transform: translateX(1600px); }
+}
+@keyframes lucky-title-drop {
+  0% { opacity: 0; transform: translateY(-360px) scale(.94); filter: blur(5px); animation-timing-function: cubic-bezier(.45, 0, .8, .55); }
+  18% { opacity: 1; }
+  65% { opacity: 1; transform: translateY(18px) scale(1.018, .975); filter: blur(0); animation-timing-function: ease-out; }
+  82% { opacity: 1; transform: translateY(-12px) scale(.995, 1.01); filter: blur(0); animation-timing-function: ease-in-out; }
+  100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+}
+@keyframes player-side-enter {
+  from { opacity: 0; transform: translate(var(--player-x), 22px) scale(.96); filter: blur(3px); }
+  to { opacity: 1; transform: translate(0, 0) scale(1); filter: blur(0); }
+}
+@keyframes player-center-enter {
+  0% { opacity: 0; transform: translateY(58px) scale(.88); filter: blur(4px); }
+  74% { opacity: 1; transform: translateY(-4px) scale(1.018); filter: blur(0); }
+  100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+}
+@keyframes cricket-amount-enter {
+  0% { opacity: 0; transform: translateY(36px) scale(.72); filter: blur(4px); }
+  72% { opacity: 1; transform: translateY(-5px) scale(1.055); filter: blur(0); }
+  100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+}
 @keyframes car-enter {
   0% { opacity: 0; transform: translate(340px, -410px) scale(.16) rotate(-6deg); filter: blur(3px); }
   18% { opacity: 1; transform: translate(240px, -388px) scale(.24) rotate(-5deg); filter: blur(2px); }
@@ -180,6 +238,6 @@ onUnmounted(() => {
   38%, 100% { opacity: 0; transform: translateX(1600px); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .jito-deposit :is(.halo-dim, .halo-breathe, .jito-float, .slogan-shine, .slogan-enter, .caption-enter, .eyebrow-enter, .car-enter, .speed-trails) { animation: none; }
+  .jito-deposit :is(.halo-dim, .halo-breathe, .jito-float, .slogan-shine, .slogan-enter, .caption-enter, .eyebrow-enter, .car-enter, .speed-trails, .player-enter, .wheel-spin) { animation: none; }
 }
 </style>

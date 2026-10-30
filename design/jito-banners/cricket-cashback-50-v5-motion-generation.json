@@ -1,0 +1,80 @@
+{
+  "tool": "built-in image_gen",
+  "asset": "public/assets/ipa/hero-cricket-cashback-v5.png",
+  "sourceArtwork": "design/jito-banners/cricket-cashback-50-v4-no-ball.png",
+  "status": "Implemented as fourth local Jito banner; pending separate deployment",
+  "hierarchyPrompt": "Use case: precise-object-edit — typography hierarchy refinement.\nEdit this exact 1983 x 793 approved IPL three-player banner. CHANGE ONLY the secondary slogan treatment and CASHBACK placement.\n\n1. KEEP \"50%\" EXACTLY its current vivid champagne-gold color/material, bright highlights, shape, size and location. It must remain the clearest and most visually dominant wording. Do not desaturate, dim or recolor any part of 50%.\n2. Weaken \"CRICKET\" and \"UP TO\": shift their faces from bright gold to a lower-contrast warm ivory/stone champagne; substantially reduce glossy highlights, extrusion intensity and surrounding flare. CRICKET may shrink approximately 8% in place to further subordinate it. Keep UP TO very readable.\n3. Weaken \"CASHBACK\": retain its green color family but make it muted pistachio/sage (#BED889 family, darker and less luminous than now), with reduced bright outer glow, lower shine and simpler bevels. It remains clearly readable but no longer competes with 50%.\n4. Move the CASHBACK line UP by roughly 30–35 pixels. Layer it BEHIND the gold 50%, so only the very top edges of a few CASHBACK letters tuck behind the lower edge of 50%, a restrained overlap of about 10–15% of CASHBACK's letter height. Keep the word's identity and complete readability. The gold 50% is always in FRONT and is never covered. Do not replace the overlap with a separate box, and do not shrink the offer number.\n5. Reduce secondary red/green light streaks around the smaller text a little, keeping the overall dynamic diagonal alignment.\n\nEverything else must be preserved: all THREE recognizable faces, exact team kits, natural body proportions and player poses/placement, Iyer's fully visible red lower body and leg pads, Pant center foreground, Bumrah right with small ball IN HIS RAISED HAND, all bats, IPL logo, the stadium, grass, frame and proportions. There is NO large foreground cricket ball, and it must NOT return. No extra text, CTA, names, dates, claims, props, crop or logo changes. Preserve original 1983 x 793 full-bleed opaque canvas.",
+  "layers": [
+    {
+      "key": "cricketPlate",
+      "transparent": false,
+      "prompt": "Use case: precise-object-edit, clean animation background plate. Keep the EXACT 1983 x 793 full canvas and original pixel-coordinate registration. Do NOT crop, recenter, rescale, move or redesign surviving artwork. This is a precise production animation layer extraction from the approved image.\nRemove ALL THREE PLAYERS completely, including every face, hair, limb, jersey, pants, pads, glove, bat and Bumrah's hand-held ball. Also remove ONLY the large GOLD \"50%\" and its attached extrusion/flare. Fill those areas with continuous night cricket stadium, dark burgundy left space, blurred crowd, floodlights and grass consistent with the original.\nKEEP EXACTLY the existing TATA IPL logo at upper left, the muted ivory CRICKET and UP TO, and the muted green CASHBACK. Keep all three phrases at their EXACT original sizes, slopes and positions. Where 50% overlapped the tops of CASHBACK, reconstruct the small hidden parts of CASHBACK so it is complete underneath a future overlaid 50%. Keep CASHBACK anchored where it is, do not vertically move it because the number disappeared. No player ghosts, no 50% fragments, no foreground ball, no new objects or text. Opaque background, full original canvas.",
+      "asset": "public/assets/ipa/hero-cricket-background-v1.png"
+    },
+    {
+      "key": "cricketAmount",
+      "transparent": true,
+      "prompt": "Use case: background-extraction. Keep the EXACT 1983 x 793 full canvas and original pixel-coordinate registration. Do NOT crop, recenter, rescale, move or redesign surviving artwork. This is a precise production animation layer extraction from the approved image.\nExtract ONLY the large gold \"50%\" to a TRUE TRANSPARENT RGBA canvas. Exact source placement approximately x270..905, y245..560, unchanged gold color, highlights, italic letterforms, dark burgundy extrusion, and attached narrow sparkle edges. ALL digits and the % must remain gold. Remove the IPL logo, CRICKET, UP TO, CASHBACK, all players, gloves, bats, stadium, grass, broad light trails and everything else. Do not include any green CASHBACK pixels in this layer. Keep transparent holes and clean alpha edges. The rest of the entire 1983 x 793 canvas is alpha transparent, no black rectangle, white panel or checkerboard. Do NOT enlarge the extracted number to fill the canvas.",
+      "asset": "public/assets/ipa/hero-cricket-amount-v1.png"
+    },
+    {
+      "key": "cricketLeft",
+      "transparent": true,
+      "prompt": "Use case: background-extraction, isolated athlete. Keep the EXACT 1983 x 793 full canvas and original pixel-coordinate registration. Do NOT crop, recenter, rescale, move or redesign surviving artwork. This is a precise production animation layer extraction from the approved image.\nExtract ONLY SHREYAS IYER, the LEFT athlete wearing RED Punjab Kings jersey and RED trousers, including his full connected body from head to visible knees, both arms/hands, batting gloves, tattooed forearm, red trousers and pads, and the wooden bat resting at his shoulder. Preserve his exact face and red-blue team kit, scale and posture. He occupies approximately x810..1160, y70..793 in the original. Reconstruct only tiny body/kit sections hidden by lettering or the adjacent center player, keeping anatomy natural; do not shift the player.\nREMOVE the other two blue-shirted players, all text including 50% and green CASHBACK, IPL logo, crowd, stadium, lights and ground. Do not accidentally include Pant's raised blue-white gloves near Iyer's head. The output contains ONLY Iyer and his own bat/gear on a true alpha-transparent full 1983 x 793 canvas, in the original location. No shadows/glow that include background rectangles, no other faces/arms, no matte or checkerboard.",
+      "asset": "public/assets/ipa/hero-cricket-iyer-v1.png"
+    },
+    {
+      "key": "cricketRight",
+      "transparent": true,
+      "prompt": "Use case: background-extraction, isolated athlete. Keep the EXACT 1983 x 793 full canvas and original pixel-coordinate registration. Do NOT crop, recenter, rescale, move or redesign surviving artwork. This is a precise production animation layer extraction from the approved image.\nExtract ONLY JASPRIT BUMRAH, the RIGHTMOST player in blue-and-gold Mumbai Indians kit. Preserve exact facial identity, hairstyle/beard, body, trousers, both arms/hands, and small WHITE CRICKET BALL in his raised RIGHT HAND. Preserve his exact original bowling action and placement roughly x1540..1983, y50..793. Full rightmost body continues to the existing canvas edge exactly as source.\nREMOVE both other players, all text and IPL logo, all bats/gloves belonging to others, crowd, stadium lights, dust and grass. Do not add a big foreground ball. True RGBA transparency everywhere outside Bumrah and his hand-held ball. Full original 1983 x 793 canvas, no centering, no resizing, no dark/white rectangle, no checkerboard or colored background matte.",
+      "asset": "public/assets/ipa/hero-cricket-bumrah-v1.png"
+    },
+    {
+      "key": "cricketCenter",
+      "transparent": true,
+      "prompt": "Use case: background-extraction, isolated foreground hero. Keep the EXACT 1983 x 793 full canvas and original pixel-coordinate registration. Do NOT crop, recenter, rescale, move or redesign surviving artwork. This is a precise production animation layer extraction from the approved image.\nExtract ONLY RISHABH PANT, the CENTER foreground player wearing the BLUE AND RED Delhi Capitals jersey. Preserve exact facial identity, hair/beard, body proportions, dynamic batting pose, BOTH arms with both blue-white batting gloves, the wooden bat raised to the top edge, blue trousers with red sides and large blue leg pads. Keep his entire original visible silhouette in its exact location, approximately x1110..1580, y0..793. Keep his kit graphics and crest. Do not include Iyer's red sleeve or tattooed forearm, and do not include any part of Bumrah.\nRemove ALL other players, ALL letters including gold 50%, IPL logo, crowd, stadium, grass and light streaks. Do not add a foreground ball. Output ONLY Pant with his bat and equipment on a TRUE transparent full 1983 x 793 RGBA canvas. No moving or enlarging subject, no matte rectangle, no black backdrop or checkerboard. Preserve crisp clean cutout edges and transparent negative space around his arms.",
+      "asset": "public/assets/ipa/hero-cricket-pant-v1.png"
+    }
+  ],
+  "registration": {
+    "canvas": [
+      1983,
+      793
+    ],
+    "amountTransform": "translate(96 64) scale(.8)",
+    "players": "Original full-canvas registration"
+  },
+  "motion": {
+    "left": {
+      "delay": 0.05,
+      "duration": 0.72,
+      "fromX": -90
+    },
+    "right": {
+      "delay": 0.14,
+      "duration": 0.72,
+      "fromX": 90
+    },
+    "center": {
+      "delay": 0.65,
+      "duration": 0.85,
+      "fromScale": 0.88,
+      "fromY": 58,
+      "drawnAboveSides": true
+    },
+    "amount": {
+      "delay": 0.72,
+      "duration": 0.95,
+      "fromScale": 0.72,
+      "overshootScale": 1.055
+    },
+    "shine": {
+      "delay": 0.4,
+      "firstSweepStarts": 1.75,
+      "cycle": 7.5
+    },
+    "staticFallback": "Image mode, reduced motion, or failed layer loads",
+    "pause": "Offscreen or document hidden"
+  },
+  "referencesManifest": "design/jito-banners/cricket-cashback-50-v2-ipl-generation.json"
+}

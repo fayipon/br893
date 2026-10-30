@@ -1,0 +1,36 @@
+{
+  "tool": "built-in image_gen",
+  "mode": "static artwork",
+  "createdAt": "2026-10-30",
+  "status": "User-approved v2, installed locally",
+  "dimensions": {
+    "width": 1983,
+    "height": 793
+  },
+  "assets": [
+    {
+      "title": "Daily Check-in",
+      "source": "public/assets/ipa/promo-daily-checkin-v1.png",
+      "output": "public/assets/ipa/promo-daily-checkin-v2.png",
+      "prompt": "Use case: precise-object-edit / marketing art refinement. Image 1 is the current Jito small-banner EDIT TARGET, not the desired object design. Preserve its exact 1983x793 horizontal canvas, burgundy and teal palette, premium dimensional typography, and exact copy DAILY CHECK-IN / 7 DAYS. The user dislikes the CALENDAR OBJECT. Completely REMOVE the calendar, binding rings, paper page and background check tiles.\nReplace the object grouping in the rightmost 30% with a striking sculptural CHECK-IN MEDALLION: a thick brushed champagne-gold circular medallion at a graceful 20-degree three-quarter angle, deep translucent emerald/teal enamel center, a large solid gold checkmark integrated into its face, and seven simple evenly spaced teal gem insets around its outer rim. Contemporary premium product-render styling, broad surfaces, precise edges, no antique engravings, no rosette ribbons, no laurels, no calendar shapes. A soft teal crescent behind the medallion gives separation from a restrained dark burgundy background. Keep it visually subordinate to the 7, with space separating text from object.\nRefine the left 65% composition: DAILY CHECK-IN as a crisp warm-gold compact header; below, an especially prominent tall gold 7 with the word DAYS in smaller pale teal dimensional type alongside its lower half. The number is clearly dominant rather than making all letters equally huge. Keep all copy on the left and inside safe margins, strong dark outlines, readable at 156x62px. Broad highlights, no tiny decoration or confetti, no button, no additional words or numbers, no money, no gift or chest, no watermark. This is a new finished static mini-banner, not a mockup."
+    },
+    {
+      "title": "VIP Club",
+      "source": "public/assets/ipa/promo-vip-club-v1.png",
+      "output": "public/assets/ipa/promo-vip-club-v2.png",
+      "prompt": "Use case: precise-object-edit / marketing art refinement. Image 1 is the current Jito small-banner EDIT TARGET. Preserve exact 1983x793 canvas, the burgundy / champagne gold / violet palette, and the EXACT copy VIP CLUB / ₹120,000. The user dislikes the OBJECT SHAPES. Completely REMOVE the royal crown, velvet cap, pearls and membership card. Do not just shrink or restyle those same objects.\nReplace the rightmost 30% with a sleek sculptural VIP EMBLEM: an upright polished champagne-gold V monogram integrated with one substantial faceted deep-red ruby, supported by two broad, streamlined gold wing-like fins. Modern luxury membership emblem, compact bold silhouette, machined metal with rich red glass, elegant and architectural rather than a medieval coat of arms. No crown, no shield, no membership card, no trophy, no gift box, no tiny jewels or filigree. Give it strong violet #9B7CFF rim lighting against deep burgundy for contrast.\nThe left 66% is typography with breathing room: VIP CLUB in medium-size pale lavender/champagne display type near the upper left; ₹120,000 is the dominant gold focal point below, all on ONE single line and legible at 156x62px. Keep the rupee glyph ₹ and exactly 120,000 with comma after 120. Smooth restrained beveled faces, burgundy extrusion, less top-heavy text than the original. Ensure emblem and text do not touch. Controlled blurred background, few specular accents, no decorative floor clutter. No additional wording, CTA or watermark. Pure static finished artwork."
+    },
+    {
+      "title": "Cricket Cashback",
+      "source": "public/assets/ipa/promo-cricket-cashback-v1.png",
+      "output": "public/assets/ipa/promo-cricket-cashback-v2.png",
+      "prompt": "Use case: precise-object-edit / typography and composition. Image 1 is the approved Jito CRICKET SMALL BANNER edit target. Keep exact 1983x793 canvas and retain all THREE recognizable athletes, their faces, their red / blue-red / blue-gold team kits, their natural body anatomy and their playing poses. Keep burgundy left background, softly blurred green floodlit cricket stadium on right, bright GOLD 50%, muted sage-green CASHBACK.\nRequired edits:\n1. REMOVE the entire IPL league logo at upper left, including the batter silhouette, colored arc, TATA symbol and both TATA and IPL lettering. No replacement logo.\n2. REMOVE the words UP TO completely.\n3. RECOMPOSE the remaining typography to use that freed space elegantly: place CRICKET alone as a modest warm-champagne heading at upper left, without a large empty hole where the logo was. Under it, make 50% a single enormous gold focal point spanning the middle-left area. CASHBACK is directly below in sage green and smaller than the percentage, very slightly tucked behind its bottom edge but fully readable. Three clean levels with 50% clearly dominant, balanced vertical spacing rather than all three being same size. Maintain 5% safe margins.\n4. Nudge/rebalance the athlete group only as needed so all three faces remain clear on the right; Pant remains central foreground, Iyer red at left of the group, Bumrah right. Keep Iyer's red torso and some lower body visible. Keep small white ball in Bumrah's raised hand, no other foreground ball.\nOnly banner words now are CRICKET / 50% / CASHBACK. No IPL or TATA logo, no UP TO, no additional caption, amount or CTA. Keep kit graphics consistent rather than inventing new ones. Simplify tiny texture and lights so the small 156x62px card reads instantly. Do not modify any other Jito banner or any large-banner design. Pure static artwork, no animated sequence."
+    }
+  ],
+  "changes": [
+    "Daily Check-in: replace calendar with metal check-in medallion",
+    "VIP Club: replace crown and card with ruby and gold V emblem",
+    "Cricket: remove IPL/TATA logo and UP TO, rebalance CRICKET / 50% / CASHBACK"
+  ],
+  "noMotion": true
+}
