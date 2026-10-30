@@ -17,23 +17,13 @@ export const ipaData = {
         spritesImage: 'assets/ipa/hero-deposit-motion-sprites-v1.png',
       },
     },
-    ...home.banners.map(banner => {
-      if (banner.variant === 'referral') return {
-        ...banner,
-        title: 'Referral commission',
-        alt: 'Refer and earn 5% commission — Up to ₹10,00,000 per month.',
-        image: 'assets/ipa/hero-referral-inr-v1.png',
-        lettering: banner.lettering.map(layer => layer.id === 'caption' ? { ...layer, image: 'assets/ipa/hero-referral-caption-inr-v1.png' } : layer),
-      }
-      if (banner.variant === 'members') return {
-        ...banner,
-        title: 'New member bonus',
-        alt: 'New member bonus: ₹8,888. On days 2, 3, 7, 15 and 30.',
-        image: 'assets/ipa/hero-members-inr-v1.png',
-        lettering: banner.lettering.map(layer => layer.id === 'amount' ? { ...layer, image: 'assets/ipa/hero-members-amount-inr-v1.png' } : layer),
-      }
-      return banner
-    }),
+    ...home.banners.filter(banner => banner.variant === 'referral').map(banner => ({
+      ...banner,
+      title: 'Referral commission',
+      alt: 'Refer and earn 5% commission — Up to ₹10,00,000 per month.',
+      image: 'assets/ipa/hero-referral-inr-v1.png',
+      lettering: banner.lettering.map(layer => layer.id === 'caption' ? { ...layer, image: 'assets/ipa/hero-referral-caption-inr-v1.png' } : layer),
+    })),
   ],
   promotions: [
     { title: 'Mystery Mine', alt: 'Mystery Mine — Up to ₹8,888.', image: 'assets/ipa/promo-mystery-mine-inr-v1.png' },

@@ -52,7 +52,7 @@ npm run preview
 
 Design 頁的 `Icons` 區列出 12 個介面 SVG 元件與 8 個導覽／快捷圖示，並提供轉盤、寶箱、禮物的即時動畫、原始透明 PNG 預覽與下載。動畫沿用首頁 `ActivityIcon.vue` 元件，可暫停／繼續，也遵循裝置的減少動態效果設定。
 
-Jito 保留原有四張大 Banner，再新增「Deposit rewards」作為第一張，共五張輪播；首頁與 Design 展示同步。新 Banner 使用 `JitoDepositBanner.vue`：光環以 5.2 秒週期先暗、再亮、再暗，青綠色遮罩與柔邊限制明暗範圍；手中籌碼以 4.6 秒週期上下浮動、五顆獨立紅寶石以 4.9–6.3 秒不同節奏漂浮。主標用獨立透明字稿在 0.95 秒內滑入、微幅放大落定，副標延後 0.36 秒淡入，再接上 BR893 風格的暖金屬掃光，每 7.5 秒循環。靜態原稿、去字底圖及透明文字／浮動物件各自保留，人物及五組獎勵保持穩定。首頁、彈窗與 Design 頁共用同一元件；離開可見範圍或切至背景分頁時暫停，減少動態效果設定及圖片模式顯示完整靜態原稿。素材載入失敗亦保留靜態圖。圖片與內建 image_gen 提示詞記錄於 `design/jito-banners/motion-and-inr-generation.json`，文字拆層記錄於 `design/jito-banners/entrance-generation.json`。
+Jito 大 Banner 僅保留「Deposit rewards」與「Referral commission」兩張，依序顯示儲值獎勵與 5% 邀請佣金；首頁與 Design 展示同步。新 Banner 使用 `JitoDepositBanner.vue`：光環以 5.2 秒週期先暗、再亮、再暗，青綠色遮罩與柔邊限制明暗範圍；手中籌碼以 4.6 秒週期上下浮動、五顆獨立紅寶石以 4.9–6.3 秒不同節奏漂浮。主標用獨立透明字稿在 1.25 秒內由左側 180px 滑入，從 82% 放大至 104.5% 後落定，副標延後 0.55 秒淡入，再接上 BR893 風格的暖金屬掃光，每 7.5 秒循環。靜態原稿、去字底圖及透明文字／浮動物件各自保留，人物及五組獎勵保持穩定。首頁、彈窗與 Design 頁共用同一元件；離開可見範圍或切至背景分頁時暫停，減少動態效果設定及圖片模式顯示完整靜態原稿。素材載入失敗亦保留靜態圖。圖片與內建 image_gen 提示詞記錄於 `design/jito-banners/motion-and-inr-generation.json`，文字拆層記錄於 `design/jito-banners/entrance-generation.json`。
 ## 大 Banner 分層動畫
 
 桌面「專案入口」下方及 Design 頁的 Banners 區提供 `Banner type switch`，可切換原始整張圖片與預設的 `Artwork + motion`。選擇會儲存在此瀏覽器，首頁、展示頁及放大預覽使用同一設定；三張小 Banner 保持原樣。

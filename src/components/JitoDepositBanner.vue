@@ -111,8 +111,8 @@ onUnmounted(() => {
 .halo-breathe, .slogan-shine { opacity: 0; mix-blend-mode: screen; }
 .slogan-enter, .caption-enter, .jito-float { opacity: 0; }
 .slogan-enter { transform-origin: 650px 260px; }
-.motion-ready .slogan-enter { animation: slogan-enter .95s cubic-bezier(.16, 1, .3, 1) both; }
-.motion-ready .caption-enter { animation: caption-enter .65s .36s cubic-bezier(.16, 1, .3, 1) both; }
+.motion-ready .slogan-enter { animation: slogan-enter 1.25s cubic-bezier(.22, .65, .3, 1) both; }
+.motion-ready .caption-enter { animation: caption-enter .65s .55s cubic-bezier(.16, 1, .3, 1) both; }
 .motion-ready .halo-dim { animation: halo-dim 5.2s ease-in-out infinite; }
 .motion-ready .halo-breathe { animation: halo-breathe 5.2s ease-in-out infinite; }
 .motion-ready .jito-float { opacity: 1; animation: jito-float var(--float-duration) var(--float-delay) ease-in-out infinite; }
@@ -120,8 +120,8 @@ onUnmounted(() => {
 .motion-ready :is(.halo-dim, .halo-breathe, .jito-float, .slogan-shine, .slogan-enter, .caption-enter) { animation-play-state: paused; }
 .motion-running :is(.halo-dim, .halo-breathe, .jito-float, .slogan-shine, .slogan-enter, .caption-enter) { animation-play-state: running; }
 @keyframes slogan-enter {
-  0% { opacity: 0; transform: translateX(-78px) scale(.93); filter: blur(4px); }
-  72% { opacity: 1; transform: translateX(4px) scale(1.012); filter: blur(0); }
+  0% { opacity: 0; transform: translateX(-180px) scale(.82); filter: blur(6px); }
+  70% { opacity: 1; transform: translateX(10px) scale(1.045); filter: blur(0); }
   100% { opacity: 1; transform: translateX(0) scale(1); filter: blur(0); }
 }
 @keyframes caption-enter {
@@ -133,10 +133,10 @@ onUnmounted(() => {
 @keyframes jito-float { 0%, 100% { transform: translateY(2px); } 50% { transform: translateY(var(--float-travel)); } }
 /* The warm narrow sweep matches BR893's 1.45s metal shine, with a quiet interval between passes. */
 @keyframes slogan-shine {
-  0%, 15% { opacity: 0; transform: translateX(-300px); }
-  19% { opacity: .75; }
-  31% { opacity: .75; }
-  35%, 100% { opacity: 0; transform: translateX(1600px); }
+  0%, 18% { opacity: 0; transform: translateX(-300px); }
+  22% { opacity: .75; }
+  34% { opacity: .75; }
+  38%, 100% { opacity: 0; transform: translateX(1600px); }
 }
 @media (prefers-reduced-motion: reduce) {
   .jito-deposit :is(.halo-dim, .halo-breathe, .jito-float, .slogan-shine, .slogan-enter, .caption-enter) { animation: none; }
