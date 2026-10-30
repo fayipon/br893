@@ -1,0 +1,24 @@
+{
+  "tool": "built-in image_gen",
+  "createdAt": "2026-10-30",
+  "title": "Daily Deposit Bonus",
+  "status": "Static design draft for review.",
+  "path": "design/jito-banners/daily-deposit-v1.png",
+  "references": [
+    {
+      "path": "public/assets/ipa/hero-deposit-teal-v5.png",
+      "role": "Approved campaign style and queen identity"
+    },
+    {
+      "path": "public/assets/ipa/brand-mark-v1.png",
+      "role": "Brand emblem"
+    }
+  ],
+  "copy": {
+    "tagline": "EVERY DAY",
+    "headline": "DAILY DEPOSIT BONUS",
+    "subtitle": "A new day. A new bonus.",
+    "button": null
+  },
+  "prompt": "Use case: ads-marketing / companion banner redesign.\nAsset: a finished STATIC wide homepage campaign banner for Jito Gaming, 1983 x 793 pixels, full-bleed opaque artwork, same 2.5:1 aspect ratio as reference 1. No mockup or surrounding website UI.\nInput 1 is the previous approved banner: use it as the visual style, material, lighting, palette and adult Indian queen identity reference. Recompose into a distinct SECOND campaign, not a copy with substituted text. Input 2 is the exact Jito emblem, supporting branding reference only; use this red-and-gold emblem once as a clean badge on the treasure chest.\nCampaign: DAILY DEPOSIT BONUS. A new reward each day. There is absolutely NO CTA BUTTON and no button-shaped label.\nComposition: generous and readable typography on the left 55%; the queen and a single generous open treasure chest occupy the right 45%, with strong foreground depth. Keep the woman recognizable from reference 1, alone, confident and welcoming, with flowing dark hair, a modest burgundy royal dress with broad champagne-gold trim and simple jewelry. Use simpler clothing surfaces, no dense embroidery. Her face and shoulders are sharp. She presents the open chest, one hand naturally resting near it; avoid complicated fingers. The chest fills the lower right foreground with broad burgundy lacquer panels, warm gold bands, and a modest scattering of large readable gold coins. Coins arc gently upward around the chest, only a few larger isolated coins. No king, no staff, no row of five rewards, no dense treasure clutter. One small floating ruby near the far right is enough.\nBackground: deep soft-focus teal and burgundy palace atmosphere with large warm bokeh, similar cinematic depth to reference 1. A clean sunrise-like circular teal luminous halo behind the queen suggests the returning day, with simple concentric arcs, no dense tiny runes. Broad glowing teal light and champagne rim light separate the subject. Halo stays clean and sharp; distant environment remains blurred.\nPalette: burgundy #681C32 and rich dark red subjects, champagne gold #E8C77D typography/materials, clear teal #46B8A5 complementary accents. Premium cinematic 3D illustrated realism, dimensional polished metallic gold lettering with dark wine extrusion and teal edge reflections, clean medium detail, crisp large shapes at mobile banner scale. Avoid excessive tiny ornament and overly bright white areas.\nRender ONLY these exact four text elements, perfectly spelled, in this hierarchy:\n1. Small simple unboxed uppercase text at upper left: \"EVERY DAY\"\n2. Medium-large upper headline on one line: \"DAILY DEPOSIT\"\n3. Extremely large bold dimensional gold serif headline below: \"BONUS\"\n4. One short champagne-ivory subtitle below: \"A new day. A new bonus.\"\nBONUS is the dominant readable visual anchor. Give the left text block comfortable safe margins of about 5% and clear dark negative space behind it. Keep ALL lettering unobstructed by the character, coins, chest or decoration. The subtitle is visibly smaller than DAILY DEPOSIT, with no tiny extra copy. A single restrained gold divider line is optional.\nNo \"Claim\", no \"Claim Your Bonus\", no CTA, no pill, no rounded rectangle, no button, no navigation. No extra text, no numbers, percentages or currency amounts, no calendar grid, no watermark. Do not reuse the old slogan. This should feel like an elegant matching second banner with fewer visual elements, not a crowded collage."
+}

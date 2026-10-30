@@ -1,0 +1,46 @@
+{
+  "tool": "built-in image_gen",
+  "createdAt": "2026-10-30",
+  "status": "Integrated as Jito's second hero banner with slogan motion.",
+  "staticArtwork": {
+    "path": "design/jito-banners/daily-deposit-v3-ice-blue.png",
+    "runtimePath": "public/assets/ipa/hero-daily-deposit-v3.png",
+    "source": "design/jito-banners/daily-deposit-v2-modern.png",
+    "prompt": "Use case: precise-object-edit, color palette replacement only.\nEdit this approved 1983 x 793 Daily Deposit Bonus static banner. Change ONLY its cool teal accent color from green/teal to ICE MIST BLUE #A8D8E8. Treat #A8D8E8 as the exact target accent hue family, with darker blue-gray shadows and luminous pale-blue highlights.\nRecolor all teal background illumination and blurred atmosphere, the clean concentric light rings behind the woman, and teal edge reflections/extrusion edges around the gold lettering, chest and character to this cool sophisticated ice-mist blue. The dark left background should become deep smoky midnight blue rather than green; the halo should read as pale ice blue, not turquoise or saturated electric blue. Warm bokeh remains warm champagne.\nPreserve EVERYTHING else exactly: the short-haired modern adult woman, her face, pose, hands, burgundy tailored jacket, open red-and-gold chest with the Jito emblem, gold coins, rubies, sharp text, full layout and composition. Keep the burgundy #681C32 and champagne gold colors unchanged. No changes to brightness of gold letters or skin.\nThe exact text must remain in its exact position, size, shapes, style and spacing:\nEVERY DAY\nDAILY DEPOSIT\nBONUS\nA new day. A new bonus.\nNo buttons, no CTA, no new elements, no extra text, no currency or numbers, no watermark. Same 1983 x 793 full-bleed opaque wide canvas. This is a color revision, not a redesign."
+  },
+  "motionAssets": [
+    {
+      "path": "public/assets/ipa/hero-daily-deposit-textless-v1.png",
+      "transparent": false,
+      "prompt": "Use case: precise-object-edit, clean background plate for animated lettering.\nEdit this exact approved 1983 x 793 Jito Daily Deposit Bonus ice-blue banner. Remove ONLY all typography and its little decorative gold lines/diamonds on the left: \"EVERY DAY\", \"DAILY DEPOSIT\", \"BONUS\", \"A new day. A new bonus.\" Remove all shadows, bevel outlines, extrusion and sparkles belonging to those letters. Inpaint their exact areas with a calm dark midnight-blue / ice-mist-blue softly blurred backdrop continuous with the surroundings. The left text area should remain dark and quiet, not filled with new large bright bokeh.\nKeep EVERYTHING ELSE unchanged at exactly the original pixel position and scale: short-haired woman, face/hair/pose/hands/burgundy jacket, clean ice-blue concentric halo, all coin and ruby locations, open treasure chest with Jito badge, depth, warm gold lighting, blur and color palette #A8D8E8. Do not move, resize, crop, remove or redraw any foreground objects or the person. Same opaque full-bleed 1983 x 793 canvas. No text, labels, buttons or watermark anywhere. This is just a clean textless background, not a new design."
+    },
+    {
+      "path": "public/assets/ipa/hero-daily-deposit-lettering-v1.png",
+      "transparent": true,
+      "prompt": "Use case: background-extraction, isolated typography for animation.\nExtract ONLY the existing left typography and its tiny gold rules/diamonds from this exact Daily Deposit Bonus banner onto a TRUE TRANSPARENT RGBA canvas, 1983 x 793. Strictly preserve every glyph, size, spacing, perspective, placement, shadow, bevel, texture and ice-blue rim lighting; this is a same-coordinate overlay, NOT a newly typeset composition.\nKeep precisely these elements:\n\"EVERY DAY\" with its gold left/right rules, roughly x210..850 y110..150.\n\"DAILY DEPOSIT\" roughly x70..1040 y165..295.\n\"BONUS\" roughly x40..1070 y290..570, including its natural dark shadow and ice-blue edges.\nGold divider around y575 and subtitle \"A new day. A new bonus.\" roughly x170..920 y600..650.\nThose coordinates are registration guides on the original 1983 x 793 source. Do NOT enlarge, center, reflow, tighten the crop or change any text. Keep lots of empty transparent canvas to the right and bottom, exactly as the original layout requires.\nRemove ALL background, bokeh, people, hair, hands, halo, clothing, chest, gold coins and rubies. Keep only lettering, its existing drop shadows and small ornamental rules. All non-letter pixels must be alpha-transparent: no black rectangle, no checkerboard baked in, no cloudy backdrop. Same original wide canvas for accurate registration. No new text or decorations."
+    }
+  ],
+  "textLayerFrames": [
+    {
+      "id": "eyebrow",
+      "x": 0,
+      "y": 0,
+      "width": 1120,
+      "height": 155
+    },
+    {
+      "id": "slogan",
+      "x": 0,
+      "y": 155,
+      "width": 1120,
+      "height": 440
+    },
+    {
+      "id": "caption",
+      "x": 0,
+      "y": 595,
+      "width": 1120,
+      "height": 100
+    }
+  ]
+}

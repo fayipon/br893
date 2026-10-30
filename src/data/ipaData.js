@@ -17,13 +17,24 @@ export const ipaData = {
         spritesImage: 'assets/ipa/hero-deposit-motion-sprites-v1.png',
       },
     },
-    ...home.banners.filter(banner => banner.variant === 'referral').map(banner => ({
-      ...banner,
-      title: 'Referral commission',
-      alt: 'Refer and earn 5% commission — Up to ₹10,00,000 per month.',
-      image: 'assets/ipa/hero-referral-inr-v1.png',
-      lettering: banner.lettering.map(layer => layer.id === 'caption' ? { ...layer, image: 'assets/ipa/hero-referral-caption-inr-v1.png' } : layer),
-    })),
+    {
+      title: 'Daily Deposit Bonus',
+      alt: 'Every day — Daily Deposit Bonus. A new day. A new bonus.',
+      variant: 'jito-daily',
+      image: 'assets/ipa/hero-daily-deposit-v3.png',
+      motion: {
+        backgroundImage: 'assets/ipa/hero-daily-deposit-textless-v1.png',
+        letteringImage: 'assets/ipa/hero-daily-deposit-lettering-v1.png',
+        letteringTransform: 'translate(0 0)',
+        sloganOrigin: '550px 380px',
+        halo: false,
+        textLayers: [
+          { id: 'eyebrow', x: 0, y: 0, width: 1120, height: 155 },
+          { id: 'slogan', x: 0, y: 155, width: 1120, height: 440 },
+          { id: 'caption', x: 0, y: 595, width: 1120, height: 100 },
+        ],
+      },
+    },
   ],
   promotions: [
     { title: 'Mystery Mine', alt: 'Mystery Mine — Up to ₹8,888.', image: 'assets/ipa/promo-mystery-mine-inr-v1.png' },
