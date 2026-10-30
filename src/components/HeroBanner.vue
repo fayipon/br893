@@ -50,7 +50,7 @@ onUnmounted(() => observer?.disconnect())
 </script>
 
 <template>
-  <JitoDepositBanner v-if="banner.variant === 'jito-deposit' || banner.variant === 'jito-daily'" :banner="banner" :type="type" :loading="loading" :priority="priority" />
+  <JitoDepositBanner v-if="banner.variant === 'jito-deposit' || banner.variant === 'jito-daily' || banner.variant === 'jito-first'" :banner="banner" :type="type" :loading="loading" :priority="priority" />
   <div v-else ref="element" class="hero-banner" :class="`hero-banner-${banner.variant}`" :data-banner-type="layered ? 'layered' : 'image'" role="img" :aria-label="banner.alt">
     <svg v-if="layered && banner.variant === 'vip'" class="hero-filter-defs" width="0" height="0" aria-hidden="true" focusable="false">
       <defs>

@@ -35,6 +35,27 @@ export const ipaData = {
         ],
       },
     },
+    {
+      title: 'First Deposit 37% Bonus',
+      alt: 'First deposit — 37% bonus. Start with more.',
+      variant: 'jito-first',
+      image: 'assets/ipa/hero-first-deposit-v4.png',
+      motion: {
+        backgroundImage: 'assets/ipa/hero-first-deposit-background-v1.png',
+        letteringImage: 'assets/ipa/hero-first-deposit-lettering-v1.png',
+        foregroundImage: 'assets/ipa/hero-first-deposit-car-v1.png',
+        letteringTransform: 'translate(8 9) scale(.92 .96)',
+        sloganOrigin: '530px 390px',
+        sloganDelay: '.1s',
+        captionDelay: '.7s',
+        halo: false,
+        textLayers: [
+          { id: 'eyebrow', x: 0, y: 0, width: 1180, height: 155 },
+          { id: 'slogan', x: 0, y: 155, width: 1180, height: 495 },
+          { id: 'caption', x: 0, y: 650, width: 1180, height: 143 },
+        ],
+      },
+    },
   ],
   promotions: [
     { title: 'Mystery Mine', alt: 'Mystery Mine — Up to ₹8,888.', image: 'assets/ipa/promo-mystery-mine-inr-v1.png' },

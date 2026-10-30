@@ -1,0 +1,38 @@
+{
+  "tool": "built-in image_gen",
+  "status": "Approved racing composition; gold 37% and car entrance implemented",
+  "source": "design/jito-banners/first-deposit-37-v3-hierarchy.png",
+  "staticArtwork": "public/assets/ipa/hero-first-deposit-v4.png",
+  "canvas": {
+    "width": 1983,
+    "height": 793
+  },
+  "goldCorrectionPrompt": "Use case: precise-object-edit, single glyph material color correction.\nEdit this exact approved 1983 x 793 Jito First Deposit racing banner. Change ONLY the currently icy-silver percent sign \"%\" to the SAME champagne-gold metallic face and gold bevel material as the adjacent \"37\". Match the existing digits' gold hue, brightness, facet highlights and restrained engraved texture. Preserve the percent sign's dark navy / electric-blue extrusion and rim light so it matches the corresponding dimensional edges of 37. Keep its exact shape, position and size.\nEVERYTHING ELSE remains unchanged: huge gold 37, small ice-white FIRST DEPOSIT, electric-blue/ice-white BONUS, subtitle Start with more., burgundy sports car and Jito hood emblem, racing track, background city, blue #597CFF speed lights, shadows, composition, all text positions and proportions.\nNo redesign, no moving or resizing anything, no extra text or buttons, no new elements, no watermark. Same full-bleed opaque 1983 x 793 canvas. The single intended visible change is that all three characters of 37% have matching GOLD faces.",
+  "layers": [
+    {
+      "key": "first37Plate",
+      "transparent": false,
+      "prompt": "Use case: precise-object-edit, clean animation background plate.\nFrom this EXACT 1983 x 793 First Deposit racing banner, remove the entire burgundy sports car (including its tires, mirrors, emblem, body and car-specific contact shadow) AND remove all lettering: FIRST DEPOSIT, 37%, BONUS, Start with more., plus letter-specific glow and underline decorations.\nInpaint the removed areas with the continuous dark navy racetrack environment, blurred city, #597CFF electric-blue track lights and road reflections. Preserve the original camera perspective and all existing background track/architecture exactly. No new vehicle or objects. The left half stays dark and quiet for text overlay; no large new light objects. The right road is now empty, correctly continuous with the rest of the track.\nDo NOT change the crop, perspective, lighting direction, full canvas size or the background outside the removed subjects. Opaque full-bleed 1983 x 793. No remaining words, numbers, logos, car outlines, wheel shadows or ghost images. Strict clean-plate extraction, not a redesign.",
+      "asset": "public/assets/ipa/hero-first-deposit-background-v1.png"
+    },
+    {
+      "key": "first37Letters",
+      "transparent": true,
+      "prompt": "Use case: background-extraction, exact-coordinate transparent typography.\nExtract ONLY ALL the lettering from this approved 1983 x 793 racing banner to a TRUE TRANSPARENT RGBA canvas of EXACTLY 1983 x 793. Preserve its exact original positions, sizes, silhouettes, perspective, letter shapes, textures, colors, bevels, dark extrusion and narrow electric-blue reflections. Do NOT scale, crop, recenter, reflow or typeset new words.\nRetain:\nFIRST DEPOSIT (ice white, upper left, roughly x140..730 y90..150).\nThe huge GOLD 37 AND GOLD % (both must stay matching champagne gold), roughly x60..1005 y155..630.\nBONUS in ice white/electric blue at x630..1010 y500..605.\nStart with more. at x155..625 y638..690.\nInclude only the fine blue underline strokes directly attached to the lettering. Preserve intentional negative space inside all letter shapes and original shadows. Keep the original occlusion boundary beside the car.\nRemove the entire car, wheels, hood badge, buildings, bokeh, road, background racing light trails and all environment. All non-letter pixels alpha-transparent, no black panel, no baked checkerboard or cloudy rectangular background. Full original canvas, most of the right half fully transparent. This is a precise overlay extraction of existing artwork.",
+      "asset": "public/assets/ipa/hero-first-deposit-lettering-v1.png"
+    },
+    {
+      "key": "first37Car",
+      "transparent": true,
+      "prompt": "Use case: background-extraction, foreground car sprite.\nExtract ONLY the burgundy sports car from this approved First Deposit banner onto a TRUE TRANSPARENT RGBA canvas of EXACTLY 1983 x 793. Keep the car's original absolute pixel placement, scale, three-quarter front camera view, pose, geometry and colors. Do not recenter, enlarge or crop. Original car spans roughly x920..1960 and y170..720. The left half of the canvas remains mostly transparent.\nKeep every visible part of the vehicle: front/rear bodywork, glass and dark cabin, tires/wheels, mirrors, dark grilles, thin gold details, blue headlights, sharp reflections and the small red/gold Jito hood emblem. Preserve clean edges and a very subtle natural contact shadow immediately beneath tires, with transparent falloff. Reconstruct only any tiny rear body edge previously hidden by the lettering so the isolated car is coherent; do not invent a new car shape.\nREMOVE ALL text completely: FIRST DEPOSIT, 37%, BONUS, Start with more. No numbers or letters may be burned onto the car. Remove all racetrack, buildings, road, blue track-light trails and bokeh. No rectangular black backdrop, checkerboard, gray matte or colored halo around the car. Do not include broad sections of road with the shadow. Same full canvas and coordinate registration so it overlays the original background exactly. No new logos, props or decorations.",
+      "asset": "public/assets/ipa/hero-first-deposit-car-v1.png"
+    }
+  ],
+  "motion": {
+    "car": "Perspective road approach over 1.65s: start at 16% scale near the distant upper-right bend, follow the road curve down and left, then grow to 100% and ease into the original foreground pose. Tire-contact origin at (1450,700); subtle turning and diminishing blur; curved blue light trails fade on arrival.",
+    "letteringTransform": "translate(8 9) scale(.92 .96)",
+    "slogan": "Gold 37% and BONUS enter together over 1.25s, delayed 0.1s, then metallic shine.",
+    "captionDelay": ".7s",
+    "fallback": "Static artwork for image mode, reduced motion, or asset error; animations pause offscreen and when page hidden."
+  }
+}

@@ -45,7 +45,7 @@ onMounted(() => {
   motionPreference.addEventListener('change', updateMotion)
   observer = new IntersectionObserver(entries => { visible.value = entries.some(entry => entry.isIntersecting) }, { threshold: .05 })
   observer.observe(element.value)
-  Promise.all([props.banner.motion.backgroundImage, props.banner.motion.letteringImage, props.banner.motion.spritesImage].filter(Boolean).map(path => new Promise((resolve, reject) => {
+  Promise.all([props.banner.motion.backgroundImage, props.banner.motion.letteringImage, props.banner.motion.spritesImage, props.banner.motion.foregroundImage].filter(Boolean).map(path => new Promise((resolve, reject) => {
     const image = new Image()
     image.onload = resolve
     image.onerror = reject
@@ -61,7 +61,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div ref="element" class="hero-banner jito-deposit" :class="[banner.variant, { 'motion-ready': animated, 'motion-running': animated && visible && pageVisible }]" :style="{ '--slogan-origin': banner.motion.sloganOrigin ?? '650px 260px' }" :data-banner-type="animated ? 'layered' : 'image'" role="img" :aria-label="banner.alt">
+  <div ref="element" class="hero-banner jito-deposit" :class="[banner.variant, { 'motion-ready': animated, 'motion-running': animated && visible && pageVisible }]" :style="{ '--slogan-origin': banner.motion.sloganOrigin ?? '650px 260px', '--slogan-delay': banner.motion.sloganDelay ?? '0s', '--caption-delay': banner.motion.captionDelay ?? '.55s' }" :data-banner-type="animated ? 'layered' : 'image'" role="img" :aria-label="banner.alt">
     <img v-if="!motionEnabled || assetFailed" class="jito-static" :src="asset(banner.image)" alt="" width="1983" height="793" :loading="loading" :fetchpriority="priority" />
     <svg v-else class="jito-motion" viewBox="0 0 1983 793" aria-hidden="true" focusable="false">
       <defs>
@@ -86,11 +86,25 @@ onUnmounted(() => {
           <stop offset=".66" stop-color="#fff7da" stop-opacity=".14" />
           <stop offset="1" stop-color="#fff7da" stop-opacity="0" />
         </linearGradient>
+        <linearGradient v-if="banner.motion.foregroundImage" :id="`${id}-speed-light`" gradientUnits="userSpaceOnUse" x1="1790" y1="290" x2="1450" y2="700">
+          <stop offset="0" stop-color="#A8D8E8" stop-opacity="0" />
+          <stop offset=".32" stop-color="#A8D8E8" />
+          <stop offset=".58" stop-color="#597CFF" stop-opacity=".8" />
+          <stop offset="1" stop-color="#597CFF" stop-opacity="0" />
+        </linearGradient>
       </defs>
       <image :href="asset(banner.motion.backgroundImage)" width="1983" height="793" />
       <g v-if="banner.motion.halo !== false" :mask="refId('halo-area')">
         <rect class="halo-dim" width="1983" height="793" fill="#001a19" :mask="refId('halo-mask')" />
         <image class="halo-breathe" :href="asset(banner.motion.backgroundImage)" width="1983" height="793" :filter="refId('teal-key')" />
+      </g>
+      <g v-if="banner.motion.foregroundImage" class="speed-trails" :stroke="refId('speed-light')" fill="none" stroke-linecap="round">
+        <path d="M1760 280C1550 300 1265 470 1400 700" pathLength="100" stroke-width="6" />
+        <path d="M1790 290C1580 310 1310 470 1450 700" pathLength="100" stroke-width="3" />
+        <path d="M1820 300C1610 320 1355 470 1500 700" pathLength="100" stroke-width="8" />
+      </g>
+      <g v-if="banner.motion.foregroundImage" class="car-enter">
+        <image :href="asset(banner.motion.foregroundImage)" width="1983" height="793" />
       </g>
       <!-- Register the extracted typography to the approved poster, then animate each text group independently. -->
       <g :transform="banner.motion.letteringTransform ?? 'translate(10 9) scale(.86 .88)'">
@@ -112,17 +126,36 @@ onUnmounted(() => {
 .jito-motion { pointer-events: none; }
 .halo-dim { opacity: .9; }
 .halo-breathe, .slogan-shine { opacity: 0; mix-blend-mode: screen; }
-.slogan-enter, .caption-enter, .eyebrow-enter, .jito-float { opacity: 0; }
+.slogan-enter, .caption-enter, .eyebrow-enter, .jito-float, .car-enter, .speed-trails { opacity: 0; }
 .slogan-enter { transform-origin: var(--slogan-origin); }
+/* Anchor at the tire contact plane so perspective scaling keeps the car on the road. */
+.car-enter { transform-box: view-box; transform-origin: 1450px 700px; }
+.speed-trails { mix-blend-mode: screen; stroke-dasharray: 26 100; }
 .motion-ready .eyebrow-enter { animation: eyebrow-enter .55s .08s ease-out both; }
-.motion-ready .slogan-enter { animation: slogan-enter 1.25s cubic-bezier(.22, .65, .3, 1) both; }
-.motion-ready .caption-enter { animation: caption-enter .65s .55s cubic-bezier(.16, 1, .3, 1) both; }
+.motion-ready .slogan-enter { animation: slogan-enter 1.25s var(--slogan-delay) cubic-bezier(.22, .65, .3, 1) both; }
+.motion-ready .caption-enter { animation: caption-enter .65s var(--caption-delay) cubic-bezier(.16, 1, .3, 1) both; }
+.motion-ready .car-enter { animation: car-enter 1.65s .06s linear both; }
+.motion-ready .speed-trails { animation: speed-trails 1.65s .06s linear both; }
 .motion-ready .halo-dim { animation: halo-dim 5.2s ease-in-out infinite; }
 .motion-ready .halo-breathe { animation: halo-breathe 5.2s ease-in-out infinite; }
 .motion-ready .jito-float { opacity: 1; animation: jito-float var(--float-duration) var(--float-delay) ease-in-out infinite; }
 .motion-ready .slogan-shine { animation: slogan-shine 7.5s ease-in-out infinite; }
-.motion-ready :is(.halo-dim, .halo-breathe, .jito-float, .slogan-shine, .slogan-enter, .caption-enter, .eyebrow-enter) { animation-play-state: paused; }
-.motion-running :is(.halo-dim, .halo-breathe, .jito-float, .slogan-shine, .slogan-enter, .caption-enter, .eyebrow-enter) { animation-play-state: running; }
+.motion-ready :is(.halo-dim, .halo-breathe, .jito-float, .slogan-shine, .slogan-enter, .caption-enter, .eyebrow-enter, .car-enter, .speed-trails) { animation-play-state: paused; }
+.motion-running :is(.halo-dim, .halo-breathe, .jito-float, .slogan-shine, .slogan-enter, .caption-enter, .eyebrow-enter, .car-enter, .speed-trails) { animation-play-state: running; }
+@keyframes car-enter {
+  0% { opacity: 0; transform: translate(340px, -410px) scale(.16) rotate(-6deg); filter: blur(3px); }
+  18% { opacity: 1; transform: translate(240px, -388px) scale(.24) rotate(-5deg); filter: blur(2px); }
+  40% { opacity: 1; transform: translate(100px, -300px) scale(.43) rotate(-3deg); filter: blur(1.6px); }
+  62% { opacity: 1; transform: translate(-5px, -172px) scale(.69) rotate(-1deg); filter: blur(.8px); }
+  82% { opacity: 1; transform: translate(-15px, -50px) scale(.91) rotate(.4deg); filter: blur(0); animation-timing-function: cubic-bezier(.2, .65, .35, 1); }
+  100% { opacity: 1; transform: translate(0, 0) scale(1) rotate(0); filter: blur(0); }
+}
+@keyframes speed-trails {
+  0% { opacity: 0; stroke-dashoffset: 26; }
+  18% { opacity: .65; }
+  62% { opacity: .5; }
+  100% { opacity: 0; stroke-dashoffset: -100; }
+}
 @keyframes eyebrow-enter {
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
@@ -147,6 +180,6 @@ onUnmounted(() => {
   38%, 100% { opacity: 0; transform: translateX(1600px); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .jito-deposit :is(.halo-dim, .halo-breathe, .jito-float, .slogan-shine, .slogan-enter, .caption-enter, .eyebrow-enter) { animation: none; }
+  .jito-deposit :is(.halo-dim, .halo-breathe, .jito-float, .slogan-shine, .slogan-enter, .caption-enter, .eyebrow-enter, .car-enter, .speed-trails) { animation: none; }
 }
 </style>

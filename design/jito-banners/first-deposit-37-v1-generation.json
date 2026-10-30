@@ -1,0 +1,26 @@
+{
+  "tool": "built-in image_gen",
+  "createdAt": "2026-10-30",
+  "title": "First Deposit 37% Bonus",
+  "status": "Static design draft for review.",
+  "path": "design/jito-banners/first-deposit-37-v1-cream.png",
+  "accent": "#F2D57E",
+  "copy": {
+    "headline": "FIRST DEPOSIT",
+    "amount": "37%",
+    "reward": "BONUS",
+    "subtitle": "Start with more.",
+    "button": null
+  },
+  "references": [
+    {
+      "path": "design/jito-banners/daily-deposit-v3-ice-blue.png",
+      "role": "Series rendering and typography reference only"
+    },
+    {
+      "path": "public/assets/ipa/brand-mark-v1.png",
+      "role": "Brand emblem"
+    }
+  ],
+  "prompt": "Use case: ads-marketing, companion campaign redesign.\nCreate a finished STATIC wide First Deposit 37% Bonus banner for Jito by redesigning reference 1 into a new companion campaign. Reference 1 supplies the premium cinematic 3D rendering, dimensional serif typography, depth and polish only; reference 2 supplies the exact red-and-gold Jito emblem.\nCanvas: 1983 x 793 pixels, full bleed opaque horizontal 2.5:1 banner, no website UI or mockup.\nPrimary contrasting accent is CREAM YELLOW #F2D57E. The other main color is deep burgundy #681C32 with near-black wine shadows. Use a substantial soft cream-yellow light field behind the right-hand reward, buttery-yellow reflective highlights, and champagne metal edges. This should read unmistakably as a cream-yellow and burgundy campaign. Do not carry over any teal, blue, turquoise or green from reference 1. Avoid pure white highlights and harsh orange fire.\nComposition: very large readable typography across the left 55%, and a single impressive red-and-gold WELCOME GIFT BOX on the right. No people or characters. The gift has a rich burgundy polished body, broad satin cream-yellow ribbon with refined metallic-gold edging, a large elegant bow, and the Jito emblem as a small centered front seal. No hearts. Its lid is slightly raised, with warm cream-yellow light emerging through the opening. A few large dimensional gold coins float gently around the gift and rest near its base, with a small red ruby or two for brand color. The gift should feel close in the foreground, tactile and cinematic. Use broad clean shapes, restrained surface detail and generous negative space rather than many small objects.\nBackground: a softly blurred abstract burgundy environment, warm sparse champagne bokeh, and a broad diffuse circular #F2D57E backlight behind the gift. Keep the left text field dark for contrast. No palace architecture, national costume elements, religious/cultural symbols, magic runes or intricate patterns. One soft curved gold light trail may support the gift without clutter.\nTEXT: render ONLY these exact four text elements with perfect spelling and hierarchy:\n\"FIRST DEPOSIT\" — medium-large upper heading at left.\n\"37%\" — by far the largest and most dominant element, bold monumental dimensional typography, luminous cream-yellow #F2D57E faces, champagne-gold bevels, deep burgundy extrusion and shadow.\n\"BONUS\" — subordinate bold companion word below the huge percentage.\n\"Start with more.\" — one concise smaller champagne-cream subtitle at bottom left.\nMaintain 4–5% safe margins, crisp letterforms, balanced spacing. No object may overlap or obscure any part of 37% or the words. Preserve strong mobile readability. No extra text, no buttons, no CTA, no pills, no labels, no additional percentages or invented money amounts, no watermark.\nFinal appearance: modern premium rewards campaign, matching the existing banner series' level of finish but with a simpler gift-focused composition and visibly distinct cream-yellow/burgundy palette."
+}
