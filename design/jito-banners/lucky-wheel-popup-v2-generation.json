@@ -1,0 +1,55 @@
+{
+  "tool": "built-in image_gen",
+  "createdAt": "2026-10-30",
+  "source": "public/assets/ipa/popup-lucky-wheel-v1.png",
+  "staticImage": "public/assets/ipa/popup-lucky-wheel-v2.png",
+  "staticRevisionPrompt": "Use case: precise-object-edit. Edit Image 1, the existing portrait Lucky Wheel poster. Exact source canvas 1122x1402. CHANGE ONLY the LUCKY WHEEL headline size and position: slightly reduce both words together and move the complete two-line heading UP so it fits entirely in the upper region x250..880, y15..360. Leave at least 30 pixels of clear background between the LOWEST headline edge and the TOP of the ruby wheel pointer (pointer starts at roughly y395). No letter, extrusion, glare or shadow may cover or touch the ruby pointer. Keep gold LUCKY and pale-lavender WHEEL, original fonts, slant and metallic material.\nPreserve EVERYTHING else exactly: wheel diameter and location, gold outer rim/bulbs, ruby pointer position and shape, hub, red/gold wedges, prize symbols, pedestal, coins, burgundy/purple scene and lighting. No zoom, cropping or repositioning of wheel or backdrop. No button or caption, no added copy. The only artwork text remains LUCKY / WHEEL. Full opaque portrait image.",
+  "rewardStylePrompt": "Use case: style-transfer. Asset type: transparent 3D promotional lettering sprite for a Lucky Wheel popup. Image 1 is TYPOGRAPHY STYLE REFERENCE ONLY. Create new lettering with exactly two centered lines:\n\"MIN ₹100\"\n\"UP TO ₹5,000\"\nUse the SAME bold, slightly forward-leaning, sculpted slab-serif lettering, deep burgundy-red extrusion, golden beveled outlines and polished metallic faces as the supplied LUCKY WHEEL reference. First line MIN ₹100 has pale lavender-silver faces like WHEEL, at about 60% of the second line height. Second line UP TO ₹5,000 has rich champagne-gold faces like LUCKY. Emphasize ₹5,000 within the second line; UP TO is smaller but remains on that same baseline. Strong dimensional rendering, crisp at mobile size. Centered composition, modest upward-right slant like reference. No extra text, no logos, no scene, no wheel, no plaque, no decorations except tiny restrained edge highlights. Full actual transparent alpha background with clean edges and no checkerboard. Leave narrow transparent padding around complete lettering. Wide compact overall format about 2.3:1. The rupee symbol must be ₹, and the comma must appear in 5,000.",
+  "rewardAssets": [
+    {
+      "role": "min",
+      "prompt": "Use case: background-extraction / text-localization. Image 1 is the exact style reference. Create ONLY \"MIN ₹100\" as one standalone horizontal transparent typography asset. Preserve the exact bold slanted slab-serif font, pale lavender-silver metallic faces, polished gold beveled edge, burgundy-red 3D extrusion from the corresponding lettering in the reference. MIN label about 55% of the height of ₹100; amount is the main focus. One row only with a subtle upward-right slant. Remove the other entire text row. Do not include any other words, numbers, wheel, background, plaque, particles, lens flares, rays, sparkle or sweep highlights. Compact framing with a small transparent safety margin around complete typography. True alpha transparency. This will be independently animated as one unit. Text must be exactly \"MIN ₹100\", including the Indian rupee symbol and correct comma if present.",
+      "image": "public/assets/ipa/popup-lucky-wheel-min-100-v1.png"
+    },
+    {
+      "role": "max",
+      "prompt": "Use case: background-extraction / text-localization. Image 1 is the exact style reference. Create ONLY \"UP TO ₹5,000\" as one standalone horizontal transparent typography asset. Preserve the exact bold slanted slab-serif font, rich champagne-gold metallic faces, polished gold beveled edge, burgundy-red 3D extrusion from the corresponding lettering in the reference. UP TO label about 45% of the height of ₹5,000; amount is the main focus. One row only with a subtle upward-right slant. Remove the other entire text row. Do not include any other words, numbers, wheel, background, plaque, particles, lens flares, rays, sparkle or sweep highlights. Compact framing with a small transparent safety margin around complete typography. True alpha transparency. This will be independently animated as one unit. Text must be exactly \"UP TO ₹5,000\", including the Indian rupee symbol and correct comma if present.",
+      "image": "public/assets/ipa/popup-lucky-wheel-max-5000-v1.png"
+    }
+  ],
+  "behavior": {
+    "scope": "Jito welcome popup and Design preview; shares Banner type switch",
+    "frame": "Artwork only; checkbox below, no SPIN & WIN button",
+    "title": "Raised clear of fixed ruby pointer; .65 second drop, no sweep",
+    "bulbs": "21 stationary bulbs; staggered 1.8 second clockwise brightness/glow wave",
+    "burst": "After 2 seconds, 56 coins/rubies burst radially out of the wheel center and fade outward within 1.35 seconds, no falling",
+    "min": "3.55s: MIN ₹100 scales from 20% to 110% then settles, remains above center",
+    "max": "4.9s: UP TO ₹5,000 scales from 20% to 110% then settles, remains below center",
+    "static": "Both amounts are visible immediately; no particle/light/motion effects",
+    "accessibility": "Reduced motion uses static composition; hidden/offscreen animation pauses"
+  },
+  "placement": {
+    "viewBox": [
+      1122,
+      1402
+    ],
+    "title": [
+      235,
+      18,
+      650,
+      342
+    ],
+    "min": [
+      145,
+      540,
+      832,
+      320
+    ],
+    "max": [
+      40,
+      795,
+      1042,
+      310
+    ]
+  }
+}

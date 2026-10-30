@@ -8,6 +8,7 @@ import HeroBanner from './components/HeroBanner.vue'
 import BannerTypeSwitch from './components/BannerTypeSwitch.vue'
 import GameBrightnessControl from './components/GameBrightnessControl.vue'
 import IpaBrand from './components/IpaBrand.vue'
+import LuckyWheelWelcome from './components/LuckyWheelWelcome.vue'
 import { ipaCopy } from './ipaCopy'
 import { useBannerType } from './bannerType'
 import { useGameBrightness } from './gameBrightness'
@@ -43,6 +44,8 @@ const activityDockTop = ref(null)
 const activityDragging = ref(false)
 const menuDialog = ref(null)
 const infoDialog = ref(null)
+const luckyWheelDialog = ref(null)
+const luckyWheelOpen = ref(false)
 const dialogContent = ref({ title: '', description: '', image: '' })
 const toast = ref('')
 let carouselTimer, noticeTimer, toastTimer, activityScrollTimer
@@ -190,7 +193,7 @@ function handlePageScroll() {
   const scrollY = window.scrollY
   if (scrollY === lastScrollY) return
   lastScrollY = scrollY
-  if (menuDialog.value?.open || infoDialog.value?.open) return
+  if (menuDialog.value?.open || infoDialog.value?.open || luckyWheelOpen.value) return
   pageScrolling.value = true
   clearTimeout(activityScrollTimer)
   activityScrollTimer = setTimeout(() => { pageScrolling.value = false }, 800)
@@ -241,11 +244,11 @@ onMounted(() => {
   if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
     if (data.banners.length > 1) {
       carouselTimer = setInterval(() => {
-        if (!carouselPaused.value && !document.hidden && !menuDialog.value?.open && !infoDialog.value?.open) changeSlide(1)
+        if (!carouselPaused.value && !document.hidden && !menuDialog.value?.open && !infoDialog.value?.open && !luckyWheelOpen.value) changeSlide(1)
       }, 6000)
     }
     noticeTimer = setInterval(() => {
-      if (!noticePaused.value && !document.hidden && !menuDialog.value?.open && !infoDialog.value?.open) {
+      if (!noticePaused.value && !document.hidden && !menuDialog.value?.open && !infoDialog.value?.open && !luckyWheelOpen.value) {
         currentNotice.value = (currentNotice.value + 1) % noticeMessages.length
       }
     }, 3500)
@@ -370,7 +373,7 @@ onUnmounted(() => {
         <div class="activity-group">
           <div id="activity-items" class="activity-panel">
             <div class="activity-items">
-              <button v-for="(activity, index) in activityItems" :key="activity.image" type="button" :aria-label="`${t(activityNames[index])} ${activity.amount}`" aria-haspopup="dialog" @click.stop="showNotice(activityNames[index], activity.image)">
+              <button v-for="(activity, index) in activityItems" :key="activity.image" type="button" :aria-label="`${t(activityNames[index])} ${activity.amount}`" aria-haspopup="dialog" @click.stop="isIpa && index === 0 ? luckyWheelDialog.open() : showNotice(activityNames[index], activity.image)">
                 <ActivityIcon :src="asset(activity.image)" :motion="activity.motion" :tone="isIpa ? 'jito' : 'original'" />
                 <span class="activity-amount" aria-hidden="true">{{ activity.amount }}</span>
                 <span class="activity-label" aria-hidden="true">{{ t(activityNames[index]) }}</span>
@@ -414,6 +417,7 @@ onUnmounted(() => {
     <dialog ref="infoDialog" class="info-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-description" @click="dismissBackdrop">
       <div class="info-content"><button class="dialog-close" :aria-label="t('Fechar')" @click="infoDialog.close()"><UiIcon name="close" /></button><HeroBanner v-if="dialogContent.banner" class="dialog-hero" :banner="dialogContent.banner" :type="bannerType" /><img v-else-if="dialogContent.image" class="dialog-image" :src="asset(dialogContent.image)" alt="" /><span class="dialog-badge">{{ t('DEMONSTRAÇÃO') }}</span><h2 id="dialog-title">{{ dialogContent.title }}</h2><p id="dialog-description">{{ dialogContent.description }}</p><button class="primary-button dialog-confirm" autofocus @click="infoDialog.close()">{{ t('Entendi') }}</button></div>
     </dialog>
+    <LuckyWheelWelcome v-if="isIpa" ref="luckyWheelDialog" :artwork="data.welcomePromotion" @visibility-change="luckyWheelOpen = $event" />
     <Transition name="toast"><div v-if="toast" class="toast-message" role="status"><UiIcon name="check" :size="18" />{{ toast }}</div></Transition>
   </div>
 </template>

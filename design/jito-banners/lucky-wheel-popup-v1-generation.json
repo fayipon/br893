@@ -1,0 +1,37 @@
+{
+  "tool": "built-in image_gen",
+  "createdAt": "2026-10-30",
+  "status": "Approved portrait artwork; static and motion popup implemented locally",
+  "source": "public/assets/ipa/hero-lucky-wheel-v1.png",
+  "image": "public/assets/ipa/popup-lucky-wheel-v1.png",
+  "dimensions": {
+    "width": 1122,
+    "height": 1402
+  },
+  "portraitPrompt": "Use case: compositing / marketing format adaptation. The reference is the APPROVED Jito Lucky Wheel wide banner. Reformat the SAME campaign into a VERTICAL mobile promotional popup artwork. Portrait 4:5 canvas, target 1080x1350 pixels, opaque full bleed.\nKeep the original premium glossy gold/burgundy prize wheel, ruby-red top pointer, champagne ring with warm bulbs, red/gold wedges with simple stars/rubies/rupee-coin symbols, gold hub, purple-lit burgundy casino stage, and a few gold coins at the bottom. Keep the original LUCKY gold / WHEEL pale-lavender metallic display lettering style and burgundy extrusion.\nRecompose: upper 24% has the headline on TWO compact lines LUCKY / WHEEL, centered, strong and readable with graceful upward slant. Leave clear breathing room at the very top-right for a small UI close button to be added in code. The wheel is the visual hero in the lower 70%, large and complete, centered, its pointer just below the headline, its base visible, no cropping of circular rim. Foreground coins sit near the bottom corners and do not cover the wheel or lettering. Purple rim light behind the wheel and deep burgundy background behind text. Use broad shapes and controlled detail so it reads on a 350px mobile popup.\nExact artwork text: LUCKY and WHEEL ONLY. Remove the original small SPIN & WIN caption: a real HTML button will carry that wording BELOW the image. Do NOT draw a button, checkbox, close control, card frame, webpage UI or any extra text. Do not invent prize amounts, percentages, conditions, dates, guarantees or additional objects. Preserve the original approved art's material, palette and overall character while composing naturally for portrait. This is a complete static artwork, not a stretched/cropped wide banner.",
+  "motionLayers": [
+    {
+      "role": "background",
+      "prompt": "Use case: precise-object-edit / animation clean plate. Image 1 is the APPROVED PORTRAIT Lucky Wheel popup, exact 1122x1402 pixels. Keep the same canvas and exact surviving-object registration; no resizing or moving anything.\nREMOVE only both headline words LUCKY and WHEEL including their extrusions and attached text flares, filling their area seamlessly with burgundy stage curtains and violet background light. REMOVE the wheel's INNER prize wedges and all stars, rubies and rupee coin icons inside the wheel face, replacing that interior with smooth deep burgundy enamel. KEEP the central circular gold hub, entire outer rim and bulbs, ruby pointer, pedestal, foreground coins and stage in the exact same pixel positions. This is a production background layer for animation, not a redesigned poster. No words, no leftover letter fragments, no new objects. Full opaque canvas 1122x1402.",
+      "transparentBackground": false,
+      "image": "public/assets/ipa/popup-lucky-wheel-background-v1.png"
+    },
+    {
+      "role": "lettering",
+      "prompt": "Use case: background-extraction. Image 1 is the approved portrait Lucky Wheel popup. Extract ONLY its LUCKY / WHEEL two-line heading, preserving the exact gold LUCKY, pale lavender WHEEL, original serif lettering forms, slant, spacing, burgundy 3D extrusion, gold edges and attached highlights. Remove absolutely everything else including the wheel pointer, stage, purple light, coins and backdrop. Render as a tightly framed transparent typography sprite, target 1024x640 pixels, the heading fills almost all the canvas with a small transparent safety margin. Do not rearrange the two lines or change their shape and color. Use TRUE transparent RGBA background, with transparent counters and gaps. No black rectangle, no checkerboard, no caption or additional content.",
+      "transparentBackground": true,
+      "image": "public/assets/ipa/popup-lucky-wheel-lettering-v1.png"
+    }
+  ],
+  "reusedWheel": "public/assets/ipa/hero-lucky-wheel-disc-v1.png",
+  "behavior": {
+    "mode": "shared Banner type switch",
+    "wheelSeconds": 12,
+    "titleSeconds": 0.65,
+    "titleDelay": 0.03,
+    "shineDelay": 0.8,
+    "shineLoop": 6.5,
+    "dailyDismissal": "visitor-local calendar day, localStorage",
+    "scope": "Jito homepage only; Design preview available"
+  }
+}

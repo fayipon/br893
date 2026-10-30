@@ -104,4 +104,19 @@ export const ipaData = {
     { title: 'VIP Club', alt: 'VIP Club — ₹120,000.', image: 'assets/ipa/promo-vip-club-v2.png' },
     { title: 'Cricket Cashback', alt: 'Cricket — 50% Cashback.', image: 'assets/ipa/promo-cricket-cashback-v2.png' },
   ],
+  welcomePromotion: {
+    title: 'Lucky Wheel popup',
+    alt: 'Lucky Wheel — Min ₹100, up to ₹5,000.',
+    variant: 'jito-lucky-wheel-popup',
+    image: 'assets/ipa/popup-lucky-wheel-v2.png',
+    rewards: {
+      min: 'assets/ipa/popup-lucky-wheel-min-100-v1.png',
+      max: 'assets/ipa/popup-lucky-wheel-max-5000-v1.png',
+    },
+    motion: {
+      backgroundImage: 'assets/ipa/popup-lucky-wheel-background-v1.png',
+      letteringImage: 'assets/ipa/popup-lucky-wheel-lettering-v1.png',
+      wheelImage: 'assets/ipa/hero-lucky-wheel-disc-v1.png',
+    },
+  },
 }

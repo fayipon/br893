@@ -2,6 +2,7 @@
 import { computed, nextTick, onMounted, ref } from 'vue'
 import UiIcon from './UiIcon.vue'
 import HeroBanner from './HeroBanner.vue'
+import LuckyWheelPopupArtwork from './LuckyWheelPopupArtwork.vue'
 import BannerTypeSwitch from './BannerTypeSwitch.vue'
 import GameBrightnessControl from './GameBrightnessControl.vue'
 import DesignIcons from './DesignIcons.vue'
@@ -147,14 +148,18 @@ onMounted(() => {
         <div class="design-promo-grid">
           <button v-for="promotion in data.promotions" :key="promotion.image" class="design-artwork" :aria-label="`Preview ${promotion.title}`" @click="openArtwork(promotion)"><img :src="asset(promotion.image)" :alt="promotion.alt" width="1983" height="793" loading="lazy" /><span class="design-artwork-caption"><span>{{ promotion.title }}</span><UiIcon name="right" :size="17" /></span></button>
         </div>
+        <template v-if="data.welcomePromotion">
+          <div class="design-gallery-label design-gallery-label-small"><h3>Welcome popup</h3><span>Static + motion</span></div>
+          <div class="design-popup-grid"><button class="design-artwork" aria-label="Preview Lucky Wheel popup" @click="openArtwork(data.welcomePromotion)"><LuckyWheelPopupArtwork :key="motionReplay" :artwork="data.welcomePromotion" :type="bannerType" /><span class="design-artwork-caption"><span>Lucky Wheel popup</span><UiIcon name="right" :size="17" /></span></button></div>
+        </template>
         <p class="design-caption">Select an artwork for a closer look.</p>
       </section>
 
       <footer class="design-footer"><span>{{ siteName }} <span class="design-footer-dot">/</span> Design library</span><a :href="homeUrl">Back to site <UiIcon name="right" :size="16" /></a></footer>
     </main>
 
-    <dialog ref="artworkDialog" class="design-artwork-dialog" aria-labelledby="artwork-title" @click="event => { if (event.target === event.currentTarget) artworkDialog.close() }" @close="selectedArtwork = null">
-      <template v-if="selectedArtwork"><header><h2 id="artwork-title">{{ selectedArtwork.title }}</h2><button aria-label="Close artwork" autofocus @click="artworkDialog.close()"><UiIcon name="close" :size="23" /></button></header><HeroBanner v-if="selectedArtwork.backgroundImage || selectedArtwork.motion" :banner="selectedArtwork" :type="bannerType" /><img v-else :src="asset(selectedArtwork.image)" :alt="selectedArtwork.alt" /><p class="design-artwork-description">{{ selectedArtwork.alt }}</p></template>
+    <dialog ref="artworkDialog" class="design-artwork-dialog" :class="{ 'design-artwork-dialog--portrait': selectedArtwork?.variant === 'jito-lucky-wheel-popup' }" aria-labelledby="artwork-title" @click="event => { if (event.target === event.currentTarget) artworkDialog.close() }" @close="selectedArtwork = null">
+      <template v-if="selectedArtwork"><header><h2 id="artwork-title">{{ selectedArtwork.title }}</h2><button aria-label="Close artwork" autofocus @click="artworkDialog.close()"><UiIcon name="close" :size="23" /></button></header><LuckyWheelPopupArtwork v-if="selectedArtwork.variant === 'jito-lucky-wheel-popup'" :artwork="selectedArtwork" :type="bannerType" /><HeroBanner v-else-if="selectedArtwork.backgroundImage || selectedArtwork.motion" :banner="selectedArtwork" :type="bannerType" /><img v-else :src="asset(selectedArtwork.image)" :alt="selectedArtwork.alt" /><p class="design-artwork-description">{{ selectedArtwork.alt }}</p></template>
     </dialog>
   </div>
 </template>
@@ -241,6 +246,8 @@ onMounted(() => {
 .design-artwork-caption > svg { flex-shrink: 0; color: #bd7499; }
 .design-gallery-label-small { margin-top: 36px; }
 .design-promo-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.design-popup-grid { width: min(100%, 280px); }
+.design-artwork-dialog.design-artwork-dialog--portrait { width: min(420px, calc(100vw - 32px), calc((100dvh - 158px) * .8)); }
 .design-footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 28px 0 36px; border-top: 1px solid var(--panel-border); color: var(--text-muted); font-size: 13px; }
 .design-footer-dot { padding-inline: 10px; color: #bd7499; }
 .design-footer a { display: inline-flex; align-items: center; gap: 8px; }
