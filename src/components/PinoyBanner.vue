@@ -4,9 +4,9 @@ import PinoyRebateBanner from './PinoyRebateBanner.vue'
 import PinoyWelcomeBanner from './PinoyWelcomeBanner.vue'
 defineProps({ bonus: Boolean, weekly: Boolean, payday: Boolean, deposits: Boolean, royal: Boolean })
 const { bannerType } = useBannerType()
-const weeklyArtwork = `${import.meta.env.BASE_URL}assets/pinoyplay/weekly-cashback-v3-graffiti.png`
-const paydayArtwork = `${import.meta.env.BASE_URL}assets/pinoyplay/payday-v1-graffiti.png`
-const depositsArtwork = `${import.meta.env.BASE_URL}assets/pinoyplay/first-three-deposits-v1-graffiti.png?v=1`
+const weeklyArtwork = `${import.meta.env.BASE_URL}assets/pinoyplay/weekly-cashback-v4-rooster.png`
+const paydayArtwork = `${import.meta.env.BASE_URL}assets/pinoyplay/payday-v2-rooster.png`
+const depositsArtwork = `${import.meta.env.BASE_URL}assets/pinoyplay/first-three-deposits-v2-rooster.png`
 const carnivalArtwork = `${import.meta.env.BASE_URL}assets/pinoyplay/new-player-carnival-v1.png`
 </script>
 
