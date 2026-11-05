@@ -3,9 +3,13 @@ import { computed, onMounted, onUnmounted, ref, useId, watch } from 'vue'
 
 const props = defineProps({ type: { type: String, default: 'layered' } })
 const asset = name => `${import.meta.env.BASE_URL}assets/pinoyplay/${name}`
-const artwork = asset('register-bonus-v4-orange.png')
+const artwork = asset('register-bonus-v5-brand.png')
 const boot = asset('welcome-cass-raised-boot-v1.png')
-const layer = name => asset(`register-bonus-${name}-v1.png`)
+const brandedLayers = {
+  background: 'register-bonus-background-v2-brand.png',
+  copy: 'register-bonus-copy-v2-brand.png',
+}
+const layer = name => asset(brandedLayers[name] ?? `register-bonus-${name}-v1.png`)
 const textGroups = [
   { id: 'badge', x: 30, y: 55, width: 395, height: 78 },
   { id: 'headline', x: 30, y: 133, width: 675, height: 115 },

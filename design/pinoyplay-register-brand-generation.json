@@ -1,0 +1,48 @@
+{
+  "tool": "built-in image_gen",
+  "createdAt": "2026-11-06",
+  "component": "src/components/PinoyWelcomeBanner.vue",
+  "request": "Align Register Bonus banner with the PinoyPlay logo palette.",
+  "palette": {
+    "navy": "#123474",
+    "red": "#FA2541",
+    "white": "#FFFFFF"
+  },
+  "preserved": [
+    "Character and clothing",
+    "Composition and exact copy",
+    "Existing animation and reduced-motion/static fallback"
+  ],
+  "assets": [
+    {
+      "path": "public/assets/pinoyplay/register-bonus-v5-brand.png",
+      "sourcePath": "C:/Users/user/.codex/generated_images/01a1adbf-bf6d-7f20-9be3-be59b7096ba7/exec-5176b201-139d-4056-a08b-a1eb2d4a9c66.png",
+      "transparent_background": false,
+      "references": [
+        "C:/Users/user/Documents/GitHub/br893/public/assets/pinoyplay/register-bonus-v4-orange.png",
+        "C:/Users/user/Documents/GitHub/br893/public/assets/pinoyplay/logo.webp"
+      ],
+      "prompt": "Use case: precise-object-edit, color-only brand palette alignment. Match PinoyPlay's existing navy #123474, vivid Play Red #FA2541 and white #FFFFFF. Preserve all original geometry, positions, scale, font shapes, line breaks, art detail, texture and canvas registration. No additions or redesign. Full 1882x836 landscape canvas.\nImage 1 is the EDIT TARGET, the complete Register Bonus banner. Image 2 is a COLOR REFERENCE ONLY; do not insert the logo. Change ONLY: (1) all orange faces of the huge left-hand ₱20 to vivid brand red #FA2541, retaining subtle tonal modeling and the existing dark navy extrusion; (2) shift the bright cobalt background and ghost portrait toward a richer deeper navy #123474, allowing restrained blue midtones and preserving the white lower gradient and white decorative strokes. Harmonize the already-red badge and slim tag accents to the same brand red. Keep all other elements pixel-faithful: the cowgirl's exact face, purple vest, pink shirt, cream hat/trousers, brown boots, crossed-leg pose and chair; all typography and all placement. Exact copy remains NEW PLAYER EXCLUSIVE, REGISTER BONUS, ₱20, giant WHITE WELCOME, REGISTER, AUTO CREDIT, and Deposit required to play · 5× Slot wagering. Do not recolor character or clothing, do not darken the white text or white lower background. The visible design should read navy/red/white instead of cobalt/orange/white. Opaque complete finished banner."
+    },
+    {
+      "path": "public/assets/pinoyplay/register-bonus-background-v2-brand.png",
+      "sourcePath": "C:/Users/user/.codex/generated_images/01a1adbf-bf6d-7f20-9be3-be59b7096ba7/exec-a5943498-efac-45f3-ad08-93e63b51eabd.png",
+      "transparent_background": false,
+      "references": [
+        "C:/Users/user/Documents/GitHub/br893/public/assets/pinoyplay/register-bonus-background-v1.png",
+        "C:/Users/user/Documents/GitHub/br893/public/assets/pinoyplay/logo.webp"
+      ],
+      "prompt": "Use case: precise-object-edit, color-only brand palette alignment. Match PinoyPlay's existing navy #123474, vivid Play Red #FA2541 and white #FFFFFF. Preserve all original geometry, positions, scale, font shapes, line breaks, art detail, texture and canvas registration. No additions or redesign. Full 1882x836 landscape canvas.\nImage 1 is the EDIT TARGET, an existing background-only animation layer. Image 2 is COLOR REFERENCE ONLY; do not insert the logo. Change ONLY the bright cobalt blue backdrop and translucent upper-right cowgirl portrait to a richer deeper navy based on #123474. Preserve the exact existing gentle tonal variation, blue midtone detail, faint graphic patterns, precise white decorative halo strokes, lower white textured gradient and portrait geometry. Keep white areas white. No red new areas, no characters in the foreground, no chair, no text, no amount, no new objects. All artwork must remain in its existing coordinates for the animation layers. Opaque full-canvas background."
+    },
+    {
+      "path": "public/assets/pinoyplay/register-bonus-copy-v2-brand.png",
+      "sourcePath": "C:/Users/user/.codex/generated_images/01a1adbf-bf6d-7f20-9be3-be59b7096ba7/exec-6a88891d-9d7c-4e26-8706-457c5e57a4c9.png",
+      "transparent_background": true,
+      "references": [
+        "C:/Users/user/Documents/GitHub/br893/public/assets/pinoyplay/register-bonus-copy-v1.png",
+        "C:/Users/user/Documents/GitHub/br893/public/assets/pinoyplay/logo.webp"
+      ],
+      "prompt": "Use case: precise-object-edit, color-only brand palette alignment. Match PinoyPlay's existing navy #123474, vivid Play Red #FA2541 and white #FFFFFF. Preserve all original geometry, positions, scale, font shapes, line breaks, art detail, texture and canvas registration. No additions or redesign. Full 1882x836 landscape canvas.\nImage 1 is the EDIT TARGET, a transparent full-canvas registered typography sprite containing six separate groups in fixed coordinates. Image 2 is COLOR REFERENCE ONLY; do not insert the logo. Change ONLY orange front faces of the large left-hand ₱20 to vivid red #FA2541. Keep its exact letter silhouettes, perspective and dark navy extrusion/shadow, using #123474 navy where needed. Harmonize the already-red NEW PLAYER EXCLUSIVE strip and the slim red accents on REGISTER and AUTO CREDIT labels to the same #FA2541. Preserve all other glyphs, whites, navy lettering and compact shadows. Text is exactly NEW PLAYER EXCLUSIVE, REGISTER BONUS, ₱20, REGISTER, AUTO CREDIT, Deposit required to play · 5× Slot wagering. Preserve all SIX groups in their existing positions, including small footer. Do not resize, recenter, rearrange or crop. The amount must stay within its existing approximately x0..555 y250..715 region. No WELCOME background word, no background art, no character. Preserve genuine alpha transparency everywhere outside the original text groups; no checkerboard, no opaque background, no new outline or haze."
+    }
+  ]
+}
