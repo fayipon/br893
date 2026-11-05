@@ -59,7 +59,7 @@ export const firstThreeDeposits = {
 }
 
 export const royalArrival = {
-  title: 'Royal Arrival',
+  title: 'New Player Carnival',
   displayTotal: 16000,
   totalRewards: 15995,
   summary: 'Complete 28 wagering and free-reward tasks. Every reward carries a 1× wagering requirement.',
@@ -269,5 +269,5 @@ export const pinoyBannerSlides = [
   { id: 'weekly-cashback', label: 'Weekly Cashback', kind: 'weekly-cashback', title: weeklyCashback.title },
   { id: 'payday', label: 'Payday', kind: 'payday', title: payday.title },
   { id: 'first-three-deposits', label: 'First 3 Deposits', kind: 'first-three-deposits', title: firstThreeDeposits.title },
-  { id: 'royal-arrival', label: 'Royal Arrival', kind: 'royal-arrival', title: royalArrival.title },
+  { id: 'royal-arrival', label: royalArrival.title, kind: 'royal-arrival', title: royalArrival.title },
 ]

@@ -1,0 +1,30 @@
+{
+  "tool": "built-in image_gen",
+  "createdAt": "2026-11-06",
+  "file": "public/assets/pinoyplay/new-player-carnival-v1.png",
+  "source": "C:/Users/user/.codex/generated_images/01a1adbf-bf6d-7f20-9be3-be59b7096ba7/exec-66d08c9d-ad8f-4f2e-bf7d-78c0b6658f05.png",
+  "editTarget": "public/assets/pinoyplay/royal-arrival-v1.png",
+  "activityName": {
+    "zhHant": "新手嘉年華",
+    "en": "New Player Carnival"
+  },
+  "prompt": "Use case: text-localization / precise typography edit. Image 1 is the EDIT TARGET: an existing approved wide anime promotional banner. Rename the campaign from ROYAL ARRIVAL to NEW PLAYER CARNIVAL (meaning 新手嘉年華). Keep the same graphic orange, petrol-cyan, near-black and ivory screen-print art direction, distressed heavy condensed italic typography and original adult headphone character.\n\nChange the upper-left headline ONLY to these two exact lines:\nNEW PLAYER\nCARNIVAL\nMake NEW PLAYER fit within the original left text region, using a somewhat smaller condensed headline size than CARNIVAL. CARNIVAL should be very large and emphatic. Both lines should be fully legible, ivory/off-white with the same black offset/edging and printed texture. Below the title add a restrained small supporting line: COMPLETE TASKS · UNLOCK REWARDS. Keep it readable, clearly subordinate to the title. Adjust only local text spacing in the left area to fit this short line; keep the lower amount in its original location.\n\nPreserve the exact lower qualifier APPROX. TOTAL REWARDS and the exact one-line amount ₱16,000. The APPROX. qualifier is required and must remain immediately above the amount. Keep all of these copy elements confined to the original left half and avoid covering the character.\n\nEverything else stays unchanged: the entire right-hand headphone-wearing anime character, facial identity, eye, head angle, clothes, earcup, original orange/cyan/black colors, background textures, diagonal strokes, halftone, canvas proportions, foreground details, amount styling and amount location. No added crown, carnival tent, confetti, logo, button, badge, extra character, or extra words. Remove both old words ROYAL and ARRIVAL completely. Do not redesign the artwork, recolor it, crop it, or shift the character. Output a finished full-canvas 1882 x 836 opaque banner.",
+  "visibleCopy": [
+    "NEW PLAYER",
+    "CARNIVAL",
+    "COMPLETE TASKS · UNLOCK REWARDS",
+    "APPROX. TOTAL REWARDS",
+    "₱16,000"
+  ],
+  "displayTotal": 16000,
+  "exactTaskTotal": 15995,
+  "taskCount": 28,
+  "integration": [
+    "Homepage sixth carousel slide",
+    "Promotions",
+    "Rewards",
+    "Activity details",
+    "Design library"
+  ],
+  "taskData": "src/data/pinoyPromotions.js"
+}

@@ -7,12 +7,12 @@ const { bannerType } = useBannerType()
 const weeklyArtwork = `${import.meta.env.BASE_URL}assets/pinoyplay/weekly-cashback-v3-graffiti.png`
 const paydayArtwork = `${import.meta.env.BASE_URL}assets/pinoyplay/payday-v1-graffiti.png`
 const depositsArtwork = `${import.meta.env.BASE_URL}assets/pinoyplay/first-three-deposits-v1-graffiti.png?v=1`
-const royalArtwork = `${import.meta.env.BASE_URL}assets/pinoyplay/royal-arrival-v1.png`
+const carnivalArtwork = `${import.meta.env.BASE_URL}assets/pinoyplay/new-player-carnival-v1.png`
 </script>
 
 <template>
   <div class="pinoy-banner" :class="{ 'pinoy-banner--motion': bannerType === 'layered' }">
-    <img v-if="royal" :src="royalArtwork" alt="Royal Arrival — approximately ₱16,000 in total rewards" width="1882" height="836" />
+    <img v-if="royal" :src="carnivalArtwork" alt="New Player Carnival — approximately ₱16,000 in total rewards" width="1882" height="836" />
     <img v-else-if="deposits" :src="depositsArtwork" alt="First 3 Deposits — total bonus up to ₱17,000" width="1882" height="836" />
     <img v-else-if="payday" :src="paydayArtwork" alt="Payday — up to ₱5,000 in tier rewards" width="1882" height="836" />
     <img v-else-if="weekly" :src="weeklyArtwork" alt="Weekly Cashback — 10% back on eligible weekly net losses from Slot games" width="1882" height="836" />
