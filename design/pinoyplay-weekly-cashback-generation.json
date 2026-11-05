@@ -1,0 +1,28 @@
+{
+  "mode": "built-in imagegen",
+  "file": "public/assets/pinoyplay/weekly-cashback-v2.png",
+  "source": "C:\\Users\\user\\.codex\\generated_images\\01a1aa47-a496-7f62-8846-50443ad7efc8\\exec-c8a4f5a4-8ea2-44df-aaeb-f3f99625d285.png",
+  "reference": "C:/Users/user/AppData/Local/Temp/codex-clipboard-ba1d64bd-5fb3-4b5b-accc-37111b3ed418.png",
+  "initialGeneration": {
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a1aa47-a496-7f62-8846-50443ad7efc8\\exec-55350c3f-f1ae-422d-9125-9b74d18b8bd6.png",
+    "prompt": "Use case: ads-marketing. Create a finished wide website campaign banner for PinoyPlay's 10% weekly Slot loss cashback, in a 1882 x 836 composition, sharp enough for retina display. Input image 1 is a COMPOSITION AND ART-DIRECTION REFERENCE, not a screenshot to paste.\nReference direction: a cinematic futuristic city at night, deep ink navy and cyan architecture, a large broken white holographic ring behind two adult anime-styled women, a few controlled acid-lime vertical light accents. Follow the reference's clean anime game-key-art treatment, dramatic perspective, translucent blue light trails and foreground/background depth. Create two original mature adult cyber-streetwear heroines: a silver-lavender short-haired woman in a white technical jacket and fitted white trousers closer to camera, and a long teal-haired woman with a futuristic handheld device slightly behind. Keep their faces, hands, hair and fabric seams very clear and coherent, no muddy texture or oversharpening. Outfit is sporty, fully clothed.\nAdapt layout for a readable campaign: left 43% is a deep navy uninterrupted text zone with subtle city detail, right 57% holds both women, each large enough to read at mobile banner size. Their silhouettes may overlap the central holographic ring, but never cover the offer text. City scene continues edge to edge across the entire canvas. No panel seams or boxed text card. Keep important content at least 60px from edges and leave the extreme bottom-right 170x100 area free of essential details for carousel controls.\nExact text, large and legible:\n\"SLOT WEEKLY\" on the first line, \"CASHBACK\" on the second line, both condensed bold uppercase white, upper-left.\n\"10%\" below, dominant enormous bold condensed italic numerals in a luminous but controlled lime-to-pale-lemon gradient with a crisp ivory edge, not coins or metallic lettering.\n\"OF YOUR WEEKLY NET LOSSES\" directly below the number, smaller uppercase white but readable.\n\"EVERY MONDAY • 9 AM\" at bottom-left, cyan-white.\nUse typography with strong hierarchy and generous spacing; the four text groups must fit the left zone without touching each other.\nKeep neon yellow-lime accents limited to the percentage and slim atmospheric lines; avoid large flat saturated yellow blocks. Background buildings slightly softer than sharp foreground figures. High quality clean promotional art, cohesive cool lighting. No PinoyPlay logo, no rooster, no coins, no slot machine, no extra offer claims, no fake button, no watermark, no rule paragraphs."
+  },
+  "finalPrompt": "Use case: text-localization and precise-object-edit. Image 1 is the EDIT TARGET, an approved finished weekly cashback banner. Make exactly these text edits:\n1. Replace the first headline line \"SLOT WEEKLY\" with \"WEEKLY\". Keep the second line \"CASHBACK\". The final title is two lines: \"WEEKLY\" / \"CASHBACK\". Use the existing white bold condensed italic type, same large height, left alignment and spacing.\n2. Completely remove the line \"OF YOUR WEEKLY NET LOSSES\".\n3. Completely remove the line \"EVERY MONDAY • 9 AM\".\nRestore the removed two bottom-left lines to seamless dark navy/cyan city background continuing the existing architecture and light trails. Do not replace them with any new copy, labels, marks, or ornaments. Keep \"10%\" exactly as it is: same size, place, lime-to-lemon gradient, white edge and tilt.\nEverything else must remain unchanged: both characters and their detailed faces, body proportions, poses and clothing; holographic white ring; cyan neon city; camera; lighting; slim lime accents; entire wide 1882 x 836 composition. No cropping, recoloring, rearrangement or extra text.",
+  "visibleCopy": [
+    "WEEKLY CASHBACK",
+    "10%"
+  ],
+  "removedCopy": [
+    "SLOT",
+    "OF YOUR WEEKLY NET LOSSES",
+    "EVERY MONDAY • 9 AM"
+  ],
+  "integration": [
+    "Homepage carousel",
+    "Cashback shortcut",
+    "Promotions",
+    "Rewards",
+    "Design library"
+  ],
+  "activityRulesSource": "src/data/pinoyPromotions.js"
+}

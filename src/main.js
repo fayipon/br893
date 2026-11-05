@@ -10,22 +10,27 @@ const searchParams = new URLSearchParams(location.search)
 const isDesign = searchParams.get('page') === 'design'
 const isPreview = searchParams.get('preview') === '1'
 const isIpa = searchParams.get('page') === 'ipa' || (isDesign && searchParams.get('site') === 'ipa')
-const isBr893 = !isIpa && (searchParams.get('page') === 'br893' || searchParams.has('background'))
-const isSite = isIpa || isBr893
-const site = isIpa ? 'ipa' : 'br893'
-const siteName = isIpa ? 'Jito' : 'BR893'
-const page = isDesign
+const isPinoyPlay = searchParams.get('page') === 'pinoyplay' || (isDesign && searchParams.get('site') === 'pinoyplay')
+const isBr893 = !isIpa && !isPinoyPlay && (searchParams.get('page') === 'br893' || searchParams.has('background'))
+const isSite = isIpa || isPinoyPlay || isBr893
+const site = isPinoyPlay ? 'pinoyplay' : isIpa ? 'ipa' : 'br893'
+const siteName = isPinoyPlay ? 'PinoyPlay' : isIpa ? 'Jito' : 'BR893'
+const page = isPinoyPlay
+  ? isPreview && !isDesign ? DesignPreview : defineAsyncComponent(() => isDesign ? import('./components/PinoyDesignPage.vue') : import('./components/PinoyPlayPage.vue'))
+  : isDesign
   ? defineAsyncComponent(() => import('./components/DesignPage.vue'))
   : isPreview ? DesignPreview : isSite ? App : ProjectHub
 
 document.documentElement.classList.toggle('ipa-theme', isIpa)
-document.documentElement.lang = isDesign ? 'en' : isPreview || !isSite ? 'zh-Hant' : isIpa ? 'en' : 'pt-BR'
+document.documentElement.classList.toggle('pinoyplay-theme', isPinoyPlay)
+document.documentElement.lang = isDesign ? 'en' : isPreview || !isSite ? 'zh-Hant' : isPinoyPlay || isIpa ? 'en' : 'pt-BR'
 document.title = isDesign ? `${siteName} · Design` : isPreview ? `${siteName} · 設計預覽` : isSite ? `${siteName} · Homepage Design` : 'Project Hub · 專案入口'
 document.querySelector('meta[name="description"]').content = isDesign
   ? `${siteName} design library: colors, typography, icons and banners.`
-  : isPreview ? `${siteName} 響應式設計預覽，切換裝置尺寸與背景。`
+  : isPinoyPlay ? 'PinoyPlay — red, white and blue static homepage with Slot Daily Rebate.'
+    : isPreview ? `${siteName} 響應式設計預覽，切換裝置尺寸與背景。`
     : isIpa ? 'Jito Gaming — Burgundy homepage design preview.'
       : isBr893 ? 'BR893 — prévia estática do design da página inicial.'
-        : '從專案入口探索 BR893、Jito 網站與 Design 設計展示。'
-document.querySelector('meta[name="theme-color"]').content = isIpa ? '#240b12' : '#281538'
+        : '從專案入口探索 BR893、Jito、PinoyPlay 網站與 Design 設計展示。'
+document.querySelector('meta[name="theme-color"]').content = isPinoyPlay ? '#ffffff' : isIpa ? '#240b12' : '#281538'
 createApp(page, isDesign || isPreview || isSite ? { site } : undefined).mount('#app')

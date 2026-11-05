@@ -1,0 +1,24 @@
+{
+  "mode": "built-in imagegen",
+  "file": "public/assets/pinoyplay/royal-arrival-v1.png",
+  "source": "C:\\Users\\user\\.codex\\generated_images\\01a1aa47-a496-7f62-8846-50443ad7efc8\\exec-3b441aae-c0d7-441a-8950-ca244cf40703.png",
+  "referenceURL": "https://i.pinimg.com/1200x/d8/82/4b/d8824bc14f663be20004563f97da9c22.jpg",
+  "referenceFile": "C:/Users/user/Documents/GitHub/br893/design/references/royal-arrival-reference.jpg",
+  "prompt": "Use case: ads-marketing / style-transfer. Create a finished wide 1882 x 836 banner for the \"ROYAL ARRIVAL\" rewards campaign.\nImage 1 is the PRIMARY STYLE AND SUBJECT REFERENCE: bold orange, petrol-cyan and near-black Japanese anime music-poster artwork, a close-up adult headphone-wearing character with short dark tousled hair, a visible cyan-toned eye, heavy black brush shadows, black technical streetwear, scratched screen-print texture, halftone and stencil graphic fragments. Adapt this striking editorial art direction into a horizontal banner. Keep the illustrated headphone character in a dynamic close-up occupying the right 52%, head at an angle, eye and orange/cyan headphone earcup clearly readable. Do not bring in any other campaign's characters, fantasy crowns, coins, or royal robes.\nBackdrop: a continuous vivid burnt-orange, deep-cyan and black printed poster surface, with sharp diagonal paint slashes, carefully placed stencil/halftone and restrained distressed marks. The art should feel intentional and graphic, with clean focal details rather than noisy visual clutter. Orange and cream copy area at left; cyan/black character at right; orange headphone accents connect the two halves. No frames or separate rectangular panels.\nOnly readable campaign text:\n\"ROYAL\" on the first line and \"ARRIVAL\" on the second, huge heavy condensed uppercase at upper-left.\n\"APPROX. TOTAL REWARDS\" as a smaller clear qualifier immediately above the amount.\n\"₱16,000\" as a very large dominant ONE-LINE amount below.\nUse off-white/ivory letters and numerals with dark ink edging where needed, sharp strong hierarchy, slightly dynamic editorial slant. Keep all words fully legible at mobile width; the amount includes a Philippine peso sign, comma and exact digits 1 6 0 0 0. This user-approved rounded promotional total summarizes 28 tasks; do not add a task table or any other text. Keep copy within the left 46%, at least 60px from canvas edges, no text across the face. Preserve bottom-right corner safe space for carousel dots.\nNo reference-page words such as DIGITAL/LENS, no logos, no watermark, no extra slogans, no dates, no UI buttons, no glossy 3D or soft gold effects. Premium graphic anime print campaign, clean crisp character linework, high contrast and controlled screen-print grain.",
+  "visibleCopy": [
+    "ROYAL ARRIVAL",
+    "APPROX. TOTAL REWARDS",
+    "₱16,000"
+  ],
+  "displayTotal": 16000,
+  "exactTaskTotal": 15995,
+  "rounding": "User requested 16,000 for the banner; task rewards remain unchanged.",
+  "taskCount": 28,
+  "integration": [
+    "Homepage sixth carousel slide",
+    "Promotions",
+    "Rewards",
+    "Design library"
+  ],
+  "taskData": "src/data/pinoyPromotions.js"
+}

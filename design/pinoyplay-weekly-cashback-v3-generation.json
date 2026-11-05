@@ -1,0 +1,17 @@
+{
+  "mode": "built-in imagegen",
+  "file": "public/assets/pinoyplay/weekly-cashback-v3-graffiti.png",
+  "source": "C:\\Users\\user\\.codex\\generated_images\\01a1aa47-a496-7f62-8846-50443ad7efc8\\exec-25aef310-13ce-44f4-b54d-08e18198c097.png",
+  "referenceImages": [
+    "C:/Users/user/AppData/Local/Temp/codex-clipboard-1fb09e6c-f532-441d-8dc2-66b28ce57cdf.png",
+    "C:/Users/user/Documents/GitHub/br893/public/assets/pinoyplay/weekly-cashback-v2.png"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: completed weekly cashback promotional banner for a mobile gaming homepage. Redesign image 2 in the art direction of image 1.\nImage 1 is the PRIMARY VISUAL REFERENCE: an anime pink-haired woman in a relaxed white T-shirt in front of a richly painted street-graffiti wall. Follow its character rendering, casual hand-near-chin pose, violet eyes, pink hair with gold ornamental hair accessories, expressive clean line work, streetwear mood, and pink/cyan/turquoise/navy palette with restrained yellow/orange accents. One adult female character only, waist-up and fully clothed, large, sharp and elegant.\nImage 2 is the CURRENT BANNER to replace; preserve only the wide 1882 x 836 format, left-text/right-character communication hierarchy, and the exact campaign content. Replace its sci-fi city, holographic ring and two women with the graffiti wall and single pink-haired woman from the reference direction.\nComposition: full-bleed continuous concrete mural across the whole canvas with layered spray paint, oversized abstract graffiti letter shapes, scratches, paint drips and visible wall seams. Put the single pink-haired heroine in the right 52%, face around the upper-right-of-center, body naturally cropped at the bottom. Keep face, eyes, hair and fabric folds crisp and coherent. On the left, use naturally darker navy painted areas of the SAME mural to give the campaign text strong contrast, not a separate box or blank panel. Let some expressive cyan/pink paint marks cross the composition without covering the offer.\nOnly readable text:\n\"WEEKLY\" on line one and \"CASHBACK\" on line two, upper-left, oversized bold condensed slightly italic white lettering with subtle ink-dark edging, urban poster typography.\n\"10%\" beneath, enormous bold ivory-white numeral shapes with a thick deep-navy outline and restrained pink offset paint-stroke shadow, highly legible when reduced to a 480px wide banner.\nKeep title and number aligned and well spaced, important content 60px inside the edges. Let the number dominate the left side. No new taglines, labels, dates, buttons, or small explanatory lines; do not add SLOT, OF YOUR WEEKLY NET LOSSES or EVERY MONDAY. Decorative graffiti should be abstract shapes rather than extra readable copy.\nFinish: contemporary anime street-art editorial campaign, confident and youthful but clearly adult character, saturated painted accents with tonal depth and plenty of dark contrast, no large flat fluorescent yellow blocks, no muddy/blurred character details, no glitter, no 3D metallic effects, no coins, no rooster, no logo or watermark. Keep bottom-right corner clear of essential detail for the carousel dots.",
+  "visibleCopy": [
+    "WEEKLY CASHBACK",
+    "10%"
+  ],
+  "style": "Pink-haired anime heroine and continuous pink/cyan/navy street-graffiti mural",
+  "integration": "Shared PinoyBanner weekly artwork; homepage, Promotion, activity details and design library",
+  "previousFile": "public/assets/pinoyplay/weekly-cashback-v2.png"
+}

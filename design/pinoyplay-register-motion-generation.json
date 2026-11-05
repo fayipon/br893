@@ -1,0 +1,114 @@
+{
+  "tool": "built-in image_gen",
+  "createdAt": "2026-11-05",
+  "component": "src/components/PinoyWelcomeBanner.vue",
+  "assets": [
+    {
+      "path": "public/assets/pinoyplay/register-bonus-background-v1.png",
+      "sourcePath": "C:\\Users\\user\\.codex\\generated_images\\01a1aa47-a496-7f62-8846-50443ad7efc8\\exec-d75d5379-05e4-4ea9-b393-b94e6ca970a3.png",
+      "transparent_background": false,
+      "prompt": "Use case: background clean plate for a layered web banner. Image 1 is the EDIT TARGET, an approved 1882x836 blue-and-white Cass Register Bonus banner. Produce the exact full-canvas BACKGROUND ONLY. Remove ALL lettering and labels: NEW PLAYER EXCLUSIVE red strip, REGISTER BONUS heading, orange ₱20, huge white WELCOME, angled REGISTER and AUTO CREDIT labels and their shadows, and the bottom footnote. Remove the central full-color seated Cass, chair, both boots, and her ground shadow. Reconstruct the covered areas as a seamless continuation of the original cobalt/navy upper backdrop flowing into the pale white lower textured backdrop. Keep the faint large blue monochrome Cass portrait at upper-right as part of the background, the low-contrast line art and halftone texture, and the sweeping white decorative halo/ribbons in their original positions. No visible remnants of text or central character. Exact original 1882x836 proportions, no cropping or shifting, no new objects. This is a base layer beneath separately animated typography and the seated figure.",
+      "references": [
+        "C:/Users/user/Documents/GitHub/br893/public/assets/pinoyplay/register-bonus-v4-orange.png"
+      ]
+    },
+    {
+      "path": "public/assets/pinoyplay/register-bonus-welcome-word-v1.png",
+      "sourcePath": "C:\\Users\\user\\.codex\\generated_images\\01a1aa47-a496-7f62-8846-50443ad7efc8\\exec-e27d2dea-6115-4499-aa04-4ecdd2f5b7b6.png",
+      "transparent_background": true,
+      "prompt": "Use case: transparent typography animation sprite. Image 1 is the EDIT TARGET. Isolate ONLY the gigantic white uppercase WELCOME word running across the middle/lower background behind Cass, approximately x=550..1882 and y=295..678. Reconstruct the hidden portions of its letters behind the seated woman, chair and tilted labels so it reads the complete WELCOME in the same tall condensed heavy italic type, with the same white marbled/graphic texture, same original size, same baseline and exact registration. Do not include the orange ₱20 on the left or any other lettering. Full 1882x836 RGBA transparent canvas, with the complete WELCOME in its original background position on the right two-thirds. All surrounding and letter-counter areas fully transparent. Remove the character, chair, boots, labels, orange amount, other headlines and background completely. No sticker outline, no glow, no gray haze. Do not center, crop, enlarge or restyle.",
+      "references": [
+        "C:/Users/user/Documents/GitHub/br893/public/assets/pinoyplay/register-bonus-v4-orange.png"
+      ]
+    },
+    {
+      "path": "public/assets/pinoyplay/register-bonus-copy-v1.png",
+      "sourcePath": "C:\\Users\\user\\.codex\\generated_images\\01a1aa47-a496-7f62-8846-50443ad7efc8\\exec-ad8ee045-baea-4bbd-851c-c72fd9c76d54.png",
+      "transparent_background": true,
+      "prompt": "Use case: registered transparent typography sprite sheet for a web banner. Image 1 is the EDIT TARGET. Extract ONLY these SIX separate foreground text groups, all in their exact existing locations and original size on a full 1882x836 transparent RGBA canvas: (1) red slanted NEW PLAYER EXCLUSIVE strip at upper-left around x35..415 y65..132; (2) white REGISTER BONUS headline at x35..695 y134..246; (3) huge warm orange #FF922E ₱20 with its existing navy extrusion/shadow at x10..550 y250..705; (4) angled white REGISTER label with red/navy accent and its compact shadow at x1195..1490 y85..235; (5) angled white AUTO CREDIT label with its red/navy accent and compact shadow at x1210..1550 y490..670; (6) navy footnote Deposit required to play · 5× Slot wagering at x25..630 y745..805. Keep the exact original lettering, font shapes, angles, original colors, sizes and spacing. Everything else must be fully transparent: no giant WELCOME background word, no blue/white backdrop, no character, no chair, no boots, no ghost portrait. No added white sticker border, haze or gray backing. Each group remains separately surrounded by transparent space. Preserve all six original positions; do not rearrange into a new layout or crop canvas. Exact wording is critical, especially REGISTER BONUS and ₱20 and the decimal-free twenty amount.",
+      "references": [
+        "C:/Users/user/Documents/GitHub/br893/public/assets/pinoyplay/register-bonus-v4-orange.png"
+      ]
+    },
+    {
+      "path": "public/assets/pinoyplay/register-bonus-cass-body-v1.png",
+      "sourcePath": "C:\\Users\\user\\.codex\\generated_images\\01a1aa47-a496-7f62-8846-50443ad7efc8\\exec-89f8de07-dd41-45df-a641-ef5908aaa967.png",
+      "transparent_background": true,
+      "prompt": "Use case: exact transparent character sprite extraction. Image 1 is the EDIT TARGET, an animation clean plate of seated cowgirl Cass with the LEFT raised boot already removed. Isolate the ENTIRE full-color central seated Cass and her blue chair onto a transparent full 1882x836 canvas, at the exact original size and position. Include her cream cowboy hat, face, hair, gloves, pink shirt, purple vest, belt, cream crossed trouser legs, the cuff where the raised boot is absent, the OTHER planted brown boot at bottom-center, and the complete blue chair. Preserve her exact identity, pose, proportions, clothing, all original visible pixels and registration. Keep the left raised boot ABSENT; it is a separate animated sprite. Remove every letter, label, background, ghost portrait and halo. No white outline or gray halo, no platform or opaque ground patch; remove the ground shadow so the silhouette has clean antialiased transparency. Don't reconstruct a foot in the missing boot area, don't change the trouser cuff, don't crop or center. Final RGBA true transparency. This sprite will be overlaid onto the exact original full-canvas coordinates.",
+      "references": [
+        "C:/Users/user/Documents/GitHub/br893/public/assets/pinoyplay/welcome-cass-boot-clean-plate-v1.png"
+      ]
+    },
+    {
+      "path": "public/assets/pinoyplay/welcome-cass-raised-boot-v1.png",
+      "sourcePath": "C:\\Users\\user\\.codex\\generated_images\\01a1aa47-a496-7f62-8846-50443ad7efc8\\exec-2750ef94-0ed5-4a79-b5e4-4b4ca31b7c3c.png",
+      "transparent_background": true,
+      "prompt": "Use case: transparent sprite extraction for subtle leg animation. The supplied image is the EDIT TARGET: an approved 1882 × 836 PinoyPlay banner featuring seated cowgirl Cass with crossed legs. Extract ONLY the raised brown cowboy boot on the viewer's LEFT, the boot at the end of the crossed/front leg, pointing left. Do NOT extract the other boot that is planted vertically near the bottom center. Keep the raised boot's full shaft, leather stitching, toe, sole and heel, exactly as painted in the input, in its exact ORIGINAL POSITION and SIZE on a full 1882 × 836 transparent canvas. Its approximate area is x=620..865, y=425..685; follow the actual boot outline precisely. Keep a tiny strip of the cream trouser cuff inside the boot opening for natural joint overlap, but no large thigh or knee region. Preserve every visible boot detail, color and silhouette; do not redesign or rotate it. Everything else must be fully transparent alpha: remove all text, chair, other leg, body, background and ground shadow. No white sticker edge, no gray halo, no glow, no cast shadow, no checkerboard, no canvas crop, no centering. This exact full-canvas registration is important for CSS animation."
+    },
+    {
+      "path": "public/assets/pinoyplay/register-bonus-v4-orange.png",
+      "sourcePath": "C:\\Users\\user\\.codex\\generated_images\\01a1aa47-a496-7f62-8846-50443ad7efc8\\exec-aba9da02-b82d-4f5e-b429-e984ebac9406.png",
+      "prompt": "Use case: precise typography correction on an approved promotional banner. Image 1 is the EDIT TARGET. Replace ONLY the upper-left second-line headline \"WELCOME BONUS\" with exactly \"REGISTER BONUS\". Use the same white condensed extra-bold italic uppercase font, same visual weight, same position, same height and approximately the same overall line width, preserving alignment beneath the red NEW PLAYER EXCLUSIVE label. Spell REGISTER correctly: R-E-G-I-S-T-E-R. Keep it on one line.\n\nKeep EVERY other element unchanged: the huge warm orange #FF922E ₱20, the giant white WELCOME word behind the central figure, Cass's exact face, cream cowboy hat, purple vest, pink shirt, cream trousers, brown boots, the original seated crossed-leg pose, chair, all background artwork and faint portrait, REGISTER angled tag on upper-right, AUTO CREDIT angled tag on lower-right, footer \"Deposit required to play · 5× Slot wagering\". Do not change the giant background WELCOME word. Do not change the separate REGISTER tag. Do not alter any of the boots, legs, clothing or background pixels as they are registered to animation sprites. Preserve the exact 1882 × 836 canvas dimensions and all geometry. No other text changes, additions, cropping or redesign. This edit is ONLY replacing that one upper-left headline with REGISTER BONUS."
+    }
+  ],
+  "intermediateCleanPlate": {
+    "path": "public/assets/pinoyplay/welcome-cass-boot-clean-plate-v1.png",
+    "sourcePath": "C:\\Users\\user\\.codex\\generated_images\\01a1aa47-a496-7f62-8846-50443ad7efc8\\exec-8f5f59d6-b616-4990-85db-7fc05c012f41.png",
+    "prompt": "Use case: precise background clean plate for character foot animation. The supplied image is the EDIT TARGET: approved full 1882 × 836 PinoyPlay Welcome Bonus banner. Remove ONLY the raised brown cowboy boot on the viewer's LEFT, at the end of Cass's crossed/front leg, pointing left (approximately x=620..865, y=425..685). This is the boot with its heel raised in midair. Keep the OTHER boot which is planted vertically near the bottom center fully unchanged. Reconstruct the background beneath the removed raised boot naturally: continue the original oversized white WELCOME letters, pale graphic texture, blue backdrop, and any small visible part of the stationary leg/chair that had been hidden. Keep the cream trouser calf ABOVE the removed boot intact; extend its cuff just slightly into the boot opening area so a separately rotating boot sprite can overlap the joint cleanly. Do not remove the crossed knee, upper cream trouser leg, thigh, torso, chair or stationary leg. Preserve all original image pixels outside that small raised-boot silhouette as closely as possible. Absolutely preserve Cass's face and cowboy outfit, cross-legged seated pose, the exact warm orange #FF922E ₱20 at the left, all other text, typographic registration, background portrait and decorations, shadows, and image dimensions. No duplicate boot, no new objects or letters, no ghost of the removed boot. Full opaque banner with ONLY this one raised boot removed for a later animation layer. This clean plate will be covered again by the original raised-boot sprite in the website."
+  },
+  "amountColor": "#FF922E",
+  "animation": {
+    "raisedFoot": {
+      "origin": [
+        835,
+        460
+      ],
+      "degrees": [
+        0,
+        7,
+        -1,
+        0
+      ],
+      "duration": 3.8,
+      "delay": 0.8
+    },
+    "amount": {
+      "delay": 0.62,
+      "duration": 1.05,
+      "scaleKeyframes": [
+        0.4,
+        1.22,
+        0.985,
+        1
+      ],
+      "matches": "Slot Daily Rebate 1.5% entrance"
+    },
+    "word": {
+      "delay": 0.15,
+      "entrance": 1,
+      "drift": 6.2
+    },
+    "badge": {
+      "delay": 0.1,
+      "duration": 0.65
+    },
+    "headline": {
+      "delay": 0.22,
+      "duration": 0.75
+    },
+    "register": {
+      "delay": 0.55,
+      "duration": 0.8
+    },
+    "autoCredit": {
+      "delay": 0.85,
+      "duration": 0.8
+    },
+    "footer": {
+      "delay": 1.1,
+      "duration": 0.65
+    }
+  },
+  "fallback": "Static REGISTER BONUS artwork for image mode, reduced motion, loading or missing assets.",
+  "pause": "Out of view or hidden page"
+}

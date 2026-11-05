@@ -1,0 +1,36 @@
+{
+  "tool": "built-in image_gen",
+  "createdAt": "2026-11-05",
+  "assets": [
+    {
+      "path": "public/assets/pinoyplay/slot-rebate-offer-v2-red.png",
+      "sourcePath": "C:\\Users\\user\\.codex\\generated_images\\01a1aa47-a496-7f62-8846-50443ad7efc8\\exec-cab8d7be-1d55-4f94-b64d-dc32b478042c.png",
+      "transparent_background": true,
+      "prompt": "Precise color edit of a transparent animation sprite. Image 1 is the EDIT TARGET. Change ONLY the large white 1.5% amount (digits 1, decimal point, digit 5, percent sign) to PinoyPlay bright red #FA2541. Keep UP TO white and ALL SLOT GAMES and the decorative stripes their original ivory/pale gold. Preserve the exact 1882x836 transparent RGBA canvas, original positions, font geometry, sizes, antialiased outlines and transparency. No new background, no shadow cloud or sticker border, no letter changes, no cropping, no restyling. The decimal point must remain and also be red. Only recolor the 1.5% face.",
+      "references": [
+        "C:/Users/user/Documents/GitHub/br893/public/assets/pinoyplay/slot-rebate-offer-v1.png"
+      ]
+    },
+    {
+      "path": "public/assets/pinoyplay/slot-daily-rebate-v3-red-outline.png",
+      "sourcePath": "C:\\Users\\user\\.codex\\generated_images\\01a1aa47-a496-7f62-8846-50443ad7efc8\\exec-5b572a71-d34c-4724-8a06-af11cbac9d4d.png",
+      "prompt": "Precise typography color/stroke edit to the supplied approved full banner. Image 1 is the EDIT TARGET. Change ONLY the large lower-left \"1.5%\" to bright PinoyPlay red #FA2541 with a clean crisp WHITE outline around each glyph, including the decimal point and the percent sign. White stroke approximately 6 pixels thick at the original 1882x836 image resolution, uniform, outside the letter shape, smooth antialiasing. Preserve the exact original size, position, font shape, slant, decimal point and spacing. Do not enlarge or reflow the amount. Keep the number exactly 1.5%, never 15%. Keep all other content unchanged: UP TO remains white, ALL SLOT GAMES remains ivory, the giant navy SLOT DAILY REBATE title, all four characters, their poses and colors, every background detail, full canvas dimensions and registration. No new shadows, gradients or glowing halo. Only the amount becomes red with a distinct clean white border. Full opaque finished banner."
+    }
+  ],
+  "amount": {
+    "color": "#FA2541",
+    "outline": {
+      "color": "#FFFFFF",
+      "radius": 6,
+      "implementation": "SVG morphology filter on the isolated amount group"
+    },
+    "scale": 1.12,
+    "entranceScale": [
+      0.4,
+      1.22,
+      0.985,
+      1
+    ]
+  },
+  "preserved": "Existing individual character entrances, 45-degree title shimmer and final enlarged amount."
+}

@@ -1,0 +1,382 @@
+{
+  "groups": [
+    {
+      "count": 235,
+      "games": [
+        {
+          "name": "Super Ace",
+          "image": "assets/pinoyplay/games/jl-JL0033.png"
+        },
+        {
+          "name": "Golden Empire",
+          "image": "assets/pinoyplay/games/jl-JL0044.png"
+        },
+        {
+          "name": "Fortune Gems 3",
+          "image": "assets/pinoyplay/games/jl-JL0156.png"
+        },
+        {
+          "name": "Fortune Garuda 1000",
+          "image": "assets/pinoyplay/games/jl-807.png"
+        },
+        {
+          "name": "Super Ace Deluxe",
+          "image": "assets/pinoyplay/games/jl-JL0162.png"
+        },
+        {
+          "name": "Mines",
+          "image": "assets/pinoyplay/games/jl-JL0110.png"
+        },
+        {
+          "name": "Fortune Gems 2",
+          "image": "assets/pinoyplay/games/jl-JL0125.png"
+        },
+        {
+          "name": "Fortune Garuda 500",
+          "image": "assets/pinoyplay/games/jl-696.png"
+        },
+        {
+          "name": "Money Coming",
+          "image": "assets/pinoyplay/games/jl-JL0036.png"
+        }
+      ],
+      "name": "JL"
+    },
+    {
+      "count": 175,
+      "games": [
+        {
+          "name": "Pinata Wins",
+          "image": "assets/pinoyplay/games/pg-PG0144.png"
+        },
+        {
+          "name": "Wild Bounty Showdown",
+          "image": "assets/pinoyplay/games/pg-PG0113.png"
+        },
+        {
+          "name": "Wild Ape#3258",
+          "image": "assets/pinoyplay/games/pg-PG0143.png"
+        },
+        {
+          "name": "Wild Bandito",
+          "image": "assets/pinoyplay/games/pg-PG0083.png"
+        },
+        {
+          "name": "Lucky Neko",
+          "image": "assets/pinoyplay/games/pg-PG0073.png"
+        },
+        {
+          "name": "Treasures of Aztec",
+          "image": "assets/pinoyplay/games/pg-PG0066.png"
+        },
+        {
+          "name": "Mahjong Ways 2",
+          "image": "assets/pinoyplay/games/pg-PG0055.png"
+        },
+        {
+          "name": "Geisha's Revenge",
+          "image": "assets/pinoyplay/games/pg-PG0158.png"
+        },
+        {
+          "name": "Mahjong Ways",
+          "image": "assets/pinoyplay/games/pg-PG0046.png"
+        }
+      ],
+      "name": "PG"
+    },
+    {
+      "count": 104,
+      "games": [
+        {
+          "name": "Money Tree",
+          "image": "assets/pinoyplay/games/cq9-CQ0344.png"
+        },
+        {
+          "name": "Mahjong Rich Ways",
+          "image": "assets/pinoyplay/games/cq9-CQ0489.png"
+        },
+        {
+          "name": "Mahjong Break",
+          "image": "assets/pinoyplay/games/cq9-cq9-slot-CP1.png"
+        },
+        {
+          "name": "Golden Horus",
+          "image": "assets/pinoyplay/games/cq9-cq9-slot-CP4.png"
+        },
+        {
+          "name": "Good Fortune M",
+          "image": "assets/pinoyplay/games/cq9-CQ0194.png"
+        },
+        {
+          "name": "Mr. Miser",
+          "image": "assets/pinoyplay/games/cq9-CQ0401.png"
+        },
+        {
+          "name": "Sugar Combo",
+          "image": "assets/pinoyplay/games/cq9-cq9-slot-CP2.png"
+        },
+        {
+          "name": "Hot DJ",
+          "image": "assets/pinoyplay/games/cq9-CQ0395.png"
+        },
+        {
+          "name": "5 God Beasts",
+          "image": "assets/pinoyplay/games/cq9-CQ0218.png"
+        }
+      ],
+      "name": "CQ9"
+    },
+    {
+      "count": 73,
+      "games": [
+        {
+          "name": "DJ BOOM BOOM",
+          "image": "assets/pinoyplay/games/fc-22092.png"
+        },
+        {
+          "name": "Sugar Bang Bang 2",
+          "image": "assets/pinoyplay/games/fc-FC0062.png"
+        },
+        {
+          "name": "SUPER ELEMENTS 2",
+          "image": "assets/pinoyplay/games/fc-22098.png"
+        },
+        {
+          "name": "Poker Win",
+          "image": "assets/pinoyplay/games/fc-FC0060.png"
+        },
+        {
+          "name": "Chinese New Year Moreways",
+          "image": "assets/pinoyplay/games/fc-FC0059.png"
+        },
+        {
+          "name": "Sugar Bang Bang",
+          "image": "assets/pinoyplay/games/fc-FC0035.png"
+        },
+        {
+          "name": "QUEEN OF INCA 2",
+          "image": "assets/pinoyplay/games/fc-22103.png"
+        },
+        {
+          "name": "SUGAR BANG BANG PLUS",
+          "image": "assets/pinoyplay/games/fc-22093.png"
+        },
+        {
+          "name": "Chinese New Year 2",
+          "image": "assets/pinoyplay/games/fc-FC0032.png"
+        }
+      ],
+      "name": "FC"
+    },
+    {
+      "count": 170,
+      "games": [
+        {
+          "name": "Parthenon: Quest for Immortality™",
+          "image": "assets/pinoyplay/games/ne-NE0049.png"
+        },
+        {
+          "name": "Spice",
+          "image": "assets/pinoyplay/games/ne-NG-spicer96f1000000.png"
+        },
+        {
+          "name": "Dazzle Me™",
+          "image": "assets/pinoyplay/games/ne-NE0009.png"
+        },
+        {
+          "name": "Dead or Alive 3: Wanted",
+          "image": "assets/pinoyplay/games/ne-NG-deadalive3r96f10.png"
+        },
+        {
+          "name": "Starburst Galaxy",
+          "image": "assets/pinoyplay/games/ne-NE0233.png"
+        },
+        {
+          "name": "Irish Pot Luck™",
+          "image": "assets/pinoyplay/games/ne-NE0043.png"
+        },
+        {
+          "name": "Reef Raider™",
+          "image": "assets/pinoyplay/games/ne-NE0078.png"
+        },
+        {
+          "name": "Starburst™",
+          "image": "assets/pinoyplay/games/ne-NE0007.png"
+        },
+        {
+          "name": "Rabid Randy Dark Trails",
+          "image": "assets/pinoyplay/games/ne-196995.png"
+        }
+      ],
+      "name": "NE"
+    },
+    {
+      "count": 82,
+      "games": [
+        {
+          "name": "Duck Hunters 2",
+          "image": "assets/pinoyplay/games/nlc-NG-duckhunters20000.png"
+        },
+        {
+          "name": "Duck Hunters",
+          "image": "assets/pinoyplay/games/nlc-NLC206.png"
+        },
+        {
+          "name": "Outsourced 2 - Balkan Engineering",
+          "image": "assets/pinoyplay/games/nlc-NG-outsourced200000.png"
+        },
+        {
+          "name": "Duck Hunters Happy Hour",
+          "image": "assets/pinoyplay/games/nlc-NG-duckhunteppyhour.png"
+        },
+        {
+          "name": "The Crypt 2",
+          "image": "assets/pinoyplay/games/nlc-NG-thecrypt20000000.png"
+        },
+        {
+          "name": "Fire in the Hole 3",
+          "image": "assets/pinoyplay/games/nlc-NLC242.png"
+        },
+        {
+          "name": "True Grit Redemption 2",
+          "image": "assets/pinoyplay/games/nlc-NG-truegrit20000000.png"
+        },
+        {
+          "name": "Beheaded",
+          "image": "assets/pinoyplay/games/nlc-NLC150.png"
+        },
+        {
+          "name": "Soaked By Seamen",
+          "image": "assets/pinoyplay/games/nlc-NG-soakedbyseamen00.png"
+        }
+      ],
+      "name": "NLC"
+    },
+    {
+      "count": 659,
+      "games": [
+        {
+          "name": "Sugar Rush 1000",
+          "image": "assets/pinoyplay/games/pp-PP0696.png"
+        },
+        {
+          "name": "Sweet Bonanza 1000",
+          "image": "assets/pinoyplay/games/pp-PP0739.png"
+        },
+        {
+          "name": "Mahjong Wins Super Scatter",
+          "image": "assets/pinoyplay/games/pp-PP1014.png"
+        },
+        {
+          "name": "Gates of Olympus 2500",
+          "image": "assets/pinoyplay/games/pp-vs20olympmmd.png"
+        },
+        {
+          "name": "Gates of Olympus 1000",
+          "image": "assets/pinoyplay/games/pp-PP0639.png"
+        },
+        {
+          "name": "Sweet Rush Bonanza",
+          "image": "assets/pinoyplay/games/pp-PP1064.png"
+        },
+        {
+          "name": "Sweet Bonanza 2500",
+          "image": "assets/pinoyplay/games/pp-vs20swbon2500.png"
+        },
+        {
+          "name": "Gates of Olympus Super Scatter",
+          "image": "assets/pinoyplay/games/pp-PP0992.png"
+        },
+        {
+          "name": "Starlight Princess 1000",
+          "image": "assets/pinoyplay/games/pp-PP0555.png"
+        }
+      ],
+      "name": "PP"
+    },
+    {
+      "count": 75,
+      "games": [
+        {
+          "name": "BOUNTY EXPRESS",
+          "image": "assets/pinoyplay/games/ps-PSS-ON-00174.png"
+        },
+        {
+          "name": "MEGA PALAYOK 5000x",
+          "image": "assets/pinoyplay/games/ps-PSS-ON-00180.png"
+        },
+        {
+          "name": "MAHJONG: ORIGIN",
+          "image": "assets/pinoyplay/games/ps-PSS-ON-00171.png"
+        },
+        {
+          "name": "HIYAS GEMS",
+          "image": "assets/pinoyplay/games/ps-PS0139.png"
+        },
+        {
+          "name": "Lucky Ace",
+          "image": "assets/pinoyplay/games/ps-PS0123.png"
+        },
+        {
+          "name": "MAHJONG：ORIGIN 2",
+          "image": "assets/pinoyplay/games/ps-PSS-ON-00170.png"
+        },
+        {
+          "name": "LUCKY ACE 2",
+          "image": "assets/pinoyplay/games/ps-PSS-ON-00168.png"
+        },
+        {
+          "name": "Super Awesome",
+          "image": "assets/pinoyplay/games/ps-PS0091.png"
+        },
+        {
+          "name": "ELECTRIC ZEUS",
+          "image": "assets/pinoyplay/games/ps-PSS-ON-00175.png"
+        }
+      ],
+      "name": "PS"
+    },
+    {
+      "count": 236,
+      "games": [
+        {
+          "name": "Zillard King MegaWays",
+          "image": "assets/pinoyplay/games/rt-RT0497.png"
+        },
+        {
+          "name": "Don't Hit Plz",
+          "image": "assets/pinoyplay/games/rt-RT0394.png"
+        },
+        {
+          "name": "Rise of Cleopatra",
+          "image": "assets/pinoyplay/games/rt-RT0501.png"
+        },
+        {
+          "name": "Dragons Clusterbuster™",
+          "image": "assets/pinoyplay/games/rt-RT0203.png"
+        },
+        {
+          "name": "Archdragon King",
+          "image": "assets/pinoyplay/games/rt-NG-archdragonking00.png"
+        },
+        {
+          "name": "Sylvan Spirits",
+          "image": "assets/pinoyplay/games/rt-RT0128.png"
+        },
+        {
+          "name": "777 Strike",
+          "image": "assets/pinoyplay/games/rt-RT0006.png"
+        },
+        {
+          "name": "4 Squad",
+          "image": "assets/pinoyplay/games/rt-RT0004.png"
+        },
+        {
+          "name": "Dynamite Riches MW + PowerWheel",
+          "image": "assets/pinoyplay/games/rt-RT0178.png"
+        }
+      ],
+      "name": "RT"
+    }
+  ]
+}

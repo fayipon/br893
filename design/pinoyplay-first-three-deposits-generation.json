@@ -1,0 +1,43 @@
+{
+  "mode": "built-in imagegen",
+  "file": "public/assets/pinoyplay/first-three-deposits-v1-graffiti.png",
+  "source": "C:\\Users\\user\\.codex\\generated_images\\01a1aa47-a496-7f62-8846-50443ad7efc8\\exec-8427c343-6924-4ae1-9f2b-4d8c8befa2a4.png",
+  "references": [
+    "C:/Users/user/AppData/Local/Temp/codex-clipboard-75528609-3e94-4111-86f2-73e5284020ee.png",
+    "C:/Users/user/Documents/GitHub/br893/public/assets/pinoyplay/payday-v1-graffiti.png"
+  ],
+  "prompt": "Use case: ads-marketing. Create a finished 1882 x 836 wide promotional banner for the FIRST 3 DEPOSITS bonus.\nImage 1 is the PRIMARY CHARACTER AND STYLE REFERENCE: the adult silver-grey-haired anime woman with a high ponytail, iridescent sunglasses resting on her head, a playful wink and a two-finger V gesture near her eye, white and black streetwear with blue jacket accents, standing in front of a blue/grey/pink graffiti wall. Preserve her recognizable hairstyle, face, playful pose, accessories and outfit; keep a clean sharp anime illustration finish. Single fully clothed adult character, upper body, positioned on the right 52% with face and hand unobscured. Do not add another person.\nImage 2 is only a layout/typography reference from the same banner family. Use the same clean left copy/right character hierarchy and bold condensed italic promotional type, but do not use its black-haired woman, Payday copy or green palette.\nUse one continuous weathered urban graffiti wall across the canvas, matching image 1: navy shadows, concrete grey, cyan and cobalt-blue spray paint, restrained pink/yellow highlights, wall seams, paint drips and abstract mural marks. The left copy area has darker navy painted texture naturally integrated into the mural, not a boxed panel. The right figure stays crisp with clear eyes, fingers and hair. No fog or messy oversharpening.\nExact readable text ONLY:\n\"FIRST 3\" on the first headline line.\n\"DEPOSITS\" on the second headline line.\n\"TOTAL BONUS UP TO\" in a smaller but clear line directly above the amount.\n\"₱17,000\" as the dominant very large amount on ONE LINE below.\nThe amount is the combined maximum of three bonuses, so retain the full qualifier \"TOTAL BONUS UP TO\". Use ivory-white number faces, deep navy outlines and a restrained cyan/blue offset paint stroke, high contrast and readable at 480px banner width. Preserve at least 60px margins, generous separation between title/qualifier/amount, and do not cover the woman. Fit all lettering in the left 46% with condensed numerals as needed. Keep lower-right corner free of essential content for carousel dots.\nNo other readable text, no individual rates or fine print, no dates, no buttons, no logo, no coins, no rooster, no metallic effects, no watermark. Contemporary anime street-art advertising consistent with the supplied campaign family.",
+  "visibleCopy": [
+    "FIRST 3 DEPOSITS",
+    "TOTAL BONUS UP TO",
+    "₱17,000"
+  ],
+  "integration": [
+    "Homepage fifth carousel slide",
+    "Promotions",
+    "Rewards",
+    "Design library"
+  ],
+  "publicTermsSource": "src/data/pinoyPromotions.js",
+  "internalPlanningOnly": {
+    "completedWageringGGR": [
+      2100,
+      5250,
+      10500
+    ],
+    "averagePlayerProfit": [
+      -100,
+      -250,
+      -500
+    ]
+  },
+  "touchpointBrief": {
+    "depositButton": "Show a red dot and a bubble containing the currently available bonus cap.",
+    "entryPopup": "Show when returning home or from a game while the first-three-deposit promotion is incomplete.",
+    "floatingEntry": "Bottom-right floating icon opens promotion.",
+    "catalog": "Homepage banner and Promo.",
+    "notifications": "Subsequent rewards unlock at 9 AM; push at unlock and 1 PM, SMS at 6 PM if still unclaimed.",
+    "retention": "Show when closing deposit page while first-deposit offer is available."
+  },
+  "implementedScope": "Static banner and promotion/rewards detail views. Triggered deposit UX and notification delivery are not connected."
+}

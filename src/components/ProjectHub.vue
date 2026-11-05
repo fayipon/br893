@@ -3,6 +3,7 @@ import UiIcon from './UiIcon.vue'
 import IpaBrand from './IpaBrand.vue'
 import data from '../data/home.json'
 import { ipaData } from '../data/ipaData'
+import pinoyData from '../data/pinoyplay.json'
 
 const baseUrl = import.meta.env.BASE_URL
 const asset = path => `${baseUrl}${path}`
@@ -25,6 +26,16 @@ const projects = [
       { label: '演示站', href: `${baseUrl}?page=ipa`, ariaLabel: 'Jito 演示站', icon: 'arrow', primary: true },
     ],
     links: [{ label: '尺寸預覽', href: `${baseUrl}?page=ipa&preview=1`, ariaLabel: 'Jito 尺寸預覽' }],
+  },
+  {
+    id: 'pinoyplay', number: '03', name: 'PinoyPlay', category: 'WEBSITE',
+    description: '探索紅白藍主題首頁、每日返水活動與遊戲入口。',
+    detail: 'Web & Mobile',
+    buttons: [
+      { label: 'Design', href: `${baseUrl}?page=design&site=pinoyplay`, ariaLabel: 'PinoyPlay Design', icon: 'palette' },
+      { label: '演示站', href: `${baseUrl}?page=pinoyplay`, ariaLabel: 'PinoyPlay 演示站', icon: 'arrow', primary: true },
+    ],
+    links: [{ label: '尺寸預覽', href: `${baseUrl}?page=pinoyplay&preview=1`, ariaLabel: 'PinoyPlay 尺寸預覽' }],
   },
 ]
 </script>
@@ -73,12 +84,16 @@ const projects = [
                     <div class="site-preview-promos"><img v-for="promo in ipaData.promotions" :key="promo.image" :src="asset(promo.image)" alt="" /></div>
                   </div>
                 </div>
+                <div v-else-if="project.id === 'pinoyplay'" class="site-preview pinoyplay-preview">
+                  <div class="site-preview-bar"><span /><span /><span /><small>pinoyplay / homepage</small></div>
+                  <div class="pinoyplay-preview-page"><img class="pinoy-preview-logo" :src="asset('assets/pinoyplay/logo.webp')" alt="" /><img class="pinoy-preview-banner" :src="asset('assets/pinoyplay/slot-daily-rebate-v1.png')" alt="" /><div class="pinoy-preview-games"><img v-for="game in pinoyData.groups[0].games.slice(0, 3)" :key="game.image" :src="asset(game.image)" alt="" /></div></div>
+                </div>
               </div>
               <div class="project-copy">
                 <div class="project-title-row"><h3>{{ project.name }}</h3><span class="project-status"><i />可瀏覽</span></div>
                 <p>{{ project.description }}</p>
                 <div v-if="project.buttons" class="project-buttons">
-                  <a v-for="button in project.buttons" :key="button.href" class="project-button" :class="{ 'project-button--primary': button.primary }" :href="button.href" :aria-label="button.ariaLabel"><UiIcon :name="button.icon" :size="18" /><span>{{ button.label }}</span></a>
+                  <a v-for="button in project.buttons" :key="button.href" class="project-button" :class="{ 'project-button--primary': button.primary }" :href="button.href" :target="button.newTab ? '_blank' : undefined" :rel="button.newTab ? 'noopener noreferrer' : undefined" :aria-label="button.ariaLabel"><UiIcon :name="button.icon" :size="18" /><span>{{ button.label }}</span></a>
                 </div>
                 <span v-else class="project-action">{{ project.action }}<UiIcon name="arrow" :size="19" /></span>
               </div>
@@ -145,6 +160,20 @@ const projects = [
 .ipa-preview .site-preview-header > .ipa-preview-mark { margin-right: auto; padding: 0; font-size: 14px; background: none; }
 .ipa-preview .site-preview-header > span { background: #681c32; color: #f3deb2; }
 .ipa-preview .site-preview-header > strong { color: #341019; background: linear-gradient(180deg, #f8e7ba, #e8c77d 48%, #c99a50); }
+.project-card--pinoyplay { background: #13223d; border-color: rgb(169 190 226 / 28%); }
+.project-card--pinoyplay:focus-within { border-color: #ff8797; }
+.project-card--pinoyplay .project-artwork { background: radial-gradient(ellipse at 70% 95%, #f5d8df, #edf2fc 70%); border-color: rgb(169 190 226 / 25%); }
+.project-card--pinoyplay .project-number { color: #294779; }
+.pinoyplay-preview { border-color: #a9bad5; background: #fff; transform: rotate(-2deg); }
+.pinoyplay-preview .site-preview-bar { background: #e8eef8; }
+.pinoyplay-preview .site-preview-bar > span { background: #92a4c2; }
+.pinoyplay-preview .site-preview-bar small { color: #47618a; }
+.pinoyplay-preview-page { aspect-ratio: 1.45; overflow: hidden; padding: 9px; background: #fff; }
+.pinoyplay-preview-page img { display: block; height: auto; }
+.pinoyplay-preview-page .pinoy-preview-logo { width: 52%; margin-bottom: 8px; }
+.pinoy-preview-banner { width: 100%; border-radius: 7px; }
+.pinoy-preview-games { display: grid; grid-template-columns: repeat(3, 1fr); gap: 7px; margin-top: 9px; }
+.pinoy-preview-games img { width: 100%; border-radius: 6px; }
 .project-links { display: flex; align-items: center; gap: 14px; }
 .project-copy { padding: 25px 26px 24px; }
 .project-title-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
@@ -162,14 +191,19 @@ const projects = [
 .project-card--ipa .project-button--primary { border-color: #f3dda7; color: #341019; background: linear-gradient(180deg, #f8e7ba, #e8c77d 48%, #c99a50); }
 .project-card--ipa .project-status, .project-card--ipa .project-copy > p { color: #d7c2aa; }
 .project-card--ipa .project-status i { background: #e8c77d; }
+.project-card--pinoyplay .project-button { border-color: #8caddd; color: #163669; background: #edf2fc; }
+.project-card--pinoyplay .project-button--primary { border-color: #ff536b; color: #fff; background: #e71e3d; }
+.project-card--pinoyplay .project-status, .project-card--pinoyplay .project-copy > p { color: #bdcce5; }
+.project-card--pinoyplay .project-status i { background: #ff536b; }
 .project-footer { min-height: 49px; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 5px 26px; border-top: 1px solid rgb(212 182 235 / 10%); color: var(--hub-muted); font-size: 10px; letter-spacing: .25px; }
 .project-footer a { display: inline-flex; align-items: center; gap: 4px; min-height: 36px; color: #d3bddf; text-decoration: none; font-size: 11px; }
 .project-card--ipa .project-footer { border-color: rgb(232 199 125 / 16%); color: #b39b87; }
 .project-card--ipa .project-footer a { color: #e8c77d; }
+.project-card--pinoyplay .project-footer { border-color: rgb(169 190 226 / 22%); color: #bdcce5; }
 .hub-footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 76px; border-top: 1px solid rgb(219 197 240 / 10%); color: var(--hub-muted); font-size: 10px; letter-spacing: .3px; }
 .hub-footer > span:last-child { font-size: 9px; letter-spacing: 1.5px; }
 .footer-divider { margin: 0 9px; color: #665572; }
-@media (hover: hover) { .project-card:hover { border-color: #80628f; }.project-card--ipa:hover { border-color: #b89456; } }
+@media (hover: hover) { .project-card:hover { border-color: #80628f; }.project-card--ipa:hover { border-color: #b89456; }.project-card--pinoyplay:hover { border-color: #ff8797; } }
 @media (min-width: 1500px) { .hub-main { padding-top: 82px; } }
 @media (max-width: 760px) {
   .project-hub { padding-inline: 24px; }

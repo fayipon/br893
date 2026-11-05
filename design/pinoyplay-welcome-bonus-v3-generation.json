@@ -1,0 +1,15 @@
+{
+  "tool": "built-in image_gen",
+  "createdAt": "2026-11-05",
+  "path": "public/assets/pinoyplay/welcome-bonus-v3-orange.png",
+  "sourcePath": "C:/Users/user/.codex/generated_images/01a1aa47-a496-7f62-8846-50443ad7efc8/exec-d11fe3d0-dce6-4292-906a-a93824f1667f.png",
+  "editTarget": "public/assets/pinoyplay/welcome-bonus-v2-cass.png",
+  "requestedAmountColor": "#FF922E",
+  "prompt": "Use case: precise single-color correction to an existing finished banner. Image 1 is the EDIT TARGET. Change ONLY the white front faces of the huge \"₱20\" amount at the LEFT of the banner to the exact solid warm orange sRGB color #FF922E (RGB 255, 146, 46). The peso symbol ₱, numeral 2, and numeral 0 must all use this same orange. Preserve their existing navy extrusion/drop-shadow, font shape, size, position, kerning, edge antialiasing and dimensional outline. The primary flat face color should be #FF922E, not yellow, gold, red, peach, or a different orange. No new gradient or metallic effect.\n\nEverything else MUST remain unchanged: Cass's exact face, cowboy hat, purple vest, pink shirt, cream trousers, brown boots, seated cross-legged pose, chair; the blue and white background and ghosted portrait; giant WHITE WELCOME background lettering; WHITE WELCOME BONUS headline; red NEW PLAYER EXCLUSIVE tag; REGISTER and AUTO CREDIT angled labels; all spacing and typography; footer \"Deposit required to play · 5× Slot wagering\". Do not recolor any of the other white letters or background. No additions, removals, redrawing, cropping, sharpening or layout changes. Output the same full 1882 × 836 wide banner. This is ONLY a localized color replacement of the existing left-hand ₱20 text faces.",
+  "usage": [
+    "Homepage carousel",
+    "Promotions",
+    "Welcome Bonus activity details",
+    "Design library"
+  ]
+}

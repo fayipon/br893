@@ -1,0 +1,126 @@
+{
+  "tool": "built-in image_gen; user-approved local silhouette mask for the main character",
+  "createdAt": "2026-11-05",
+  "reference": "public/assets/pinoyplay/slot-daily-rebate-v1.png",
+  "canvas": [
+    1882,
+    836
+  ],
+  "assets": [
+    {
+      "name": "background",
+      "path": "public/assets/pinoyplay/slot-rebate-background-v1.png",
+      "sourcePath": "C:\\Users\\user\\.codex\\generated_images\\01a1aa47-a496-7f62-8846-50443ad7efc8\\exec-9ec1d6d7-d45c-4705-a2c9-988eb3681f8b.png",
+      "transparent_background": false,
+      "prompt": "Input image 1 is the EDIT TARGET, the approved PinoyPlay Slot Daily Rebate banner. Preserve its exact 1882 x 836 wide canvas/aspect ratio and original pixel registration. This is production layer extraction for an animated website banner, NOT a redesign. Preserve original character identity, rendering, colors, pose, scale and location. No additional text, logo, coins or characters. Use case: precise-object-edit. Produce the CLEAN BACKGROUND PLATE ONLY. Remove ALL FOUR foreground characters completely (brown-haired girl, red horse in red tracksuit, white rabbit in red cap, golden-haired boy), ALL lettering including SLOT DAILY REBATE, UP TO, 1.5%, ALL SLOT GAMES, and ALL decorative cream stripes and rules. Fill their areas naturally with the same softly blurred festive village plaza scene, warm lanterns and purple dusk sky. Keep the wide warm ivory header band in the top 32.7% completely EMPTY. Continue the blurred village across the entire lower canvas, including behind every removed character and offer text. Keep the same ivory color, softly blurred warm architecture, cobblestone floor perspective, saturation and lighting. No text remnants, no silhouettes, no foreground objects, no frames. Opaque full-bleed background at original alignment."
+    },
+    {
+      "name": "horse",
+      "path": "public/assets/pinoyplay/slot-rebate-horse-v1.png",
+      "sourcePath": "C:\\Users\\user\\.codex\\generated_images\\01a1aa47-a496-7f62-8846-50443ad7efc8\\exec-dbdcaa88-93da-4b50-9832-ffcbba1ec3b2.png",
+      "transparent_background": true,
+      "prompt": "Input image 1 is the EDIT TARGET, the approved PinoyPlay Slot Daily Rebate banner. Preserve its exact 1882 x 836 wide canvas/aspect ratio and original pixel registration. This is production layer extraction for an animated website banner, NOT a redesign. Preserve original character identity, rendering, colors, pose, scale and location. No additional text, logo, coins or characters. Use case: background-extraction. Output ONLY the red-haired anthropomorphic horse character in the red/yellow racing tracksuit at the upper right behind the other characters. TRUE TRANSPARENT RGBA cutout, exact original pose with one purple-gloved hand raised on the right. Preserve face, red mane, glasses/eyes, red jacket, yellow piping, glove. Original placement: head around x1390 y290, raised glove near x1580 y285, torso from x1260 to x1525 and legs towards the lower-right of center. Complete naturally ONLY the portions of torso/legs that were covered by other characters, while preserving visible silhouette exactly. Keep canvas bottom cropping. No girl, rabbit, blond boy, no typography, no scenery, no colored solid background, no checkerboard. Entire original 1882 x 836 canvas transparent except this character. Do not center, enlarge or relocate."
+    },
+    {
+      "name": "boy",
+      "path": "public/assets/pinoyplay/slot-rebate-boy-v1.png",
+      "sourcePath": "C:\\Users\\user\\.codex\\generated_images\\01a1aa47-a496-7f62-8846-50443ad7efc8\\exec-b4247676-6709-46de-bdbe-ab922be0ac1d.png",
+      "transparent_background": true,
+      "prompt": "Input image 1 is the EDIT TARGET, the approved PinoyPlay Slot Daily Rebate banner. Preserve its exact 1882 x 836 wide canvas/aspect ratio and original pixel registration. This is production layer extraction for an animated website banner, NOT a redesign. Preserve original character identity, rendering, colors, pose, scale and location. No additional text, logo, coins or characters. Use case: background-extraction. Output ONLY the golden spiky-haired fantasy boy at the far right wearing blue clothing, a blue neck scarf, brown gloves and boots, in the exact existing turning/looking-back pose. TRUE TRANSPARENT RGBA cutout. Preserve golden hair around x1625 y395, blue scarf, face, brown gloves, belt, blue trousers and boots; keep figure placement approximately x1400..1870 and y290..836, bottom clipped exactly as original. Remove ALL other characters, ALL text, all background and all decorative elements. Keep exact original shape, shading, color and scale. Canvas stays 1882 x 836, completely transparent except the boy. Do not center, crop tightly, enlarge, alter pose or reposition."
+    },
+    {
+      "name": "headline",
+      "path": "public/assets/pinoyplay/slot-rebate-headline-v1.png",
+      "sourcePath": "C:\\Users\\user\\.codex\\generated_images\\01a1aa47-a496-7f62-8846-50443ad7efc8\\exec-de97d6d8-2777-44c3-8455-737cc678ae2a.png",
+      "transparent_background": true,
+      "prompt": "Input image 1 is the EDIT TARGET, the approved PinoyPlay Slot Daily Rebate banner. Preserve its exact 1882 x 836 wide canvas/aspect ratio and original pixel registration. This is production layer extraction for an animated website banner, NOT a redesign. Preserve original character identity, rendering, colors, pose, scale and location. No additional text, logo, coins or characters. Use case: background-extraction. Extract ONLY the navy blue stencil headline text \"SLOT DAILY REBATE\" on a TRUE TRANSPARENT RGBA canvas. Preserve exact ultra-bold condensed uppercase letterforms, placement and original subtle blue-cloud texture inside the letters. The headline spans x65..1845, y18..259 on the 1882 x 836 canvas, all in ONE LINE. Restore the tiny letter areas obscured by the girl's bat/hair so the title is complete behind the separately layered characters. Remove all ivory/cream background, all village scene, all characters, all other text. Nothing should remain below y270. Exact words S L O T D A I L Y R E B A T E, with the same word spacing. Do not add glow, bevel or outlines. This opaque-letter alpha shape will also mask a CSS shimmer. Canvas 1882 x 836, transparent everywhere outside the headline. Do not reposition, center vertically, crop tightly or enlarge."
+    },
+    {
+      "name": "rabbit",
+      "path": "public/assets/pinoyplay/slot-rebate-rabbit-v1.png",
+      "sourcePath": "C:\\Users\\user\\.codex\\generated_images\\01a1aa47-a496-7f62-8846-50443ad7efc8\\exec-4a326d4a-50fc-41f7-bebf-84b825672fe1.png",
+      "transparent_background": true,
+      "prompt": "Use case: background-extraction, precise alpha cleanup. Image 1 is the EDIT TARGET: a rabbit cutout layer which incorrectly includes a large cloudy white/gray/pink halo and a silver-red sword. Image 2 is the original banner for character identity reference ONLY. Edit image 1 to REMOVE THE ENTIRE HALO / FOG / BACKGROUND REMNANTS and REMOVE THE SWORD ENTIRELY. Output ONLY the rabbit's actual solid body silhouette: white furry head and ears, red cap, orange-red jacket, purple gloves, purple/red trousers. The sword belongs to another character and must not be included. Keep the rabbit at the exact same original placement and scale on the 1882 x 836 canvas, centered approximately x1220 y620, cropped at the bottom. All pixels outside the actual character silhouette must have ALPHA ZERO, including the cloudy ring above his ears and around his shoulders and the magenta patch on the lower left. Natural fine fur edges are allowed only within a few pixels of his ears and head, not a broad glow. Preserve the existing face, clothing details, pose and colors without redesign. No ground, no background, no shadow cloud, no checkerboard, no lettering. Keep exact canvas aspect and registration. This is a clean transparent web animation sprite, not a glowing sticker."
+    },
+    {
+      "name": "offer",
+      "path": "public/assets/pinoyplay/slot-rebate-offer-v1.png",
+      "sourcePath": "C:\\Users\\user\\.codex\\generated_images\\01a1aa47-a496-7f62-8846-50443ad7efc8\\exec-6eb71b54-2e96-4503-ad39-47bcc3d85ca1.png",
+      "transparent_background": true,
+      "prompt": "Use case: background-extraction, clean transparent typography sprite. Image 1 is the EDIT TARGET: extracted offer text with an unwanted gray sticker border and gray cloudy backing. Image 2 is the original banner for precise typography reference. Remove ALL gray/cloudy backing and ALL shadows/outlines from image 1. Keep ONLY the actual bright white/ivory letter and ornament pixels on a truly transparent RGBA canvas. Preserve text exactly: UP TO, 1.5% with its decimal point, ALL SLOT GAMES. Preserve their existing original positions, angles, font shapes, sizes, word spacing, the ivory/yellow color gradient of ALL SLOT GAMES, and the two sets of cream racing-stripe ornaments. Everything between the individual letters and numerals, around them, and around the ornaments must be completely transparent, NOT gray or dark. Keep ORIGINAL 1882 x 836 full-canvas registration with text ONLY in the lower-left area: UP TO about y295..360, 1.5% about y375..630, ALL SLOT GAMES y640..715, lower ornament y745..765. No stroke, no gray border, no sticker outline, no drop shadow, no glow, no soft haze. Flat original typography colors, fully isolated. All right side and upper third completely empty/transparent. Do not crop, center, enlarge, reflow, add letters, or add a background."
+    },
+    {
+      "name": "girl",
+      "path": "public/assets/pinoyplay/slot-rebate-girl-v1.png",
+      "sourcePath": "public/assets/pinoyplay/slot-daily-rebate-v1.png",
+      "transparent_background": true,
+      "method": "Original RGB pixels isolated with a manually outlined local GrabCut mask, approved by the user after two image_gen output refusals.",
+      "script": "design/pinoyplay-motion/extract-girl.py"
+    }
+  ],
+  "animation": {
+    "characters": [
+      {
+        "id": "girl",
+        "delay": 0.08,
+        "duration": 1.15
+      },
+      {
+        "id": "horse",
+        "delay": 0.32,
+        "duration": 1.05
+      },
+      {
+        "id": "boy",
+        "delay": 0.6,
+        "duration": 1.1
+      },
+      {
+        "id": "rabbit",
+        "delay": 0.92,
+        "duration": 0.95
+      }
+    ],
+    "offer": [
+      {
+        "text": "UP TO",
+        "delay": 0.18,
+        "duration": 0.65
+      },
+      {
+        "text": "1.5%",
+        "delay": 0.62,
+        "duration": 1.05
+      },
+      {
+        "text": "ALL SLOT GAMES",
+        "delay": 1.12,
+        "duration": 0.7
+      }
+    ],
+    "headlineShine": {
+      "delay": 1.9,
+      "period": 6.5,
+      "mask": "Headline alpha only",
+      "angleDegrees": 45,
+      "sweepDuration": 1.43
+    },
+    "fallback": "Approved static artwork for image mode, reduced motion, loading, and any missing layer",
+    "pause": "Out of view or hidden browser page",
+    "offerLayout": {
+      "amountScale": 1.12,
+      "amountScaleOrigin": [
+        365,
+        510
+      ],
+      "upToOffsetY": -12,
+      "allSlotsOffsetY": 14,
+      "amountEntranceScale": [
+        0.4,
+        1.22,
+        0.985,
+        1
+      ]
+    }
+  }
+}

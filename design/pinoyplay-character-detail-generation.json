@@ -1,0 +1,35 @@
+{
+  "mode": "built-in imagegen for rabbit; SVG rendering adjustment for all character layers",
+  "reason": "Reduce fragmented cutout detail and improve character definition while retaining a softly blurred background.",
+  "rabbit": {
+    "file": "public/assets/pinoyplay/slot-rebate-rabbit-v2-clean.png",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a1aa47-a496-7f62-8846-50443ad7efc8\\exec-bdf814e1-200c-400a-b63a-22fdc33ea543.png",
+    "refs": [
+      "C:/Users/user/Documents/GitHub/br893/public/assets/pinoyplay/slot-rebate-rabbit-v1.png",
+      "C:/Users/user/Documents/GitHub/br893/public/assets/pinoyplay/slot-daily-rebate-v4-berry-outline.png"
+    ],
+    "prompt": "Precisely restore the image quality of the isolated white rabbit character in IMAGE 1. IMAGE 1 is the edit target, an RGBA animation layer; IMAGE 2 is reference only for identity and the composed banner. Keep exact 1882 x 836 full canvas, exact position, scale, pose, expression, red cap, white head and ears, red-orange jacket, purple gloves and trousers. Restore a clearly readable face, clean eye shapes, nose and mouth. Render soft white fur with clear shaped tufts rather than melted polygon facets; restore coherent fabric folds and clean seams. Preserve original silhouette and identity, do not change the design. The character body must be fully opaque, with a narrow smoothly antialiased alpha boundary. Remove tiny isolated edge debris. True transparent background outside the body; no halo, fog, glow, shadow, sword or other character. Do not center, crop tightly, enlarge or reposition. Polished sharp 3D cartoon game character, controlled detail, no excessive sharpening rings or artificial noisy texture."
+  },
+  "girl": {
+    "file": "public/assets/pinoyplay/slot-rebate-girl-v1.png",
+    "retainedOriginal": true,
+    "generationResult": "Output refused by image tool; no generated replacement used."
+  },
+  "rendering": {
+    "filter": "feConvolveMatrix",
+    "kernel": [
+      0,
+      -0.18,
+      0,
+      -0.18,
+      1.72,
+      -0.18,
+      0,
+      -0.18,
+      0
+    ],
+    "preserveAlpha": true,
+    "appliesTo": "four separate animated character layers only",
+    "background": "unchanged"
+  }
+}

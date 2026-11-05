@@ -1,0 +1,483 @@
+{
+  "source": "https://pinoy.go-meow.com/",
+  "capturedAt": "2026-11-05",
+  "catalog": [
+    {
+      "count": 235,
+      "games": [
+        {
+          "name": "Super Ace",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/JL/EN/JL0033.png",
+          "image": "assets/pinoyplay/games/jl-JL0033.png"
+        },
+        {
+          "name": "Golden Empire",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/JL/EN/JL0044.png",
+          "image": "assets/pinoyplay/games/jl-JL0044.png"
+        },
+        {
+          "name": "Fortune Gems 3",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/JL/EN/JL0156.png",
+          "image": "assets/pinoyplay/games/jl-JL0156.png"
+        },
+        {
+          "name": "Fortune Garuda 1000",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/JL/EN/807.png",
+          "image": "assets/pinoyplay/games/jl-807.png"
+        },
+        {
+          "name": "Super Ace Deluxe",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/JL/EN/JL0162.png",
+          "image": "assets/pinoyplay/games/jl-JL0162.png"
+        },
+        {
+          "name": "Mines",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/JL/EN/JL0110.png",
+          "image": "assets/pinoyplay/games/jl-JL0110.png"
+        },
+        {
+          "name": "Fortune Gems 2",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/JL/EN/JL0125.png",
+          "image": "assets/pinoyplay/games/jl-JL0125.png"
+        },
+        {
+          "name": "Fortune Garuda 500",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/JL/EN/696.png",
+          "image": "assets/pinoyplay/games/jl-696.png"
+        },
+        {
+          "name": "Money Coming",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/JL/EN/JL0036.png",
+          "image": "assets/pinoyplay/games/jl-JL0036.png"
+        }
+      ],
+      "name": "JL"
+    },
+    {
+      "count": 175,
+      "games": [
+        {
+          "name": "Pinata Wins",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/PG/EN/PG0144.png",
+          "image": "assets/pinoyplay/games/pg-PG0144.png"
+        },
+        {
+          "name": "Wild Bounty Showdown",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/PG/EN/PG0113.png",
+          "image": "assets/pinoyplay/games/pg-PG0113.png"
+        },
+        {
+          "name": "Wild Ape#3258",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/PG/EN/PG0143.png",
+          "image": "assets/pinoyplay/games/pg-PG0143.png"
+        },
+        {
+          "name": "Wild Bandito",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/PG/EN/PG0083.png",
+          "image": "assets/pinoyplay/games/pg-PG0083.png"
+        },
+        {
+          "name": "Lucky Neko",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/PG/EN/PG0073.png",
+          "image": "assets/pinoyplay/games/pg-PG0073.png"
+        },
+        {
+          "name": "Treasures of Aztec",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/PG/EN/PG0066.png",
+          "image": "assets/pinoyplay/games/pg-PG0066.png"
+        },
+        {
+          "name": "Mahjong Ways 2",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/PG/EN/PG0055.png",
+          "image": "assets/pinoyplay/games/pg-PG0055.png"
+        },
+        {
+          "name": "Geisha's Revenge",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/PG/EN/PG0158.png",
+          "image": "assets/pinoyplay/games/pg-PG0158.png"
+        },
+        {
+          "name": "Mahjong Ways",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/PG/EN/PG0046.png",
+          "image": "assets/pinoyplay/games/pg-PG0046.png"
+        }
+      ],
+      "name": "PG"
+    },
+    {
+      "count": 104,
+      "games": [
+        {
+          "name": "Money Tree",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/CQ9/EN/CQ0344.png",
+          "image": "assets/pinoyplay/games/cq9-CQ0344.png"
+        },
+        {
+          "name": "Mahjong Rich Ways",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/CQ9/EN/CQ0489.png",
+          "image": "assets/pinoyplay/games/cq9-CQ0489.png"
+        },
+        {
+          "name": "Mahjong Break",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/CQ9/EN/cq9-slot-CP1.png",
+          "image": "assets/pinoyplay/games/cq9-cq9-slot-CP1.png"
+        },
+        {
+          "name": "Golden Horus",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/CQ9/EN/cq9-slot-CP4.png",
+          "image": "assets/pinoyplay/games/cq9-cq9-slot-CP4.png"
+        },
+        {
+          "name": "Good Fortune M",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/CQ9/EN/CQ0194.png",
+          "image": "assets/pinoyplay/games/cq9-CQ0194.png"
+        },
+        {
+          "name": "Mr. Miser",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/CQ9/EN/CQ0401.png",
+          "image": "assets/pinoyplay/games/cq9-CQ0401.png"
+        },
+        {
+          "name": "Sugar Combo",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/CQ9/EN/cq9-slot-CP2.png",
+          "image": "assets/pinoyplay/games/cq9-cq9-slot-CP2.png"
+        },
+        {
+          "name": "Hot DJ",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/CQ9/EN/CQ0395.png",
+          "image": "assets/pinoyplay/games/cq9-CQ0395.png"
+        },
+        {
+          "name": "5 God Beasts",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/CQ9/EN/CQ0218.png",
+          "image": "assets/pinoyplay/games/cq9-CQ0218.png"
+        }
+      ],
+      "name": "CQ9"
+    },
+    {
+      "count": 73,
+      "games": [
+        {
+          "name": "DJ BOOM BOOM",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/FC/EN/22092.png",
+          "image": "assets/pinoyplay/games/fc-22092.png"
+        },
+        {
+          "name": "Sugar Bang Bang 2",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/FC/EN/FC0062.png",
+          "image": "assets/pinoyplay/games/fc-FC0062.png"
+        },
+        {
+          "name": "SUPER ELEMENTS 2",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/FC/EN/22098.png",
+          "image": "assets/pinoyplay/games/fc-22098.png"
+        },
+        {
+          "name": "Poker Win",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/FC/EN/FC0060.png",
+          "image": "assets/pinoyplay/games/fc-FC0060.png"
+        },
+        {
+          "name": "Chinese New Year Moreways",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/FC/EN/FC0059.png",
+          "image": "assets/pinoyplay/games/fc-FC0059.png"
+        },
+        {
+          "name": "Sugar Bang Bang",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/FC/EN/FC0035.png",
+          "image": "assets/pinoyplay/games/fc-FC0035.png"
+        },
+        {
+          "name": "QUEEN OF INCA 2",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/FC/EN/22103.png",
+          "image": "assets/pinoyplay/games/fc-22103.png"
+        },
+        {
+          "name": "SUGAR BANG BANG PLUS",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/FC/EN/22093.png",
+          "image": "assets/pinoyplay/games/fc-22093.png"
+        },
+        {
+          "name": "Chinese New Year 2",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/FC/EN/FC0032.png",
+          "image": "assets/pinoyplay/games/fc-FC0032.png"
+        }
+      ],
+      "name": "FC"
+    },
+    {
+      "count": 170,
+      "games": [
+        {
+          "name": "Parthenon: Quest for Immortality™",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/NE/EN/NE0049.png",
+          "image": "assets/pinoyplay/games/ne-NE0049.png"
+        },
+        {
+          "name": "Spice",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/NE/EN/NG-spicer96f1000000.png",
+          "image": "assets/pinoyplay/games/ne-NG-spicer96f1000000.png"
+        },
+        {
+          "name": "Dazzle Me™",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/NE/EN/NE0009.png",
+          "image": "assets/pinoyplay/games/ne-NE0009.png"
+        },
+        {
+          "name": "Dead or Alive 3: Wanted",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/NE/EN/NG-deadalive3r96f10.png",
+          "image": "assets/pinoyplay/games/ne-NG-deadalive3r96f10.png"
+        },
+        {
+          "name": "Starburst Galaxy",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/NE/EN/NE0233.png",
+          "image": "assets/pinoyplay/games/ne-NE0233.png"
+        },
+        {
+          "name": "Irish Pot Luck™",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/NE/EN/NE0043.png",
+          "image": "assets/pinoyplay/games/ne-NE0043.png"
+        },
+        {
+          "name": "Reef Raider™",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/NE/EN/NE0078.png",
+          "image": "assets/pinoyplay/games/ne-NE0078.png"
+        },
+        {
+          "name": "Starburst™",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/NE/EN/NE0007.png",
+          "image": "assets/pinoyplay/games/ne-NE0007.png"
+        },
+        {
+          "name": "Rabid Randy Dark Trails",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/NE/EN/196995.png",
+          "image": "assets/pinoyplay/games/ne-196995.png"
+        }
+      ],
+      "name": "NE"
+    },
+    {
+      "count": 82,
+      "games": [
+        {
+          "name": "Duck Hunters 2",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/NLC/EN/NG-duckhunters20000.png",
+          "image": "assets/pinoyplay/games/nlc-NG-duckhunters20000.png"
+        },
+        {
+          "name": "Duck Hunters",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/NLC/EN/NLC206.png",
+          "image": "assets/pinoyplay/games/nlc-NLC206.png"
+        },
+        {
+          "name": "Outsourced 2 - Balkan Engineering",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/NLC/EN/NG-outsourced200000.png",
+          "image": "assets/pinoyplay/games/nlc-NG-outsourced200000.png"
+        },
+        {
+          "name": "Duck Hunters Happy Hour",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/NLC/EN/NG-duckhunteppyhour.png",
+          "image": "assets/pinoyplay/games/nlc-NG-duckhunteppyhour.png"
+        },
+        {
+          "name": "The Crypt 2",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/NLC/EN/NG-thecrypt20000000.png",
+          "image": "assets/pinoyplay/games/nlc-NG-thecrypt20000000.png"
+        },
+        {
+          "name": "Fire in the Hole 3",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/NLC/EN/NLC242.png",
+          "image": "assets/pinoyplay/games/nlc-NLC242.png"
+        },
+        {
+          "name": "True Grit Redemption 2",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/NLC/EN/NG-truegrit20000000.png",
+          "image": "assets/pinoyplay/games/nlc-NG-truegrit20000000.png"
+        },
+        {
+          "name": "Beheaded",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/NLC/EN/NLC150.png",
+          "image": "assets/pinoyplay/games/nlc-NLC150.png"
+        },
+        {
+          "name": "Soaked By Seamen",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/NLC/EN/NG-soakedbyseamen00.png",
+          "image": "assets/pinoyplay/games/nlc-NG-soakedbyseamen00.png"
+        }
+      ],
+      "name": "NLC"
+    },
+    {
+      "count": 659,
+      "games": [
+        {
+          "name": "Sugar Rush 1000",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/PP/EN/PP0696.png",
+          "image": "assets/pinoyplay/games/pp-PP0696.png"
+        },
+        {
+          "name": "Sweet Bonanza 1000",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/PP/EN/PP0739.png",
+          "image": "assets/pinoyplay/games/pp-PP0739.png"
+        },
+        {
+          "name": "Mahjong Wins Super Scatter",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/PP/EN/PP1014.png",
+          "image": "assets/pinoyplay/games/pp-PP1014.png"
+        },
+        {
+          "name": "Gates of Olympus 2500",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/PP/EN/vs20olympmmd.png",
+          "image": "assets/pinoyplay/games/pp-vs20olympmmd.png"
+        },
+        {
+          "name": "Gates of Olympus 1000",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/PP/EN/PP0639.png",
+          "image": "assets/pinoyplay/games/pp-PP0639.png"
+        },
+        {
+          "name": "Sweet Rush Bonanza",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/PP/EN/PP1064.png",
+          "image": "assets/pinoyplay/games/pp-PP1064.png"
+        },
+        {
+          "name": "Sweet Bonanza 2500",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/PP/EN/vs20swbon2500.png",
+          "image": "assets/pinoyplay/games/pp-vs20swbon2500.png"
+        },
+        {
+          "name": "Gates of Olympus Super Scatter",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/PP/EN/PP0992.png",
+          "image": "assets/pinoyplay/games/pp-PP0992.png"
+        },
+        {
+          "name": "Starlight Princess 1000",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/PP/EN/PP0555.png",
+          "image": "assets/pinoyplay/games/pp-PP0555.png"
+        }
+      ],
+      "name": "PP"
+    },
+    {
+      "count": 75,
+      "games": [
+        {
+          "name": "BOUNTY EXPRESS",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/PS/EN/PSS-ON-00174.png",
+          "image": "assets/pinoyplay/games/ps-PSS-ON-00174.png"
+        },
+        {
+          "name": "MEGA PALAYOK 5000x",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/PS/EN/PSS-ON-00180.png",
+          "image": "assets/pinoyplay/games/ps-PSS-ON-00180.png"
+        },
+        {
+          "name": "MAHJONG: ORIGIN",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/PS/EN/PSS-ON-00171.png",
+          "image": "assets/pinoyplay/games/ps-PSS-ON-00171.png"
+        },
+        {
+          "name": "HIYAS GEMS",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/PS/EN/PS0139.png",
+          "image": "assets/pinoyplay/games/ps-PS0139.png"
+        },
+        {
+          "name": "Lucky Ace",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/PS/EN/PS0123.png",
+          "image": "assets/pinoyplay/games/ps-PS0123.png"
+        },
+        {
+          "name": "MAHJONG：ORIGIN 2",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/PS/EN/PSS-ON-00170.png",
+          "image": "assets/pinoyplay/games/ps-PSS-ON-00170.png"
+        },
+        {
+          "name": "LUCKY ACE 2",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/PS/EN/PSS-ON-00168.png",
+          "image": "assets/pinoyplay/games/ps-PSS-ON-00168.png"
+        },
+        {
+          "name": "Super Awesome",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/PS/EN/PS0091.png",
+          "image": "assets/pinoyplay/games/ps-PS0091.png"
+        },
+        {
+          "name": "ELECTRIC ZEUS",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/PS/EN/PSS-ON-00175.png",
+          "image": "assets/pinoyplay/games/ps-PSS-ON-00175.png"
+        }
+      ],
+      "name": "PS"
+    },
+    {
+      "count": 236,
+      "games": [
+        {
+          "name": "Zillard King MegaWays",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/RT/EN/RT0497.png",
+          "image": "assets/pinoyplay/games/rt-RT0497.png"
+        },
+        {
+          "name": "Don't Hit Plz",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/RT/EN/RT0394.png",
+          "image": "assets/pinoyplay/games/rt-RT0394.png"
+        },
+        {
+          "name": "Rise of Cleopatra",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/RT/EN/RT0501.png",
+          "image": "assets/pinoyplay/games/rt-RT0501.png"
+        },
+        {
+          "name": "Dragons Clusterbuster™",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/RT/EN/RT0203.png",
+          "image": "assets/pinoyplay/games/rt-RT0203.png"
+        },
+        {
+          "name": "Archdragon King",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/RT/EN/NG-archdragonking00.png",
+          "image": "assets/pinoyplay/games/rt-NG-archdragonking00.png"
+        },
+        {
+          "name": "Sylvan Spirits",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/RT/EN/RT0128.png",
+          "image": "assets/pinoyplay/games/rt-RT0128.png"
+        },
+        {
+          "name": "777 Strike",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/RT/EN/RT0006.png",
+          "image": "assets/pinoyplay/games/rt-RT0006.png"
+        },
+        {
+          "name": "4 Squad",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/RT/EN/RT0004.png",
+          "image": "assets/pinoyplay/games/rt-RT0004.png"
+        },
+        {
+          "name": "Dynamite Riches MW + PowerWheel",
+          "url": "https://images.b728484.com:42666/TCG_GAME_ICONS/RT/EN/RT0178.png",
+          "image": "assets/pinoyplay/games/rt-RT0178.png"
+        }
+      ],
+      "name": "RT"
+    }
+  ],
+  "brandAssets": [
+    {
+      "source": "https://pinoy.go-meow.com/brand/logo.webp",
+      "image": "assets/pinoyplay/logo.webp"
+    },
+    {
+      "source": "https://pinoy.go-meow.com/brand/pattern-light.webp",
+      "image": "assets/pinoyplay/pattern-light.webp"
+    },
+    {
+      "source": "https://pinoy.go-meow.com/brand/hero-light.webp",
+      "image": "assets/pinoyplay/hero-light.webp"
+    }
+  ],
+  "banner": {
+    "image": "assets/pinoyplay/slot-daily-rebate-v1.png",
+    "source": "Approved conversation artwork: exec-15f6e6dd-8d7f-411a-bab3-7aec65e967f0.png"
+  }
+}

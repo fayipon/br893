@@ -1,0 +1,24 @@
+{
+  "mode": "built-in imagegen",
+  "file": "public/assets/pinoyplay/payday-v1-graffiti.png",
+  "source": "C:\\Users\\user\\.codex\\generated_images\\01a1aa47-a496-7f62-8846-50443ad7efc8\\exec-60541b63-91bb-4d10-b797-b74a7340f773.png",
+  "references": [
+    "C:/Users/user/AppData/Local/Temp/codex-clipboard-5707fe4c-35c5-414a-ab38-6130026548ff.png",
+    "C:/Users/user/Documents/GitHub/br893/public/assets/pinoyplay/weekly-cashback-v3-graffiti.png"
+  ],
+  "prompt": "Use case: ads-marketing / compositing. Create the Payday edition of the existing promotional banner layout.\nImage 1 is the PRIMARY ARTWORK REFERENCE and replaces the previous pink-haired character: use its long straight black-haired adult anime woman with blunt bangs, pale lavender eyes, relaxed tilted-head pose, grey zip hoodie over a dark top, black collar and simple necklace. Preserve her likeness, clothing, calm expression, clean anime linework and light/shadow style. Keep her fully clothed, waist-up, large and sharp.\nImage 2 is only a reference for the wide banner layout and bold promotional typography. Do not use its pink-haired woman or its Weekly Cashback copy.\nOutput: a finished 1882 x 836 wide Payday banner. Single black-haired woman from image 1 occupies the right half, face clear and unobstructed. The background is one continuous weathered concrete graffiti wall inspired by image 1, charcoal/navy and grey with mint, cyan and restrained lime/yellow paint accents, wall seams, drips and layered abstract spray-painted shapes. Preserve visual depth while keeping the character crisp. Darker painted wall behind the left copy, naturally integrated rather than a separate panel. Maintain at least 60px safe margin for all text.\nExact readable copy only:\n\"PAYDAY\" as the large bold condensed italic white headline at upper-left.\n\"UP TO\" in smaller white uppercase immediately above the amount.\n\"₱5,000\" as the dominant large ONE-LINE ivory-white amount below, with deep charcoal/navy outline and a restrained cyan/mint offset paint-stroke shadow. Include the Philippine peso sign and comma exactly. Fit the entire amount within the left 46% without covering the character; use condensed numerals as needed.\nNo other readable copy, no WEEKLY/CASHBACK, no percentages, dates, subtitles, buttons, coins, logos, rooster or watermarks. Only one character. Keep bottom-right corner free of essential detail for carousel dots. Premium contemporary anime street-art advertising, coherent sharp facial features and hands, no muddy image texture, no excessive neon glow, no metallic 3D lettering.",
+  "visibleCopy": [
+    "PAYDAY",
+    "UP TO",
+    "₱5,000"
+  ],
+  "integration": [
+    "Homepage fourth carousel slide",
+    "Payday shortcut",
+    "Promotions",
+    "Rewards",
+    "Design library"
+  ],
+  "rulesAndTierData": "src/data/pinoyPromotions.js",
+  "note": "The black-haired character reference supersedes the earlier request to reuse the Weekly Cashback pink-haired artwork."
+}

@@ -1,0 +1,14 @@
+{
+  "tool": "built-in image_gen",
+  "createdAt": "2026-11-05",
+  "path": "public/assets/pinoyplay/welcome-bonus-v1.png",
+  "sourcePath": "C:/Users/user/.codex/generated_images/01a1aa47-a496-7f62-8846-50443ad7efc8/exec-47850571-30b4-4d55-b046-649d04f2f381.png",
+  "prompt": "Use case: polished promotional website banner, final raster artwork. Create one wide horizontal banner, aspect ratio 1882:836 (about 2.25:1), for the PinoyPlay welcome bonus campaign. Premium contemporary game lobby advertising, red white and navy blue (#FA2541, #FFFFFF, #123474), pale ice-blue highlights, layered light and dimensional surfaces. Full bleed cohesive environment across the entire canvas, no split panels or hard background boundaries. No gold coins, no cash banknotes, no rooster, no logos, no slot machine, no human figures. The left 58% is a beautifully typeset dominant typographic composition; the right 42% features one large elegant open white gift box with glossy vivid red ribbon and cobalt-blue interior, lid hovering above, a few tasteful red/blue paper ribbons and subtle luminous white stars. Realistic high-end 3D illustration, adult premium brand aesthetic, not childish. Soft blue architectural curves and a white illuminated platform create depth in the continuous backdrop, rich navy at far right, left kept light so the headline reads. Minimal decorative clutter, tasteful depth of field. EXACT ENGLISH COPY, no other text: at upper left a small widely tracked red kicker \"NEW PLAYER EXCLUSIVE\"; below it a large condensed extra-bold navy headline \"WELCOME BONUS\"; below headline an enormous \"₱20\" in crisp dimensional deep navy with restrained white edge light and red accent, the amount occupies about half the banner height; at lower left in small but legible navy type \"REGISTER & GET REWARDED\"; and a compact footnote \"Deposit required to play\". The Philippine peso symbol must be correct: ₱. Make typography sharp and premium, high hierarchy and comfortable safe margins (5% sides). Keep all main copy within left 58%, not touching gift box. Keep bottom-right 15% uncluttered for a carousel dot tray overlay. No CTA button, no fake UI, no watermark. Do not imply deposit-free playing or guaranteed winnings. The image itself is the banner, no website mockup or surrounding browser.",
+  "usage": [
+    "Homepage carousel",
+    "Promotions",
+    "Welcome Bonus activity details",
+    "Design library"
+  ],
+  "copySource": "User-supplied Welcome Bonus rules, stored in src/data/pinoyPromotions.js"
+}

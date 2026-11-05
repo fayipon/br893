@@ -1,0 +1,20 @@
+{
+  "mode": "built-in imagegen",
+  "campaigns": [
+    {
+      "name": "Payday",
+      "asset": "C:/Users/user/Documents/GitHub/br893/public/assets/pinoyplay/payday-v1-graffiti.png",
+      "promptRecord": "C:/Users/user/Documents/GitHub/br893/design/pinoyplay-payday-generation.json"
+    },
+    {
+      "name": "First 3 Deposits",
+      "asset": "C:/Users/user/Documents/GitHub/br893/public/assets/pinoyplay/first-three-deposits-v1-graffiti.png",
+      "promptRecord": "C:/Users/user/Documents/GitHub/br893/design/pinoyplay-first-three-deposits-generation.json"
+    },
+    {
+      "name": "Royal Arrival",
+      "asset": "C:/Users/user/Documents/GitHub/br893/public/assets/pinoyplay/royal-arrival-v1.png",
+      "promptRecord": "C:/Users/user/Documents/GitHub/br893/design/pinoyplay-royal-arrival-generation.json"
+    }
+  ]
+}

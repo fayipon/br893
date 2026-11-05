@@ -1,0 +1,39 @@
+{
+  "mode": "built-in imagegen",
+  "purpose": "Refine the Slot Daily Rebate 1.5% red into a controlled berry-crimson gradient.",
+  "colors": {
+    "top": "#E94363",
+    "main": "#D91F48",
+    "bottom": "#B91F42"
+  },
+  "preserved": {
+    "whiteOutlineSvgRadius": 6,
+    "finalAmountScale": 1.12,
+    "entranceScales": [
+      0.4,
+      1.22,
+      0.985,
+      1
+    ]
+  },
+  "assets": [
+    {
+      "file": "public/assets/pinoyplay/slot-rebate-offer-v3-berry.png",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a1aa47-a496-7f62-8846-50443ad7efc8\\exec-12c80c5a-65cf-4d1e-8449-e19e15d30078.png",
+      "reference": [
+        "C:/Users/user/Documents/GitHub/br893/public/assets/pinoyplay/slot-rebate-offer-v2-red.png"
+      ],
+      "transparent": true,
+      "prompt": "Use case: precise color refinement of a transparent banner animation sprite. Image 1 is the EDIT TARGET. Replace the current vivid fluorescent red face of 1.5% with a deeper refined berry-crimson centered on #D91F48. Add only a very subtle vertical tonal variation: slightly lighter #E94363 near the top, main #D91F48 through the middle, deeper #B91F42 at the bottom. The overall result must read as a rich controlled berry red, not hot pink, orange-red, glowing neon, gold or metallic. Preserve the exact digit shapes, decimal point, percent sign, size, slant and placement. Change only the 1.5% face and its antialiased color edge. Keep UP TO white, ALL SLOT GAMES and the small ornaments their existing ivory/pale-gold colors. Preserve original transparent RGBA full 1882x836 canvas and every group's exact registration. No new outline: the website adds the existing white stroke separately. No red haze, glowing aura, opaque backing or sticker border. Keep all areas around letters and inside counters fully transparent. No font or layout changes, no cropping."
+    },
+    {
+      "file": "public/assets/pinoyplay/slot-daily-rebate-v4-berry-outline.png",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a1aa47-a496-7f62-8846-50443ad7efc8\\exec-24e27e8d-46c0-4cac-844f-7c9b205f1633.png",
+      "reference": [
+        "C:/Users/user/Documents/GitHub/br893/public/assets/pinoyplay/slot-daily-rebate-v3-red-outline.png"
+      ],
+      "transparent": false,
+      "prompt": "Use case: precise single color refinement of an approved finished banner. Image 1 is the EDIT TARGET. Replace the current vivid fluorescent red face of 1.5% with a deeper refined berry-crimson centered on #D91F48. Add only a very subtle vertical tonal variation: slightly lighter #E94363 near the top, main #D91F48 through the middle, deeper #B91F42 at the bottom. The overall result must read as a rich controlled berry red, not hot pink, orange-red, glowing neon, gold or metallic. Preserve the exact digit shapes, decimal point, percent sign, size, slant and placement. Keep the existing clean white outline around 1.5% exactly unchanged in thickness and placement. Preserve absolutely everything else: all four characters and their colors, background, giant SLOT DAILY REBATE title, UP TO, ALL SLOT GAMES, ornaments, spacing and full 1882x836 composition. No other edits, no new shadows, no new glow, no crop. The goal is a deeper, less glaring red with understated tonal depth while maintaining the readable white border."
+    }
+  ]
+}

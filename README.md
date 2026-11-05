@@ -1,6 +1,8 @@
 # Project Hub / BR893 首頁設計
 
-根目錄為卡片式專案入口，提供 **BR893** 與 **Jito** 兩張卡片。兩張卡片皆以 **Design**、**演示站** 兩個並排按鈕分別進入各自的設計展示與首頁；Jito 卡片頁尾另保留尺寸預覽。BR893 尺寸預覽仍可透過 `?preview=1` 直接開啟。桌面並排、手機單欄，卡片內容集中在 `src/components/ProjectHub.vue` 的 `projects` 清單。兩站共用 `DesignPage.vue` 的色票、字體、按鈕、圖示與 Banner 展示架構，Jito 使用酒紅色票及英文介面，Back to site 返回所屬演示站。
+根目錄為卡片式專案入口，提供 **BR893**、**Jito** 與 **PinoyPlay** 三張卡片，皆有 **Design**、**演示站** 兩個並排按鈕，進入各自的本地設計展示與靜態首頁。Jito 與 PinoyPlay 卡片頁尾另提供尺寸預覽。桌面並排、手機單欄，卡片內容集中在 `src/components/ProjectHub.vue` 的 `projects` 清單。BR893 與 Jito 共用 `DesignPage.vue`；PinoyPlay 使用獨立的 `PinoyDesignPage.vue`，Back to site 返回所屬演示站。
+
+PinoyPlay 參照 https://pinoy.go-meow.com/ 首頁：紅白藍品牌、520px 中央白色框體與淡陰影、捲動時固定頂部的 Header、六個活動快捷入口、九個廠商共 81 張遊戲卡片、底部導航與說明區。PinoyPlay 浮水印以同一背景連續鋪滿頁面與桌面兩側。第一張 Banner 使用已核准的 Slot Daily Rebate（最高 1.5% / ALL SLOT GAMES），第二張保留原站品牌主視覺。右側提供「專案入口」、Banner type switch、Game brightness；切換 Banner 模式控制人物與文字入場及標題掃光，亮度調整遊戲卡片，設定與其他站共用並持久保存。手機選單內也可調整這兩項設定。活動入口開啟本地規則彈窗；View all 提供廠商篩選與搜尋，帳號與遊戲僅有示意預覽，沒有帳號提交、金流或遊戲服務。所有圖片均為本地素材，來源記錄於 `design/pinoyplay-reference-catalog.json`，遊戲資料集中於 `src/data/pinoyplay.json`，樣式位於 `src/styles/pinoyplay.css`。Design 頁提供色票、字體、圖示、Banner 與遊戲亮度展示。
 
 Jito 是本地酒紅主題靜態頁，與 BR893 共用 `App.vue`、遊戲圖片、輪播、Banner 圖片／動畫切換及遊戲亮度控制。Jito 的獨立 Banner 與印度盧比資料集中於 `src/data/ipaData.js`。設定沿用既有瀏覽器儲存，因此兩站同步使用相同的 Banner 模式與亮度。Jito 的橫式品牌以 `IpaBrand.vue` 呈現：圖片僅包含紅金 LOGO 圖形，右側「Jito Gaming」為 HTML/CSS 文字；下載列 APP 圖示使用相同圖形。透明圖檔位於 `public/assets/ipa/brand-mark-v1.png`，原稿、來源與生成提示詞保存在 `design/ipa-logo/`。既有 `?page=ipa` 與 `site=ipa` 連結維持相容，英文介面文案位於 `src/ipaCopy.js`，主題集中在 `src/styles/ipa.css`。不載入 Jitobets 的 Banner、遊戲素材或服務，先前下載的原站縮圖已移除；原站色碼觀察保留在 `design/ipa-reference.json`。
 
@@ -11,6 +13,9 @@ Jito 的 Web 留白使用 `KoiBackground.vue` 繪製五條不同大小的粒子�
 - `/`：專案入口。
 - `?page=br893`：BR893 紫色首頁。
 - `?page=ipa`：Jito 酒紅色首頁。
+- `?page=pinoyplay`：PinoyPlay 紅白藍靜態首頁。
+- `?page=design&site=pinoyplay`：PinoyPlay Design 展示頁。
+- `?page=pinoyplay&preview=1`：PinoyPlay Web／390px／430px／320px 尺寸預覽。
 - `?page=design`：BR893 Design 展示頁，Back to site 返回 BR893。
 - `?page=design&site=ipa`：Jito Design 展示頁，Back to site 返回 Jito。
 - `?preview=1`：BR893 尺寸預覽。
