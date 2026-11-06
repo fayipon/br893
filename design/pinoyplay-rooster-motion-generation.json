@@ -1,0 +1,107 @@
+{
+  "tool": "image_gen.imagegen",
+  "purpose": "Independent entrance motion layers for the three rooster campaign banners",
+  "canvas": {
+    "width": 1882,
+    "height": 836
+  },
+  "assets": [
+    {
+      "campaign": "weekly",
+      "part": "background",
+      "source": "weekly-cashback-v4-rooster.png",
+      "transparent_background": false,
+      "prompt": "Use case: background-extraction / registered layer for web animation. Image 1 is the EDIT TARGET, an approved weekly-cashback-v4-rooster.png 1882x836 promotional banner. This is precise layer separation, not a redesign. The output MUST retain the entire 1882x836 canvas and exact original pixel registration; do not recenter, resize, zoom or shift anything. Preserve original art, letter shapes, colors, textures and silhouette. Create the BACKGROUND CLEAN PLATE ONLY. Remove the ENTIRE thumbs-up rooster including face, comb, tail, jacket, hands, legs and every gold edge or shadow. Also remove ALL foreground campaign copy, numerals, peso/percent signs, dark outlines and colored offset shadows: WEEKLY on the first line, CASHBACK on the second, and huge 10% below. Pink offset paint shadow on the amount. Reconstruct all removed regions as a continuous believable extension of the existing weathered graffiti concrete wall, keeping the original pink/cyan/mint/navy color palette for this specific input, dark painted left text area, seams, abstract paint swipes and drips. Abstract graffiti is okay; NO readable letters, no number ghosts, no mascot remnants, no promotional copy, no humans, no new objects. An opaque full-canvas backdrop that can sit beneath separate transparent text and mascot sprites. Keep all unoccluded background detail in place.",
+      "input": "public/assets/pinoyplay/weekly-cashback-v4-rooster.png",
+      "generated_source": "C:\\Users\\user\\.codex\\generated_images\\01a1adbf-bf6d-7f20-9be3-be59b7096ba7\\exec-16304aa8-1064-4ccd-8297-76217878196f.png",
+      "output": "public/assets/pinoyplay/motion/weekly-background-v1.png"
+    },
+    {
+      "campaign": "weekly",
+      "part": "rooster",
+      "source": "weekly-cashback-v4-rooster.png",
+      "transparent_background": true,
+      "prompt": "Use case: background-extraction / registered layer for web animation. Image 1 is the EDIT TARGET, an approved weekly-cashback-v4-rooster.png 1882x836 promotional banner. This is precise layer separation, not a redesign. The output MUST retain the entire 1882x836 canvas and exact original pixel registration; do not recenter, resize, zoom or shift anything. Preserve original art, letter shapes, colors, textures and silhouette. Extract ONLY the COMPLETE thumbs-up rooster as one crisp RGBA sprite in its EXACT original position on the right of the full canvas. Include every visible part: red comb and tail feathers, white feathers, eyes, golden beak, red-and-black P jacket, both hands, gold necklace, black trousers and any visible sneakers. Keep the EXACT existing pose, facial expression, body proportions, costume, colors, original shading and bottom/top canvas cropping. This is extraction, do not draw a different rooster or fill in unseen body parts. Remove every part of the mural and ALL campaign lettering/numerals/qualifiers. Everything outside the actual silhouette must be fully transparent alpha, including holes between arms, torso, legs and tail. No background rectangle, no gradient, no fake checkerboard, no glow, no extra outline, no gray/colored haze, no detached paint specks. Preserve antialiased clean edges. Leave all blank transparent space on the left so the sprite remains registered to the original banner.",
+      "input": "public/assets/pinoyplay/weekly-cashback-v4-rooster.png",
+      "generated_source": "C:\\Users\\user\\.codex\\generated_images\\01a1adbf-bf6d-7f20-9be3-be59b7096ba7\\exec-03bc60be-703a-40af-a309-e8bab7385189.png",
+      "output": "public/assets/pinoyplay/motion/weekly-rooster-v1.png"
+    },
+    {
+      "campaign": "weekly",
+      "part": "copy",
+      "source": "weekly-cashback-v4-rooster.png",
+      "transparent_background": true,
+      "prompt": "Use case: background-extraction / registered layer for web animation. Image 1 is the EDIT TARGET, an approved weekly-cashback-v4-rooster.png 1882x836 promotional banner. This is precise layer separation, not a redesign. The output MUST retain the entire 1882x836 canvas and exact original pixel registration; do not recenter, resize, zoom or shift anything. Preserve original art, letter shapes, colors, textures and silhouette. Extract ONLY all existing CAMPAIGN LETTERING and NUMERALS into a SINGLE full-canvas transparent RGBA typography sprite, keeping each separate text group in its EXACT original coordinates, original size and original spacing. Exact text: WEEKLY on the first line, CASHBACK on the second, and huge 10% below. Pink offset paint shadow on the amount. Approximate registration to preserve: WEEKLY around x90..610 y75..195; CASHBACK x65..790 y200..325; 10% x35..810 y335..745. These are location guides, not permission to move or re-typeset the original. Preserve ivory fill, navy/dark dimensional edging, rough printed glyph texture and the tight pink/mint/cyan offset shadow directly associated with the letters. Include the FULL qualifier where present, peso symbol ₱, comma and percentage sign exactly. Remove the entire rooster and all graffiti/wall/background completely. Only actual text, its original outline and compact typography shadow remain. Transparent gaps between letters and between groups must be truly clear alpha. No broad color blocks or wall texture, no decorative graffiti, no new text, no background, no white sticker contour. Do NOT rearrange the text into a new layout. Keep all groups isolated within their original rectangles for separate SVG clipping and animation.",
+      "input": "public/assets/pinoyplay/weekly-cashback-v4-rooster.png",
+      "generated_source": "C:\\Users\\user\\.codex\\generated_images\\01a1adbf-bf6d-7f20-9be3-be59b7096ba7\\exec-c4b2c931-65a3-4ef6-ba9b-20bc4669cc66.png",
+      "output": "public/assets/pinoyplay/motion/weekly-copy-v1.png"
+    },
+    {
+      "campaign": "payday",
+      "part": "background",
+      "source": "payday-v2-rooster.png",
+      "transparent_background": false,
+      "prompt": "Use case: background-extraction / registered layer for web animation. Image 1 is the EDIT TARGET, an approved payday-v2-rooster.png 1882x836 promotional banner. This is precise layer separation, not a redesign. The output MUST retain the entire 1882x836 canvas and exact original pixel registration; do not recenter, resize, zoom or shift anything. Preserve original art, letter shapes, colors, textures and silhouette. Create the BACKGROUND CLEAN PLATE ONLY. Remove the ENTIRE leaping rooster with raised fist and bent knee including face, comb, tail, jacket, hands, legs and every gold edge or shadow. Also remove ALL foreground campaign copy, numerals, peso/percent signs, dark outlines and colored offset shadows: PAYDAY as the upper-left headline, UP TO directly above the amount, and large ₱5,000 on one line. Mint/cyan offset paint shadow on the amount. Reconstruct all removed regions as a continuous believable extension of the existing weathered graffiti concrete wall, keeping the original pink/cyan/mint/navy color palette for this specific input, dark painted left text area, seams, abstract paint swipes and drips. Abstract graffiti is okay; NO readable letters, no number ghosts, no mascot remnants, no promotional copy, no humans, no new objects. An opaque full-canvas backdrop that can sit beneath separate transparent text and mascot sprites. Keep all unoccluded background detail in place.",
+      "input": "public/assets/pinoyplay/payday-v2-rooster.png",
+      "generated_source": "C:\\Users\\user\\.codex\\generated_images\\01a1adbf-bf6d-7f20-9be3-be59b7096ba7\\exec-a1459747-d0bf-4e50-8b81-72482ef7c42f.png",
+      "output": "public/assets/pinoyplay/motion/payday-background-v1.png"
+    },
+    {
+      "campaign": "payday",
+      "part": "rooster",
+      "source": "payday-v2-rooster.png",
+      "transparent_background": true,
+      "prompt": "Use case: background-extraction / registered layer for web animation. Image 1 is the EDIT TARGET, an approved payday-v2-rooster.png 1882x836 promotional banner. This is precise layer separation, not a redesign. The output MUST retain the entire 1882x836 canvas and exact original pixel registration; do not recenter, resize, zoom or shift anything. Preserve original art, letter shapes, colors, textures and silhouette. Extract ONLY the COMPLETE leaping rooster with raised fist and bent knee as one crisp RGBA sprite in its EXACT original position on the right of the full canvas. Include every visible part: red comb and tail feathers, white feathers, eyes, golden beak, red-and-black P jacket, both hands, gold necklace, black trousers and any visible sneakers. Keep the EXACT existing pose, facial expression, body proportions, costume, colors, original shading and bottom/top canvas cropping. This is extraction, do not draw a different rooster or fill in unseen body parts. Remove every part of the mural and ALL campaign lettering/numerals/qualifiers. Everything outside the actual silhouette must be fully transparent alpha, including holes between arms, torso, legs and tail. No background rectangle, no gradient, no fake checkerboard, no glow, no extra outline, no gray/colored haze, no detached paint specks. Preserve antialiased clean edges. Leave all blank transparent space on the left so the sprite remains registered to the original banner.",
+      "input": "public/assets/pinoyplay/payday-v2-rooster.png",
+      "generated_source": "C:\\Users\\user\\.codex\\generated_images\\01a1adbf-bf6d-7f20-9be3-be59b7096ba7\\exec-d4eab6cd-a027-4c33-bcfb-859f9a1081a5.png",
+      "output": "public/assets/pinoyplay/motion/payday-rooster-v1.png"
+    },
+    {
+      "campaign": "payday",
+      "part": "copy",
+      "source": "payday-v2-rooster.png",
+      "transparent_background": true,
+      "prompt": "Use case: background-extraction / registered layer for web animation. Image 1 is the EDIT TARGET, an approved payday-v2-rooster.png 1882x836 promotional banner. This is precise layer separation, not a redesign. The output MUST retain the entire 1882x836 canvas and exact original pixel registration; do not recenter, resize, zoom or shift anything. Preserve original art, letter shapes, colors, textures and silhouette. Extract ONLY all existing CAMPAIGN LETTERING and NUMERALS into a SINGLE full-canvas transparent RGBA typography sprite, keeping each separate text group in its EXACT original coordinates, original size and original spacing. Exact text: PAYDAY as the upper-left headline, UP TO directly above the amount, and large ₱5,000 on one line. Mint/cyan offset paint shadow on the amount. Approximate registration to preserve: PAYDAY x75..925 y105..325; UP TO x80..350 y335..400; ₱5,000 x35..900 y405..755. These are location guides, not permission to move or re-typeset the original. Preserve ivory fill, navy/dark dimensional edging, rough printed glyph texture and the tight pink/mint/cyan offset shadow directly associated with the letters. Include the FULL qualifier where present, peso symbol ₱, comma and percentage sign exactly. Remove the entire rooster and all graffiti/wall/background completely. Only actual text, its original outline and compact typography shadow remain. Transparent gaps between letters and between groups must be truly clear alpha. No broad color blocks or wall texture, no decorative graffiti, no new text, no background, no white sticker contour. Do NOT rearrange the text into a new layout. Keep all groups isolated within their original rectangles for separate SVG clipping and animation.",
+      "input": "public/assets/pinoyplay/payday-v2-rooster.png",
+      "generated_source": "C:\\Users\\user\\.codex\\generated_images\\01a1adbf-bf6d-7f20-9be3-be59b7096ba7\\exec-6610b673-e22a-4011-b72e-e9cc804d2437.png",
+      "output": "public/assets/pinoyplay/motion/payday-copy-v1.png"
+    },
+    {
+      "campaign": "deposits",
+      "part": "background",
+      "source": "first-three-deposits-v2-rooster.png",
+      "transparent_background": false,
+      "prompt": "Use case: background-extraction / registered layer for web animation. Image 1 is the EDIT TARGET, an approved first-three-deposits-v2-rooster.png 1882x836 promotional banner. This is precise layer separation, not a redesign. The output MUST retain the entire 1882x836 canvas and exact original pixel registration; do not recenter, resize, zoom or shift anything. Preserve original art, letter shapes, colors, textures and silhouette. Create the BACKGROUND CLEAN PLATE ONLY. Remove the ENTIRE rooster extending an open welcoming hand including face, comb, tail, jacket, hands, legs and every gold edge or shadow. Also remove ALL foreground campaign copy, numerals, peso/percent signs, dark outlines and colored offset shadows: FIRST 3 on the first line, DEPOSITS on the second, TOTAL BONUS UP TO as the smaller qualifier, and ₱17,000 on one line below. Cyan offset paint shadow on the amount. Reconstruct all removed regions as a continuous believable extension of the existing weathered graffiti concrete wall, keeping the original pink/cyan/mint/navy color palette for this specific input, dark painted left text area, seams, abstract paint swipes and drips. Abstract graffiti is okay; NO readable letters, no number ghosts, no mascot remnants, no promotional copy, no humans, no new objects. An opaque full-canvas backdrop that can sit beneath separate transparent text and mascot sprites. Keep all unoccluded background detail in place.",
+      "input": "public/assets/pinoyplay/first-three-deposits-v2-rooster.png",
+      "generated_source": "C:\\Users\\user\\.codex\\generated_images\\01a1adbf-bf6d-7f20-9be3-be59b7096ba7\\exec-bc6a7791-26b2-43dc-a4d4-426ca4b449ca.png",
+      "output": "public/assets/pinoyplay/motion/deposits-background-v1.png"
+    },
+    {
+      "campaign": "deposits",
+      "part": "rooster",
+      "source": "first-three-deposits-v2-rooster.png",
+      "transparent_background": true,
+      "prompt": "Use case: background-extraction / registered layer for web animation. Image 1 is the EDIT TARGET, an approved first-three-deposits-v2-rooster.png 1882x836 promotional banner. This is precise layer separation, not a redesign. The output MUST retain the entire 1882x836 canvas and exact original pixel registration; do not recenter, resize, zoom or shift anything. Preserve original art, letter shapes, colors, textures and silhouette. Extract ONLY the COMPLETE rooster extending an open welcoming hand as one crisp RGBA sprite in its EXACT original position on the right of the full canvas. Include every visible part: red comb and tail feathers, white feathers, eyes, golden beak, red-and-black P jacket, both hands, gold necklace, black trousers and any visible sneakers. Keep the EXACT existing pose, facial expression, body proportions, costume, colors, original shading and bottom/top canvas cropping. This is extraction, do not draw a different rooster or fill in unseen body parts. Remove every part of the mural and ALL campaign lettering/numerals/qualifiers. Everything outside the actual silhouette must be fully transparent alpha, including holes between arms, torso, legs and tail. No background rectangle, no gradient, no fake checkerboard, no glow, no extra outline, no gray/colored haze, no detached paint specks. Preserve antialiased clean edges. Leave all blank transparent space on the left so the sprite remains registered to the original banner.",
+      "input": "public/assets/pinoyplay/first-three-deposits-v2-rooster.png",
+      "generated_source": "C:\\Users\\user\\.codex\\generated_images\\01a1adbf-bf6d-7f20-9be3-be59b7096ba7\\exec-45457ede-80ca-4aaf-88b9-ca41a7200baa.png",
+      "output": "public/assets/pinoyplay/motion/deposits-rooster-v1.png"
+    },
+    {
+      "campaign": "deposits",
+      "part": "copy",
+      "source": "first-three-deposits-v2-rooster.png",
+      "transparent_background": true,
+      "prompt": "Use case: background-extraction / registered layer for web animation. Image 1 is the EDIT TARGET, an approved first-three-deposits-v2-rooster.png 1882x836 promotional banner. This is precise layer separation, not a redesign. The output MUST retain the entire 1882x836 canvas and exact original pixel registration; do not recenter, resize, zoom or shift anything. Preserve original art, letter shapes, colors, textures and silhouette. Extract ONLY all existing CAMPAIGN LETTERING and NUMERALS into a SINGLE full-canvas transparent RGBA typography sprite, keeping each separate text group in its EXACT original coordinates, original size and original spacing. Exact text: FIRST 3 on the first line, DEPOSITS on the second, TOTAL BONUS UP TO as the smaller qualifier, and ₱17,000 on one line below. Cyan offset paint shadow on the amount. Approximate registration to preserve: FIRST 3 x115..750 y75..235; DEPOSITS x100..900 y235..395; TOTAL BONUS UP TO x85..680 y395..465; ₱17,000 x35..945 y470..790. These are location guides, not permission to move or re-typeset the original. Preserve ivory fill, navy/dark dimensional edging, rough printed glyph texture and the tight pink/mint/cyan offset shadow directly associated with the letters. Include the FULL qualifier where present, peso symbol ₱, comma and percentage sign exactly. Remove the entire rooster and all graffiti/wall/background completely. Only actual text, its original outline and compact typography shadow remain. Transparent gaps between letters and between groups must be truly clear alpha. No broad color blocks or wall texture, no decorative graffiti, no new text, no background, no white sticker contour. Do NOT rearrange the text into a new layout. Keep all groups isolated within their original rectangles for separate SVG clipping and animation.",
+      "input": "public/assets/pinoyplay/first-three-deposits-v2-rooster.png",
+      "generated_source": "C:\\Users\\user\\.codex\\generated_images\\01a1adbf-bf6d-7f20-9be3-be59b7096ba7\\exec-e79489d9-cda7-406e-83c2-efbe4f8497fe.png",
+      "output": "public/assets/pinoyplay/motion/deposits-copy-v1.png"
+    }
+  ],
+  "motion": {
+    "slogan": "Slide in from the left over 750ms; qualifiers staggered.",
+    "rooster": "Weekly slides from right, Payday leaps upward, First 3 Deposits slides forward from right.",
+    "amount": "Scale from 35% to 108%, rebound to 98.5%, settle at 100% over 1050ms.",
+    "start": "On first visible intersection after all layers load; carousel remount and Design replay restart.",
+    "fallback": "Original static banner for image mode, reduced motion, or load failure."
+  }
+}

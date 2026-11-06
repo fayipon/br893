@@ -222,6 +222,11 @@
 .pinoy-icon-samples small { font-size: 9px; color: #71809b; }
 .pinoy-design-banners { display: grid; gap: 20px; margin-top: 20px; }
 .pinoy-design-banners .pinoy-banner { border-radius: 16px; border: 1px solid #dce3ef; }
+.pinoy-motion-preview-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
+.pinoy-motion-preview-header h3 { margin: 0; font-size: 14px; }
+.pinoy-motion-preview-header button { display: inline-flex; align-items: center; gap: 8px; padding: 7px 11px; border: 1px solid #dce3ef; border-radius: 8px; background: #fff; color: #123474; font: inherit; font-size: 12px; cursor: pointer; }
+.pinoy-motion-preview-header button:disabled { opacity: .45; cursor: default; }
+.pinoy-motion-preview-header button:focus-visible { outline: 2px solid #123474; outline-offset: 3px; }
 .pinoy-design-games { margin-top: 20px; max-width: 520px; }
 @media (hover: hover) { .pinoy-game-card:hover > img { transform: translateY(-2px); } .pinoy-primary:hover { background: #e91b37; } .pinoy-shortcuts > button:hover { border-color: #8197bd; } }
 @media (min-width: 1024px) { .pinoy-mobile-controls { display: none; } }

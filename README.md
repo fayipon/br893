@@ -4,6 +4,8 @@
 
 PinoyPlay 參照 https://pinoy.go-meow.com/ 首頁：紅白藍品牌、520px 中央白色框體與淡陰影、捲動時固定頂部的 Header、六個活動快捷入口、九個廠商共 81 張遊戲卡片、底部導航與說明區。PinoyPlay 浮水印以同一背景連續鋪滿頁面與桌面兩側。第一張 Banner 使用已核准的 Slot Daily Rebate（最高 1.5% / ALL SLOT GAMES），第二張保留原站品牌主視覺。右側提供「專案入口」、Banner type switch、Game brightness；切換 Banner 模式控制人物與文字入場及標題掃光，亮度調整遊戲卡片，設定與其他站共用並持久保存。手機選單內也可調整這兩項設定。活動入口開啟本地規則彈窗；View all 提供廠商篩選與搜尋，帳號與遊戲僅有示意預覽，沒有帳號提交、金流或遊戲服務。所有圖片均為本地素材，來源記錄於 `design/pinoyplay-reference-catalog.json`，遊戲資料集中於 `src/data/pinoyplay.json`，樣式位於 `src/styles/pinoyplay.css`。Design 頁提供色票、字體、圖示、Banner 與遊戲亮度展示。
 
+PinoyPlay 的 Weekly Cashback、Payday、First 3 Deposits 使用 `PinoyRoosterBanner.vue` 分層動畫：標語從左側滑入，公雞分別側滑、跳躍、向前進場，10%、₱5,000、₱17,000 從 35% 放大至 108% 後回彈落定。首頁輪播、活動彈窗與 Design 共用，Design 各張提供 `Replay motion`。離開畫面或切到背景分頁時暫停；圖片模式、減少動態效果及圖層載入失敗時顯示原靜態稿。圖層、完整 image_gen 提示詞記錄於 `design/pinoyplay-rooster-motion-generation.json`，分組裁切與節奏位於 `src/data/pinoyRoosterMotion.js`。
+
 Jito 是本地酒紅主題靜態頁，與 BR893 共用 `App.vue`、遊戲圖片、輪播、Banner 圖片／動畫切換及遊戲亮度控制。Jito 的獨立 Banner 與印度盧比資料集中於 `src/data/ipaData.js`。設定沿用既有瀏覽器儲存，因此兩站同步使用相同的 Banner 模式與亮度。Jito 的橫式品牌以 `IpaBrand.vue` 呈現：圖片僅包含紅金 LOGO 圖形，右側「Jito Gaming」為 HTML/CSS 文字；下載列 APP 圖示使用相同圖形。透明圖檔位於 `public/assets/ipa/brand-mark-v1.png`，原稿、來源與生成提示詞保存在 `design/ipa-logo/`。既有 `?page=ipa` 與 `site=ipa` 連結維持相容，英文介面文案位於 `src/ipaCopy.js`，主題集中在 `src/styles/ipa.css`。不載入 Jitobets 的 Banner、遊戲素材或服務，先前下載的原站縮圖已移除；原站色碼觀察保留在 `design/ipa-reference.json`。
 
 Jito 的 Web 留白使用 `KoiBackground.vue` 繪製五條不同大小的粒子錦鯉：最大魚身由 150px 放大至最高 300px，依視窗留白縮放，其餘為 85%、68%、56%、43%。象牙白／朱紅與香檳金斑紋搭配魚身擺動、尾鰭、胸鰭、尾流與細水波，左側三條、右側兩條緩游；巡游時依魚身邊界調整位置，右側避開上方設定區。水池加入細粒子荷葉、淡線花瓣、水草、不規則石岸與緩動水面反光；池底以離屏 Canvas 快取。Canvas 僅繪製中央版型之外，背景可點擊投餌，中央頁面與設定控制維持各自的點擊行為。動畫限制為 30fps 與最高 1.5 倍像素密度，窄螢幕和背景分頁停止運算；減少動態效果時暫停環境巡游，使用者主動投餌時才完成單次追食動畫。BR893 沿用原本櫻花背景。
