@@ -6,13 +6,13 @@ import BannerTypeSwitch from './BannerTypeSwitch.vue'
 import GameBrightnessControl from './GameBrightnessControl.vue'
 import { useGameBrightness } from '../gameBrightness'
 import { useBannerType } from '../bannerType'
-import { roosterCampaigns } from '../data/pinoyRoosterMotion'
+import { motionCampaigns } from '../data/pinoyCampaignMotion'
 import data from '../data/pinoyplay.json'
 import '../styles/pinoyplay.css'
 const baseUrl = import.meta.env.BASE_URL
 const { gameBrightness } = useGameBrightness()
 const { bannerType } = useBannerType()
-const replayCounts = ref({ weekly: 0, payday: 0, deposits: 0 })
+const replayCounts = ref({ weekly: 0, payday: 0, deposits: 0, carnival: 0 })
 const colors = [{ name: 'Pinoy Navy', hex: '#123474' }, { name: 'Play Red', hex: '#FA2541' }, { name: 'White', hex: '#FFFFFF' }, { name: 'Canvas', hex: '#F1F4FA' }, { name: 'Slate', hex: '#71809B' }]
 </script>
 
@@ -26,11 +26,10 @@ const colors = [{ name: 'Pinoy Navy', hex: '#123474' }, { name: 'Play Red', hex:
       <h2>03 / Featured banners</h2><BannerTypeSwitch />
       <div class="pinoy-design-banners">
         <PinoyBanner bonus /><PinoyBanner />
-        <article v-for="(campaign, key) in roosterCampaigns" :key="key" class="pinoy-motion-preview">
+        <article v-for="(campaign, key) in motionCampaigns" :key="key" class="pinoy-motion-preview">
           <div class="pinoy-motion-preview-header"><h3>{{ campaign.label }}</h3><button type="button" :disabled="bannerType !== 'layered'" :aria-label="`Replay ${campaign.label} motion`" @click="replayCounts[key]++">Replay motion <span aria-hidden="true">↻</span></button></div>
-          <PinoyBanner :key="`${key}-${replayCounts[key]}`" :weekly="key === 'weekly'" :payday="key === 'payday'" :deposits="key === 'deposits'" />
+          <PinoyBanner :key="`${key}-${replayCounts[key]}`" :weekly="key === 'weekly'" :payday="key === 'payday'" :deposits="key === 'deposits'" :royal="key === 'carnival'" />
         </article>
-        <PinoyBanner royal />
       </div>
     </section>
     <section><h2>04 / Game cards</h2><GameBrightnessControl /><div class="pinoy-game-grid pinoy-design-games"><div v-for="game in data.groups[0].games.slice(0, 3)" :key="game.image" class="pinoy-game-card"><img :src="`${baseUrl}${game.image}`" :alt="game.name" width="320" height="320" /><span>{{ game.name }}</span></div></div></section>

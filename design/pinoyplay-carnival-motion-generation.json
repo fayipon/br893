@@ -1,0 +1,41 @@
+{
+  "tool": "image_gen.imagegen",
+  "purpose": "Independent entrance motion layers for New Player Carnival",
+  "canvas": {
+    "width": 1882,
+    "height": 836
+  },
+  "assets": [
+    {
+      "part": "background",
+      "transparent_background": false,
+      "prompt": "Edit the provided approved New Player Carnival campaign image to create ONE registered production animation layer. Keep its full original 1882x836 wide artboard, exact composition, coordinates, textures, typography, illustration, colors and proportions. This is separation, not redesign. Do not recenter, resize or crop any retained content. Deliver one full-canvas PNG. Extract the EMPTY BACKGROUND plate only. Remove ALL lettering, all amounts/numerals, all black lettering outlines and the two black text swash strips. Remove the ENTIRE blue-haired anime headphone character including all hair strands, face, neck, clothing, orange/blue headphones, cables and illustration shadows. Inpaint everywhere removed with the same continuous vivid orange street-art paper background, subtle distressed texture, black halftone dots, sparse cyan diagonal brush accents. Keep background from being crowded so absent character and copy can enter over it. NO character, NO text, NO numbers, NO headphones. Opaque background edge to edge.",
+      "input": "public/assets/pinoyplay/new-player-carnival-v1.png",
+      "generated_source": "C:\\Users\\user\\.codex\\generated_images\\01a1adbf-bf6d-7f20-9be3-be59b7096ba7\\exec-8be5ddff-903b-43e8-b25d-e0f8e0e3fbeb.png",
+      "output": "public/assets/pinoyplay/motion/carnival-background-v1.png"
+    },
+    {
+      "part": "character",
+      "transparent_background": true,
+      "prompt": "Edit the provided approved New Player Carnival campaign image to create ONE registered production animation layer. Keep its full original 1882x836 wide artboard, exact composition, coordinates, textures, typography, illustration, colors and proportions. This is separation, not redesign. Do not recenter, resize or crop any retained content. Deliver one full-canvas PNG. Isolate ONLY the entire blue-haired anime headphone character, keeping the precise large right-side framing: head and flowing dark blue hair on upper/right, cyan profile looking upward, orange/cyan headphones lower right, jacket and cables across bottom, and all detailed inky outlines. Keep the character exactly where it is, with its head tilted the same way and same expression. Preserve the original cyan/black/orange screen-printed art. Remove ALL campaign typography, text strips, amount, decorative background splashes and the entire orange backdrop. Left half should be transparent wherever no part of the character exists. Reconstruct any small edges hidden by lettering. Transparent alpha for every pixel outside the character silhouette, including space between hair strands. No shadow plate, no orange rectangle, no text.",
+      "input": "public/assets/pinoyplay/new-player-carnival-v1.png",
+      "generated_source": "C:\\Users\\user\\.codex\\generated_images\\01a1adbf-bf6d-7f20-9be3-be59b7096ba7\\exec-78903061-024e-4d45-b164-57dfb3e412be.png",
+      "output": "public/assets/pinoyplay/motion/carnival-character-v1.png"
+    },
+    {
+      "part": "copy",
+      "transparent_background": true,
+      "prompt": "Edit the provided approved New Player Carnival campaign image to create ONE registered production animation layer. Keep its full original 1882x836 wide artboard, exact composition, coordinates, textures, typography, illustration, colors and proportions. This is separation, not redesign. Do not recenter, resize or crop any retained content. Deliver one full-canvas PNG. Isolate ONLY ALL campaign typography as a single transparent full-canvas sprite with exact original positions and gentle upward-right slant. Exact text: NEW PLAYER; CARNIVAL; COMPLETE TASKS · UNLOCK REWARDS; APPROX. TOTAL REWARDS; ₱16,000. Preserve warm cream fill, black distressed outlines, subtle ink speckles, and the black brush strips directly behind the two small slogan lines. Keep NEW PLAYER upper-left approx x120..740 y70..205; CARNIVAL x80..900 y165..395; COMPLETE TASKS · UNLOCK REWARDS x70..840 y370..460; APPROX. TOTAL REWARDS x45..760 y440..545; ₱16,000 x40..850 y505..780. Remove the anime character, headphones, hair, all orange/cyan background, halftone dots and all unrelated mural marks. Maintain exact source type hierarchy and line spacing; no new copy, no spelling changes, no rectangular background. Transparent alpha everywhere outside letters, black outlines and the two small text brush strips.",
+      "input": "public/assets/pinoyplay/new-player-carnival-v1.png",
+      "generated_source": "C:\\Users\\user\\.codex\\generated_images\\01a1adbf-bf6d-7f20-9be3-be59b7096ba7\\exec-a3911618-be22-43d7-96c9-4c5fbea7036a.png",
+      "output": "public/assets/pinoyplay/motion/carnival-copy-v1.png"
+    }
+  ],
+  "motion": {
+    "slogan": "Headline slides from left at 80ms; two reward ribbons slide in at 360ms.",
+    "character": "Rightward offset of 240px, 3-degree rotation, 94% scale settles to original position in 1100ms, delayed 220ms.",
+    "amount": "₱16,000 scales from 35% to 108%, rebounds to 98.5%, settles at 100% over 1050ms, delayed 620ms.",
+    "cropping": "Diagonal SVG clip paths follow original slanted text, preserving whole glyphs. See src/data/pinoyCampaignMotion.js.",
+    "fallback": "Original static banner for image mode, reduced motion, or load failure."
+  }
+}
